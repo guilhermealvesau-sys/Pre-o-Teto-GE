@@ -65,9 +65,63 @@ def _ano_ref(rel: str, data_com: date | None) -> int | None:
     return int(m.group(0)) if m else (data_com.year if data_com else None)
 
 
-def proventos(emissor: str) -> list[dict]:
-    """Proventos em dinheiro do emissor: classe, tipo, valor por ação (bruto), data com, ano de referência."""
+_amostra_logada = set()
+
+
+def _logar_amostra(nome: str, js) -> None:
+    if nome in _amostra_logada:
+        return
+    _amostra_logada.add(nome)
+    txt = json.dumps(js, ensure_ascii=False)[:700]
+    log.info("B3 %s (amostra): %s", nome, txt)
+
+
+def empresa(emissor: str) -> dict | None:
+    """Cadastro da B3 do emissor: nome de pregão, código CVM e CNPJ."""
+    js = get_json(f"{PROXY}/GetInitialCompanies/{_b64({'language': 'pt-br', 'pageNumber': 1, 'pageSize': 20, 'company': emissor})}")
+    _logar_amostra("GetInitialCompanies", js)
+    res = (js or {}).get("results") or []
+    for r in res:
+        if str(r.get("issuingCompany", "")).upper() == emissor.upper():
+            return {"tradingName": r.get("tradingName"), "codeCVM": str(r.get("codeCVM") or "").strip(),
+                    "cnpj": r.get("cnpj"), "companyName": r.get("companyName")}
+    return None
+
+
+def proventos_historico(trading_name: str, paginas: int = 20) -> list[dict]:
+    """Histórico completo de proventos em dinheiro (todas as páginas) pelo nome de pregão."""
+    eventos, pag, total = [], 1, 1
+    while pag <= min(total, paginas):
+        q = {"language": "pt-br", "pageNumber": pag, "pageSize": 120, "tradingName": trading_name}
+        js = get_json(f"{PROXY}/GetListedCashDividends/{_b64(q)}")
+        _logar_amostra("GetListedCashDividends", js)
+        if not js:
+            break
+        total = int(((js.get("page") or {}).get("totalPages")) or 1)
+        for ev in js.get("results") or []:
+            classe = str(ev.get("typeStock") or "").upper().strip()
+            classe = {"ON": "ON", "PN": "PN", "PNA": "PNA", "PNB": "PNB", "PNC": "PNC"}.get(classe)
+            valor = _num(ev.get("valueCash"))
+            dc = _data(ev.get("lastDatePriorEx"))
+            if not classe or valor is None or dc is None:
+                continue
+            eventos.append({"classe": classe, "tipo": _tipo(ev.get("corporateAction")), "valor": valor,
+                            "data_com": dc.isoformat(), "pagamento": None, "ano_ref": dc.year, "referente": ""})
+        pag += 1
+    return eventos
+
+
+def proventos(emissor: str, trading_name: str | None = None) -> list[dict]:
+    """Proventos em dinheiro do emissor: classe, tipo, valor por ação (bruto), data com, ano de referência.
+
+    O histórico vem de GetListedCashDividends (todas as datas); os eventos recentes de
+    GetListedSupplementCompany trazem também o período a que se referem (usado no payout)."""
     eventos: list[dict] = []
+    if trading_name:
+        try:
+            eventos += proventos_historico(trading_name)
+        except Exception as e:  # noqa: BLE001
+            log.warning("B3: histórico de proventos de %s falhou: %s", emissor, e)
     js = get_json(f"{PROXY}/GetListedSupplementCompany/{_b64({'issuingCompany': emissor, 'language': 'pt-br'})}")
     bloco = js[0] if isinstance(js, list) and js else (js or {})
     for ev in bloco.get("cashDividends") or []:
@@ -81,14 +135,13 @@ def proventos(emissor: str) -> list[dict]:
     if not eventos:
         chaves = list(bloco.keys()) if isinstance(bloco, dict) else type(js).__name__
         log.warning("B3: nenhum provento para %s (resposta: %s)", emissor, chaves)
-    # a B3 repete o mesmo evento em listagens diferentes: um por (classe, tipo, data com, valor)
-    vistos, unicos = set(), []
+    # as duas listagens repetem eventos: um por (classe, tipo, data com, valor), ficando o que traz o período
+    unicos: dict = {}
     for e in eventos:
-        k = (e["classe"], e["tipo"], e["data_com"], round(e["valor"], 10))
-        if k not in vistos:
-            vistos.add(k)
-            unicos.append(e)
-    return sorted(unicos, key=lambda e: e["data_com"])
+        k = (e["classe"], e["tipo"], e["data_com"], round(e["valor"], 8))
+        if k not in unicos or (e["referente"] and not unicos[k]["referente"]):
+            unicos[k] = e
+    return sorted(unicos.values(), key=lambda e: e["data_com"])
 
 
 # ---------------------------------------------------------------- COTAHIST

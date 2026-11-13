@@ -1,29 +1,29 @@
 emissor,nome,busca_cvm,cd_cvm
-ABCB,ABC Brasil,BCO ABC BRASIL,
-ALUP,Alupar,ALUPAR INVESTIMENTO,
-BRSR,Banrisul,BCO ESTADO DO RIO GRANDE DO SUL,
-BBSE,BB Seguridade,BB SEGURIDADE PARTICIPA,
-BBDC,Bradesco,BCO BRADESCO,
-BBAS,Banco do Brasil,BCO BRASIL S.A.,
-BPAC,BTG Pactual,BCO BTG PACTUAL,
-CXSE,Caixa Seguridade,CAIXA SEGURIDADE PARTICIPA,
-CMIG,Cemig,CIA ENERGETICA DE MINAS GERAIS,
-CSMG,Copasa,CIA SANEAMENTO DE MINAS GERAIS,
-CPLE,Copel,CIA PARANAENSE DE ENERGIA,
-CPFE,CPFL,CPFL ENERGIA,
-ENGI,Energisa,ENERGISA S.A.,
-EGIE,Engie,ENGIE BRASIL ENERGIA,
-EQTL,Equatorial,EQUATORIAL,
-ISAE,ISA Energia,ISA ENERGIA BRASIL|CTEEP,
-ITUB,Itau,ITAU UNIBANCO HOLDING,
-ITSA,Itausa,ITAUSA,
-PSSA,Porto Seguro,PORTO SEGURO,
-SBSP,Sabesp,CIA SANEAMENTO BASICO EST SAO PAULO|SABESP,
-SAPR,Sanepar,CIA SANEAMENTO DO PARANA,
-SANB,Santander,BCO SANTANDER (BRASIL),
-VIVT,Vivo,TELEFONICA BRASIL,
-TIMS,TIM,TIM S.A.,
-TAEE,Taesa,TRANSMISSORA ALIANCA DE ENERGIA ELETRICA,
-KLBN,Klabin,KLABIN S.A.,
-PETR,Petrobras,PETROLEO BRASILEIRO,
-VALE,Vale,VALE S.A.,
+ABCB,ABC Brasil,^banco abc brasil,
+ALUP,Alupar,^alupar investimento,21490
+BRSR,Banrisul,banco do estado do rio grande do sul,
+BBSE,BB Seguridade,^bb seguridade participacoes,23159
+BBDC,Bradesco,^banco bradesco s,
+BBAS,Banco do Brasil,^banco do brasil s,
+BPAC,BTG Pactual,^banco btg pactual s,
+CXSE,Caixa Seguridade,^caixa seguridade participacoes,23795
+CMIG,Cemig,energetica de minas gerais,
+CSMG,Copasa,saneamento de minas gerais,
+CPLE,Copel,paranaense de energia,
+CPFE,CPFL,^cpfl energia s,18660
+ENGI,Energisa,^energisa s[ ./]*a,
+EGIE,Engie,^engie brasil energia,17329
+EQTL,Equatorial,^equatorial s[ ./]*a,20010
+ISAE,ISA Energia,^isa energia brasil,18376
+ITUB,Itau,^itau unibanco holding,19348
+ITSA,Itausa,^itausa s,7617
+PSSA,Porto Seguro,^porto seguro s,16659
+SBSP,Sabesp,saneamento basico do estado de sao paulo,
+SAPR,Sanepar,saneamento do parana,
+SANB,Santander,^banco santander \(brasil\),
+VIVT,Vivo,^telefonica brasil,17671
+TIMS,TIM,^tim s[ ./]*a,24929
+TAEE,Taesa,^transmissora alianca de energia eletrica,20257
+KLBN,Klabin,^klabin s,12653
+PETR,Petrobras,^petroleo brasileiro,9512
+VALE,Vale,^vale s[ ./]*a,4170

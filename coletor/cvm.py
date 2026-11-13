@@ -158,23 +158,31 @@ class Empresa:
     acoes_ref: str | None = None
     acoes_ano: dict[int, dict] = field(default_factory=dict)
     divida_bruta_mi: float | None = None
+    conta_lucro: str | None = None
     avisos: list[str] = field(default_factory=list)
+
+    def escalar_acoes(self, fator: float) -> None:
+        self.acoes_on = (self.acoes_on or 0) * fator
+        self.acoes_pn = (self.acoes_pn or 0) * fator
+        self.acoes_ano = {y: {"on": v["on"] * fator, "pn": v["pn"] * fator} for y, v in self.acoes_ano.items()}
 
 
 def resolver(empresas: pd.DataFrame, cad: pd.DataFrame) -> pd.DataFrame:
     """Completa cd_cvm/cnpj de cada emissor pelo cadastro da CVM (companhias ativas)."""
-    ativos = cad[cad["SIT"].fillna("").str.upper().str.startswith("ATIVO")]
+    cad = cad.copy()
+    cad["cd"] = cad["CD_CVM"].astype(str).str.strip().str.lstrip("0")
+    cad["_ativo"] = cad["SIT"].fillna("").str.upper().str.startswith("ATIVO")
+    # o cadastro repete a companhia (uma linha por categoria/situação): uma linha por código, a ativa primeiro
+    cad = cad.sort_values("_ativo", ascending=False).drop_duplicates("cd")
+    ativos = cad[cad["_ativo"]]
     linhas = []
     for _, e in empresas.iterrows():
-        cand = ativos
-        if isinstance(e.get("cd_cvm"), str) and e["cd_cvm"].strip():
-            cand = cad[cad["CD_CVM"].astype(str).str.lstrip("0") == e["cd_cvm"].strip().lstrip("0")]
-        else:
-            pads = [norm(p) for p in str(e["busca_cvm"]).split("|")]
-            cand = ativos[ativos["nome_n"].apply(lambda n: any(p in n for p in pads))]
-        if "CATEG_REG" in cand:
-            a = cand[cand["CATEG_REG"].fillna("").str.contains("A")]
-            cand = a if not a.empty else cand
+        cd = str(e.get("cd_cvm") or "").strip().lstrip("0")
+        if cd:
+            cand = cad[cad["cd"] == cd]
+        else:  # busca_cvm: expressões regulares (sem acento, minúsculas) separadas por "|"
+            rx = re.compile(norm(e["busca_cvm"]))
+            cand = ativos[ativos["nome_n"].apply(lambda n: bool(rx.search(n)))]
         linhas.append({
             "emissor": e["emissor"], "nome": e["nome"],
             "cnpj": cand["CNPJ_CIA"].iloc[0] if len(cand) == 1 else None,
@@ -216,6 +224,9 @@ def coletar(mapa: pd.DataFrame, anos_hist: int = 7) -> dict[str, Empresa]:
 
     # ---- lucro: uma série por período (DT_INI, DT_FIM), preferindo o documento mais recente
     luc = _linhas_lucro(dre)
+    for cnpj, g in luc.groupby("CNPJ_CIA"):  # conta usada no documento mais recente, para auditoria
+        u = g.sort_values("DT_REFER").iloc[-1]
+        res[por_cnpj[cnpj]].conta_lucro = f"{u['CD_CONTA']} {u['DS_CONTA']} ({u['origem']})"
     luc = luc.sort_values(["DT_REFER", "VERSAO"]).drop_duplicates(["CNPJ_CIA", "DT_INI_EXERC", "DT_FIM_EXERC"], keep="last")
     for cnpj, g in luc.groupby("CNPJ_CIA"):
         e = res[por_cnpj[cnpj]]
@@ -240,6 +251,17 @@ def coletar(mapa: pd.DataFrame, anos_hist: int = 7) -> dict[str, Empresa]:
         if e.lucro12m_mi is not None:
             e.lucro12m_mi = round(e.lucro12m_mi, 3)
 
+    for e in res.values():  # diagnóstico: lucro ausente ou zerado → mostra as contas da DRE no log
+        if e.lucro12m_mi:
+            continue
+        g = dre[(dre["CNPJ_CIA"] == e.cnpj)]
+        if g.empty:
+            continue
+        g = g[g["DT_REFER"] == g["DT_REFER"].max()]
+        g = g[g["CD_CONTA"].str.startswith("3.") & (g["nivel"] <= 2)].drop_duplicates("CD_CONTA")
+        log.warning("CVM: lucro de %s zerado/ausente (conta usada: %s). Contas da DRE:\n%s", e.nome, e.conta_lucro,
+                    "\n".join(f"   {r.CD_CONTA} {r.DS_CONTA} = {r.vl_mi:.1f}" for r in g.itertuples()))
+
     # ---- balanço mais recente: PL dos controladores e dívida bruta
     for cnpj, g in bpp.groupby("CNPJ_CIA"):
         e = res[por_cnpj[cnpj]]
@@ -254,6 +276,11 @@ def coletar(mapa: pd.DataFrame, anos_hist: int = 7) -> dict[str, Empresa]:
     for cnpj, g in cap.groupby("CNPJ_CIA"):
         e = res[por_cnpj[cnpj]]
         g = g.sort_values("DT_REFER")
+        # algumas companhias informam a composição em milhares em parte dos formulários:
+        # documento com total 100× menor que o maior da série é reescalado (×1000)
+        mx = g["total"].max()
+        esc = g["total"].apply(lambda t: 1000.0 if 0 < t < mx / 100 else 1.0)
+        g = g.assign(on=g["on"] * esc, pn=g["pn"] * esc, total=g["total"] * esc)
         ult = g.iloc[-1]
         e.acoes_on, e.acoes_pn, e.acoes_ref = float(ult["on"]), float(ult["pn"]), ult["DT_REFER"]
         for r in g[g["DT_REFER"].str[5:] == "12-31"].itertuples():

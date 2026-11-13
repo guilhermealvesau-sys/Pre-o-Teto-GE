@@ -60,7 +60,18 @@ def completo() -> dict:
     a = _ativos()
     emp_cfg = pd.read_csv(CFG / "empresas.csv", dtype=str).fillna("")
 
-    # 1) quem é quem na CVM (cadastro oficial); a resolução fica gravada para conferência
+    # 1) quem é quem: o cadastro da B3 informa o código CVM e o nome de pregão de cada emissor
+    pregao = {}
+    for i, e in emp_cfg.iterrows():
+        try:
+            info = b3.empresa(e["emissor"])
+        except Exception as ex:  # noqa: BLE001
+            info = None
+            log.warning("B3: cadastro de %s indisponível: %s", e["emissor"], ex)
+        if info:
+            pregao[e["emissor"]] = info.get("tradingName")
+            if not e["cd_cvm"] and info.get("codeCVM"):
+                emp_cfg.at[i, "cd_cvm"] = info["codeCVM"]
     cad = cvm.cadastro()
     mapa = cvm.resolver(emp_cfg, cad)
     mapa.to_csv(DADOS / "mapa_cvm.csv", index=False)
@@ -81,11 +92,21 @@ def completo() -> dict:
             hist.setdefault(tk, {})[str(y)] = v
     salvar_json(DADOS / "precos_anuais.json", hist)
 
+    # 3b) composição do capital informada em milhares: confere pelo P/VP com o preço de mercado
+    for em, e in emps.items():
+        pxs = [v[max(v)]["fim"] for tk in a.loc[a["emissor"] == em, "ticker"] if (v := hist.get(tk))]
+        tot = (e.acoes_on or 0) + (e.acoes_pn or 0)
+        if pxs and tot and e.pl_mi and e.pl_mi > 0:
+            pvp = pxs[0] * tot / (e.pl_mi * 1e6)
+            if pvp < 0.05:  # nenhuma companhia real negocia a menos de 0,05× o patrimônio
+                e.escalar_acoes(1000)
+                e.avisos.append("composição do capital informada em milhares (corrigida)")
+
     # 4) proventos por emissor
     prov = {}
     for em in sorted(set(a["emissor"])):
         try:
-            prov[em] = b3.proventos(em)
+            prov[em] = b3.proventos(em, pregao.get(em))
         except Exception as e:  # noqa: BLE001
             log.warning("B3: proventos de %s falharam: %s", em, e)
             prov[em] = []
@@ -112,16 +133,17 @@ def completo() -> dict:
         except Exception as e:  # noqa: BLE001
             log.warning("PTAX da data do balanço indisponível: %s", e)
     salvar_json(DADOS / "base.json", base)
-    _relatorio(base, mapa)
+    _relatorio(base, mapa, {k: e.conta_lucro or "" for k, e in emps.items()})
     return base
 
 
-def _relatorio(base: dict, mapa: pd.DataFrame) -> None:
+def _relatorio(base: dict, mapa: pd.DataFrame, contas: dict | None = None) -> None:
+    contas = contas or {}
     lin = [f"# Coleta de {base['gerado_em']}", "", "## Empresas na CVM", "",
-           "| Emissor | CVM | Razão social | Pendência |", "|---|---|---|---|"]
+           "| Emissor | CVM | Razão social | Conta do lucro | Pendência |", "|---|---|---|---|---|"]
     txt = lambda v: "" if v is None or (isinstance(v, float) and v != v) else str(v)  # noqa: E731
     for r in mapa.itertuples():
-        lin.append(f"| {r.emissor} | {txt(r.cd_cvm)} | {txt(r.denom)} | {txt(r.candidatos)} |")
+        lin.append(f"| {r.emissor} | {txt(r.cd_cvm)} | {txt(r.denom)} | {contas.get(r.emissor, '')} | {txt(r.candidatos)} |")
     lin += ["", "## Papéis", "",
             "| Papel | Ações (mi) | Lucro 12M (R$ mi) | Até | VPA | Payout | DY médio | Div. médio | % JCP | P/L médio | Avisos |",
             "|---|---|---|---|---|---|---|---|---|---|---|"]

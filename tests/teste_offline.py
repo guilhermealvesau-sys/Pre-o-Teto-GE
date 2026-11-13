@@ -70,6 +70,10 @@ def bpp_rows(em, ref):
 def cap_rows(em, ref, ano):
     cnpj, cd, nome, *_ = EMP[em]
     on, pn = acoes(em, ano)
+    if em == "ITUB":  # Itaú informa em milhares em todos os documentos (corrigido pelo P/VP)
+        on, pn = on / 1000, pn / 1000
+    if em == "PETR" and ano == ANO - 3:  # um documento isolado em milhares (corrigido pela série)
+        on, pn = on / 1000, pn / 1000
     return [f"{cnpj};{ref};1;{nome};1;{int(on + 1000)};{int(pn)};{int(on + pn + 1000)};1000;0;1000"]
 
 
@@ -185,6 +189,8 @@ def main_teste():
     ok("TAEE11 % JCP", t11["pct_jcp"], 0.2 / 0.7)
     ok("TAEE payout", t11["payout"], 0.7 * 1033 / 1000)
     ok("TAEE11 P/L médio", t11["pl_medio"], 30 / (1000e6 / 1033e6 * 3))
+    ok("ITUB ações corrigidas de milhares", i4["qtd_mi"], 10000.0)
+    ok("PETR ações com documento isolado em milhares", A["PETR4"]["qtd_mi"], 13000.0)
     ok("ITUB lucro 12M (layout de banco)", i4["lucro12m_mi"], 33000 + 40000 - 30000)
     adj = (4 * (1 / 1.1) + 2 * 1.0) / 6 * 0.7
     ok("ITUB4 dividendo médio ajustado pela bonificação", i4["div_medio6"], adj)
