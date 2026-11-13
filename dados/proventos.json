@@ -1752,8 +1752,8 @@
   },
   {
    "classe": "ON",
-   "tipo": "JCP",
-   "valor": 0.925517,
+   "tipo": "RENDIMENTO",
+   "valor": 0.021602,
    "data_com": "2006-02-20",
    "pagamento": null,
    "ano_ref": 2006,
@@ -1761,8 +1761,8 @@
   },
   {
    "classe": "ON",
-   "tipo": "RENDIMENTO",
-   "valor": 0.021602,
+   "tipo": "JCP",
+   "valor": 0.925517,
    "data_com": "2006-02-20",
    "pagamento": null,
    "ano_ref": 2006,
@@ -1797,8 +1797,8 @@
   },
   {
    "classe": "ON",
-   "tipo": "JCP",
-   "valor": 0.849233,
+   "tipo": "RENDIMENTO",
+   "valor": 0.014629,
    "data_com": "2006-08-14",
    "pagamento": null,
    "ano_ref": 2006,
@@ -1806,8 +1806,8 @@
   },
   {
    "classe": "ON",
-   "tipo": "RENDIMENTO",
-   "valor": 0.014629,
+   "tipo": "JCP",
+   "valor": 0.849233,
    "data_com": "2006-08-14",
    "pagamento": null,
    "ano_ref": 2006,
@@ -2625,8 +2625,8 @@
   },
   {
    "classe": "ON",
-   "tipo": "JCP",
-   "valor": 0.12432857295,
+   "tipo": "RENDIMENTO",
+   "valor": 0.00292443895,
    "data_com": "2015-08-21",
    "pagamento": null,
    "ano_ref": 2015,
@@ -2634,8 +2634,8 @@
   },
   {
    "classe": "ON",
-   "tipo": "RENDIMENTO",
-   "valor": 0.00292443895,
+   "tipo": "JCP",
+   "valor": 0.12432857295,
    "data_com": "2015-08-21",
    "pagamento": null,
    "ano_ref": 2015,
@@ -3642,6 +3642,15 @@
   },
   {
    "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.14935148468,
+   "data_com": "2025-03-11",
+   "pagamento": null,
+   "ano_ref": 2025,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
    "tipo": "RENDIMENTO",
    "valor": 0.00354526413,
    "data_com": "2025-03-11",
@@ -3653,15 +3662,6 @@
    "classe": "ON",
    "tipo": "RENDIMENTO",
    "valor": 0.00893062309,
-   "data_com": "2025-03-11",
-   "pagamento": null,
-   "ano_ref": 2025,
-   "referente": ""
-  },
-  {
-   "classe": "ON",
-   "tipo": "JCP",
-   "valor": 0.14935148468,
    "data_com": "2025-03-11",
    "pagamento": null,
    "ano_ref": 2025,
@@ -3759,21 +3759,21 @@
   },
   {
    "classe": "ON",
-   "tipo": "RENDIMENTO",
-   "valor": 0.00281361809,
-   "data_com": "2026-09-01",
-   "pagamento": "2026-09-11",
-   "ano_ref": 2026,
-   "referente": "2º Trimestre/2026"
-  },
-  {
-   "classe": "ON",
    "tipo": "JCP",
    "valor": 0.03450628312,
    "data_com": "2026-09-01",
    "pagamento": "2026-09-11",
    "ano_ref": 2026,
    "referente": "3º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "RENDIMENTO",
+   "valor": 0.00281361809,
+   "data_com": "2026-09-01",
+   "pagamento": "2026-09-11",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
   }
  ],
  "BBDC": [
@@ -24287,8 +24287,8 @@
   },
   {
    "classe": "ON",
-   "tipo": "JCP",
-   "valor": 0.4189,
+   "tipo": "DIVIDENDO",
+   "valor": 0.205349,
    "data_com": "2012-04-16",
    "pagamento": null,
    "ano_ref": 2012,
@@ -24296,8 +24296,8 @@
   },
   {
    "classe": "ON",
-   "tipo": "DIVIDENDO",
-   "valor": 0.205349,
+   "tipo": "JCP",
+   "valor": 0.4189,
    "data_com": "2012-04-16",
    "pagamento": null,
    "ano_ref": 2012,
@@ -24314,8 +24314,8 @@
   },
   {
    "classe": "PN",
-   "tipo": "JCP",
-   "valor": 0.4189,
+   "tipo": "DIVIDENDO",
+   "valor": 0.205349,
    "data_com": "2012-04-16",
    "pagamento": null,
    "ano_ref": 2012,
@@ -24323,8 +24323,8 @@
   },
   {
    "classe": "PN",
-   "tipo": "DIVIDENDO",
-   "valor": 0.205349,
+   "tipo": "JCP",
+   "valor": 0.4189,
    "data_com": "2012-04-16",
    "pagamento": null,
    "ano_ref": 2012,
@@ -32697,8 +32697,8 @@
   },
   {
    "classe": "ON",
-   "tipo": "JCP",
-   "valor": 1.22,
+   "tipo": "DIVIDENDO",
+   "valor": 0.024,
    "data_com": "2007-02-28",
    "pagamento": null,
    "ano_ref": 2007,
@@ -32706,8 +32706,8 @@
   },
   {
    "classe": "ON",
-   "tipo": "DIVIDENDO",
-   "valor": 0.024,
+   "tipo": "JCP",
+   "valor": 1.22,
    "data_com": "2007-02-28",
    "pagamento": null,
    "ano_ref": 2007,
@@ -32724,8 +32724,8 @@
   },
   {
    "classe": "PN",
-   "tipo": "JCP",
-   "valor": 1.22,
+   "tipo": "DIVIDENDO",
+   "valor": 0.024,
    "data_com": "2007-02-28",
    "pagamento": null,
    "ano_ref": 2007,
@@ -32733,8 +32733,8 @@
   },
   {
    "classe": "PN",
-   "tipo": "DIVIDENDO",
-   "valor": 0.024,
+   "tipo": "JCP",
+   "valor": 1.22,
    "data_com": "2007-02-28",
    "pagamento": null,
    "ano_ref": 2007,
@@ -38578,8 +38578,8 @@
   },
   {
    "classe": "ON",
-   "tipo": "JCP",
-   "valor": 4.27,
+   "tipo": "RENDIMENTO",
+   "valor": 0.17,
    "data_com": "2000-03-23",
    "pagamento": null,
    "ano_ref": 2000,
@@ -38587,8 +38587,8 @@
   },
   {
    "classe": "ON",
-   "tipo": "RENDIMENTO",
-   "valor": 0.17,
+   "tipo": "JCP",
+   "valor": 4.27,
    "data_com": "2000-03-23",
    "pagamento": null,
    "ano_ref": 2000,
@@ -38614,15 +38614,6 @@
   },
   {
    "classe": "PN",
-   "tipo": "JCP",
-   "valor": 4.27,
-   "data_com": "2000-03-23",
-   "pagamento": null,
-   "ano_ref": 2000,
-   "referente": ""
-  },
-  {
-   "classe": "PN",
    "tipo": "RENDIMENTO",
    "valor": 0.17,
    "data_com": "2000-03-23",
@@ -38631,6 +38622,15 @@
    "referente": ""
   },
   {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 4.27,
+   "data_com": "2000-03-23",
+   "pagamento": null,
+   "ano_ref": 2000,
+   "referente": ""
+  },
+  {
    "classe": "ON",
    "tipo": "JCP",
    "valor": 1.67,
@@ -38812,8 +38812,8 @@
   },
   {
    "classe": "ON",
-   "tipo": "DIVIDENDO",
-   "valor": 0.53,
+   "tipo": "RENDIMENTO",
+   "valor": 0.03,
    "data_com": "2003-03-27",
    "pagamento": null,
    "ano_ref": 2003,
@@ -38821,8 +38821,8 @@
   },
   {
    "classe": "ON",
-   "tipo": "RENDIMENTO",
-   "valor": 0.03,
+   "tipo": "DIVIDENDO",
+   "valor": 0.53,
    "data_com": "2003-03-27",
    "pagamento": null,
    "ano_ref": 2003,
@@ -38848,8 +38848,8 @@
   },
   {
    "classe": "PN",
-   "tipo": "DIVIDENDO",
-   "valor": 0.53,
+   "tipo": "RENDIMENTO",
+   "valor": 0.03,
    "data_com": "2003-03-27",
    "pagamento": null,
    "ano_ref": 2003,
@@ -38857,8 +38857,8 @@
   },
   {
    "classe": "PN",
-   "tipo": "RENDIMENTO",
-   "valor": 0.03,
+   "tipo": "DIVIDENDO",
+   "valor": 0.53,
    "data_com": "2003-03-27",
    "pagamento": null,
    "ano_ref": 2003,
@@ -39352,8 +39352,8 @@
   },
   {
    "classe": "ON",
-   "tipo": "DIVIDENDO",
-   "valor": 0.05,
+   "tipo": "RENDIMENTO",
+   "valor": 0.0013,
    "data_com": "2008-04-04",
    "pagamento": null,
    "ano_ref": 2008,
@@ -39361,8 +39361,8 @@
   },
   {
    "classe": "ON",
-   "tipo": "RENDIMENTO",
-   "valor": 0.0013,
+   "tipo": "DIVIDENDO",
+   "valor": 0.05,
    "data_com": "2008-04-04",
    "pagamento": null,
    "ano_ref": 2008,
@@ -39388,15 +39388,6 @@
   },
   {
    "classe": "PN",
-   "tipo": "DIVIDENDO",
-   "valor": 0.05,
-   "data_com": "2008-04-04",
-   "pagamento": null,
-   "ano_ref": 2008,
-   "referente": ""
-  },
-  {
-   "classe": "PN",
    "tipo": "RENDIMENTO",
    "valor": 0.0013,
    "data_com": "2008-04-04",
@@ -39405,6 +39396,15 @@
    "referente": ""
   },
   {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.05,
+   "data_com": "2008-04-04",
+   "pagamento": null,
+   "ano_ref": 2008,
+   "referente": ""
+  },
+  {
    "classe": "ON",
    "tipo": "JCP",
    "valor": 0.8,
@@ -39532,8 +39532,8 @@
   },
   {
    "classe": "ON",
-   "tipo": "JCP",
-   "valor": 0.1172,
+   "tipo": "RENDIMENTO",
+   "valor": 0.0029,
    "data_com": "2010-04-22",
    "pagamento": null,
    "ano_ref": 2010,
@@ -39541,8 +39541,8 @@
   },
   {
    "classe": "ON",
-   "tipo": "RENDIMENTO",
-   "valor": 0.0029,
+   "tipo": "JCP",
+   "valor": 0.1172,
    "data_com": "2010-04-22",
    "pagamento": null,
    "ano_ref": 2010,
@@ -39568,8 +39568,8 @@
   },
   {
    "classe": "PN",
-   "tipo": "JCP",
-   "valor": 0.1172,
+   "tipo": "RENDIMENTO",
+   "valor": 0.0029,
    "data_com": "2010-04-22",
    "pagamento": null,
    "ano_ref": 2010,
@@ -39577,8 +39577,8 @@
   },
   {
    "classe": "PN",
-   "tipo": "RENDIMENTO",
-   "valor": 0.0029,
+   "tipo": "JCP",
+   "valor": 0.1172,
    "data_com": "2010-04-22",
    "pagamento": null,
    "ano_ref": 2010,
@@ -39865,8 +39865,8 @@
   },
   {
    "classe": "ON",
-   "tipo": "RENDIMENTO",
-   "valor": 0.003034,
+   "tipo": "JCP",
+   "valor": 0.13066,
    "data_com": "2013-04-29",
    "pagamento": null,
    "ano_ref": 2013,
@@ -39874,8 +39874,8 @@
   },
   {
    "classe": "ON",
-   "tipo": "JCP",
-   "valor": 0.13066,
+   "tipo": "RENDIMENTO",
+   "valor": 0.003034,
    "data_com": "2013-04-29",
    "pagamento": null,
    "ano_ref": 2013,
@@ -39903,15 +39903,6 @@
    "classe": "PN",
    "tipo": "RENDIMENTO",
    "valor": 0.00854,
-   "data_com": "2013-04-29",
-   "pagamento": null,
-   "ano_ref": 2013,
-   "referente": ""
-  },
-  {
-   "classe": "PN",
-   "tipo": "JCP",
-   "valor": 0.37566,
    "data_com": "2013-04-29",
    "pagamento": null,
    "ano_ref": 2013,
@@ -41314,8 +41305,8 @@
   },
   {
    "classe": "ON",
-   "tipo": "DIVIDENDO",
-   "valor": 0.47156696,
+   "tipo": "JCP",
+   "valor": 0.20250435,
    "data_com": "2026-08-21",
    "pagamento": "2026-12-21",
    "ano_ref": 2026,
@@ -41323,8 +41314,8 @@
   },
   {
    "classe": "ON",
-   "tipo": "JCP",
-   "valor": 0.20250435,
+   "tipo": "DIVIDENDO",
+   "valor": 0.47156696,
    "data_com": "2026-08-21",
    "pagamento": "2026-12-21",
    "ano_ref": 2026,
@@ -47239,15 +47230,6 @@
   },
   {
    "classe": "ON",
-   "tipo": "DIVIDENDO",
-   "valor": 0.18014675081,
-   "data_com": "2024-04-09",
-   "pagamento": null,
-   "ano_ref": 2024,
-   "referente": ""
-  },
-  {
-   "classe": "ON",
    "tipo": "JCP",
    "valor": 0.124069241,
    "data_com": "2024-06-21",
@@ -47295,15 +47277,6 @@
    "classe": "ON",
    "tipo": "DIVIDENDO",
    "valor": 0.282254233,
-   "data_com": "2025-04-03",
-   "pagamento": null,
-   "ano_ref": 2025,
-   "referente": ""
-  },
-  {
-   "classe": "ON",
-   "tipo": "DIVIDENDO",
-   "valor": 0.282667489,
    "data_com": "2025-04-03",
    "pagamento": null,
    "ano_ref": 2025,
