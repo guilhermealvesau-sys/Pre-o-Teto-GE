@@ -18,13 +18,16 @@ from .util import baixar, ler_json, log, norm, salvar_json
 
 URL = "https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/IPE/DADOS/ipe_cia_aberta_{ano}.zip"
 
-# padrões sobre o texto normalizado (minúsculas, sem acento) de categoria + tipo + espécie + assunto
+# padrões sobre o texto normalizado (minúsculas, sem acento) de tipo + espécie + assunto.
+# Cada um vale para todas as categorias (None) ou só para as listadas.
+_POL = (r"politica (de|da|para) (dividendos|distribuicao|destinacao|pagamento de (dividendos|proventos)"
+        r"|proventos|remuneracao (aos|dos|ao) acionistas?)")
+FORTES = {"fato relevante", "comunicado ao mercado"}
 PADROES = [
-    (r"politica de (dividendos|remuneracao|distribuicao|destinacao|pagamento de dividendos|proventos)", "política"),
-    (r"remuneracao (aos|dos|ao) acionistas?", "remuneração aos acionistas"),
-    (r"\bpay ?out\b", "payout"),
-    (r"dividendos? minimos?", "dividendo mínimo"),
-    (r"(alteracao|revisao|nova|atualizacao)\b.{0,60}\b(politica|payout|remuneracao)", "alteração de política"),
+    (_POL, "política de remuneração", None),
+    (r"\bpay ?out\b", "payout", FORTES),
+    (r"(reducao|aumento|alteracao|revisao|mudanca)\b.{0,40}\b(dividendos?|proventos|distribuicao de resultados)",
+     "mudança na distribuição", FORTES),
 ]
 
 
@@ -68,14 +71,15 @@ def varrer(empresas: dict[str, dict], anos: list[int]) -> list[dict]:
             continue
         df = df[df[c["cnpj"]].isin(empresas)]
         for r in df.to_dict("records"):
-            partes = [r.get(c[k]) or "" for k in ("cat", "tipo", "esp", "ass") if c[k]]
+            partes = [r.get(c[k]) or "" for k in ("tipo", "esp", "ass") if c[k]]
             txt = norm(" | ".join(partes))
-            regra = next((rot for rx, rot in PADROES if re.search(rx, txt)), None)
+            cat = norm(r.get(c["cat"]) or "") if c["cat"] else ""
+            regra = next((rot for rx, rot, cats in PADROES
+                          if re.search(rx, txt) and (cats is None or cat in cats)), None)
             if not regra:
                 continue
-            cat = norm(r.get(c["cat"]) or "")
-            if "aviso aos acionistas" in cat and regra not in ("política", "alteração de política"):
-                continue  # aviso de pagamento comum
+            if cat == "aviso aos acionistas" and not re.search(r"(alteracao|revisao|nova|aprovacao)", txt):
+                continue  # aviso de pagamento que só cita a política vigente
             e = empresas[r[c["cnpj"]]]
             achados.append({
                 "protocolo": str(r.get(c["prot"]) or f"{r[c['cnpj']]}-{r.get(c['data'])}-{r.get(c['ass'])}")[:120],
