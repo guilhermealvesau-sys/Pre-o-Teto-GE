@@ -39,6 +39,9 @@ def ler_rss(xml: str) -> list[dict]:
     return out
 
 
+REDES = {"instagram", "facebook", "youtube", "tiktok", "x", "twitter", "linkedin", "threads", "kwai"}
+
+
 def _filtrar(itens: list[dict], chaves: list[str], n: int) -> list[dict]:
     """Mantém manchetes que citam a empresa ou o código, sem repetir títulos, das mais novas para as mais antigas."""
     rx = [re.compile(r"\b" + re.escape(norm(k)) + r"\b") for k in chaves if k]
@@ -46,8 +49,9 @@ def _filtrar(itens: list[dict], chaves: list[str], n: int) -> list[dict]:
     for i in sorted(itens, key=lambda i: i.get("data") or "", reverse=True):
         t = norm(i["titulo"])
         chave = re.sub(r"[^a-z0-9 ]", "", t)[:80]
-        if chave in vistos or (rx and not any(r.search(t) for r in rx)) or "ao vivo" in t:
-            continue  # repetida, não cita a empresa no título, ou cobertura "ao vivo" do pregão
+        if chave in vistos or (rx and not any(r.search(t) for r in rx)) or "ao vivo" in t \
+                or norm(i.get("fonte")) in REDES:
+            continue  # repetida, não cita a empresa no título, cobertura "ao vivo" do pregão ou rede social
         vistos.add(chave)
         out.append(i)
         if len(out) >= n:

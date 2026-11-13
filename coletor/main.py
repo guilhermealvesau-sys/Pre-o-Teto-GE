@@ -64,7 +64,7 @@ def completo() -> dict:
     emp_cfg = pd.read_csv(CFG / "empresas.csv", dtype=str).fillna("")
 
     # 1) quem é quem: o cadastro da B3 informa o código CVM e o nome de pregão de cada emissor
-    pregao = {}
+    pregao, sites = {}, {}
     for i, e in emp_cfg.iterrows():
         try:
             info = b3.empresa(e["emissor"])
@@ -76,6 +76,10 @@ def completo() -> dict:
             log.info("B3: %s → pregão %r, CVM %s", e["emissor"], info.get("tradingName"), info.get("codeCVM"))
             if not e["cd_cvm"] and info.get("codeCVM"):
                 emp_cfg.at[i, "cd_cvm"] = info["codeCVM"]
+            try:
+                sites[e["emissor"]] = b3.site_ri(emp_cfg.at[i, "cd_cvm"] or info.get("codeCVM"))
+            except Exception as ex:  # noqa: BLE001
+                log.warning("B3: site de %s indisponível: %s", e["emissor"], ex)
         else:
             log.warning("B3: emissor %s não encontrado no cadastro da bolsa", e["emissor"])
     cad = cvm.cadastro()
@@ -127,7 +131,8 @@ def completo() -> dict:
     salvar_json(DADOS / "proventos.json", prov)
 
     # 5) indicadores por papel
-    base = {"gerado_em": _agora(), "janela_anos": 6, "ativos": {}, "fontes": {
+    base = {"gerado_em": _agora(), "janela_anos": 6, "ativos": {}, "sites": {k: v for k, v in sites.items() if v},
+            "fontes": {
         "contabeis": "CVM – Dados Abertos (ITR e DFP)", "proventos": "B3 – proventos em dinheiro",
         "precos": "B3 – COTAHIST", "cambio": "Banco Central – PTAX"}}
     for r in a.to_dict("records"):

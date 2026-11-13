@@ -88,6 +88,21 @@ def empresa(emissor: str) -> dict | None:
     return None
 
 
+def site_ri(code_cvm: str) -> str | None:
+    """Site da companhia informado no cadastro da B3 (normalmente a página de relações com investidores)."""
+    if not code_cvm:
+        return None
+    js = get_json(f"{PROXY}/GetDetail/{_b64({'codeCVM': str(code_cvm), 'language': 'pt-br'})}")
+    _logar_amostra("GetDetail", js)
+    if not isinstance(js, dict):
+        return None
+    for k, v in js.items():
+        if isinstance(v, str) and ("site" in k.lower() or "web" in k.lower()) and "." in v:
+            v = v.strip()
+            return v if v.lower().startswith("http") else "https://" + v.lstrip("/")
+    return None
+
+
 def proventos_historico(trading_name: str, paginas: int = 20) -> list[dict]:
     """Histórico completo de proventos em dinheiro (todas as páginas) pelo nome de pregão."""
     eventos, pag, total = [], 1, 1

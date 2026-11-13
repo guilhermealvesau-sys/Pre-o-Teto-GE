@@ -64,12 +64,14 @@ def montar(dados: Path) -> dict:
 def montar_noticias(dados: Path) -> dict:
     fat = ler(dados / "fatos.json", {}) or {}
     nts = ler(dados / "noticias.json", {}) or {}
+    sites = (ler(dados / "base.json", {}) or {}).get("sites") or {}
     ems = sorted(set(fat.get("por_emissor") or {}) | set(nts.get("por_emissor") or {}))
     return {"fatos": {"atualizado_em": fat.get("atualizado_em"), "ultimo_documento": fat.get("ultimo_documento"),
                       "fonte": fat.get("fonte")},
             "noticias": {"atualizado_em": nts.get("atualizado_em"), "fonte": nts.get("fonte"), "falhas": nts.get("falhas")},
             "por_emissor": {em: {"fatos": (fat.get("por_emissor") or {}).get(em, [])[:10],
-                                 "noticias": (nts.get("por_emissor") or {}).get(em, [])[:8]} for em in ems}}
+                                 "noticias": (nts.get("por_emissor") or {}).get(em, [])[:8],
+                                 "site": sites.get(em)} for em in ems}}
 
 
 def montar_historico(dados: Path) -> dict:

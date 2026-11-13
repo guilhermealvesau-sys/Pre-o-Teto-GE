@@ -247,13 +247,15 @@ def main_teste():
         <pubDate>Thu, 12 Nov 2026 21:00:00 GMT</pubDate><source url="https://infomoney.com.br">InfoMoney</source></item>
       <item><title>Ibovespa hoje ao vivo: PETR4 sobe - Exame</title><link>https://news.google.com/a3</link>
         <pubDate>Fri, 13 Nov 2026 13:00:00 GMT</pubDate><source url="https://exame.com">Exame</source></item>
+      <item><title>CRISE NA PETROBRAS | veja - Instagram</title><link>https://news.google.com/a5</link>
+        <pubDate>Fri, 13 Nov 2026 21:00:00 GMT</pubDate><source url="https://instagram.com">Instagram</source></item>
       <item><title>Dólar fecha em alta - G1</title><link>https://news.google.com/a4</link>
         <pubDate>Fri, 13 Nov 2026 20:00:00 GMT</pubDate><source url="https://g1.globo.com">G1</source></item>
     </channel></rss>"""
     nts = noticias._filtrar(noticias.ler_rss(rss), ["petrobras", "petr4"], 8)
     assert [(n["titulo"], n["fonte"]) for n in nts] == [("Petrobras aprova dividendos de R$ 10 bi", "Valor")], nts
     assert nts[0]["data"] == "2026-11-12T22:10:00+00:00", nts
-    print("ok  notícias: título sem o veículo, repetidas, ao vivo e sem citação descartadas")
+    print("ok  notícias: título sem o veículo, repetidas, ao vivo, redes sociais e sem citação descartadas")
     print((main.DADOS / "relatorio.md").read_text()[:600])
     shutil.rmtree(TMP)
     print("\nTODOS OS TESTES PASSARAM")
