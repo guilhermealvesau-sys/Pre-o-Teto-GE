@@ -6,11 +6,11 @@ Janela: os 6 últimos anos completos (ex.: em 2026, de 2020 a 2025).
   - dividendo médio (R$): média anual dos proventos por papel, ajustada à quantidade de ações de hoje
     (bonificações e desdobramentos ficam corrigidos sem precisar dos fatores)
   - % em JCP: parcela dos proventos dos últimos 3 anos completos paga como JCP
-  - P/L médio: média dos P/L anuais (preço médio do ano ÷ lucro por ação do ano), ignorando anos com prejuízo
+  - P/L médio: mediana dos P/L anuais (preço médio do ano ÷ lucro por ação do ano), ignorando anos com prejuízo
 """
 from __future__ import annotations
 
-from statistics import mean
+from statistics import mean, median
 
 PN_CLASSES = ("PN", "PNA", "PNB", "PNC")
 
@@ -130,7 +130,7 @@ def calcular(a: dict, emp, eventos: list[dict], precos: dict[int, dict], ano_atu
         lpa = ll * 1e6 / (q["on"] + q["pn"]) * fator
         pls.append(px / lpa)
     if len(pls) >= 3:
-        out["pl_medio"] = round(mean(pls), 3)
+        out["pl_medio"] = round(median(pls), 3)
 
     out["detalhe"] = {
         "proventos_por_ano": {y: round(v, 4) for y, v in prov_ano.items()},

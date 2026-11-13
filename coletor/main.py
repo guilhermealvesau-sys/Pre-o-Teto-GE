@@ -22,7 +22,7 @@ def _agora() -> str:
 
 
 def _ativos() -> pd.DataFrame:
-    a = pd.read_csv(CFG / "ativos.csv", dtype={"unit_on": int, "unit_pn": int})
+    a = pd.read_csv(CFG / "ativos.csv", dtype={"unit_on": int, "unit_pn": int, "antigos": str}).fillna({"antigos": ""})
     return a
 
 
@@ -84,12 +84,20 @@ def completo() -> dict:
 
     # 3) preços anuais (anos fechados ficam em cache no repositório)
     hist = ler_json(DADOS / "precos_anuais.json", {}) or {}
-    tickers = set(a["ticker"])
+    antigos = {r["ticker"]: [x for x in str(r.get("antigos") or "").split(";") if x and x != "nan"]
+               for r in a.to_dict("records")}
+    todos = set(a["ticker"]) | {x for v in antigos.values() for x in v}
+    feitos = hist.setdefault("_processado", {})
     for y in range(hoje.year - 6, hoje.year):
-        if all(str(y) in hist.get(tk, {}) for tk in tickers):
+        if sorted(feitos.get(str(y), [])) == sorted(todos):
             continue
-        for tk, v in b3.precos_ano(y, tickers).items():
+        for tk, v in b3.precos_ano(y, todos).items():
             hist.setdefault(tk, {})[str(y)] = v
+        feitos[str(y)] = sorted(todos)
+    for tk, olds in antigos.items():  # anos sem negócio no código atual vêm do código antigo
+        for old in olds:
+            for y, v in hist.get(old, {}).items():
+                hist.setdefault(tk, {}).setdefault(y, {**v, "codigo": old})
     salvar_json(DADOS / "precos_anuais.json", hist)
 
     # 3b) composição do capital informada em milhares: confere pelo P/VP com o preço de mercado

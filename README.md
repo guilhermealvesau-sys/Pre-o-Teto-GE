@@ -27,9 +27,11 @@ O consenso de lucro **não** fica aqui: ele é enviado por planilha na própria 
 - **DY médio:** média dos DY anuais (proventos com data com no ano ÷ preço médio de fechamento do ano).
 - **Dividendo médio (R$):** média anual dos proventos por papel, ajustada para a quantidade de ações de hoje (corrige bonificações e desdobramentos).
 - **% em JCP:** parcela dos proventos dos últimos 3 anos completos paga como juros sobre capital próprio.
-- **P/L médio:** média dos P/L anuais (preço médio do ano ÷ lucro por ação do ano), ignorando anos com prejuízo.
+- **P/L médio:** mediana dos P/L anuais (preço médio do ano ÷ lucro por ação do ano), ignorando anos com prejuízo.
 
-Lucros são **contábeis** (incluem efeitos não recorrentes), como na planilha original.
+Lucros são **contábeis** (incluem efeitos não recorrentes), como na planilha original. Quando a companhia deixa zerada a linha "atribuído aos controladores" (caso comum sem minoritários), vale o lucro consolidado.
+
+Tickers que mudaram de código usam o histórico do código antigo (coluna `antigos` de `config/ativos.csv`).
 
 ## Arquivos
 

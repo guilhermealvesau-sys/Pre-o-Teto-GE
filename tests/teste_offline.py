@@ -49,8 +49,9 @@ def dre_rows(em, ref, periodos, banco=False):
     cod = ("3.09", "3.09.01") if banco else ("3.11", "3.11.01")
     for ordem, ini, fim, v in periodos:
         mil = int(v * 1000)  # MIL
+        ctrl = 0 if (em == "PETR" and fim == f"{ANO - 2}-12-31") else mil  # linha de controladores zerada
         out.append(f"{cnpj};{ref};1;{nome};{cd};DF Consolidado - Demonstração do Resultado;REAL;MIL;{ordem};{ini};{fim};{cod[0]};Lucro/Prejuízo Consolidado do Período;{mil + 5000};S")
-        out.append(f"{cnpj};{ref};1;{nome};{cd};DF Consolidado - Demonstração do Resultado;REAL;MIL;{ordem};{ini};{fim};{cod[1]};Atribuído a Sócios da Empresa Controladora;{mil};S")
+        out.append(f"{cnpj};{ref};1;{nome};{cd};DF Consolidado - Demonstração do Resultado;REAL;MIL;{ordem};{ini};{fim};{cod[1]};Atribuído a Sócios da Empresa Controladora;{ctrl};S")
     return out
 
 
@@ -145,6 +146,8 @@ def proventos_json(emissor):
                        "paymentDate": f"30/12/{y}", "relatedTo": f"Anual/{y}"})
         ev.append({"isinCode": f"BR{emissor}CDAM1", "rate": "9,9", "label": "DIVIDENDO", "lastDatePrior": f"15/06/{y}"})
     ev.append(dict(ev[0]))  # duplicado proposital
+    quase = dict(ev[0]); quase["rate"] = "0,50040000000"; quase["relatedTo"] = ""  # revisão na 4ª casa
+    ev.append(quase)
     return [{"code": emissor, "cashDividends": ev}]
 
 
@@ -191,6 +194,8 @@ def main_teste():
     ok("TAEE11 P/L médio", t11["pl_medio"], 30 / (1000e6 / 1033e6 * 3))
     ok("ITUB ações corrigidas de milhares", i4["qtd_mi"], 10000.0)
     ok("PETR ações com documento isolado em milhares", A["PETR4"]["qtd_mi"], 13000.0)
+    ok("PETR lucro anual com linha de controladores zerada → consolidado",
+       A["PETR4"]["detalhe"]["lucro_anual_mi"][ANO - 2], 100005)
     ok("ITUB lucro 12M (layout de banco)", i4["lucro12m_mi"], 33000 + 40000 - 30000)
     adj = (4 * (1 / 1.1) + 2 * 1.0) / 6 * 0.7
     ok("ITUB4 dividendo médio ajustado pela bonificação", i4["div_medio6"], adj)

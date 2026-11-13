@@ -135,13 +135,20 @@ def proventos(emissor: str, trading_name: str | None = None) -> list[dict]:
     if not eventos:
         chaves = list(bloco.keys()) if isinstance(bloco, dict) else type(js).__name__
         log.warning("B3: nenhum provento para %s (resposta: %s)", emissor, chaves)
-    # as duas listagens repetem eventos: um por (classe, tipo, data com, valor), ficando o que traz o período
-    unicos: dict = {}
+    # as duas listagens repetem eventos, às vezes com o valor revisado na 4ª casa: mesmo (classe, tipo,
+    # data com) e valores a menos de 2% um do outro contam uma vez, ficando o que traz o período de referência
+    grupos: dict = {}
     for e in eventos:
-        k = (e["classe"], e["tipo"], e["data_com"], round(e["valor"], 8))
-        if k not in unicos or (e["referente"] and not unicos[k]["referente"]):
-            unicos[k] = e
-    return sorted(unicos.values(), key=lambda e: e["data_com"])
+        grupos.setdefault((e["classe"], e["tipo"], e["data_com"]), []).append(e)
+    unicos = []
+    for evs in grupos.values():
+        evs.sort(key=lambda e: (not e["referente"],))
+        mantidos: list[dict] = []
+        for e in evs:
+            if not any(abs(e["valor"] - m["valor"]) <= 0.02 * max(abs(m["valor"]), 1e-9) for m in mantidos):
+                mantidos.append(e)
+        unicos += mantidos
+    return sorted(unicos, key=lambda e: e["data_com"])
 
 
 # ---------------------------------------------------------------- COTAHIST

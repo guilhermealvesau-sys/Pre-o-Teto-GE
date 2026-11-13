@@ -89,7 +89,20 @@ def _linhas_lucro(dre: pd.DataFrame) -> pd.DataFrame:
             if n2.empty:
                 continue
             cod = sorted(n2["CD_CONTA"].unique(), key=lambda c: [int(x) for x in c.split(".")])[-1]
-        out.append(g[g["CD_CONTA"] == cod])
+        linhas = g[g["CD_CONTA"] == cod].copy()
+        # companhia sem minoritários costuma deixar a linha "atribuído aos controladores" zerada:
+        # nesse período vale o lucro consolidado (conta-mãe)
+        pai = cod.rsplit(".", 1)[0] if cod.count(".") >= 2 else None
+        if pai:
+            mae = g[g["CD_CONTA"] == pai].set_index(["ORDEM_EXERC", "DT_INI_EXERC", "DT_FIM_EXERC"])["vl_mi"]
+            mae = mae[~mae.index.duplicated()]
+            for i, r in linhas.iterrows():
+                if not r["vl_mi"]:
+                    v = mae.get((r["ORDEM_EXERC"], r["DT_INI_EXERC"], r["DT_FIM_EXERC"]))
+                    if v:
+                        linhas.at[i, "vl_mi"] = v
+                        linhas.at[i, "DS_CONTA"] = f"{r['DS_CONTA']} (zerada; usado {pai})"
+        out.append(linhas)
     return pd.concat(out, ignore_index=True) if out else dre.iloc[0:0]
 
 
