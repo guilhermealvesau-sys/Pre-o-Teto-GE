@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-13T18:00:45+00:00",
+ "gerado_em": "2026-11-13T18:03:16+00:00",
  "janela_anos": 6,
  "ativos": {
   "ABCB4": {
@@ -44,6 +44,38 @@
      "2023": 18.8665,
      "2024": 22.4973,
      "2025": 21.6048
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 16.9,
+      "lucro_mi": 340.688,
+      "acoes_on": 110795134.0,
+      "acoes_pn": 106560401.0
+     },
+     "2021": {
+      "distribuido_mi": 133.8,
+      "lucro_mi": 562.89,
+      "acoes_on": 113445475.0,
+      "acoes_pn": 106647086.0
+     },
+     "2022": {
+      "distribuido_mi": 150.0,
+      "lucro_mi": 789.718,
+      "acoes_on": 113445475.0,
+      "acoes_pn": 107407332.0
+     },
+     "2023": {
+      "distribuido_mi": 179.1,
+      "lucro_mi": 851.582,
+      "acoes_on": 119010510.0,
+      "acoes_pn": 113539858.0
+     },
+     "2025": {
+      "distribuido_mi": 309.5,
+      "lucro_mi": 1002.0,
+      "acoes_on": 122961704.0,
+      "acoes_pn": 118201327.0
+     }
     }
    }
   },
@@ -87,6 +119,44 @@
      "2023": 28.5497,
      "2024": 29.8248,
      "2025": 30.231
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 202.2,
+      "lucro_mi": 942.088,
+      "acoes_on": 596955970.0,
+      "acoes_pn": 282155299.0
+     },
+     "2021": {
+      "distribuido_mi": 158.2,
+      "lucro_mi": 1115.401,
+      "acoes_on": 596955970.0,
+      "acoes_pn": 282155299.0
+     },
+     "2022": {
+      "distribuido_mi": 228.6,
+      "lucro_mi": 918.466,
+      "acoes_on": 596955970.0,
+      "acoes_pn": 282155299.0
+     },
+     "2023": {
+      "distribuido_mi": 548.6,
+      "lucro_mi": 694.063,
+      "acoes_on": 620834207.0,
+      "acoes_pn": 293441497.0
+     },
+     "2024": {
+      "distribuido_mi": 446.9,
+      "lucro_mi": 1086.09,
+      "acoes_on": 645667575.0,
+      "acoes_pn": 305179157.0
+     },
+     "2025": {
+      "distribuido_mi": 435.1,
+      "lucro_mi": 1215.559,
+      "acoes_on": 671494278.0,
+      "acoes_pn": 317386323.0
+     }
     }
    }
   },
@@ -132,6 +202,44 @@
      "2023": 11.7639,
      "2024": 12.2392,
      "2025": 11.7637
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 134.7,
+      "lucro_mi": 619.662,
+      "acoes_on": 205065000.0,
+      "acoes_pn": 203909000.0
+     },
+     "2021": {
+      "distribuido_mi": 195.6,
+      "lucro_mi": 1084.465,
+      "acoes_on": 205065000.0,
+      "acoes_pn": 203909000.0
+     },
+     "2022": {
+      "distribuido_mi": 180.7,
+      "lucro_mi": 842.242,
+      "acoes_on": 205065000.0,
+      "acoes_pn": 203909000.0
+     },
+     "2023": {
+      "distribuido_mi": 188.1,
+      "lucro_mi": 1012.434,
+      "acoes_on": 205065000.0,
+      "acoes_pn": 203909000.0
+     },
+     "2024": {
+      "distribuido_mi": 204.0,
+      "lucro_mi": 727.253,
+      "acoes_on": 205065000.0,
+      "acoes_pn": 203909000.0
+     },
+     "2025": {
+      "distribuido_mi": 343.2,
+      "lucro_mi": 1713.913,
+      "acoes_on": 205065000.0,
+      "acoes_pn": 203909000.0
+     }
     }
    }
   },
@@ -175,6 +283,44 @@
      "2023": 32.4885,
      "2024": 34.1305,
      "2025": 36.0306
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 8262.9,
+      "lucro_mi": 3850.771,
+      "acoes_on": 1996634681.0,
+      "acoes_pn": null
+     },
+     "2021": {
+      "distribuido_mi": 1990.7,
+      "lucro_mi": 3933.217,
+      "acoes_on": 1996686529.0,
+      "acoes_pn": null
+     },
+     "2022": {
+      "distribuido_mi": 3925.7,
+      "lucro_mi": 6196.415,
+      "acoes_on": 1996726433.0,
+      "acoes_pn": null
+     },
+     "2023": {
+      "distribuido_mi": 6891.8,
+      "lucro_mi": 7947.203,
+      "acoes_on": 1976866668.0,
+      "acoes_pn": null
+     },
+     "2024": {
+      "distribuido_mi": 5148.4,
+      "lucro_mi": 8703.353,
+      "acoes_on": 1941186019.0,
+      "acoes_pn": null
+     },
+     "2025": {
+      "distribuido_mi": 13334.3,
+      "lucro_mi": 9017.329,
+      "acoes_on": 1941214909.0,
+      "acoes_pn": null
+     }
     }
    }
   },
@@ -218,6 +364,44 @@
      "2023": 13.2395,
      "2024": 12.5101,
      "2025": 13.4276
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 5962.2,
+      "lucro_mi": 15836.862,
+      "acoes_on": 4427800000.0,
+      "acoes_pn": 4407727000.0
+     },
+     "2021": {
+      "distribuido_mi": 9492.6,
+      "lucro_mi": 23172.322,
+      "acoes_on": 4853085000.0,
+      "acoes_pn": 4836449000.0
+     },
+     "2022": {
+      "distribuido_mi": 4323.0,
+      "lucro_mi": 21223.264,
+      "acoes_on": 5346483000.0,
+      "acoes_pn": 5328323000.0
+     },
+     "2023": {
+      "distribuido_mi": 17236.9,
+      "lucro_mi": 14251.329,
+      "acoes_on": 5330305000.0,
+      "acoes_pn": 5311865000.0
+     },
+     "2024": {
+      "distribuido_mi": 11270.2,
+      "lucro_mi": 17252.9,
+      "acoes_on": 5306461581.0,
+      "acoes_pn": 5290521347.0
+     },
+     "2025": {
+      "distribuido_mi": 14498.7,
+      "lucro_mi": 23672.706,
+      "acoes_on": 5296370781.0,
+      "acoes_pn": 5280641247.0
+     }
     }
    }
   },
@@ -261,6 +445,44 @@
      "2023": 14.9994,
      "2024": 13.9815,
      "2025": 15.3968
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 5962.2,
+      "lucro_mi": 15836.862,
+      "acoes_on": 4427800000.0,
+      "acoes_pn": 4407727000.0
+     },
+     "2021": {
+      "distribuido_mi": 9492.6,
+      "lucro_mi": 23172.322,
+      "acoes_on": 4853085000.0,
+      "acoes_pn": 4836449000.0
+     },
+     "2022": {
+      "distribuido_mi": 4323.0,
+      "lucro_mi": 21223.264,
+      "acoes_on": 5346483000.0,
+      "acoes_pn": 5328323000.0
+     },
+     "2023": {
+      "distribuido_mi": 17236.9,
+      "lucro_mi": 14251.329,
+      "acoes_on": 5330305000.0,
+      "acoes_pn": 5311865000.0
+     },
+     "2024": {
+      "distribuido_mi": 11270.2,
+      "lucro_mi": 17252.9,
+      "acoes_on": 5306461581.0,
+      "acoes_pn": 5290521347.0
+     },
+     "2025": {
+      "distribuido_mi": 14498.7,
+      "lucro_mi": 23672.706,
+      "acoes_on": 5296370781.0,
+      "acoes_pn": 5280641247.0
+     }
     }
    }
   },
@@ -304,6 +526,44 @@
      "2023": 45.4933,
      "2024": 35.4708,
      "2025": 23.7363
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 4214.6,
+      "lucro_mi": 11851.616,
+      "acoes_on": 2853241685.0,
+      "acoes_pn": null
+     },
+     "2021": {
+      "distribuido_mi": 6466.7,
+      "lucro_mi": 18344.326,
+      "acoes_on": 2853442384.0,
+      "acoes_pn": null
+     },
+     "2022": {
+      "distribuido_mi": 11901.3,
+      "lucro_mi": 27731.162,
+      "acoes_on": 2853636259.0,
+      "acoes_pn": null
+     },
+     "2023": {
+      "distribuido_mi": 13057.2,
+      "lucro_mi": 29860.965,
+      "acoes_on": 2853776040.0,
+      "acoes_pn": null
+     },
+     "2024": {
+      "distribuido_mi": 18508.7,
+      "lucro_mi": 26358.86,
+      "acoes_on": 5708047472.0,
+      "acoes_pn": null
+     },
+     "2025": {
+      "distribuido_mi": 8016.8,
+      "lucro_mi": 13698.124,
+      "acoes_on": 5708463641.0,
+      "acoes_pn": null
+     }
     }
    }
   },
@@ -347,6 +607,44 @@
      "2023": 27.9535,
      "2024": 33.975,
      "2025": 41.1828
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 1094.0,
+      "lucro_mi": 4374.656,
+      "acoes_on": 1756433722.0,
+      "acoes_pn": 956273250.0
+     },
+     "2021": {
+      "distribuido_mi": 3299.7,
+      "lucro_mi": 6899.716,
+      "acoes_on": 7244165568.0,
+      "acoes_pn": 4261954360.0
+     },
+     "2022": {
+      "distribuido_mi": 2516.2,
+      "lucro_mi": 7194.764,
+      "acoes_on": 7234165568.0,
+      "acoes_pn": 4261954360.0
+     },
+     "2023": {
+      "distribuido_mi": 2991.7,
+      "lucro_mi": 9980.342,
+      "acoes_on": 7244165568.0,
+      "acoes_pn": 4261954360.0
+     },
+     "2024": {
+      "distribuido_mi": 3268.0,
+      "lucro_mi": 10734.466,
+      "acoes_on": 7216695969.0,
+      "acoes_pn": 4207015160.0
+     },
+     "2025": {
+      "distribuido_mi": 5391.3,
+      "lucro_mi": 16005.964,
+      "acoes_on": 7271343814.0,
+      "acoes_pn": 4316310852.0
+     }
     }
    }
   },
@@ -392,6 +690,44 @@
      "2023": 10.1521,
      "2024": 14.8171,
      "2025": 14.899
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 0.0,
+      "lucro_mi": 1769.413,
+      "acoes_on": 3000000000.0,
+      "acoes_pn": null
+     },
+     "2021": {
+      "distribuido_mi": 733.8,
+      "lucro_mi": 1896.152,
+      "acoes_on": 3000000000.0,
+      "acoes_pn": null
+     },
+     "2022": {
+      "distribuido_mi": 1945.7,
+      "lucro_mi": 3008.963,
+      "acoes_on": 3000000000.0,
+      "acoes_pn": null
+     },
+     "2023": {
+      "distribuido_mi": 3031.1,
+      "lucro_mi": 3582.244,
+      "acoes_on": 3000000000.0,
+      "acoes_pn": null
+     },
+     "2024": {
+      "distribuido_mi": 3241.0,
+      "lucro_mi": 3765.184,
+      "acoes_on": 3000000000.0,
+      "acoes_pn": null
+     },
+     "2025": {
+      "distribuido_mi": 5832.0,
+      "lucro_mi": 4291.56,
+      "acoes_on": 3000000000.0,
+      "acoes_pn": null
+     }
     }
    }
   },
@@ -437,6 +773,44 @@
      "2023": 11.8796,
      "2024": 11.3689,
      "2025": 10.8512
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 655.9,
+      "lucro_mi": 2864.11,
+      "acoes_on": 507670000.0,
+      "acoes_pn": 1010498000.0
+     },
+     "2021": {
+      "distribuido_mi": 995.4,
+      "lucro_mi": 3751.321,
+      "acoes_on": 566037000.0,
+      "acoes_pn": 1126674000.0
+     },
+     "2022": {
+      "distribuido_mi": 1845.1,
+      "lucro_mi": 4092.313,
+      "acoes_on": 735848000.0,
+      "acoes_pn": 1464677000.0
+     },
+     "2023": {
+      "distribuido_mi": 1420.1,
+      "lucro_mi": 5764.273,
+      "acoes_on": 735848000.0,
+      "acoes_pn": 1464677000.0
+     },
+     "2024": {
+      "distribuido_mi": 2748.8,
+      "lucro_mi": 7117.146,
+      "acoes_on": 955502000.0,
+      "acoes_pn": 1905180000.0
+     },
+     "2025": {
+      "distribuido_mi": 2907.7,
+      "lucro_mi": 4897.409,
+      "acoes_on": 956602000.0,
+      "acoes_pn": 1904080000.0
+     }
     }
    }
   },
@@ -482,6 +856,44 @@
      "2023": 17.554,
      "2024": 14.0705,
      "2025": 14.8172
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 655.9,
+      "lucro_mi": 2864.11,
+      "acoes_on": 507670000.0,
+      "acoes_pn": 1010498000.0
+     },
+     "2021": {
+      "distribuido_mi": 995.4,
+      "lucro_mi": 3751.321,
+      "acoes_on": 566037000.0,
+      "acoes_pn": 1126674000.0
+     },
+     "2022": {
+      "distribuido_mi": 1845.1,
+      "lucro_mi": 4092.313,
+      "acoes_on": 735848000.0,
+      "acoes_pn": 1464677000.0
+     },
+     "2023": {
+      "distribuido_mi": 1420.1,
+      "lucro_mi": 5764.273,
+      "acoes_on": 735848000.0,
+      "acoes_pn": 1464677000.0
+     },
+     "2024": {
+      "distribuido_mi": 2748.8,
+      "lucro_mi": 7117.146,
+      "acoes_on": 955502000.0,
+      "acoes_pn": 1905180000.0
+     },
+     "2025": {
+      "distribuido_mi": 2907.7,
+      "lucro_mi": 4897.409,
+      "acoes_on": 956602000.0,
+      "acoes_pn": 1904080000.0
+     }
     }
    }
   },
@@ -527,6 +939,44 @@
      "2023": 17.7509,
      "2024": 21.9427,
      "2025": 28.2861
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 3230.7,
+      "lucro_mi": 816.477,
+      "acoes_on": 379181000.0,
+      "acoes_pn": null
+     },
+     "2021": {
+      "distribuido_mi": 358.2,
+      "lucro_mi": 537.587,
+      "acoes_on": 379181000.0,
+      "acoes_pn": null
+     },
+     "2022": {
+      "distribuido_mi": 145.7,
+      "lucro_mi": 843.362,
+      "acoes_on": 379181000.0,
+      "acoes_pn": null
+     },
+     "2023": {
+      "distribuido_mi": 1097.0,
+      "lucro_mi": 1379.346,
+      "acoes_on": 379181000.0,
+      "acoes_pn": null
+     },
+     "2024": {
+      "distribuido_mi": 1051.0,
+      "lucro_mi": 1316.92,
+      "acoes_on": 379181000.0,
+      "acoes_pn": null
+     },
+     "2025": {
+      "distribuido_mi": 807.0,
+      "lucro_mi": 1415.744,
+      "acoes_on": 379181000.0,
+      "acoes_pn": null
+     }
     }
    }
   },
@@ -570,6 +1020,44 @@
      "2023": 7.5525,
      "2024": 8.8479,
      "2025": 11.0381
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 4087.4,
+      "lucro_mi": 3904.202,
+      "acoes_on": 1450310800.0,
+      "acoes_pn": 1286242950.0
+     },
+     "2021": {
+      "distribuido_mi": 1254.9,
+      "lucro_mi": 4952.573,
+      "acoes_on": 1054090460.0,
+      "acoes_pn": 1682463290.0
+     },
+     "2022": {
+      "distribuido_mi": 848.6,
+      "lucro_mi": 1112.007,
+      "acoes_on": 1054090460.0,
+      "acoes_pn": 1682463290.0
+     },
+     "2023": {
+      "distribuido_mi": 395.3,
+      "lucro_mi": 2258.81,
+      "acoes_on": 1300347300.0,
+      "acoes_pn": 1682463291.0
+     },
+     "2024": {
+      "distribuido_mi": 500.8,
+      "lucro_mi": 2809.631,
+      "acoes_on": 1297723500.0,
+      "acoes_pn": 1679388691.0
+     },
+     "2025": {
+      "distribuido_mi": 4339.6,
+      "lucro_mi": 2688.614,
+      "acoes_on": 2970070324.0,
+      "acoes_pn": 1.0
+     }
     }
    }
   },
@@ -613,6 +1101,44 @@
      "2023": 33.5402,
      "2024": 33.9358,
      "2025": 39.5495
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 2075.2,
+      "lucro_mi": 3643.149,
+      "acoes_on": 1152254440.0,
+      "acoes_pn": null
+     },
+     "2021": {
+      "distribuido_mi": 4265.0,
+      "lucro_mi": 4748.049,
+      "acoes_on": 1152254440.0,
+      "acoes_pn": null
+     },
+     "2022": {
+      "distribuido_mi": 1868.0,
+      "lucro_mi": 5099.586,
+      "acoes_on": 1152254440.0,
+      "acoes_pn": null
+     },
+     "2023": {
+      "distribuido_mi": 3324.9,
+      "lucro_mi": 5527.101,
+      "acoes_on": 1152254440.0,
+      "acoes_pn": null
+     },
+     "2024": {
+      "distribuido_mi": 3173.3,
+      "lucro_mi": 5457.652,
+      "acoes_on": 1152254440.0,
+      "acoes_pn": null
+     },
+     "2025": {
+      "distribuido_mi": 7519.3,
+      "lucro_mi": 5484.324,
+      "acoes_on": 1152254440.0,
+      "acoes_pn": null
+     }
     }
    }
   },
@@ -656,6 +1182,44 @@
      "2023": 7.7945,
      "2024": 7.9466,
      "2025": 8.3415
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 217.7,
+      "lucro_mi": 1364.477,
+      "acoes_on": 755993938.0,
+      "acoes_pn": 1058567972.0
+     },
+     "2021": {
+      "distribuido_mi": 1429.9,
+      "lucro_mi": 2591.5,
+      "acoes_on": 755070101.0,
+      "acoes_pn": 1054872624.0
+     },
+     "2022": {
+      "distribuido_mi": 472.2,
+      "lucro_mi": 2135.461,
+      "acoes_on": 800144389.0,
+      "acoes_pn": 1235169776.0
+     },
+     "2023": {
+      "distribuido_mi": 1017.7,
+      "lucro_mi": 1894.219,
+      "acoes_on": 800144389.0,
+      "acoes_pn": 1235169776.0
+     },
+     "2024": {
+      "distribuido_mi": 457.1,
+      "lucro_mi": 3789.678,
+      "acoes_on": 886476772.0,
+      "acoes_pn": 1399175516.0
+     },
+     "2025": {
+      "distribuido_mi": 1810.8,
+      "lucro_mi": 2214.439,
+      "acoes_on": 975124450.0,
+      "acoes_pn": 1539093070.0
+     }
     }
    }
   },
@@ -699,6 +1263,44 @@
      "2023": 14.3909,
      "2024": 14.4903,
      "2025": 12.41
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 217.7,
+      "lucro_mi": 1364.477,
+      "acoes_on": 755993938.0,
+      "acoes_pn": 1058567972.0
+     },
+     "2021": {
+      "distribuido_mi": 1429.9,
+      "lucro_mi": 2591.5,
+      "acoes_on": 755070101.0,
+      "acoes_pn": 1054872624.0
+     },
+     "2022": {
+      "distribuido_mi": 472.2,
+      "lucro_mi": 2135.461,
+      "acoes_on": 800144389.0,
+      "acoes_pn": 1235169776.0
+     },
+     "2023": {
+      "distribuido_mi": 1017.7,
+      "lucro_mi": 1894.219,
+      "acoes_on": 800144389.0,
+      "acoes_pn": 1235169776.0
+     },
+     "2024": {
+      "distribuido_mi": 457.1,
+      "lucro_mi": 3789.678,
+      "acoes_on": 886476772.0,
+      "acoes_pn": 1399175516.0
+     },
+     "2025": {
+      "distribuido_mi": 1810.8,
+      "lucro_mi": 2214.439,
+      "acoes_on": 975124450.0,
+      "acoes_pn": 1539093070.0
+     }
     }
    }
   },
@@ -742,6 +1344,44 @@
      "2023": 45.6437,
      "2024": 46.2941,
      "2025": 45.7789
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 217.7,
+      "lucro_mi": 1364.477,
+      "acoes_on": 755993938.0,
+      "acoes_pn": 1058567972.0
+     },
+     "2021": {
+      "distribuido_mi": 1429.9,
+      "lucro_mi": 2591.5,
+      "acoes_on": 755070101.0,
+      "acoes_pn": 1054872624.0
+     },
+     "2022": {
+      "distribuido_mi": 472.2,
+      "lucro_mi": 2135.461,
+      "acoes_on": 800144389.0,
+      "acoes_pn": 1235169776.0
+     },
+     "2023": {
+      "distribuido_mi": 1017.7,
+      "lucro_mi": 1894.219,
+      "acoes_on": 800144389.0,
+      "acoes_pn": 1235169776.0
+     },
+     "2024": {
+      "distribuido_mi": 457.1,
+      "lucro_mi": 3789.678,
+      "acoes_on": 886476772.0,
+      "acoes_pn": 1399175516.0
+     },
+     "2025": {
+      "distribuido_mi": 1810.8,
+      "lucro_mi": 2214.439,
+      "acoes_on": 975124450.0,
+      "acoes_pn": 1539093070.0
+     }
     }
    }
   },
@@ -785,6 +1425,44 @@
      "2023": 41.7925,
      "2024": 42.1357,
      "2025": 38.9871
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 1407.2,
+      "lucro_mi": 2797.091,
+      "acoes_on": 815927740.0,
+      "acoes_pn": null
+     },
+     "2021": {
+      "distribuido_mi": 1459.1,
+      "lucro_mi": 1563.725,
+      "acoes_on": 815927740.0,
+      "acoes_pn": null
+     },
+     "2022": {
+      "distribuido_mi": 2439.2,
+      "lucro_mi": 2663.079,
+      "acoes_on": 815927740.0,
+      "acoes_pn": null
+     },
+     "2023": {
+      "distribuido_mi": 2367.4,
+      "lucro_mi": 3429.555,
+      "acoes_on": 815927740.0,
+      "acoes_pn": null
+     },
+     "2024": {
+      "distribuido_mi": 2177.3,
+      "lucro_mi": 4279.349,
+      "acoes_on": 815927740.0,
+      "acoes_pn": null
+     },
+     "2025": {
+      "distribuido_mi": 2665.8,
+      "lucro_mi": 2582.841,
+      "acoes_on": 1142298836.0,
+      "acoes_pn": null
+     }
     }
    }
   },
@@ -828,6 +1506,44 @@
      "2023": 30.2794,
      "2024": 32.4429,
      "2025": 34.8348
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 322.9,
+      "lucro_mi": 2975.089,
+      "acoes_on": 1009141085.0,
+      "acoes_pn": null
+     },
+     "2021": {
+      "distribuido_mi": 706.8,
+      "lucro_mi": 3694.527,
+      "acoes_on": 981669485.0,
+      "acoes_pn": null
+     },
+     "2022": {
+      "distribuido_mi": 704.0,
+      "lucro_mi": 1373.938,
+      "acoes_on": 1100064485.0,
+      "acoes_pn": null
+     },
+     "2023": {
+      "distribuido_mi": 401.5,
+      "lucro_mi": 2075.593,
+      "acoes_on": 1147108197.0,
+      "acoes_pn": null
+     },
+     "2024": {
+      "distribuido_mi": 562.2,
+      "lucro_mi": 2811.675,
+      "acoes_on": 1249258717.0,
+      "acoes_pn": null
+     },
+     "2025": {
+      "distribuido_mi": 2985.0,
+      "lucro_mi": 1678.352,
+      "acoes_on": 1258124081.0,
+      "acoes_pn": null
+     }
     }
    }
   },
@@ -871,6 +1587,44 @@
      "2023": 23.7195,
      "2024": 24.0868,
      "2025": 23.803
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 1146.2,
+      "lucro_mi": 3361.503,
+      "acoes_on": 257937732.0,
+      "acoes_pn": 400945572.0
+     },
+     "2021": {
+      "distribuido_mi": 2364.6,
+      "lucro_mi": 3018.599,
+      "acoes_on": 257937732.0,
+      "acoes_pn": 400945572.0
+     },
+     "2022": {
+      "distribuido_mi": 700.0,
+      "lucro_mi": 2262.245,
+      "acoes_on": 257937732.0,
+      "acoes_pn": 400945572.0
+     },
+     "2023": {
+      "distribuido_mi": 1452.2,
+      "lucro_mi": 2841.117,
+      "acoes_on": 257937732.0,
+      "acoes_pn": 400945572.0
+     },
+     "2024": {
+      "distribuido_mi": 0.0,
+      "lucro_mi": 3498.416,
+      "acoes_on": 257937732.0,
+      "acoes_pn": 400945572.0
+     },
+     "2025": {
+      "distribuido_mi": 2774.8,
+      "lucro_mi": 2447.899,
+      "acoes_on": 257937732.0,
+      "acoes_pn": 400945572.0
+     }
     }
    }
   },
@@ -914,6 +1668,44 @@
      "2023": 30.5565,
      "2024": 30.7911,
      "2025": 31.5462
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 1146.2,
+      "lucro_mi": 3361.503,
+      "acoes_on": 257937732.0,
+      "acoes_pn": 400945572.0
+     },
+     "2021": {
+      "distribuido_mi": 2364.6,
+      "lucro_mi": 3018.599,
+      "acoes_on": 257937732.0,
+      "acoes_pn": 400945572.0
+     },
+     "2022": {
+      "distribuido_mi": 700.0,
+      "lucro_mi": 2262.245,
+      "acoes_on": 257937732.0,
+      "acoes_pn": 400945572.0
+     },
+     "2023": {
+      "distribuido_mi": 1452.2,
+      "lucro_mi": 2841.117,
+      "acoes_on": 257937732.0,
+      "acoes_pn": 400945572.0
+     },
+     "2024": {
+      "distribuido_mi": 0.0,
+      "lucro_mi": 3498.416,
+      "acoes_on": 257937732.0,
+      "acoes_pn": 400945572.0
+     },
+     "2025": {
+      "distribuido_mi": 2774.8,
+      "lucro_mi": 2447.899,
+      "acoes_on": 257937732.0,
+      "acoes_pn": 400945572.0
+     }
     }
    }
   },
@@ -959,6 +1751,44 @@
      "2023": 23.373,
      "2024": 29.259,
      "2025": 32.2276
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 12725.9,
+      "lucro_mi": 18896.0,
+      "acoes_on": 4958290000.0,
+      "acoes_pn": 4804167000.0
+     },
+     "2021": {
+      "distribuido_mi": 8893.3,
+      "lucro_mi": 26760.0,
+      "acoes_on": 4958290000.0,
+      "acoes_pn": 4821600000.0
+     },
+     "2022": {
+      "distribuido_mi": 9978.7,
+      "lucro_mi": 29207.0,
+      "acoes_on": 4958290000.0,
+      "acoes_pn": 4842576000.0
+     },
+     "2023": {
+      "distribuido_mi": 12319.7,
+      "lucro_mi": 33105.0,
+      "acoes_on": 4958290000.0,
+      "acoes_pn": 4845409000.0
+     },
+     "2024": {
+      "distribuido_mi": 23524.7,
+      "lucro_mi": 41085.0,
+      "acoes_on": 4958290000.0,
+      "acoes_pn": 4789783000.0
+     },
+     "2025": {
+      "distribuido_mi": 51979.0,
+      "lucro_mi": 44857.0,
+      "acoes_on": 5617743000.0,
+      "acoes_pn": 5408781000.0
+     }
     }
    }
   },
@@ -1004,6 +1834,44 @@
      "2023": 27.3268,
      "2024": 33.8507,
      "2025": 36.1918
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 12725.9,
+      "lucro_mi": 18896.0,
+      "acoes_on": 4958290000.0,
+      "acoes_pn": 4804167000.0
+     },
+     "2021": {
+      "distribuido_mi": 8893.3,
+      "lucro_mi": 26760.0,
+      "acoes_on": 4958290000.0,
+      "acoes_pn": 4821600000.0
+     },
+     "2022": {
+      "distribuido_mi": 9978.7,
+      "lucro_mi": 29207.0,
+      "acoes_on": 4958290000.0,
+      "acoes_pn": 4842576000.0
+     },
+     "2023": {
+      "distribuido_mi": 12319.7,
+      "lucro_mi": 33105.0,
+      "acoes_on": 4958290000.0,
+      "acoes_pn": 4845409000.0
+     },
+     "2024": {
+      "distribuido_mi": 23524.7,
+      "lucro_mi": 41085.0,
+      "acoes_on": 4958290000.0,
+      "acoes_pn": 4789783000.0
+     },
+     "2025": {
+      "distribuido_mi": 51979.0,
+      "lucro_mi": 44857.0,
+      "acoes_on": 5617743000.0,
+      "acoes_pn": 5408781000.0
+     }
     }
    }
   },
@@ -1049,6 +1917,44 @@
      "2023": 9.0521,
      "2024": 10.2316,
      "2025": 10.597
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 5425.4,
+      "lucro_mi": 7056.0,
+      "acoes_on": 2889838000.0,
+      "acoes_pn": 5520977000.0
+     },
+     "2021": {
+      "distribuido_mi": 3477.7,
+      "lucro_mi": 12200.0,
+      "acoes_on": 3034330000.0,
+      "acoes_pn": 5788626000.0
+     },
+     "2022": {
+      "distribuido_mi": 5957.0,
+      "lucro_mi": 13674.0,
+      "acoes_on": 3333921000.0,
+      "acoes_pn": 6367489000.0
+     },
+     "2023": {
+      "distribuido_mi": 6039.1,
+      "lucro_mi": 13466.0,
+      "acoes_on": 3549302000.0,
+      "acoes_pn": 6778847000.0
+     },
+     "2024": {
+      "distribuido_mi": 7217.5,
+      "lucro_mi": 14778.0,
+      "acoes_on": 3726767000.0,
+      "acoes_pn": 7114900000.0
+     },
+     "2025": {
+      "distribuido_mi": 19442.4,
+      "lucro_mi": 16487.0,
+      "acoes_on": 3853634000.0,
+      "acoes_pn": 7357713000.0
+     }
     }
    }
   },
@@ -1094,6 +2000,44 @@
      "2023": 9.2,
      "2024": 10.245,
      "2025": 10.6597
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 5425.4,
+      "lucro_mi": 7056.0,
+      "acoes_on": 2889838000.0,
+      "acoes_pn": 5520977000.0
+     },
+     "2021": {
+      "distribuido_mi": 3477.7,
+      "lucro_mi": 12200.0,
+      "acoes_on": 3034330000.0,
+      "acoes_pn": 5788626000.0
+     },
+     "2022": {
+      "distribuido_mi": 5957.0,
+      "lucro_mi": 13674.0,
+      "acoes_on": 3333921000.0,
+      "acoes_pn": 6367489000.0
+     },
+     "2023": {
+      "distribuido_mi": 6039.1,
+      "lucro_mi": 13466.0,
+      "acoes_on": 3549302000.0,
+      "acoes_pn": 6778847000.0
+     },
+     "2024": {
+      "distribuido_mi": 7217.5,
+      "lucro_mi": 14778.0,
+      "acoes_on": 3726767000.0,
+      "acoes_pn": 7114900000.0
+     },
+     "2025": {
+      "distribuido_mi": 19442.4,
+      "lucro_mi": 16487.0,
+      "acoes_on": 3853634000.0,
+      "acoes_pn": 7357713000.0
+     }
     }
    }
   },
@@ -1137,6 +2081,44 @@
      "2023": 26.1254,
      "2024": 32.2742,
      "2025": 46.542
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 685.1,
+      "lucro_mi": 1688.191,
+      "acoes_on": 319924000.0,
+      "acoes_pn": null
+     },
+     "2021": {
+      "distribuido_mi": 1665.7,
+      "lucro_mi": 1544.249,
+      "acoes_on": 637712000.0,
+      "acoes_pn": null
+     },
+     "2022": {
+      "distribuido_mi": 739.2,
+      "lucro_mi": 1139.971,
+      "acoes_on": 638023000.0,
+      "acoes_pn": null
+     },
+     "2023": {
+      "distribuido_mi": 904.8,
+      "lucro_mi": 2266.149,
+      "acoes_on": 641091000.0,
+      "acoes_pn": null
+     },
+     "2024": {
+      "distribuido_mi": 988.2,
+      "lucro_mi": 2644.845,
+      "acoes_on": 640468000.0,
+      "acoes_pn": null
+     },
+     "2025": {
+      "distribuido_mi": 2228.0,
+      "lucro_mi": 3380.884,
+      "acoes_on": 640360000.0,
+      "acoes_pn": null
+     }
     }
    }
   },
@@ -1180,6 +2162,44 @@
      "2023": 56.553,
      "2024": 84.9426,
      "2025": 115.5653
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 941.0,
+      "lucro_mi": 973.318,
+      "acoes_on": 683509869.0,
+      "acoes_pn": null
+     },
+     "2021": {
+      "distribuido_mi": 272.0,
+      "lucro_mi": 2305.869,
+      "acoes_on": 683509869.0,
+      "acoes_pn": null
+     },
+     "2022": {
+      "distribuido_mi": 644.3,
+      "lucro_mi": 3121.267,
+      "acoes_on": 683509869.0,
+      "acoes_pn": null
+     },
+     "2023": {
+      "distribuido_mi": 872.2,
+      "lucro_mi": 3523.531,
+      "acoes_on": 683509869.0,
+      "acoes_pn": null
+     },
+     "2024": {
+      "distribuido_mi": 984.5,
+      "lucro_mi": 9579.563,
+      "acoes_on": 683509868.0,
+      "acoes_pn": 1.0
+     },
+     "2025": {
+      "distribuido_mi": 5047.0,
+      "lucro_mi": 8462.059,
+      "acoes_on": 700219437.0,
+      "acoes_pn": 1.0
+     }
     }
    }
   },
@@ -1223,6 +2243,44 @@
      "2023": 4.2487,
      "2024": 5.5703,
      "2025": 6.4142
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 296.4,
+      "lucro_mi": 996.343,
+      "acoes_on": 503735259.0,
+      "acoes_pn": 1007470260.0
+     },
+     "2021": {
+      "distribuido_mi": 325.9,
+      "lucro_mi": 1177.631,
+      "acoes_on": 503735259.0,
+      "acoes_pn": 1007470260.0
+     },
+     "2022": {
+      "distribuido_mi": 450.3,
+      "lucro_mi": 1151.538,
+      "acoes_on": 503735259.0,
+      "acoes_pn": 1007470260.0
+     },
+     "2023": {
+      "distribuido_mi": 452.4,
+      "lucro_mi": 1503.363,
+      "acoes_on": 503735259.0,
+      "acoes_pn": 1007470260.0
+     },
+     "2024": {
+      "distribuido_mi": 462.9,
+      "lucro_mi": 1545.347,
+      "acoes_on": 503735259.0,
+      "acoes_pn": 1007470260.0
+     },
+     "2025": {
+      "distribuido_mi": 585.3,
+      "lucro_mi": 2079.568,
+      "acoes_on": 503735259.0,
+      "acoes_pn": 1007470260.0
+     }
     }
    }
   },
@@ -1266,6 +2324,44 @@
      "2023": 4.0784,
      "2024": 5.2722,
      "2025": 6.82
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 296.4,
+      "lucro_mi": 996.343,
+      "acoes_on": 503735259.0,
+      "acoes_pn": 1007470260.0
+     },
+     "2021": {
+      "distribuido_mi": 325.9,
+      "lucro_mi": 1177.631,
+      "acoes_on": 503735259.0,
+      "acoes_pn": 1007470260.0
+     },
+     "2022": {
+      "distribuido_mi": 450.3,
+      "lucro_mi": 1151.538,
+      "acoes_on": 503735259.0,
+      "acoes_pn": 1007470260.0
+     },
+     "2023": {
+      "distribuido_mi": 452.4,
+      "lucro_mi": 1503.363,
+      "acoes_on": 503735259.0,
+      "acoes_pn": 1007470260.0
+     },
+     "2024": {
+      "distribuido_mi": 462.9,
+      "lucro_mi": 1545.347,
+      "acoes_on": 503735259.0,
+      "acoes_pn": 1007470260.0
+     },
+     "2025": {
+      "distribuido_mi": 585.3,
+      "lucro_mi": 2079.568,
+      "acoes_on": 503735259.0,
+      "acoes_pn": 1007470260.0
+     }
     }
    }
   },
@@ -1309,6 +2405,44 @@
      "2023": 21.146,
      "2024": 27.5747,
      "2025": 32.5814
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 296.4,
+      "lucro_mi": 996.343,
+      "acoes_on": 503735259.0,
+      "acoes_pn": 1007470260.0
+     },
+     "2021": {
+      "distribuido_mi": 325.9,
+      "lucro_mi": 1177.631,
+      "acoes_on": 503735259.0,
+      "acoes_pn": 1007470260.0
+     },
+     "2022": {
+      "distribuido_mi": 450.3,
+      "lucro_mi": 1151.538,
+      "acoes_on": 503735259.0,
+      "acoes_pn": 1007470260.0
+     },
+     "2023": {
+      "distribuido_mi": 452.4,
+      "lucro_mi": 1503.363,
+      "acoes_on": 503735259.0,
+      "acoes_pn": 1007470260.0
+     },
+     "2024": {
+      "distribuido_mi": 462.9,
+      "lucro_mi": 1545.347,
+      "acoes_on": 503735259.0,
+      "acoes_pn": 1007470260.0
+     },
+     "2025": {
+      "distribuido_mi": 585.3,
+      "lucro_mi": 2079.568,
+      "acoes_on": 503735259.0,
+      "acoes_pn": 1007470260.0
+     }
     }
    }
   },
@@ -1354,6 +2488,44 @@
      "2023": 13.3758,
      "2024": 13.3724,
      "2025": 13.5533
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 10455.6,
+      "lucro_mi": 13418.529,
+      "acoes_on": 3799866000.0,
+      "acoes_pn": 3661007000.0
+     },
+     "2021": {
+      "distribuido_mi": 10578.2,
+      "lucro_mi": 15528.052,
+      "acoes_on": 3802940000.0,
+      "acoes_pn": 3664081000.0
+     },
+     "2022": {
+      "distribuido_mi": 8327.5,
+      "lucro_mi": 14287.093,
+      "acoes_on": 3787533000.0,
+      "acoes_pn": 3648674000.0
+     },
+     "2023": {
+      "distribuido_mi": 6201.4,
+      "lucro_mi": 9449.313,
+      "acoes_on": 3791502000.0,
+      "acoes_pn": 3652643000.0
+     },
+     "2024": {
+      "distribuido_mi": 6000.5,
+      "lucro_mi": 13365.506,
+      "acoes_on": 3799243000.0,
+      "acoes_pn": 3660384000.0
+     },
+     "2025": {
+      "distribuido_mi": 7622.5,
+      "lucro_mi": 12766.035,
+      "acoes_on": 3805029000.0,
+      "acoes_pn": 3666171000.0
+     }
     }
    }
   },
@@ -1399,6 +2571,44 @@
      "2023": 15.1126,
      "2024": 14.8951,
      "2025": 14.8486
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 10455.6,
+      "lucro_mi": 13418.529,
+      "acoes_on": 3799866000.0,
+      "acoes_pn": 3661007000.0
+     },
+     "2021": {
+      "distribuido_mi": 10578.2,
+      "lucro_mi": 15528.052,
+      "acoes_on": 3802940000.0,
+      "acoes_pn": 3664081000.0
+     },
+     "2022": {
+      "distribuido_mi": 8327.5,
+      "lucro_mi": 14287.093,
+      "acoes_on": 3787533000.0,
+      "acoes_pn": 3648674000.0
+     },
+     "2023": {
+      "distribuido_mi": 6201.4,
+      "lucro_mi": 9449.313,
+      "acoes_on": 3791502000.0,
+      "acoes_pn": 3652643000.0
+     },
+     "2024": {
+      "distribuido_mi": 6000.5,
+      "lucro_mi": 13365.506,
+      "acoes_on": 3799243000.0,
+      "acoes_pn": 3660384000.0
+     },
+     "2025": {
+      "distribuido_mi": 7622.5,
+      "lucro_mi": 12766.035,
+      "acoes_on": 3805029000.0,
+      "acoes_pn": 3666171000.0
+     }
     }
    }
   },
@@ -1444,6 +2654,44 @@
      "2023": 28.4941,
      "2024": 28.2741,
      "2025": 28.4526
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 10455.6,
+      "lucro_mi": 13418.529,
+      "acoes_on": 3799866000.0,
+      "acoes_pn": 3661007000.0
+     },
+     "2021": {
+      "distribuido_mi": 10578.2,
+      "lucro_mi": 15528.052,
+      "acoes_on": 3802940000.0,
+      "acoes_pn": 3664081000.0
+     },
+     "2022": {
+      "distribuido_mi": 8327.5,
+      "lucro_mi": 14287.093,
+      "acoes_on": 3787533000.0,
+      "acoes_pn": 3648674000.0
+     },
+     "2023": {
+      "distribuido_mi": 6201.4,
+      "lucro_mi": 9449.313,
+      "acoes_on": 3791502000.0,
+      "acoes_pn": 3652643000.0
+     },
+     "2024": {
+      "distribuido_mi": 6000.5,
+      "lucro_mi": 13365.506,
+      "acoes_on": 3799243000.0,
+      "acoes_pn": 3660384000.0
+     },
+     "2025": {
+      "distribuido_mi": 7622.5,
+      "lucro_mi": 12766.035,
+      "acoes_on": 3805029000.0,
+      "acoes_pn": 3666171000.0
+     }
     }
    }
   },
@@ -1487,6 +2735,44 @@
      "2023": 43.0845,
      "2024": 50.5864,
      "2025": 37.0904
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 5765.4,
+      "lucro_mi": 4770.527,
+      "acoes_on": 1688174000.0,
+      "acoes_pn": null
+     },
+     "2021": {
+      "distribuido_mi": 5806.6,
+      "lucro_mi": 6239.364,
+      "acoes_on": 1676938000.0,
+      "acoes_pn": null
+     },
+     "2022": {
+      "distribuido_mi": 5084.3,
+      "lucro_mi": 4085.013,
+      "acoes_on": 1663556731.0,
+      "acoes_pn": null
+     },
+     "2023": {
+      "distribuido_mi": 3401.8,
+      "lucro_mi": 5029.389,
+      "acoes_on": 1652584004.0,
+      "acoes_pn": null
+     },
+     "2024": {
+      "distribuido_mi": 4559.6,
+      "lucro_mi": 5547.948,
+      "acoes_on": 1626682604.0,
+      "acoes_pn": null
+     },
+     "2025": {
+      "distribuido_mi": 7899.0,
+      "lucro_mi": 6167.906,
+      "acoes_on": 3195606352.0,
+      "acoes_pn": null
+     }
     }
    }
   },
@@ -1530,6 +2816,44 @@
      "2023": 14.2778,
      "2024": 17.1867,
      "2025": 20.3727
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 1082.9,
+      "lucro_mi": 1843.69,
+      "acoes_on": 2420406967.0,
+      "acoes_pn": null
+     },
+     "2021": {
+      "distribuido_mi": 1047.6,
+      "lucro_mi": 2957.174,
+      "acoes_on": 2420406141.0,
+      "acoes_pn": null
+     },
+     "2022": {
+      "distribuido_mi": 1400.3,
+      "lucro_mi": 1670.755,
+      "acoes_on": 2420804398.0,
+      "acoes_pn": 12247.0
+     },
+     "2023": {
+      "distribuido_mi": 2199.9,
+      "lucro_mi": 2837.422,
+      "acoes_on": 2420599036.0,
+      "acoes_pn": null
+     },
+     "2024": {
+      "distribuido_mi": 1887.4,
+      "lucro_mi": 3153.881,
+      "acoes_on": 2420603078.0,
+      "acoes_pn": null
+     },
+     "2025": {
+      "distribuido_mi": 4653.7,
+      "lucro_mi": 4311.984,
+      "acoes_on": 2388668322.0,
+      "acoes_pn": null
+     }
     }
    }
   },
@@ -1575,6 +2899,44 @@
      "2023": 11.9168,
      "2024": 11.6329,
      "2025": 11.7995
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 1106.2,
+      "lucro_mi": 2262.927,
+      "acoes_on": 590714000.0,
+      "acoes_pn": 442783000.0
+     },
+     "2021": {
+      "distribuido_mi": 1551.5,
+      "lucro_mi": 2213.714,
+      "acoes_on": 590714000.0,
+      "acoes_pn": 442783000.0
+     },
+     "2022": {
+      "distribuido_mi": 1672.4,
+      "lucro_mi": 1449.215,
+      "acoes_on": 590714000.0,
+      "acoes_pn": 442783000.0
+     },
+     "2023": {
+      "distribuido_mi": 1004.0,
+      "lucro_mi": 1367.72,
+      "acoes_on": 590714000.0,
+      "acoes_pn": 442783000.0
+     },
+     "2024": {
+      "distribuido_mi": 1216.9,
+      "lucro_mi": 1693.915,
+      "acoes_on": 590714000.0,
+      "acoes_pn": 442783000.0
+     },
+     "2025": {
+      "distribuido_mi": 1425.6,
+      "lucro_mi": 1579.863,
+      "acoes_on": 590714000.0,
+      "acoes_pn": 442783000.0
+     }
     }
    }
   },
@@ -1620,6 +2982,44 @@
      "2023": 11.9573,
      "2024": 11.7425,
      "2025": 11.8893
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 1106.2,
+      "lucro_mi": 2262.927,
+      "acoes_on": 590714000.0,
+      "acoes_pn": 442783000.0
+     },
+     "2021": {
+      "distribuido_mi": 1551.5,
+      "lucro_mi": 2213.714,
+      "acoes_on": 590714000.0,
+      "acoes_pn": 442783000.0
+     },
+     "2022": {
+      "distribuido_mi": 1672.4,
+      "lucro_mi": 1449.215,
+      "acoes_on": 590714000.0,
+      "acoes_pn": 442783000.0
+     },
+     "2023": {
+      "distribuido_mi": 1004.0,
+      "lucro_mi": 1367.72,
+      "acoes_on": 590714000.0,
+      "acoes_pn": 442783000.0
+     },
+     "2024": {
+      "distribuido_mi": 1216.9,
+      "lucro_mi": 1693.915,
+      "acoes_on": 590714000.0,
+      "acoes_pn": 442783000.0
+     },
+     "2025": {
+      "distribuido_mi": 1425.6,
+      "lucro_mi": 1579.863,
+      "acoes_on": 590714000.0,
+      "acoes_pn": 442783000.0
+     }
     }
    }
   },
@@ -1665,6 +3065,44 @@
      "2023": 35.7723,
      "2024": 35.06,
      "2025": 35.6023
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 1106.2,
+      "lucro_mi": 2262.927,
+      "acoes_on": 590714000.0,
+      "acoes_pn": 442783000.0
+     },
+     "2021": {
+      "distribuido_mi": 1551.5,
+      "lucro_mi": 2213.714,
+      "acoes_on": 590714000.0,
+      "acoes_pn": 442783000.0
+     },
+     "2022": {
+      "distribuido_mi": 1672.4,
+      "lucro_mi": 1449.215,
+      "acoes_on": 590714000.0,
+      "acoes_pn": 442783000.0
+     },
+     "2023": {
+      "distribuido_mi": 1004.0,
+      "lucro_mi": 1367.72,
+      "acoes_on": 590714000.0,
+      "acoes_pn": 442783000.0
+     },
+     "2024": {
+      "distribuido_mi": 1216.9,
+      "lucro_mi": 1693.915,
+      "acoes_on": 590714000.0,
+      "acoes_pn": 442783000.0
+     },
+     "2025": {
+      "distribuido_mi": 1425.6,
+      "lucro_mi": 1579.863,
+      "acoes_on": 590714000.0,
+      "acoes_pn": 442783000.0
+     }
     }
    }
   },
@@ -1708,6 +3146,44 @@
      "2023": 4.2397,
      "2024": 4.372,
      "2025": 3.7866
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 23.9,
+      "lucro_mi": -2487.87,
+      "acoes_on": 2055199677.0,
+      "acoes_pn": 3430048489.0
+     },
+     "2021": {
+      "distribuido_mi": 402.0,
+      "lucro_mi": 3019.87,
+      "acoes_on": 2056588197.0,
+      "acoes_pn": 3435602569.0
+     },
+     "2022": {
+      "distribuido_mi": 1660.6,
+      "lucro_mi": 4691.729,
+      "acoes_on": 2058556043.0,
+      "acoes_pn": 3443473953.0
+     },
+     "2023": {
+      "distribuido_mi": 1494.0,
+      "lucro_mi": 2694.538,
+      "acoes_on": 2061466118.0,
+      "acoes_pn": 3455114253.0
+     },
+     "2024": {
+      "distribuido_mi": 1667.5,
+      "lucro_mi": 1831.011,
+      "acoes_on": 2269821404.0,
+      "acoes_pn": 3809460163.0
+     },
+     "2025": {
+      "distribuido_mi": 1243.0,
+      "lucro_mi": 1678.211,
+      "acoes_on": 2291592185.0,
+      "acoes_pn": 3843835480.0
+     }
     }
    }
   },
@@ -1751,6 +3227,44 @@
      "2023": 21.188,
      "2024": 21.8937,
      "2025": 19.0259
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 23.9,
+      "lucro_mi": -2487.87,
+      "acoes_on": 2055199677.0,
+      "acoes_pn": 3430048489.0
+     },
+     "2021": {
+      "distribuido_mi": 402.0,
+      "lucro_mi": 3019.87,
+      "acoes_on": 2056588197.0,
+      "acoes_pn": 3435602569.0
+     },
+     "2022": {
+      "distribuido_mi": 1660.6,
+      "lucro_mi": 4691.729,
+      "acoes_on": 2058556043.0,
+      "acoes_pn": 3443473953.0
+     },
+     "2023": {
+      "distribuido_mi": 1494.0,
+      "lucro_mi": 2694.538,
+      "acoes_on": 2061466118.0,
+      "acoes_pn": 3455114253.0
+     },
+     "2024": {
+      "distribuido_mi": 1667.5,
+      "lucro_mi": 1831.011,
+      "acoes_on": 2269821404.0,
+      "acoes_pn": 3809460163.0
+     },
+     "2025": {
+      "distribuido_mi": 1243.0,
+      "lucro_mi": 1678.211,
+      "acoes_on": 2291592185.0,
+      "acoes_pn": 3843835480.0
+     }
     }
    }
   },
@@ -1794,6 +3308,44 @@
      "2023": 4.2606,
      "2024": 4.3969,
      "2025": 3.9032
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 23.9,
+      "lucro_mi": -2487.87,
+      "acoes_on": 2055199677.0,
+      "acoes_pn": 3430048489.0
+     },
+     "2021": {
+      "distribuido_mi": 402.0,
+      "lucro_mi": 3019.87,
+      "acoes_on": 2056588197.0,
+      "acoes_pn": 3435602569.0
+     },
+     "2022": {
+      "distribuido_mi": 1660.6,
+      "lucro_mi": 4691.729,
+      "acoes_on": 2058556043.0,
+      "acoes_pn": 3443473953.0
+     },
+     "2023": {
+      "distribuido_mi": 1494.0,
+      "lucro_mi": 2694.538,
+      "acoes_on": 2061466118.0,
+      "acoes_pn": 3455114253.0
+     },
+     "2024": {
+      "distribuido_mi": 1667.5,
+      "lucro_mi": 1831.011,
+      "acoes_on": 2269821404.0,
+      "acoes_pn": 3809460163.0
+     },
+     "2025": {
+      "distribuido_mi": 1243.0,
+      "lucro_mi": 1678.211,
+      "acoes_on": 2291592185.0,
+      "acoes_pn": 3843835480.0
+     }
     }
    }
   },
@@ -1837,6 +3389,44 @@
      "2023": 29.6897,
      "2024": 38.1995,
      "2025": 32.7019
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 1787.9,
+      "lucro_mi": 7108.0,
+      "acoes_on": 7442231000.0,
+      "acoes_pn": 5601970000.0
+     },
+     "2021": {
+      "distribuido_mi": 73741.9,
+      "lucro_mi": 106668.0,
+      "acoes_on": 7442231382.0,
+      "acoes_pn": 5601969879.0
+     },
+     "2022": {
+      "distribuido_mi": 218707.4,
+      "lucro_mi": 188328.0,
+      "acoes_on": 7442231382.0,
+      "acoes_pn": 5601969879.0
+     },
+     "2023": {
+      "distribuido_mi": 94701.0,
+      "lucro_mi": 124606.0,
+      "acoes_on": 7442231382.0,
+      "acoes_pn": 5497905879.0
+     },
+     "2024": {
+      "distribuido_mi": 83810.9,
+      "lucro_mi": 36606.0,
+      "acoes_on": 7442231382.0,
+      "acoes_pn": 5446501379.0
+     },
+     "2025": {
+      "distribuido_mi": 42115.8,
+      "lucro_mi": 110129.0,
+      "acoes_on": 7442231382.0,
+      "acoes_pn": 5446501379.0
+     }
     }
    }
   },
@@ -1880,6 +3470,44 @@
      "2023": 32.7483,
      "2024": 40.5547,
      "2025": 35.3274
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 1787.9,
+      "lucro_mi": 7108.0,
+      "acoes_on": 7442231000.0,
+      "acoes_pn": 5601970000.0
+     },
+     "2021": {
+      "distribuido_mi": 73741.9,
+      "lucro_mi": 106668.0,
+      "acoes_on": 7442231382.0,
+      "acoes_pn": 5601969879.0
+     },
+     "2022": {
+      "distribuido_mi": 218707.4,
+      "lucro_mi": 188328.0,
+      "acoes_on": 7442231382.0,
+      "acoes_pn": 5601969879.0
+     },
+     "2023": {
+      "distribuido_mi": 94701.0,
+      "lucro_mi": 124606.0,
+      "acoes_on": 7442231382.0,
+      "acoes_pn": 5497905879.0
+     },
+     "2024": {
+      "distribuido_mi": 83810.9,
+      "lucro_mi": 36606.0,
+      "acoes_on": 7442231382.0,
+      "acoes_pn": 5446501379.0
+     },
+     "2025": {
+      "distribuido_mi": 42115.8,
+      "lucro_mi": 110129.0,
+      "acoes_on": 7442231382.0,
+      "acoes_pn": 5446501379.0
+     }
     }
    }
   },
@@ -1925,6 +3553,44 @@
      "2023": 73.9921,
      "2024": 62.0792,
      "2025": 57.2675
+    },
+    "payout_por_ano": {
+     "2020": {
+      "distribuido_mi": 12350.3,
+      "lucro_mi": 26713.0,
+      "acoes_on": 5129911000.0,
+      "acoes_pn": null
+     },
+     "2021": {
+      "distribuido_mi": 70893.4,
+      "lucro_mi": 121228.0,
+      "acoes_on": 4839617000.0,
+      "acoes_pn": null
+     },
+     "2022": {
+      "distribuido_mi": 33996.6,
+      "lucro_mi": 95924.0,
+      "acoes_on": 4483078000.0,
+      "acoes_pn": null
+     },
+     "2023": {
+      "distribuido_mi": 26133.6,
+      "lucro_mi": 39940.0,
+      "acoes_on": 4299854000.0,
+      "acoes_pn": null
+     },
+     "2024": {
+      "distribuido_mi": 22849.9,
+      "lucro_mi": 31592.0,
+      "acoes_on": 4268720000.0,
+      "acoes_pn": null
+     },
+     "2025": {
+      "distribuido_mi": 32523.9,
+      "lucro_mi": 13814.0,
+      "acoes_on": 4268779000.0,
+      "acoes_pn": null
+     }
     }
    }
   }
