@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-13T18:25:11+00:00",
+ "gerado_em": "2026-11-13T19:14:53+00:00",
  "janela_anos": 6,
  "ativos": {
   "ABCB4": {
@@ -3737,6 +3737,33 @@
     }
    }
   }
+ },
+ "sites": {
+  "ABCB": "https://www.abcbrasil.com.br",
+  "ALUP": "https://www.alupar.com.br",
+  "BRSR": "https://www.banrisul.com.br/ri",
+  "BBSE": "https://www.bbseguridaderi.com.br",
+  "BBDC": "https://www.bradesco.com.br",
+  "BBAS": "https://www.bb.com.br",
+  "BPAC": "https://www.btgpactual.com",
+  "CMIG": "https://www.cemig.com.br",
+  "CSMG": "https://www.copasa.com.br",
+  "CPLE": "http://ri.copel.com",
+  "CPFE": "https://www.cpfl.com.br",
+  "ENGI": "https://www.energisa.com.br",
+  "EGIE": "https://www.engie.com.br",
+  "EQTL": "https://www.equatorialenergia.com.br",
+  "ISAE": "http://www.isaenergiabrasil.com.br/",
+  "ITUB": "https://www.itau-unibanco.com.br/relacoes-com-investidores",
+  "ITSA": "https://www.itausa.com.br",
+  "PSSA": "https://www.portoseguro.com.br",
+  "SBSP": "https://www.sabesp.com.br",
+  "SAPR": "https://www.sanepar.com.br",
+  "SANB": "https://www.santander.com.br",
+  "VIVT": "https://www.telefonica.com.br",
+  "TAEE": "https://www.taesa.com.br",
+  "KLBN": "https://www.klabin.com.br",
+  "PETR": "https://www.petrobras.com.br"
  },
  "fontes": {
   "contabeis": "CVM – Dados Abertos (ITR e DFP)",
