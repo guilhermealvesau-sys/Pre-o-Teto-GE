@@ -1,4 +1,4 @@
-# Coleta de 2026-11-13T17:53:53+00:00
+# Coleta de 2026-11-13T17:56:00+00:00
 
 ## Empresas na CVM
 
@@ -71,7 +71,7 @@
 | SANB4 | 7,487.69 | 13,160.8 | 2026-09 | 17.14 | 0.624 | 0.0688 | 1.133 | 0.97 | 9.06 | composição do capital informada em milhares (corrigida) |
 | SANB11 | 7,487.69 | 13,160.8 | 2026-09 | 34.27 | 0.624 | 0.0687 | 2.164 | 0.97 | 8.75 | composição do capital informada em milhares (corrigida) |
 | VIVT3 | 3,195.61 | 6,598.9 | 2026-06 | 20.54 | 1.021 | 0.0640 | 1.696 | 0.64 | 15.99 |  |
-| TIMS3 | 2,388.67 | 1,786.7 | 2026-06 | 10.47 | 1.932 | 0.0528 | 0.856 | 0.60 | 17.70 |  |
+| TIMS3 | 2,388.67 | 6,098.6 | 2026-06 | 10.47 | 0.888 | 0.0528 | 0.856 | 0.60 | 13.19 |  |
 | TAEE3 | 1,033.50 | 1,635.7 | 2026-06 | 7.81 | 0.755 | 0.1045 | 1.236 | 0.41 | 7.41 | composição do capital informada em milhares (corrigida) |
 | TAEE4 | 1,033.50 | 1,635.7 | 2026-06 | 7.81 | 0.755 | 0.1041 | 1.236 | 0.41 | 7.47 | composição do capital informada em milhares (corrigida) |
 | TAEE11 | 1,033.50 | 1,635.7 | 2026-06 | 23.43 | 0.755 | 0.1045 | 3.708 | 0.41 | 7.45 | composição do capital informada em milhares (corrigida) |
