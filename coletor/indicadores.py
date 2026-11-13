@@ -22,16 +22,24 @@ def _cls(classe: str) -> str:
 def _componentes(a: dict) -> list[tuple[str, float]]:
     """Classes que compõem o papel e quantas de cada: unit → [(ON, n), (PN, m)]."""
     if a["classe"] == "UNIT":
-        return [("ON", a["unit_on"]), ("PN", a["unit_pn"])]
+        return [("ON", a["unit_on"]), (a.get("unit_pn_classe") or "PN", a["unit_pn"])]
     return [(a["classe"], 1)]
 
 
+_PREF_PN = ("PN", "PNB", "PNA", "PNC")  # classe preferencial representativa: a mais comum primeiro
+
+
 def _prov_classe(eventos: list[dict], classe: str) -> list[dict]:
-    if classe == "PN":  # na unit, o componente preferencial pode ser PN, PNA ou PNB
-        tem = {e["classe"] for e in eventos if e["classe"] in PN_CLASSES}
-        alvo = "PN" if "PN" in tem else (sorted(tem)[0] if tem else "PN")
-        return [e for e in eventos if e["classe"] == alvo]
-    return [e for e in eventos if e["classe"] == classe]
+    """Eventos da classe. "PN" genérico (componente da unit ou soma das PN na CVM) escolhe, ano a ano,
+    a primeira classe preferencial com eventos naquele ano — a B3 rotula eventos antigos de outra forma."""
+    if classe != "PN":
+        return [e for e in eventos if e["classe"] == classe]
+    por_ano: dict = {}
+    for e in eventos:
+        if e["classe"] in PN_CLASSES:
+            por_ano.setdefault(e["data_com"][:4], set()).add(e["classe"])
+    alvo = {y: next(c for c in _PREF_PN if c in cls) for y, cls in por_ano.items()}
+    return [e for e in eventos if e["classe"] in PN_CLASSES and alvo.get(e["data_com"][:4]) == e["classe"]]
 
 
 def calcular(a: dict, emp, eventos: list[dict], precos: dict[int, dict], ano_atual: int,
@@ -111,7 +119,7 @@ def calcular(a: dict, emp, eventos: list[dict], precos: dict[int, dict], ano_atu
         ev_on, ev_pn = _prov_classe(eventos, "ON"), _prov_classe(eventos, "PN")
         v_on = sum(e["valor"] for e in ev_on if e["ano_ref"] == y)
         v_pn = sum(e["valor"] for e in ev_pn if e["ano_ref"] == y)
-        if not ev_on and v_pn and acoes("ON", y):  # ON não negociada: B3 só lista a PN
+        if not v_on and v_pn and acoes("ON", y):  # ON não negociada no ano: a B3 só lista a PN
             v_on = v_pn
             if "proventos da ON estimados pelos da PN (ON não negociada)" not in out["avisos"]:
                 out["avisos"].append("proventos da ON estimados pelos da PN (ON não negociada)")

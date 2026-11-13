@@ -22,7 +22,7 @@ def _agora() -> str:
 
 
 def _ativos() -> pd.DataFrame:
-    a = pd.read_csv(CFG / "ativos.csv", dtype={"unit_on": int, "unit_pn": int, "antigos": str}).fillna({"antigos": ""})
+    a = pd.read_csv(CFG / "ativos.csv", dtype={"unit_on": int, "unit_pn": int, "antigos": str, "unit_pn_classe": str}).fillna({"antigos": "", "unit_pn_classe": ""})
     return a
 
 
