@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-13T18:05:50+00:00",
+ "gerado_em": "2026-11-13T18:08:08+00:00",
  "janela_anos": 6,
  "ativos": {
   "ABCB4": {
@@ -165,7 +165,8 @@
    "fator": 1,
    "janela": "2020-2025",
    "avisos": [
-    "composição do capital informada em milhares (corrigida)"
+    "composição do capital informada em milhares (corrigida)",
+    "3 devolução(ões) de capital fora das médias"
    ],
    "qtd_mi": 408.974,
    "acoes_ref": "2026-06-30",
@@ -247,22 +248,24 @@
   "BBSE3": {
    "fator": 1,
    "janela": "2020-2025",
-   "avisos": [],
+   "avisos": [
+    "1 devolução(ões) de capital fora das médias"
+   ],
    "qtd_mi": 1941.2485,
    "acoes_ref": "2026-09-30",
    "lucro12m_mi": 9188.294,
    "lucro12m_ate": "2026-09",
    "vpa": 6.9433,
    "vpa_ref": "2026-09-30",
-   "div_medio6": 2.9614,
-   "dy_medio": 0.0946,
+   "div_medio6": 2.7296,
+   "dy_medio": 0.0865,
    "pct_jcp": 0.0,
-   "payout": 0.9976,
+   "payout": 0.9295,
    "payout_anos": "2020-2025",
    "pl_medio": 8.337,
    "detalhe": {
     "proventos_por_ano": {
-     "2020": 4.1384,
+     "2020": 2.7861,
      "2021": 0.997,
      "2022": 1.9661,
      "2023": 3.4862,
@@ -287,7 +290,7 @@
     },
     "payout_por_ano": {
      "2020": {
-      "distribuido_mi": 8262.9,
+      "distribuido_mi": 5562.8,
       "lucro_mi": 3850.771,
       "acoes_on": 1996634681.0,
       "acoes_pn": null
@@ -1470,7 +1473,9 @@
   "EQTL3": {
    "fator": 1,
    "janela": "2020-2025",
-   "avisos": [],
+   "avisos": [
+    "1 devolução(ões) de capital fora das médias"
+   ],
    "qtd_mi": 1255.0313,
    "acoes_ref": "2026-06-30",
    "lucro12m_mi": 958.423,
@@ -2451,7 +2456,8 @@
    "fator": 1,
    "janela": "2020-2025",
    "avisos": [
-    "composição do capital informada em milhares (corrigida)"
+    "composição do capital informada em milhares (corrigida)",
+    "2 devolução(ões) de capital fora das médias"
    ],
    "qtd_mi": 7487.693,
    "acoes_ref": "2026-09-30",
@@ -2534,7 +2540,8 @@
    "fator": 1,
    "janela": "2020-2025",
    "avisos": [
-    "composição do capital informada em milhares (corrigida)"
+    "composição do capital informada em milhares (corrigida)",
+    "2 devolução(ões) de capital fora das médias"
    ],
    "qtd_mi": 7487.693,
    "acoes_ref": "2026-09-30",
@@ -2617,7 +2624,8 @@
    "fator": 2,
    "janela": "2020-2025",
    "avisos": [
-    "composição do capital informada em milhares (corrigida)"
+    "composição do capital informada em milhares (corrigida)",
+    "2 devolução(ões) de capital fora das médias"
    ],
    "qtd_mi": 7487.693,
    "acoes_ref": "2026-09-30",
@@ -2699,17 +2707,19 @@
   "VIVT3": {
    "fator": 1,
    "janela": "2020-2025",
-   "avisos": [],
+   "avisos": [
+    "3 devolução(ões) de capital fora das médias"
+   ],
    "qtd_mi": 3195.6064,
    "acoes_ref": "2026-06-30",
    "lucro12m_mi": 6598.88,
    "lucro12m_ate": "2026-06",
    "vpa": 20.5373,
    "vpa_ref": "2026-06-30",
-   "div_medio6": 1.6959,
-   "dy_medio": 0.064,
-   "pct_jcp": 0.6402,
-   "payout": 1.0212,
+   "div_medio6": 1.4133,
+   "dy_medio": 0.0555,
+   "pct_jcp": 0.9042,
+   "payout": 0.8511,
    "payout_anos": "2020-2025",
    "pl_medio": 15.993,
    "detalhe": {
@@ -2718,8 +2728,8 @@
      "2021": 3.4626,
      "2022": 3.0563,
      "2023": 2.0585,
-     "2024": 2.803,
-     "2025": 2.4718
+     "2024": 1.8953,
+     "2025": 1.2384
     },
     "lucro_anual_mi": {
      "2020": 4770.527,
@@ -2763,13 +2773,13 @@
       "acoes_pn": null
      },
      "2024": {
-      "distribuido_mi": 4559.6,
+      "distribuido_mi": 3083.1,
       "lucro_mi": 5547.948,
       "acoes_on": 1626682604.0,
       "acoes_pn": null
      },
      "2025": {
-      "distribuido_mi": 7899.0,
+      "distribuido_mi": 3957.6,
       "lucro_mi": 6167.906,
       "acoes_on": 3195606352.0,
       "acoes_pn": null
