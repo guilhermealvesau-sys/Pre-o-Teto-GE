@@ -102,6 +102,7 @@ def calcular(a: dict, emp, eventos: list[dict], precos: dict[int, dict], ano_atu
     dist = 0.0
     luc = 0.0
     anos_ok = []
+    payout_ano: dict = {}
     for y in janela:
         if y not in emp.lucro_anual_mi:
             continue
@@ -118,6 +119,8 @@ def calcular(a: dict, emp, eventos: list[dict], precos: dict[int, dict], ano_atu
             q = acoes(cls, y)
             if q:
                 d += v * q / 1e6
+        payout_ano[y] = {"distribuido_mi": round(d, 1), "lucro_mi": emp.lucro_anual_mi[y],
+                         "acoes_on": acoes("ON", y), "acoes_pn": acoes("PN", y)}
         dist += d
         luc += emp.lucro_anual_mi[y]
         anos_ok.append(y)
@@ -142,5 +145,6 @@ def calcular(a: dict, emp, eventos: list[dict], precos: dict[int, dict], ano_atu
         "proventos_por_ano": {y: round(v, 4) for y, v in prov_ano.items()},
         "lucro_anual_mi": {y: emp.lucro_anual_mi.get(y) for y in janela},
         "preco_medio_ano": {y: precos.get(y, {}).get("media") for y in janela},
+        "payout_por_ano": payout_ano,
     }
     return out
