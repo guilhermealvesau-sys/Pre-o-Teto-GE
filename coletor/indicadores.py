@@ -3,7 +3,8 @@
 Janela: os 6 últimos anos completos (ex.: em 2026, de 2020 a 2025).
   - payout (modelo): mediana dos payouts anuais dos 3 últimos anos completos (proventos referentes ao ano ÷ lucro)
   - payout 12M (comparação): proventos com data com nos últimos 12 meses ÷ lucro dos últimos 12 meses
-  - payout média 6 anos (referência): soma dos proventos da janela ÷ soma dos lucros
+  - payout média (opção): média simples dos payouts anuais dos 6 últimos anos completos (5, se faltar um ano)
+  - payout média 6 anos agregada (referência): soma dos proventos da janela ÷ soma dos lucros
   - DY médio: média dos DY anuais (proventos com data com no ano ÷ preço médio de fechamento do ano)
   - dividendo médio (R$): média anual dos proventos por papel, ajustada à quantidade de ações de hoje
     (bonificações e desdobramentos ficam corrigidos sem precisar dos fatores)
@@ -149,6 +150,13 @@ def calcular(a: dict, emp, eventos: list[dict], precos: dict[int, dict], ano_atu
     if len(ult) >= 2:
         out["payout"] = round(median(ult), 4)
         out["payout_anos"] = f"{janela[-3]}-{janela[-1]} (mediana)"
+    # payout médio (opção): média simples dos payouts anuais da janela de 6 anos, com 6 anos de dados ou, se faltar um, 5
+    na_janela = dict((y, p) for y, p in anuais if y in janela)
+    if len(na_janela) >= len(janela) - 1 and len(na_janela) >= 5:
+        out["payout_media"] = round(sum(na_janela.values()) / len(na_janela), 4)
+        falt = [str(y) for y in janela if y not in na_janela]
+        out["payout_media_anos"] = (f"{janela[0]}-{janela[-1]} (média de {len(na_janela)} anos"
+                                    + (f", sem {', '.join(falt)})" if falt else ")"))
 
     # ---- payout atual: proventos com data com nos últimos 12 meses ÷ lucro dos últimos 12 meses
     if emp.lucro12m_mi and emp.lucro12m_mi > 0 and hoje is not None:

@@ -19,7 +19,7 @@ import sys
 from pathlib import Path
 
 CAMPOS = ("qtd_mi", "lucro12m_mi", "lucro12m_ate", "vpa", "dy_medio", "pl_medio", "div_medio6", "pct_jcp",
-          "payout", "payout_12m", "payout_media6", "payout_anos")
+          "payout", "payout_12m", "payout_media6", "payout_anos", "payout_media", "payout_media_anos")
 
 
 def ler(p: Path, padrao=None):

@@ -207,6 +207,8 @@ def main_teste():
     ok("TAEE11 dividendo médio", t11["div_medio6"], 2.1)
     ok("TAEE11 % JCP", t11["pct_jcp"], 0.2 / 0.7)
     ok("TAEE payout", t11["payout"], 0.7 * 1033 / 1000)
+    ok("TAEE payout média 6 anos", t11["payout_media"], 0.7 * 1033 / 1000)
+    assert t11["payout_media_anos"].endswith("(média de 6 anos)"), t11["payout_media_anos"]
     ok("TAEE11 P/L médio", t11["pl_medio"], 30 / (1000e6 / 1033e6 * 3))
     ok("ITUB ações corrigidas de milhares", i4["qtd_mi"], 10000.0)
     ok("PETR ações com documento isolado em milhares", A["PETR4"]["qtd_mi"], 13000.0)
