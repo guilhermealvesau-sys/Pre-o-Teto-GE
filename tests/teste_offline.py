@@ -20,7 +20,7 @@ import coletor.util as util  # noqa: E402
 util.CACHE = TMP / "cache"
 util.CACHE.mkdir()
 
-from coletor import b3, bcb, cvm, main  # noqa: E402
+from coletor import avisos, b3, bcb, cvm, main  # noqa: E402
 
 EMP = {  # cnpj, cd_cvm, razão social, ações ON/PN por ano (None = constante)
     "TAEE": ("07.859.971/0001-30", "20257", "TRANSMISSORA ALIANCA DE ENERGIA ELETRICA S.A.", 590e6, 443e6),
@@ -117,6 +117,16 @@ def fixtures():
         zipar(p, {f"itr_cia_aberta_DRE_con_{y}.csv": dre, f"itr_cia_aberta_BPP_con_{y}.csv": bpp,
                   f"itr_cia_aberta_composicao_capital_{y}.csv": cap})
         arq[f"ITR/DADOS/itr_cia_aberta_{y}.zip"] = p
+    ipe_hdr = "CNPJ_Companhia;Nome_Companhia;Codigo_CVM;Data_Referencia;Categoria;Tipo;Especie;Assunto;Data_Entrega;Tipo_Apresentacao;Protocolo_Entrega;Versao;Link_Download"
+    cn = EMP["PETR"][0]
+    ipe = [ipe_hdr,
+           f"{cn};PETROBRAS;9512;{ANO}-03-01;Fato Relevante;;;Revisão da Política de Remuneração aos Acionistas;{ANO}-03-01;AP;111;1;http://x/111",
+           f"{cn};PETROBRAS;9512;{ANO}-04-01;Aviso aos Acionistas;;;Pagamento de dividendos e JCP;{ANO}-04-01;AP;112;1;http://x/112",
+           f"{EMP['TAEE'][0]};TAESA;20257;{ANO}-05-01;Comunicado ao Mercado;;;Payout de {ANO};{ANO}-05-01;AP;113;1;http://x/113"]
+    for y in (ANO - 1, ANO):
+        p = TMP / f"ipe{y}.zip"
+        zipar(p, {f"ipe_cia_aberta_{y}.csv": ipe if y == ANO else [ipe_hdr]})
+        arq[f"IPE/DADOS/ipe_cia_aberta_{y}.zip"] = p
     cad = TMP / "cad.csv"
     linhas = ["CNPJ_CIA;DENOM_SOCIAL;SIT;CD_CVM;CATEG_REG"]
     linhas += [f"{c};{n};ATIVO;{cd};Categoria A" for c, cd, n, *_ in EMP.values()]
@@ -177,7 +187,7 @@ def main_teste():
             return {"value": [{"cotacaoVenda": 5.0, "dataHoraCotacao": "2026-09-30 13:00:00.000"}]}
         return None
 
-    cvm.baixar = b3.baixar = fake_baixar
+    cvm.baixar = b3.baixar = avisos.baixar = fake_baixar
     b3.get_json = bcb.get_json = fake_get_json
     main.DADOS = TMP / "dados"
     main.DADOS.mkdir()
@@ -209,6 +219,23 @@ def main_teste():
     ok("Petrobras dívida bruta (US$ bi)", base["petrobras"]["divida_bruta_usd_bi"], 310000 / 5.0 / 1000)
     assert "empresa sem dados da CVM" in A["VALE3"]["avisos"], A["VALE3"]["avisos"]
     print("ok  VALE3 sem dados é sinalizado")
+    # payout 12 meses: um dividendo de junho (0,5) e um JCP de dezembro (0,2) em qualquer janela de 365 dias
+    ok("TAEE payout 12M", t11["payout_12m"], 0.7 * 1033 / 1100)
+    # avisos: a primeira varredura grava o histórico sem disparar; um documento novo depois dispara
+    main.RAIZ = TMP
+    n1 = main.verificar_avisos()
+    est = json.loads((main.DADOS / "avisos.json").read_text())
+    assert n1 == [] and len(est["itens"]) == 2, (n1, est["itens"])
+    print("ok  avisos: 2 documentos de política na 1ª varredura (pagamento comum ignorado), sem disparo")
+    with zipfile.ZipFile(arq[f"IPE/DADOS/ipe_cia_aberta_{ANO}.zip"], "a") as z:
+        pass
+    linhas = zipfile.ZipFile(arq[f"IPE/DADOS/ipe_cia_aberta_{ANO}.zip"]).read(f"ipe_cia_aberta_{ANO}.csv").decode("latin-1").splitlines()
+    linhas.append(f"{EMP['ITUB'][0]};ITAU;19348;{ANO}-10-01;Fato Relevante;;;Nova política de dividendos;{ANO}-10-01;AP;114;1;http://x/114")
+    zipar(arq[f"IPE/DADOS/ipe_cia_aberta_{ANO}.zip"], {f"ipe_cia_aberta_{ANO}.csv": linhas})
+    n2 = main.verificar_avisos()
+    assert [a["emissor"] for a in n2] == ["ITUB"], n2
+    assert (TMP / ".saida" / "avisos_novos.md").exists()
+    print("ok  avisos: documento novo do Itaú dispara aviso")
     print((main.DADOS / "relatorio.md").read_text()[:600])
     shutil.rmtree(TMP)
     print("\nTODOS OS TESTES PASSARAM")

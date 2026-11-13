@@ -23,7 +23,9 @@ O consenso de lucro **não** fica aqui: ele é enviado por planilha na própria 
 - **Lucro 12M:** lucro atribuído aos controladores dos últimos 4 trimestres (acumulado do ano + ano anterior − mesmo período do ano anterior).
 - **Nº de ações:** ON + PN integralizadas, menos as em tesouraria, no último formulário entregue à CVM.
 - **VPA:** patrimônio líquido dos controladores ÷ nº de ações × ações por papel (units).
-- **Payout médio:** soma dos proventos declarados referentes aos lucros da janela ÷ soma desses lucros.
+- **Payout (usado no modelo):** mediana dos payouts anuais dos 3 últimos anos completos — recente o bastante para refletir a política atual e imune a um ano extraordinário.
+- **Payout 12M (comparação):** proventos com data com nos últimos 12 meses ÷ lucro dos últimos 12 meses. Reage rápido a mudanças de política, mas oscila com extraordinários.
+- **Payout média 6 anos (referência):** soma dos proventos referentes aos lucros da janela ÷ soma desses lucros.
 - **DY médio:** média dos DY anuais (proventos com data com no ano ÷ preço médio de fechamento do ano).
 - **Dividendo médio (R$):** média anual dos proventos por papel, ajustada para a quantidade de ações de hoje (corrige bonificações e desdobramentos).
 - **Proventos considerados:** dividendos, JCP e rendimentos. Devoluções de capital ficam de fora.

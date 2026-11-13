@@ -1,7 +1,9 @@
 """Indicadores do modelo a partir dos dados brutos (CVM + B3), com as definições documentadas no README.
 
 Janela: os 6 últimos anos completos (ex.: em 2026, de 2020 a 2025).
-  - payout médio: soma dos proventos declarados para os lucros da janela ÷ soma do lucro dos controladores
+  - payout (modelo): mediana dos payouts anuais dos 3 últimos anos completos (proventos referentes ao ano ÷ lucro)
+  - payout 12M (comparação): proventos com data com nos últimos 12 meses ÷ lucro dos últimos 12 meses
+  - payout média 6 anos (referência): soma dos proventos da janela ÷ soma dos lucros
   - DY médio: média dos DY anuais (proventos com data com no ano ÷ preço médio de fechamento do ano)
   - dividendo médio (R$): média anual dos proventos por papel, ajustada à quantidade de ações de hoje
     (bonificações e desdobramentos ficam corrigidos sem precisar dos fatores)
@@ -10,6 +12,7 @@ Janela: os 6 últimos anos completos (ex.: em 2026, de 2020 a 2025).
 """
 from __future__ import annotations
 
+from datetime import date, timedelta
 from statistics import mean, median
 
 PN_CLASSES = ("PN", "PNA", "PNB", "PNC")
@@ -44,7 +47,7 @@ def _prov_classe(eventos: list[dict], classe: str) -> list[dict]:
 
 
 def calcular(a: dict, emp, eventos: list[dict], precos: dict[int, dict], ano_atual: int,
-             anos: int = 6) -> dict:
+             anos: int = 6, hoje: date | None = None) -> dict:
     """`a`: linha de config/ativos.csv; `emp`: cvm.Empresa; `precos`: {ano: {media, fim}} do ticker."""
     janela = list(range(ano_atual - anos, ano_atual))
     fator = a["unit_on"] + a["unit_pn"] if a["classe"] == "UNIT" else 1
@@ -139,8 +142,28 @@ def calcular(a: dict, emp, eventos: list[dict], precos: dict[int, dict], ano_atu
         luc += emp.lucro_anual_mi[y]
         anos_ok.append(y)
     if luc > 0 and dist > 0 and len(anos_ok) >= 3:
-        out["payout"] = round(dist / luc, 4)
-        out["payout_anos"] = f"{anos_ok[0]}-{anos_ok[-1]}"
+        out["payout_media6"] = round(dist / luc, 4)  # referência: média agregada da janela de 6 anos
+    # payout do modelo: mediana dos payouts anuais dos 3 últimos anos completos com lucro positivo
+    anuais = [(y, v["distribuido_mi"] / v["lucro_mi"]) for y, v in payout_ano.items() if v["lucro_mi"] and v["lucro_mi"] > 0]
+    ult = [p for y, p in anuais if y in janela[-3:]]
+    if len(ult) >= 2:
+        out["payout"] = round(median(ult), 4)
+        out["payout_anos"] = f"{janela[-3]}-{janela[-1]} (mediana)"
+
+    # ---- payout atual: proventos com data com nos últimos 12 meses ÷ lucro dos últimos 12 meses
+    if emp.lucro12m_mi and emp.lucro12m_mi > 0 and hoje is not None:
+        ini = (hoje - timedelta(days=365)).isoformat()
+        rec = [e for e in eventos if ini < e["data_com"] <= hoje.isoformat()]
+        ev_on = [e for e in rec if e["classe"] == "ON"]
+        pn_cls = next((c for c in ("PN", "PNB", "PNA", "PNC") if any(e["classe"] == c for e in rec)), None)
+        ev_pn = [e for e in rec if e["classe"] == pn_cls]
+        v_on, v_pn = sum(e["valor"] for e in ev_on), sum(e["valor"] for e in ev_pn)
+        if not v_on and v_pn and emp.acoes_on:
+            v_on = v_pn
+        d12 = (v_on * (emp.acoes_on or 0) + v_pn * (emp.acoes_pn or 0)) / 1e6
+        if d12 > 0:
+            out["payout_12m"] = round(d12 / emp.lucro12m_mi, 4)
+            out["payout_12m_ate"] = hoje.isoformat()
 
     # ---- P/L médio
     pls = []

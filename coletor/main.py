@@ -10,7 +10,7 @@ from datetime import date, datetime, timezone
 
 import pandas as pd
 
-from . import b3, bcb, cvm, indicadores
+from . import avisos, b3, bcb, cvm, indicadores
 from .util import RAIZ, ler_json, log, salvar_json
 
 CFG = RAIZ / "config"
@@ -130,7 +130,7 @@ def completo() -> dict:
     for r in a.to_dict("records"):
         emp = emps.get(r["emissor"])
         precos = {int(y): v for y, v in hist.get(r["ticker"], {}).items()}
-        base["ativos"][r["ticker"]] = indicadores.calcular(r, emp, prov.get(r["emissor"], []), precos, hoje.year)
+        base["ativos"][r["ticker"]] = indicadores.calcular(r, emp, prov.get(r["emissor"], []), precos, hoje.year, hoje=hoje)
 
     # 6) Petrobras: dívida bruta em US$ pela PTAX da data do balanço
     pe = emps.get("PETR")
@@ -169,9 +169,25 @@ def _relatorio(base: dict, mapa: pd.DataFrame, contas: dict | None = None) -> No
     (DADOS / "relatorio.md").write_text("\n".join(lin) + "\n", encoding="utf-8")
 
 
+def verificar_avisos() -> list[dict]:
+    """Varre documentos da CVM atrás de mudanças de política de remuneração (usa o mapa da última coleta)."""
+    mapa_p = DADOS / "mapa_cvm.csv"
+    if not mapa_p.exists():
+        log.warning("avisos: mapa da CVM ainda não existe (rode a coleta completa)")
+        return []
+    mapa = pd.read_csv(mapa_p, dtype=str).dropna(subset=["cnpj"])
+    emp = {r.cnpj: {"emissor": r.emissor, "nome": r.nome} for r in mapa.itertuples()}
+    try:
+        return avisos.atualizar(emp, DADOS, RAIZ / ".saida")
+    except Exception as e:  # noqa: BLE001
+        log.warning("avisos: varredura falhou: %s", e)
+        return []
+
+
 if __name__ == "__main__":
     modo = sys.argv[1] if len(sys.argv) > 1 else "diario"
     DADOS.mkdir(exist_ok=True)
     if modo == "completo":
         completo()
     diario()
+    verificar_avisos()

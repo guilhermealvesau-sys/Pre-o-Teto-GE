@@ -15,6 +15,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: coleta
@@ -56,6 +57,17 @@ jobs:
 
       - name: Coletar
         run: python -m coletor.main "${{ steps.modo.outputs.modo }}"
+
+      - name: Avisar mudanças de política (abre issue → e-mail do GitHub)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -s .saida/avisos_novos.md ]; then
+            gh issue create --title "Mudança de política de remuneração: $(jq -r '[.[].emissor] | unique | join(", ")' .saida/avisos_novos.json)" \
+              --body-file .saida/avisos_novos.md --label "politica-dividendos" 2>/dev/null \
+            || gh issue create --title "Mudança de política de remuneração: $(jq -r '[.[].emissor] | unique | join(", ")' .saida/avisos_novos.json)" \
+              --body-file .saida/avisos_novos.md
+          fi
 
       - name: Gravar os dados no repositório
         run: |
