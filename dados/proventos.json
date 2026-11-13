@@ -38379,6 +38379,1410 @@
   {
    "classe": "ON",
    "tipo": "DIVIDENDO",
+   "valor": 0.03064,
+   "data_com": "2002-01-14",
+   "pagamento": null,
+   "ano_ref": 2002,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.03371,
+   "data_com": "2002-01-14",
+   "pagamento": null,
+   "ano_ref": 2002,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.0675,
+   "data_com": "2003-09-29",
+   "pagamento": null,
+   "ano_ref": 2003,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.07425,
+   "data_com": "2003-09-29",
+   "pagamento": null,
+   "ano_ref": 2003,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.20479,
+   "data_com": "2004-03-31",
+   "pagamento": null,
+   "ano_ref": 2004,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.22527,
+   "data_com": "2004-03-31",
+   "pagamento": null,
+   "ano_ref": 2004,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.07671,
+   "data_com": "2004-09-20",
+   "pagamento": null,
+   "ano_ref": 2004,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.08438,
+   "data_com": "2004-09-20",
+   "pagamento": null,
+   "ano_ref": 2004,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.09205,
+   "data_com": "2005-03-30",
+   "pagamento": null,
+   "ano_ref": 2005,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.10126,
+   "data_com": "2005-03-30",
+   "pagamento": null,
+   "ano_ref": 2005,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.10279,
+   "data_com": "2005-09-20",
+   "pagamento": null,
+   "ano_ref": 2005,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.11307,
+   "data_com": "2005-09-20",
+   "pagamento": null,
+   "ano_ref": 2005,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.07289,
+   "data_com": "2006-03-27",
+   "pagamento": null,
+   "ano_ref": 2006,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.08018,
+   "data_com": "2006-03-27",
+   "pagamento": null,
+   "ano_ref": 2006,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.12391,
+   "data_com": "2006-09-13",
+   "pagamento": null,
+   "ano_ref": 2006,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.1363,
+   "data_com": "2006-09-13",
+   "pagamento": null,
+   "ano_ref": 2006,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.11418,
+   "data_com": "2007-03-22",
+   "pagamento": null,
+   "ano_ref": 2007,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.1256,
+   "data_com": "2007-03-22",
+   "pagamento": null,
+   "ano_ref": 2007,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.17997,
+   "data_com": "2007-08-23",
+   "pagamento": null,
+   "ano_ref": 2007,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.19797,
+   "data_com": "2007-08-23",
+   "pagamento": null,
+   "ano_ref": 2007,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.12484,
+   "data_com": "2008-03-24",
+   "pagamento": null,
+   "ano_ref": 2008,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.13732,
+   "data_com": "2008-03-24",
+   "pagamento": null,
+   "ano_ref": 2008,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.12171,
+   "data_com": "2008-09-03",
+   "pagamento": null,
+   "ano_ref": 2008,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.13388,
+   "data_com": "2008-09-03",
+   "pagamento": null,
+   "ano_ref": 2008,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.0342,
+   "data_com": "2009-05-15",
+   "pagamento": null,
+   "ano_ref": 2009,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.03762,
+   "data_com": "2009-05-15",
+   "pagamento": null,
+   "ano_ref": 2009,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.0488,
+   "data_com": "2009-08-21",
+   "pagamento": null,
+   "ano_ref": 2009,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.05368,
+   "data_com": "2009-08-21",
+   "pagamento": null,
+   "ano_ref": 2009,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.04527,
+   "data_com": "2009-11-06",
+   "pagamento": null,
+   "ano_ref": 2009,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.0498,
+   "data_com": "2009-11-06",
+   "pagamento": null,
+   "ano_ref": 2009,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.05943,
+   "data_com": "2010-04-22",
+   "pagamento": null,
+   "ano_ref": 2010,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.06537,
+   "data_com": "2010-04-22",
+   "pagamento": null,
+   "ano_ref": 2010,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.05213,
+   "data_com": "2010-07-08",
+   "pagamento": null,
+   "ano_ref": 2010,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.05734,
+   "data_com": "2010-07-08",
+   "pagamento": null,
+   "ano_ref": 2010,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.07298,
+   "data_com": "2010-09-29",
+   "pagamento": null,
+   "ano_ref": 2010,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.08028,
+   "data_com": "2010-09-29",
+   "pagamento": null,
+   "ano_ref": 2010,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.07385,
+   "data_com": "2011-04-11",
+   "pagamento": null,
+   "ano_ref": 2011,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.08124,
+   "data_com": "2011-04-11",
+   "pagamento": null,
+   "ano_ref": 2011,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.08651,
+   "data_com": "2011-07-04",
+   "pagamento": null,
+   "ano_ref": 2011,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.09516,
+   "data_com": "2011-07-04",
+   "pagamento": null,
+   "ano_ref": 2011,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.05822,
+   "data_com": "2011-09-30",
+   "pagamento": null,
+   "ano_ref": 2011,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.06404,
+   "data_com": "2011-09-30",
+   "pagamento": null,
+   "ano_ref": 2011,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.08478,
+   "data_com": "2012-04-11",
+   "pagamento": null,
+   "ano_ref": 2012,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.09326,
+   "data_com": "2012-04-11",
+   "pagamento": null,
+   "ano_ref": 2012,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.12702,
+   "data_com": "2012-07-10",
+   "pagamento": null,
+   "ano_ref": 2012,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.13972,
+   "data_com": "2012-07-10",
+   "pagamento": null,
+   "ano_ref": 2012,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.07939,
+   "data_com": "2012-11-12",
+   "pagamento": null,
+   "ano_ref": 2012,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.08733,
+   "data_com": "2012-11-12",
+   "pagamento": null,
+   "ano_ref": 2012,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.08052,
+   "data_com": "2013-04-12",
+   "pagamento": null,
+   "ano_ref": 2013,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.08857,
+   "data_com": "2013-04-12",
+   "pagamento": null,
+   "ano_ref": 2013,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.14821,
+   "data_com": "2013-08-05",
+   "pagamento": null,
+   "ano_ref": 2013,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.16303,
+   "data_com": "2013-08-05",
+   "pagamento": null,
+   "ano_ref": 2013,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.08998,
+   "data_com": "2013-11-11",
+   "pagamento": null,
+   "ano_ref": 2013,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.09898,
+   "data_com": "2013-11-11",
+   "pagamento": null,
+   "ano_ref": 2013,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.09833,
+   "data_com": "2014-03-20",
+   "pagamento": null,
+   "ano_ref": 2014,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.09833,
+   "data_com": "2014-03-20",
+   "pagamento": null,
+   "ano_ref": 2014,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.03318,
+   "data_com": "2014-08-11",
+   "pagamento": null,
+   "ano_ref": 2014,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.03318,
+   "data_com": "2014-08-11",
+   "pagamento": null,
+   "ano_ref": 2014,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.0196537,
+   "data_com": "2014-11-10",
+   "pagamento": null,
+   "ano_ref": 2014,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.0196537,
+   "data_com": "2014-11-10",
+   "pagamento": null,
+   "ano_ref": 2014,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.02227,
+   "data_com": "2015-03-23",
+   "pagamento": null,
+   "ano_ref": 2015,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.02227,
+   "data_com": "2015-03-23",
+   "pagamento": null,
+   "ano_ref": 2015,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.03734,
+   "data_com": "2015-07-27",
+   "pagamento": null,
+   "ano_ref": 2015,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.03734,
+   "data_com": "2015-07-27",
+   "pagamento": null,
+   "ano_ref": 2015,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.02292518623,
+   "data_com": "2015-10-27",
+   "pagamento": null,
+   "ano_ref": 2015,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.02292518623,
+   "data_com": "2015-10-27",
+   "pagamento": null,
+   "ano_ref": 2015,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.02621397125,
+   "data_com": "2016-02-03",
+   "pagamento": null,
+   "ano_ref": 2016,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.02621397125,
+   "data_com": "2016-02-03",
+   "pagamento": null,
+   "ano_ref": 2016,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.02237227,
+   "data_com": "2016-04-29",
+   "pagamento": null,
+   "ano_ref": 2016,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.02237227,
+   "data_com": "2016-04-29",
+   "pagamento": null,
+   "ano_ref": 2016,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.023583028,
+   "data_com": "2016-07-29",
+   "pagamento": null,
+   "ano_ref": 2016,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.023583028,
+   "data_com": "2016-07-29",
+   "pagamento": null,
+   "ano_ref": 2016,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.02555274,
+   "data_com": "2016-11-03",
+   "pagamento": null,
+   "ano_ref": 2016,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.02555274,
+   "data_com": "2016-11-03",
+   "pagamento": null,
+   "ano_ref": 2016,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.02842498,
+   "data_com": "2017-02-06",
+   "pagamento": null,
+   "ano_ref": 2017,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.02842498,
+   "data_com": "2017-02-06",
+   "pagamento": null,
+   "ano_ref": 2017,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.01093268,
+   "data_com": "2017-04-25",
+   "pagamento": null,
+   "ano_ref": 2017,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.01093268,
+   "data_com": "2017-04-25",
+   "pagamento": null,
+   "ano_ref": 2017,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.012665051,
+   "data_com": "2017-05-04",
+   "pagamento": null,
+   "ano_ref": 2017,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.012665051,
+   "data_com": "2017-05-04",
+   "pagamento": null,
+   "ano_ref": 2017,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.022054659,
+   "data_com": "2017-08-01",
+   "pagamento": null,
+   "ano_ref": 2017,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.003930533,
+   "data_com": "2017-08-01",
+   "pagamento": null,
+   "ano_ref": 2017,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.022054659,
+   "data_com": "2017-08-01",
+   "pagamento": null,
+   "ano_ref": 2017,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.003930533,
+   "data_com": "2017-08-01",
+   "pagamento": null,
+   "ano_ref": 2017,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.03275444,
+   "data_com": "2017-11-01",
+   "pagamento": null,
+   "ano_ref": 2017,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.03275444,
+   "data_com": "2017-11-01",
+   "pagamento": null,
+   "ano_ref": 2017,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.03253351,
+   "data_com": "2018-02-06",
+   "pagamento": null,
+   "ano_ref": 2018,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.03253351,
+   "data_com": "2018-02-06",
+   "pagamento": null,
+   "ano_ref": 2018,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.02887958,
+   "data_com": "2018-05-02",
+   "pagamento": null,
+   "ano_ref": 2018,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.02887958,
+   "data_com": "2018-05-02",
+   "pagamento": null,
+   "ano_ref": 2018,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.03362952,
+   "data_com": "2018-08-03",
+   "pagamento": null,
+   "ano_ref": 2018,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.03362952,
+   "data_com": "2018-08-03",
+   "pagamento": null,
+   "ano_ref": 2018,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.01424986323,
+   "data_com": "2018-11-01",
+   "pagamento": null,
+   "ano_ref": 2018,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.05034951675,
+   "data_com": "2018-11-01",
+   "pagamento": null,
+   "ano_ref": 2018,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.01424986323,
+   "data_com": "2018-11-01",
+   "pagamento": null,
+   "ano_ref": 2018,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.05034951675,
+   "data_com": "2018-11-01",
+   "pagamento": null,
+   "ano_ref": 2018,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.04749931599,
+   "data_com": "2018-12-20",
+   "pagamento": null,
+   "ano_ref": 2018,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.04749931599,
+   "data_com": "2018-12-20",
+   "pagamento": null,
+   "ano_ref": 2018,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.00379996353,
+   "data_com": "2019-02-12",
+   "pagamento": null,
+   "ano_ref": 2019,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.00379996353,
+   "data_com": "2019-02-12",
+   "pagamento": null,
+   "ano_ref": 2019,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.03813885297,
+   "data_com": "2019-05-06",
+   "pagamento": null,
+   "ano_ref": 2019,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.03813885297,
+   "data_com": "2019-05-06",
+   "pagamento": null,
+   "ano_ref": 2019,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.0364311432,
+   "data_com": "2019-08-08",
+   "pagamento": null,
+   "ano_ref": 2019,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.0364311432,
+   "data_com": "2019-08-08",
+   "pagamento": null,
+   "ano_ref": 2019,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.03681063428,
+   "data_com": "2019-11-06",
+   "pagamento": null,
+   "ano_ref": 2019,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.01897455375,
+   "data_com": "2019-11-06",
+   "pagamento": null,
+   "ano_ref": 2019,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.03681063428,
+   "data_com": "2019-11-06",
+   "pagamento": null,
+   "ano_ref": 2019,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.01897455375,
+   "data_com": "2019-11-06",
+   "pagamento": null,
+   "ano_ref": 2019,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.03794938081,
+   "data_com": "2019-12-20",
+   "pagamento": null,
+   "ano_ref": 2019,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.03794938081,
+   "data_com": "2019-12-20",
+   "pagamento": null,
+   "ano_ref": 2019,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.0043641797,
+   "data_com": "2020-02-10",
+   "pagamento": null,
+   "ano_ref": 2020,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.0043641797,
+   "data_com": "2020-02-10",
+   "pagamento": null,
+   "ano_ref": 2020,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.05462280763,
+   "data_com": "2021-10-29",
+   "pagamento": null,
+   "ano_ref": 2021,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.01857175459,
+   "data_com": "2021-10-29",
+   "pagamento": null,
+   "ano_ref": 2021,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.05462280763,
+   "data_com": "2021-10-29",
+   "pagamento": null,
+   "ano_ref": 2021,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.01857175459,
+   "data_com": "2021-10-29",
+   "pagamento": null,
+   "ano_ref": 2021,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.06864291793,
+   "data_com": "2022-02-14",
+   "pagamento": null,
+   "ano_ref": 2022,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.06864291793,
+   "data_com": "2022-02-14",
+   "pagamento": null,
+   "ano_ref": 2022,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.0628833644,
+   "data_com": "2022-05-06",
+   "pagamento": null,
+   "ano_ref": 2022,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.0628833644,
+   "data_com": "2022-05-06",
+   "pagamento": null,
+   "ano_ref": 2022,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.07251721508,
+   "data_com": "2022-08-01",
+   "pagamento": null,
+   "ano_ref": 2022,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.07251721508,
+   "data_com": "2022-08-01",
+   "pagamento": null,
+   "ano_ref": 2022,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.05107167489,
+   "data_com": "2022-10-31",
+   "pagamento": null,
+   "ano_ref": 2022,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.04016669092,
+   "data_com": "2022-10-31",
+   "pagamento": null,
+   "ano_ref": 2022,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.05107167489,
+   "data_com": "2022-10-31",
+   "pagamento": null,
+   "ano_ref": 2022,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.04016669092,
+   "data_com": "2022-10-31",
+   "pagamento": null,
+   "ano_ref": 2022,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.00654303957,
+   "data_com": "2022-12-20",
+   "pagamento": null,
+   "ano_ref": 2022,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.00654303957,
+   "data_com": "2022-12-20",
+   "pagamento": null,
+   "ano_ref": 2022,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.06270412925,
+   "data_com": "2023-02-13",
+   "pagamento": null,
+   "ano_ref": 2023,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.06270412925,
+   "data_com": "2023-02-13",
+   "pagamento": null,
+   "ano_ref": 2023,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.07053934065,
+   "data_com": "2023-05-05",
+   "pagamento": null,
+   "ano_ref": 2023,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.07053934065,
+   "data_com": "2023-05-05",
+   "pagamento": null,
+   "ano_ref": 2023,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.04875599703,
+   "data_com": "2023-08-04",
+   "pagamento": null,
+   "ano_ref": 2023,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.04875599703,
+   "data_com": "2023-08-04",
+   "pagamento": null,
+   "ano_ref": 2023,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.05782468296,
+   "data_com": "2023-10-27",
+   "pagamento": null,
+   "ano_ref": 2023,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.05782468296,
+   "data_com": "2023-10-27",
+   "pagamento": null,
+   "ano_ref": 2023,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.03099714009,
+   "data_com": "2023-12-21",
+   "pagamento": null,
+   "ano_ref": 2023,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.03099714009,
+   "data_com": "2023-12-21",
+   "pagamento": null,
+   "ano_ref": 2023,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.03480416981,
+   "data_com": "2024-02-15",
+   "pagamento": null,
+   "ano_ref": 2024,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.03480416981,
+   "data_com": "2024-02-15",
+   "pagamento": null,
+   "ano_ref": 2024,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.05970763088,
+   "data_com": "2024-05-03",
+   "pagamento": null,
+   "ano_ref": 2024,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.05970763088,
+   "data_com": "2024-05-03",
+   "pagamento": null,
+   "ano_ref": 2024,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.06743909593,
+   "data_com": "2024-08-05",
+   "pagamento": null,
+   "ano_ref": 2024,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.06743909593,
+   "data_com": "2024-08-05",
+   "pagamento": null,
+   "ano_ref": 2024,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.06990882533,
+   "data_com": "2024-11-11",
+   "pagamento": null,
+   "ano_ref": 2024,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.06990882533,
+   "data_com": "2024-11-11",
+   "pagamento": null,
+   "ano_ref": 2024,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.04243910304,
+   "data_com": "2024-12-16",
+   "pagamento": null,
+   "ano_ref": 2024,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.04243910304,
+   "data_com": "2024-12-16",
+   "pagamento": null,
+   "ano_ref": 2024,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.008882636,
+   "data_com": "2025-03-05",
+   "pagamento": null,
+   "ano_ref": 2025,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.008882636,
+   "data_com": "2025-03-05",
+   "pagamento": null,
+   "ano_ref": 2025,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.04576010128,
+   "data_com": "2025-05-13",
+   "pagamento": null,
+   "ano_ref": 2025,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.04576010128,
+   "data_com": "2025-05-13",
+   "pagamento": null,
+   "ano_ref": 2025,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.05018892311,
+   "data_com": "2025-08-08",
+   "pagamento": null,
+   "ano_ref": 2025,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.05018892311,
+   "data_com": "2025-08-08",
+   "pagamento": null,
+   "ano_ref": 2025,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.05215774063,
+   "data_com": "2025-11-07",
+   "pagamento": null,
+   "ano_ref": 2025,
+   "referente": ""
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.05215774063,
+   "data_com": "2025-11-07",
+   "pagamento": null,
+   "ano_ref": 2025,
+   "referente": ""
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
    "valor": 0.04559717225,
    "data_com": "2025-12-15",
    "pagamento": "2026-02-27",
