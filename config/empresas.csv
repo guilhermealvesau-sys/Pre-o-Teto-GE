@@ -1,29 +1,29 @@
-emissor,nome,busca_cvm,cd_cvm
-ABCB,ABC Brasil,^banco abc brasil,
-ALUP,Alupar,^alupar investimento,21490
-BRSR,Banrisul,banco do estado do rio grande do sul,
-BBSE,BB Seguridade,^bb seguridade participacoes,23159
-BBDC,Bradesco,^banco bradesco s,
-BBAS,Banco do Brasil,^banco do brasil s,
-BPAC,BTG Pactual,^banco btg pactual s,
-CXSE,Caixa Seguridade,^caixa seguridade participacoes,23795
-CMIG,Cemig,energetica de minas gerais,
-CSMG,Copasa,saneamento de minas gerais,
-CPLE,Copel,paranaense de energia,
-CPFE,CPFL,^cpfl energia s,18660
-ENGI,Energisa,^energisa s[ ./]*a,
-EGIE,Engie,^engie brasil energia,17329
-EQTL,Equatorial,^equatorial s[ ./]*a,20010
-ISAE,ISA Energia,^isa energia brasil,18376
-ITUB,Itau,^itau unibanco holding,19348
-ITSA,Itausa,^itausa s,7617
-PSSA,Porto Seguro,^porto seguro s,16659
-SBSP,Sabesp,saneamento basico do estado de sao paulo,
-SAPR,Sanepar,saneamento do parana,
-SANB,Santander,^banco santander \(brasil\),
-VIVT,Vivo,^telefonica brasil,17671
-TIMS,TIM,^tim s[ ./]*a,24929
-TAEE,Taesa,^transmissora alianca de energia eletrica,20257
-KLBN,Klabin,^klabin s,12653
-PETR,Petrobras,^petroleo brasileiro,9512
-VALE,Vale,^vale s[ ./]*a,4170
+emissor,nome,busca_cvm,cd_cvm,noticias,chaves
+ABCB,ABC Brasil,^banco abc brasil,,"""ABC Brasil"" OR ABCB4",abc brasil;abcb4
+ALUP,Alupar,^alupar investimento,21490,Alupar OR ALUP11,alupar;alup11
+BRSR,Banrisul,banco do estado do rio grande do sul,,Banrisul OR BRSR6,banrisul;brsr6
+BBSE,BB Seguridade,^bb seguridade participacoes,23159,"""BB Seguridade"" OR BBSE3",bb seguridade;bbse3
+BBDC,Bradesco,^banco bradesco s,,Bradesco OR BBDC4,bradesco;bbdc4;bbdc3
+BBAS,Banco do Brasil,^banco do brasil s,,"""Banco do Brasil"" OR BBAS3",banco do brasil;bbas3;bb
+BPAC,BTG Pactual,^banco btg pactual s,,"""BTG Pactual"" OR BPAC11",btg;bpac11
+CXSE,Caixa Seguridade,^caixa seguridade participacoes,23795,"""Caixa Seguridade"" OR CXSE3",caixa seguridade;cxse3
+CMIG,Cemig,energetica de minas gerais,,Cemig OR CMIG4,cemig;cmig4;cmig3
+CSMG,Copasa,saneamento de minas gerais,,Copasa OR CSMG3,copasa;csmg3
+CPLE,Copel,paranaense de energia,,Copel OR CPLE3,copel;cple3
+CPFE,CPFL,^cpfl energia s,18660,"""CPFL Energia"" OR CPFE3",cpfl;cpfe3
+ENGI,Energisa,^energisa s[ ./]*a,,Energisa OR ENGI11,energisa;engi11
+EGIE,Engie,^engie brasil energia,17329,"""Engie Brasil"" OR EGIE3",engie;egie3
+EQTL,Equatorial,^equatorial s[ ./]*a,20010,"""Equatorial Energia"" OR EQTL3",equatorial;eqtl3
+ISAE,ISA Energia,^isa energia brasil,18376,"""ISA Energia"" OR ISAE4",isa energia;isae4;isa cteep
+ITUB,Itau,^itau unibanco holding,19348,"""Itaú Unibanco"" OR ITUB4",itau;itub4
+ITSA,Itausa,^itausa s,7617,Itaúsa OR ITSA4,itausa;itsa4
+PSSA,Porto Seguro,^porto seguro s,16659,"""Porto Seguro"" seguradora OR PSSA3",porto seguro;pssa3
+SBSP,Sabesp,saneamento basico do estado de sao paulo,,Sabesp OR SBSP3,sabesp;sbsp3
+SAPR,Sanepar,saneamento do parana,,Sanepar OR SAPR11,sanepar;sapr11;sapr4
+SANB,Santander,^banco santander \(brasil\),,"""Santander Brasil"" OR SANB11",santander;sanb11
+VIVT,Vivo,^telefonica brasil,17671,"""Telefônica Brasil"" OR VIVT3",telefonica;vivt3;vivo
+TIMS,TIM,^tim s[ ./]*a,24929,"""TIM Brasil"" OR TIMS3",tim;tims3
+TAEE,Taesa,^transmissora alianca de energia eletrica,20257,Taesa OR TAEE11,taesa;taee11
+KLBN,Klabin,^klabin s,12653,Klabin OR KLBN11,klabin;klbn11;klbn4
+PETR,Petrobras,^petroleo brasileiro,9512,Petrobras OR PETR4,petrobras;petr4;petr3
+VALE,Vale,^vale s[ ./]*a,4170,"VALE3 OR ""mineradora Vale""",vale3;vale

@@ -20,7 +20,7 @@ import coletor.util as util  # noqa: E402
 util.CACHE = TMP / "cache"
 util.CACHE.mkdir()
 
-from coletor import avisos, b3, bcb, cvm, main  # noqa: E402
+from coletor import avisos, b3, bcb, cvm, main, noticias  # noqa: E402
 
 EMP = {  # cnpj, cd_cvm, razão social, ações ON/PN por ano (None = constante)
     "TAEE": ("07.859.971/0001-30", "20257", "TRANSMISSORA ALIANCA DE ENERGIA ELETRICA S.A.", 590e6, 443e6),
@@ -236,6 +236,24 @@ def main_teste():
     assert [a["emissor"] for a in n2] == ["ITUB"], n2
     assert (TMP / ".saida" / "avisos_novos.md").exists()
     print("ok  avisos: documento novo do Itaú dispara aviso")
+    fat = json.loads((main.DADOS / "fatos.json").read_text())["por_emissor"]
+    assert [f["assunto"] for f in fat["PETR"]] == ["Pagamento de dividendos e JCP", "Revisão da Política de Remuneração aos Acionistas"], fat
+    assert fat["ITUB"][0]["categoria"] == "Fato Relevante" and fat["TAEE"][0]["link"] == "http://x/113", fat
+    print("ok  fatos: últimos documentos por empresa, do mais novo para o mais antigo")
+    rss = """<?xml version="1.0"?><rss><channel>
+      <item><title>Petrobras aprova dividendos de R$ 10 bi - Valor</title><link>https://news.google.com/a1</link>
+        <pubDate>Thu, 12 Nov 2026 22:10:00 GMT</pubDate><source url="https://valor.globo.com">Valor</source></item>
+      <item><title>Petrobras aprova dividendos de R$ 10 bi - InfoMoney</title><link>https://news.google.com/a2</link>
+        <pubDate>Thu, 12 Nov 2026 21:00:00 GMT</pubDate><source url="https://infomoney.com.br">InfoMoney</source></item>
+      <item><title>Ibovespa hoje ao vivo: PETR4 sobe - Exame</title><link>https://news.google.com/a3</link>
+        <pubDate>Fri, 13 Nov 2026 13:00:00 GMT</pubDate><source url="https://exame.com">Exame</source></item>
+      <item><title>Dólar fecha em alta - G1</title><link>https://news.google.com/a4</link>
+        <pubDate>Fri, 13 Nov 2026 20:00:00 GMT</pubDate><source url="https://g1.globo.com">G1</source></item>
+    </channel></rss>"""
+    nts = noticias._filtrar(noticias.ler_rss(rss), ["petrobras", "petr4"], 8)
+    assert [(n["titulo"], n["fonte"]) for n in nts] == [("Petrobras aprova dividendos de R$ 10 bi", "Valor")], nts
+    assert nts[0]["data"] == "2026-11-12T22:10:00+00:00", nts
+    print("ok  notícias: título sem o veículo, repetidas, ao vivo e sem citação descartadas")
     print((main.DADOS / "relatorio.md").read_text()[:600])
     shutil.rmtree(TMP)
     print("\nTODOS OS TESTES PASSARAM")

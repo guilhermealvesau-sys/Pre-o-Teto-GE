@@ -9,7 +9,7 @@ from __future__ import annotations
 import io
 import re
 import zipfile
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 import pandas as pd
@@ -55,9 +55,9 @@ def _ler_ano(ano: int) -> pd.DataFrame:
         return pd.read_csv(io.TextIOWrapper(f, encoding="latin-1"), sep=";", dtype=str).fillna("")
 
 
-def varrer(empresas: dict[str, dict], anos: list[int]) -> list[dict]:
-    """`empresas`: {cnpj: {"emissor":..., "nome":...}}. Devolve documentos que casam com os padrões."""
-    achados = []
+def carregar(empresas: dict[str, dict], anos: list[int]) -> list[dict]:
+    """Documentos eventuais (IPE) das companhias acompanhadas. `empresas`: {cnpj: {"emissor":..., "nome":...}}."""
+    regs = []
     for ano in anos:
         df = _ler_ano(ano)
         if df.empty:
@@ -71,25 +71,52 @@ def varrer(empresas: dict[str, dict], anos: list[int]) -> list[dict]:
             continue
         df = df[df[c["cnpj"]].isin(empresas)]
         for r in df.to_dict("records"):
-            partes = [r.get(c[k]) or "" for k in ("tipo", "esp", "ass") if c[k]]
-            txt = norm(" | ".join(partes))
-            cat = norm(r.get(c["cat"]) or "") if c["cat"] else ""
-            regra = next((rot for rx, rot, cats in PADROES
-                          if re.search(rx, txt) and (cats is None or cat in cats)), None)
-            if not regra:
-                continue
-            if cat == "aviso aos acionistas" and not re.search(r"(alteracao|revisao|nova|aprovacao)", txt):
-                continue  # aviso de pagamento que só cita a política vigente
             e = empresas[r[c["cnpj"]]]
-            achados.append({
-                "protocolo": str(r.get(c["prot"]) or f"{r[c['cnpj']]}-{r.get(c['data'])}-{r.get(c['ass'])}")[:120],
+            g = lambda k: (r.get(c[k]) or "") if c[k] else ""  # noqa: E731
+            regs.append({
+                "protocolo": str(g("prot") or f"{r[c['cnpj']]}-{g('data')}-{g('ass')}")[:120],
                 "emissor": e["emissor"], "empresa": e["nome"],
-                "data": (r.get(c["data"]) or r.get(c["ref"]) or "")[:10],
-                "categoria": r.get(c["cat"]) or "", "tipo": r.get(c["tipo"]) or "",
-                "assunto": (r.get(c["ass"]) or r.get(c["esp"]) or "").strip()[:300],
-                "link": r.get(c["link"]) or "", "regra": regra,
+                "data": (g("data") or g("ref"))[:10], "categoria": g("cat"), "tipo": g("tipo"), "especie": g("esp"),
+                "assunto": (g("ass") or g("esp")).strip()[:300], "link": g("link"),
             })
+    return regs
+
+
+def varrer(regs: list[dict]) -> list[dict]:
+    """Documentos que tratam de política de remuneração aos acionistas (ou de payout)."""
+    achados = []
+    for r in regs:
+        txt = norm(" | ".join((r["tipo"], r["especie"], r["assunto"])))
+        cat = norm(r["categoria"])
+        regra = next((rot for rx, rot, cats in PADROES
+                      if re.search(rx, txt) and (cats is None or cat in cats)), None)
+        if not regra:
+            continue
+        if cat == "aviso aos acionistas" and not re.search(r"(alteracao|revisao|nova|aprovacao)", txt):
+            continue  # aviso de pagamento que só cita a política vigente
+        achados.append({k: r[k] for k in ("protocolo", "emissor", "empresa", "data", "categoria", "tipo", "assunto",
+                                          "link")} | {"regra": regra})
     return achados
+
+
+CATS_FATOS = {"fato relevante", "comunicado ao mercado", "aviso aos acionistas"}
+
+
+def recentes(regs: list[dict], por_emissor: int = 10, dias: int = 400) -> dict[str, list[dict]]:
+    """Últimos fatos relevantes, comunicados ao mercado e avisos aos acionistas de cada emissor."""
+    corte = (date.today() - timedelta(days=dias)).isoformat()
+    vistos, out = set(), {}
+    for r in sorted(regs, key=lambda r: r["data"], reverse=True):
+        if norm(r["categoria"]) not in CATS_FATOS or r["data"] < corte:
+            continue
+        chave = (r["emissor"], r["data"], norm(r["assunto"]))
+        if chave in vistos:  # reapresentações do mesmo documento
+            continue
+        vistos.add(chave)
+        lst = out.setdefault(r["emissor"], [])
+        if len(lst) < por_emissor:
+            lst.append({k: r[k] for k in ("data", "categoria", "assunto", "link")})
+    return out
 
 
 def atualizar(empresas: dict[str, dict], dados: Path, saida: Path) -> list[dict]:
@@ -99,7 +126,13 @@ def atualizar(empresas: dict[str, dict], dados: Path, saida: Path) -> list[dict]
     primeira = estado is None
     estado = estado or {"vistos": [], "itens": []}
     vistos = set(estado.get("vistos", []))
-    achados = varrer(empresas, [hoje.year - 1, hoje.year])
+    regs = carregar(empresas, [hoje.year - 1, hoje.year])
+    achados = varrer(regs)
+    fatos = recentes(regs)
+    if regs:
+        salvar_json(dados / "fatos.json", {"atualizado_em": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
+                                           "fonte": "CVM – documentos eventuais (IPE)",
+                                           "ultimo_documento": max(r["data"] for r in regs), "por_emissor": fatos})
     novos = [a for a in achados if a["protocolo"] not in vistos]
     agora = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
     for a in novos:

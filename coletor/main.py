@@ -2,6 +2,9 @@
 
   python -m coletor.main diario    → dados/cotacoes.json (fechamento B3 + PTAX)
   python -m coletor.main completo  → dados/base.json e dados/relatorio.md (CVM + B3 + PTAX), mais o diário
+
+Os dois modos também atualizam dados/avisos.json e dados/fatos.json (CVM, documentos eventuais)
+e dados/noticias.json (manchetes do Google Notícias).
 """
 from __future__ import annotations
 
@@ -10,7 +13,7 @@ from datetime import date, datetime, timezone
 
 import pandas as pd
 
-from . import avisos, b3, bcb, cvm, indicadores
+from . import avisos, b3, bcb, cvm, indicadores, noticias
 from .util import RAIZ, ler_json, log, salvar_json
 
 CFG = RAIZ / "config"
@@ -184,6 +187,20 @@ def verificar_avisos() -> list[dict]:
         return []
 
 
+def atualizar_noticias() -> None:
+    emp = pd.read_csv(CFG / "empresas.csv", dtype=str).fillna("")
+    if "noticias" not in emp.columns:
+        return
+    lst = [{"emissor": r["emissor"], "nome": r["nome"], "noticias": r["noticias"],
+            "chaves": [c for c in r.get("chaves", "").split(";") if c]} for r in emp.to_dict("records")]
+    try:
+        out = noticias.coletar(lst)
+        if out["por_emissor"]:
+            salvar_json(DADOS / "noticias.json", out)
+    except Exception as e:  # noqa: BLE001
+        log.warning("notícias: coleta falhou: %s", e)
+
+
 if __name__ == "__main__":
     modo = sys.argv[1] if len(sys.argv) > 1 else "diario"
     DADOS.mkdir(exist_ok=True)
@@ -191,3 +208,4 @@ if __name__ == "__main__":
         completo()
     diario()
     verificar_avisos()
+    atualizar_noticias()
