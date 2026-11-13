@@ -13,6 +13,7 @@ from __future__ import annotations
 from statistics import mean, median
 
 PN_CLASSES = ("PN", "PNA", "PNB", "PNC")
+TIPOS = ("DIVIDENDO", "JCP", "RENDIMENTO")
 
 
 def _cls(classe: str) -> str:
@@ -51,6 +52,11 @@ def calcular(a: dict, emp, eventos: list[dict], precos: dict[int, dict], ano_atu
     if emp is None:
         out["avisos"].append("empresa sem dados da CVM")
         return out
+    # só dividendos, JCP e rendimentos: devolução de capital (REST CAP DIN) não é provento do lucro
+    excl = [e for e in eventos if e["tipo"] not in TIPOS]
+    if excl:
+        out["avisos"].append(f"{len(excl)} devolução(ões) de capital fora das médias")
+    eventos = [e for e in eventos if e["tipo"] in TIPOS]
 
     tot_now = (emp.acoes_on or 0) + (emp.acoes_pn or 0)
     if tot_now > 0:

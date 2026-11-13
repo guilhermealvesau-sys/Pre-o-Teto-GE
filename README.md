@@ -26,6 +26,7 @@ O consenso de lucro **não** fica aqui: ele é enviado por planilha na própria 
 - **Payout médio:** soma dos proventos declarados referentes aos lucros da janela ÷ soma desses lucros.
 - **DY médio:** média dos DY anuais (proventos com data com no ano ÷ preço médio de fechamento do ano).
 - **Dividendo médio (R$):** média anual dos proventos por papel, ajustada para a quantidade de ações de hoje (corrige bonificações e desdobramentos).
+- **Proventos considerados:** dividendos, JCP e rendimentos. Devoluções de capital ficam de fora.
 - **% em JCP:** parcela dos proventos dos últimos 3 anos completos paga como juros sobre capital próprio.
 - **P/L médio:** mediana dos P/L anuais (preço médio do ano ÷ lucro por ação do ano), ignorando anos com prejuízo.
 
