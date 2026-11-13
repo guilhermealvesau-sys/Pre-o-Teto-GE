@@ -23,6 +23,8 @@ def ptax(ate: date | None = None) -> tuple[float, str] | None:
 
 
 SGS = "https://api.bcb.gov.br/dados/serie/bcdata.sgs.{serie}/dados/ultimos/1?formato=json"
+# a série da meta Selic vem preenchida até a próxima reunião do Copom: lê só até hoje, para a data ser a de hoje
+SGS_ATE = "https://api.bcb.gov.br/dados/serie/bcdata.sgs.{serie}/dados?formato=json&dataInicial={ini}&dataFinal={fim}"
 SERIES = {"selic": (432, "Meta Selic definida pelo Copom (% a.a.)"), "ipca12m": (13522, "IPCA acumulado em 12 meses (%)")}
 
 
@@ -34,8 +36,11 @@ def _data_iso(d: str) -> str:
 def macro() -> dict:
     """Último valor da Selic meta e do IPCA 12 meses: {nome: {valor (%), data ISO, descricao, serie}}."""
     out = {}
+    hoje = date.today()
     for nome, (serie, desc) in SERIES.items():
-        js = get_json(SGS.format(serie=serie))
+        url = (SGS_ATE.format(serie=serie, ini=f"{hoje - timedelta(days=15):%d/%m/%Y}", fim=f"{hoje:%d/%m/%Y}")
+               if nome == "selic" else SGS.format(serie=serie))
+        js = get_json(url)
         if isinstance(js, list) and js:
             ult = js[-1]
             out[nome] = {"valor": float(str(ult["valor"]).replace(",", ".")), "data": _data_iso(ult["data"]),

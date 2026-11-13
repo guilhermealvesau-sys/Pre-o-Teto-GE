@@ -81,7 +81,8 @@ def montar(base: dict, of: dict, nts: dict) -> dict:
         "avisos": [{k: a.get(k) for k in ("emissor", "empresa", "data", "categoria", "assunto", "link", "detectado_em", "novo")}
                    for a in ((of.get("avisos") or {}).get("itens") or [])[:20]],
         "noticias": por,
-        "resumos": {em: {"texto": r.get("texto"), "gerado_em": r.get("gerado_em")}
+        "macro": {k: v for k, v in (of.get("macro") or {}).items() if k in ("selic", "ipca12m")},
+        "resumos": {em: {c: r.get(c) for c in ("texto", "gerado_em", "fontes", "referencia", "formato") if r.get(c) is not None}
                     for em, r in (base.get("resumos") or {}).items() if r.get("texto")},
     }
 

@@ -34,8 +34,8 @@ def montar(d: Path) -> dict:
     if not ativos:
         raise SystemExit("nenhum documento em ativos/: a leitura da página principal falhou")
     cfg, st = ler_pasta(d / "config"), ler_pasta(d / "status")
-    resumos = {k: {"texto": v.get("texto"), "gerado_em": v.get("gerado_em")} for k, v in ler_pasta(d / "resumos").items()
-               if v.get("texto")}
+    resumos = {k: {c: v.get(c) for c in ("texto", "gerado_em", "fontes", "referencia", "formato") if v.get(c) is not None}
+               for k, v in ler_pasta(d / "resumos").items() if v.get("texto")}
     return {"espelhado_em": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
             "ativos": ativos, "cotacoes": ler_pasta(d / "cotacoes"), "params": cfg.get("params"),
             "status": st.get("geral"), "resumos": resumos}
