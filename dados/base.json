@@ -1,0 +1,677 @@
+{
+ "gerado_em": "2026-11-13T17:42:53+00:00",
+ "janela_anos": 6,
+ "ativos": {
+  "ABCB4": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "ALUP11": {
+   "fator": 3,
+   "janela": "2020-2025",
+   "avisos": [],
+   "qtd_mi": 988.8806,
+   "acoes_ref": "2026-09-30",
+   "lucro12m_mi": 1030.741,
+   "lucro12m_ate": "2026-09",
+   "vpa": 29.3317,
+   "vpa_ref": "2026-09-30",
+   "div_medio6": 0.105,
+   "dy_medio": 0.0035,
+   "pct_jcp": 0.0,
+   "payout": 0.0364,
+   "payout_anos": "2020-2025",
+   "pl_medio": 8.726,
+   "detalhe": {
+    "proventos_por_ano": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.63
+    },
+    "lucro_anual_mi": {
+     "2020": 942.088,
+     "2021": 1115.401,
+     "2022": 918.466,
+     "2023": 694.063,
+     "2024": 1086.09,
+     "2025": 1215.559
+    },
+    "preco_medio_ano": {
+     "2020": 24.8954,
+     "2021": 25.4235,
+     "2022": 26.621,
+     "2023": 28.5497,
+     "2024": 29.8248,
+     "2025": 30.231
+    }
+   }
+  },
+  "BRSR6": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "BBSE3": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "sem proventos na B3 para a janela"
+   ],
+   "qtd_mi": 1941.2485,
+   "acoes_ref": "2026-09-30",
+   "lucro12m_mi": 9188.294,
+   "lucro12m_ate": "2026-09",
+   "vpa": 6.9433,
+   "vpa_ref": "2026-09-30",
+   "payout": 0.1276,
+   "payout_anos": "2020-2025",
+   "pl_medio": 9.727,
+   "detalhe": {
+    "proventos_por_ano": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0
+    },
+    "lucro_anual_mi": {
+     "2020": 3850.771,
+     "2021": 3933.217,
+     "2022": 6196.415,
+     "2023": 7947.203,
+     "2024": 8703.353,
+     "2025": 9017.329
+    },
+    "preco_medio_ano": {
+     "2020": 28.1185,
+     "2021": 23.1287,
+     "2022": 26.6663,
+     "2023": 32.4885,
+     "2024": 34.1305,
+     "2025": 36.0306
+    }
+   }
+  },
+  "BBDC3": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "BBDC4": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "BBAS3": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "BPAC11": {
+   "fator": 3,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "CXSE3": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "sem proventos na B3 para a janela"
+   ],
+   "qtd_mi": 3.0,
+   "acoes_ref": "2026-06-30",
+   "lucro12m_mi": 4291.56,
+   "lucro12m_ate": "2026-06",
+   "vpa": 4598.1963,
+   "vpa_ref": "2026-06-30",
+   "payout": 0.0003,
+   "payout_anos": "2020-2025",
+   "detalhe": {
+    "proventos_por_ano": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0
+    },
+    "lucro_anual_mi": {
+     "2020": 1769.413,
+     "2021": 1896.152,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 4291.56
+    },
+    "preco_medio_ano": {
+     "2020": null,
+     "2021": 10.1318,
+     "2022": 8.116,
+     "2023": 10.1521,
+     "2024": 14.8171,
+     "2025": 14.899
+    }
+   }
+  },
+  "CMIG4": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "CMIG3": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "CSMG3": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "CPLE3": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "CPFE3": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "ENGI4": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "ENGI3": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "ENGI11": {
+   "fator": 5,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "EGIE3": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "EQTL3": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "ISAE4": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "ISAE3": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "ITUB3": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [],
+   "qtd_mi": 11.022,
+   "acoes_ref": "2026-09-30",
+   "lucro12m_mi": 47749.0,
+   "lucro12m_ate": "2026-09",
+   "vpa": 20801.076,
+   "vpa_ref": "2026-09-30",
+   "div_medio6": 0.379,
+   "dy_medio": 0.0118,
+   "pct_jcp": 0.1784,
+   "payout": 0.0001,
+   "payout_anos": "2020-2025",
+   "pl_medio": 0.009,
+   "detalhe": {
+    "proventos_por_ano": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 2.2738
+    },
+    "lucro_anual_mi": {
+     "2020": 18896.0,
+     "2021": 26760.0,
+     "2022": 29207.0,
+     "2023": 33105.0,
+     "2024": 41085.0,
+     "2025": 44857.0
+    },
+    "preco_medio_ano": {
+     "2020": 24.8914,
+     "2021": 24.9454,
+     "2022": 21.9832,
+     "2023": 23.373,
+     "2024": 29.259,
+     "2025": 32.2276
+    }
+   }
+  },
+  "ITUB4": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [],
+   "qtd_mi": 11.022,
+   "acoes_ref": "2026-09-30",
+   "lucro12m_mi": 47749.0,
+   "lucro12m_ate": "2026-09",
+   "vpa": 20801.076,
+   "vpa_ref": "2026-09-30",
+   "div_medio6": 0.3793,
+   "dy_medio": 0.0105,
+   "pct_jcp": 0.1784,
+   "payout": 0.0001,
+   "payout_anos": "2020-2025",
+   "pl_medio": 0.01,
+   "detalhe": {
+    "proventos_por_ano": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 2.2738
+    },
+    "lucro_anual_mi": {
+     "2020": 18896.0,
+     "2021": 26760.0,
+     "2022": 29207.0,
+     "2023": 33105.0,
+     "2024": 41085.0,
+     "2025": 44857.0
+    },
+    "preco_medio_ano": {
+     "2020": 26.9586,
+     "2021": 27.6774,
+     "2022": 25.6535,
+     "2023": 27.3268,
+     "2024": 33.8507,
+     "2025": 36.1918
+    }
+   }
+  },
+  "ITSA4": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "ITSA3": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "PSSA3": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [],
+   "qtd_mi": 634.2183,
+   "acoes_ref": "2026-09-30",
+   "lucro12m_mi": 3691.122,
+   "lucro12m_ate": "2026-09",
+   "vpa": 26.3481,
+   "vpa_ref": "2026-09-30",
+   "div_medio6": 0.0001,
+   "dy_medio": 0.0019,
+   "pct_jcp": 1.0,
+   "payout": 0.0001,
+   "payout_anos": "2020-2025",
+   "pl_medio": 0.011,
+   "detalhe": {
+    "proventos_por_ano": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.5376
+    },
+    "lucro_anual_mi": {
+     "2020": 1688.191,
+     "2021": 1544.249,
+     "2022": 1139.971,
+     "2023": 2266.149,
+     "2024": 2644.845,
+     "2025": 3380.884
+    },
+    "preco_medio_ano": {
+     "2020": 52.5538,
+     "2021": 45.1425,
+     "2022": 20.7188,
+     "2023": 26.1254,
+     "2024": 32.2742,
+     "2025": 46.542
+    }
+   }
+  },
+  "SBSP3": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "SAPR4": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "SAPR3": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "SAPR11": {
+   "fator": 5,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "SANB3": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "SANB4": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "SANB11": {
+   "fator": 2,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "VIVT3": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [],
+   "qtd_mi": 3195.6064,
+   "acoes_ref": "2026-06-30",
+   "lucro12m_mi": 6598.88,
+   "lucro12m_ate": "2026-06",
+   "vpa": 20.5373,
+   "vpa_ref": "2026-06-30",
+   "div_medio6": 0.036,
+   "dy_medio": 0.001,
+   "pct_jcp": 1.0,
+   "payout": 0.0217,
+   "payout_anos": "2020-2025",
+   "pl_medio": 11.154,
+   "detalhe": {
+    "proventos_por_ano": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.2158
+    },
+    "lucro_anual_mi": {
+     "2020": 4770.527,
+     "2021": 6239.364,
+     "2022": 4085.013,
+     "2023": 5029.389,
+     "2024": 5547.948,
+     "2025": 6167.906
+    },
+    "preco_medio_ano": {
+     "2020": 48.4714,
+     "2021": 44.9065,
+     "2022": 45.8899,
+     "2023": 43.0845,
+     "2024": 50.5864,
+     "2025": 37.0904
+    }
+   }
+  },
+  "TIMS3": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "TAEE3": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "TAEE4": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "TAEE11": {
+   "fator": 3,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "KLBN4": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [],
+   "qtd_mi": 6116.6768,
+   "acoes_ref": "2026-09-30",
+   "lucro12m_mi": 0.0,
+   "lucro12m_ate": "2026-09",
+   "vpa": 1.6157,
+   "vpa_ref": "2026-09-30",
+   "div_medio6": 0.0076,
+   "dy_medio": 0.002,
+   "pct_jcp": 0.0,
+   "payout": 0.0287,
+   "payout_anos": "2020-2025",
+   "pl_medio": 9.351,
+   "detalhe": {
+    "proventos_por_ano": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0456
+    },
+    "lucro_anual_mi": {
+     "2020": -2487.87,
+     "2021": 3019.87,
+     "2022": 4691.729,
+     "2023": 2694.538,
+     "2024": 1831.011,
+     "2025": 0.0
+    },
+    "preco_medio_ano": {
+     "2020": 4.2645,
+     "2021": 5.0847,
+     "2022": 4.2289,
+     "2023": 4.2397,
+     "2024": 4.372,
+     "2025": 3.7866
+    }
+   }
+  },
+  "KLBN11": {
+   "fator": 5,
+   "janela": "2020-2025",
+   "avisos": [],
+   "qtd_mi": 6116.6768,
+   "acoes_ref": "2026-09-30",
+   "lucro12m_mi": 0.0,
+   "lucro12m_ate": "2026-09",
+   "vpa": 8.0786,
+   "vpa_ref": "2026-09-30",
+   "div_medio6": 0.0381,
+   "dy_medio": 0.002,
+   "pct_jcp": 0.0,
+   "payout": 0.0287,
+   "payout_anos": "2020-2025",
+   "pl_medio": 9.461,
+   "detalhe": {
+    "proventos_por_ano": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.228
+    },
+    "lucro_anual_mi": {
+     "2020": -2487.87,
+     "2021": 3019.87,
+     "2022": 4691.729,
+     "2023": 2694.538,
+     "2024": 1831.011,
+     "2025": 0.0
+    },
+    "preco_medio_ano": {
+     "2020": 21.4839,
+     "2021": 26.3087,
+     "2022": 21.5784,
+     "2023": 21.188,
+     "2024": 21.8937,
+     "2025": 19.0259
+    }
+   }
+  },
+  "KLBN3": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [],
+   "qtd_mi": 6116.6768,
+   "acoes_ref": "2026-09-30",
+   "lucro12m_mi": 0.0,
+   "lucro12m_ate": "2026-09",
+   "vpa": 1.6157,
+   "vpa_ref": "2026-09-30",
+   "div_medio6": 0.0076,
+   "dy_medio": 0.0019,
+   "pct_jcp": 0.0,
+   "payout": 0.0287,
+   "payout_anos": "2020-2025",
+   "pl_medio": 9.916,
+   "detalhe": {
+    "proventos_por_ano": {
+     "2020": 0.0,
+     "2021": 0.0,
+     "2022": 0.0,
+     "2023": 0.0,
+     "2024": 0.0,
+     "2025": 0.0456
+    },
+    "lucro_anual_mi": {
+     "2020": -2487.87,
+     "2021": 3019.87,
+     "2022": 4691.729,
+     "2023": 2694.538,
+     "2024": 1831.011,
+     "2025": 0.0
+    },
+    "preco_medio_ano": {
+     "2020": 4.4236,
+     "2021": 5.9615,
+     "2022": 4.6903,
+     "2023": 4.2606,
+     "2024": 4.3969,
+     "2025": 3.9032
+    }
+   }
+  },
+  "PETR4": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "PETR3": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  },
+  "VALE3": {
+   "fator": 1,
+   "janela": "2020-2025",
+   "avisos": [
+    "empresa sem dados da CVM"
+   ]
+  }
+ },
+ "fontes": {
+  "contabeis": "CVM – Dados Abertos (ITR e DFP)",
+  "proventos": "B3 – proventos em dinheiro",
+  "precos": "B3 – COTAHIST",
+  "cambio": "Banco Central – PTAX"
+ }
+}

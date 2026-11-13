@@ -1,0 +1,2443 @@
+{
+ "ABCB": [
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 1.532,
+   "data_com": "2025-12-29",
+   "pagamento": "2026-02-11",
+   "ano_ref": 2025,
+   "referente": "2º Semestre/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 1.168,
+   "data_com": "2026-06-29",
+   "pagamento": "2026-08-12",
+   "ano_ref": 2026,
+   "referente": "1º Semestre/2026"
+  }
+ ],
+ "ALUP": [
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.1,
+   "data_com": "2025-11-13",
+   "pagamento": "2026-01-06",
+   "ano_ref": 2025,
+   "referente": "3º Trimestre/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.1,
+   "data_com": "2025-11-13",
+   "pagamento": "2026-01-06",
+   "ano_ref": 2025,
+   "referente": "3º Trimestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.11,
+   "data_com": "2025-12-26",
+   "pagamento": "2026-02-12",
+   "ano_ref": 2025,
+   "referente": "3º Trimestre/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.11,
+   "data_com": "2025-12-26",
+   "pagamento": "2026-02-12",
+   "ano_ref": 2025,
+   "referente": "3º Trimestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.01,
+   "data_com": "2026-04-16",
+   "pagamento": "2026-06-10",
+   "ano_ref": 2025,
+   "referente": "4º Trimestre/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.01,
+   "data_com": "2026-04-16",
+   "pagamento": "2026-06-10",
+   "ano_ref": 2025,
+   "referente": "4º Trimestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.07,
+   "data_com": "2026-05-14",
+   "pagamento": "2026-07-06",
+   "ano_ref": 2026,
+   "referente": "1º Trimestre/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.07,
+   "data_com": "2026-05-14",
+   "pagamento": "2026-07-06",
+   "ano_ref": 2026,
+   "referente": "1º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.07,
+   "data_com": "2026-08-13",
+   "pagamento": "2026-10-02",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.07,
+   "data_com": "2026-08-13",
+   "pagamento": "2026-10-02",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.07,
+   "data_com": "2026-11-12",
+   "pagamento": "2027-01-04",
+   "ano_ref": 2026,
+   "referente": "3º Trimestre/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.07,
+   "data_com": "2026-11-12",
+   "pagamento": "2027-01-04",
+   "ano_ref": 2026,
+   "referente": "3º Trimestre/2026"
+  }
+ ],
+ "BBAS": [
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.07192713139,
+   "data_com": "2025-12-01",
+   "pagamento": "2025-12-11",
+   "ano_ref": 2025,
+   "referente": "3º Trimestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.04583263233,
+   "data_com": "2025-12-02",
+   "pagamento": "2025-12-12",
+   "ano_ref": 2025,
+   "referente": "4º Trimestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.21630429188,
+   "data_com": "2026-02-23",
+   "pagamento": "2026-03-05",
+   "ano_ref": 2025,
+   "referente": "4º Trimestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "RENDIMENTO",
+   "valor": 0.00518759764,
+   "data_com": "2026-02-23",
+   "pagamento": "2026-03-05",
+   "ano_ref": 2025,
+   "referente": "4º Trimestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.07014190105,
+   "data_com": "2026-03-02",
+   "pagamento": "2026-03-11",
+   "ano_ref": 2026,
+   "referente": "1º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.08157785203,
+   "data_com": "2026-06-01",
+   "pagamento": "2026-06-11",
+   "ano_ref": 2026,
+   "referente": "1º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.05968401166,
+   "data_com": "2026-06-01",
+   "pagamento": "2026-06-11",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.10245643978,
+   "data_com": "2026-09-01",
+   "pagamento": "2026-09-11",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.03450628312,
+   "data_com": "2026-09-01",
+   "pagamento": "2026-09-11",
+   "ano_ref": 2026,
+   "referente": "3º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "RENDIMENTO",
+   "valor": 0.00281361809,
+   "data_com": "2026-09-01",
+   "pagamento": "2026-09-11",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  }
+ ],
+ "BBDC": [
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.017249826,
+   "data_com": "2025-12-01",
+   "pagamento": "2026-01-02",
+   "ano_ref": 2025,
+   "referente": "Mensal/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.018974809,
+   "data_com": "2025-12-01",
+   "pagamento": "2026-01-02",
+   "ano_ref": 2025,
+   "referente": "Mensal/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.351190748,
+   "data_com": "2025-12-29",
+   "pagamento": "2026-07-31",
+   "ano_ref": 2025,
+   "referente": "Complementar/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.386309823,
+   "data_com": "2025-12-29",
+   "pagamento": "2026-07-31",
+   "ano_ref": 2025,
+   "referente": "Complementar/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.017249826,
+   "data_com": "2026-01-02",
+   "pagamento": "2026-02-02",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.018974809,
+   "data_com": "2026-01-02",
+   "pagamento": "2026-02-02",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.017249826,
+   "data_com": "2026-02-02",
+   "pagamento": "2026-03-02",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.018974809,
+   "data_com": "2026-02-02",
+   "pagamento": "2026-03-02",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.017249826,
+   "data_com": "2026-03-02",
+   "pagamento": "2026-04-01",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.018974809,
+   "data_com": "2026-03-02",
+   "pagamento": "2026-04-01",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.017249826,
+   "data_com": "2026-04-01",
+   "pagamento": "2026-05-04",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.018974809,
+   "data_com": "2026-04-01",
+   "pagamento": "2026-05-04",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.270307744,
+   "data_com": "2026-04-06",
+   "pagamento": "2026-09-15",
+   "ano_ref": 2026,
+   "referente": "1º Trimestre/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.297338519,
+   "data_com": "2026-04-06",
+   "pagamento": "2026-09-15",
+   "ano_ref": 2026,
+   "referente": "1º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.017249826,
+   "data_com": "2026-05-04",
+   "pagamento": "2026-06-01",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.018974809,
+   "data_com": "2026-05-04",
+   "pagamento": "2026-06-01",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.017249826,
+   "data_com": "2026-06-01",
+   "pagamento": "2026-07-01",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.018974809,
+   "data_com": "2026-06-01",
+   "pagamento": "2026-07-01",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.017249826,
+   "data_com": "2026-07-01",
+   "pagamento": "2026-08-03",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.018974809,
+   "data_com": "2026-07-01",
+   "pagamento": "2026-08-03",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.315359035,
+   "data_com": "2026-07-03",
+   "pagamento": "2026-09-15",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.346894939,
+   "data_com": "2026-07-03",
+   "pagamento": "2026-09-15",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.017249826,
+   "data_com": "2026-08-03",
+   "pagamento": "2026-09-01",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.018974809,
+   "data_com": "2026-08-03",
+   "pagamento": "2026-09-01",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.017249826,
+   "data_com": "2026-09-01",
+   "pagamento": "2026-10-01",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.018974809,
+   "data_com": "2026-09-01",
+   "pagamento": "2026-10-01",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.017249826,
+   "data_com": "2026-10-01",
+   "pagamento": "2026-11-03",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.018974809,
+   "data_com": "2026-10-01",
+   "pagamento": "2026-11-03",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.323858718,
+   "data_com": "2026-10-13",
+   "pagamento": "2027-04-30",
+   "ano_ref": 2026,
+   "referente": "3º Trimestre/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.35624459,
+   "data_com": "2026-10-13",
+   "pagamento": "2027-04-30",
+   "ano_ref": 2026,
+   "referente": "3º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.017249826,
+   "data_com": "2026-11-03",
+   "pagamento": "2026-12-01",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.018974809,
+   "data_com": "2026-11-03",
+   "pagamento": "2026-12-01",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  }
+ ],
+ "BBSE": [
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 2.54996501627,
+   "data_com": "2026-02-12",
+   "pagamento": "2026-03-02",
+   "ano_ref": 2025,
+   "referente": "2º Semestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "RENDIMENTO",
+   "valor": 0.05684162552,
+   "data_com": "2026-02-12",
+   "pagamento": "2026-03-02",
+   "ano_ref": 2025,
+   "referente": "2º Semestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 1.98328466981,
+   "data_com": "2026-08-06",
+   "pagamento": "2026-09-03",
+   "ano_ref": 2026,
+   "referente": "1º Semestre/2026"
+  }
+ ],
+ "BPAC": [
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.165007674,
+   "data_com": "2025-12-18",
+   "pagamento": "2026-02-13",
+   "ano_ref": 2025,
+   "referente": "2º Semestre/2025"
+  },
+  {
+   "classe": "PNA",
+   "tipo": "JCP",
+   "valor": 0.165007674,
+   "data_com": "2025-12-18",
+   "pagamento": "2026-02-13",
+   "ano_ref": 2025,
+   "referente": "2º Semestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.049458534,
+   "data_com": "2025-12-29",
+   "pagamento": "2026-02-13",
+   "ano_ref": 2025,
+   "referente": "2º Semestre/2025"
+  },
+  {
+   "classe": "PNA",
+   "tipo": "JCP",
+   "valor": 0.049458534,
+   "data_com": "2025-12-29",
+   "pagamento": "2026-02-13",
+   "ano_ref": 2025,
+   "referente": "2º Semestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.258896221,
+   "data_com": "2026-08-10",
+   "pagamento": "2026-08-14",
+   "ano_ref": 2026,
+   "referente": "1º Semestre/2026"
+  },
+  {
+   "classe": "PNA",
+   "tipo": "JCP",
+   "valor": 0.258896221,
+   "data_com": "2026-08-10",
+   "pagamento": "2026-08-14",
+   "ano_ref": 2026,
+   "referente": "1º Semestre/2026"
+  }
+ ],
+ "BRSR": [
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.36677105,
+   "data_com": "2025-12-12",
+   "pagamento": "2025-12-22",
+   "ano_ref": 2025,
+   "referente": "4º Trimestre/2025"
+  },
+  {
+   "classe": "PNA",
+   "tipo": "JCP",
+   "valor": 0.36677105,
+   "data_com": "2025-12-12",
+   "pagamento": "2025-12-22",
+   "ano_ref": 2025,
+   "referente": "4º Trimestre/2025"
+  },
+  {
+   "classe": "PNB",
+   "tipo": "JCP",
+   "valor": 0.36677105,
+   "data_com": "2025-12-12",
+   "pagamento": "2025-12-22",
+   "ano_ref": 2025,
+   "referente": "4º Trimestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.44004976,
+   "data_com": "2025-12-26",
+   "pagamento": "2026-01-09",
+   "ano_ref": 2025,
+   "referente": "Complementar/2025"
+  },
+  {
+   "classe": "PNA",
+   "tipo": "JCP",
+   "valor": 0.46253751,
+   "data_com": "2025-12-26",
+   "pagamento": "2026-01-09",
+   "ano_ref": 2025,
+   "referente": "Complementar/2025"
+  },
+  {
+   "classe": "PNB",
+   "tipo": "JCP",
+   "valor": 0.44004976,
+   "data_com": "2025-12-26",
+   "pagamento": "2026-01-09",
+   "ano_ref": 2025,
+   "referente": "Complementar/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.22006263,
+   "data_com": "2026-03-13",
+   "pagamento": "2026-03-26",
+   "ano_ref": 2026,
+   "referente": "1º Trimestre/2026"
+  },
+  {
+   "classe": "PNA",
+   "tipo": "JCP",
+   "valor": 0.22006263,
+   "data_com": "2026-03-13",
+   "pagamento": "2026-03-26",
+   "ano_ref": 2026,
+   "referente": "1º Trimestre/2026"
+  },
+  {
+   "classe": "PNB",
+   "tipo": "JCP",
+   "valor": 0.22006263,
+   "data_com": "2026-03-13",
+   "pagamento": "2026-03-26",
+   "ano_ref": 2026,
+   "referente": "1º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.07085547,
+   "data_com": "2026-05-04",
+   "pagamento": "2026-05-18",
+   "ano_ref": 2025,
+   "referente": "Complementar/2025"
+  },
+  {
+   "classe": "PNA",
+   "tipo": "DIVIDENDO",
+   "valor": 0.08527644,
+   "data_com": "2026-05-04",
+   "pagamento": "2026-05-18",
+   "ano_ref": 2025,
+   "referente": "Complementar/2025"
+  },
+  {
+   "classe": "PNB",
+   "tipo": "DIVIDENDO",
+   "valor": 0.07085547,
+   "data_com": "2026-05-04",
+   "pagamento": "2026-05-18",
+   "ano_ref": 2025,
+   "referente": "Complementar/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.22006263,
+   "data_com": "2026-06-12",
+   "pagamento": "2026-06-26",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  },
+  {
+   "classe": "PNA",
+   "tipo": "JCP",
+   "valor": 0.22006263,
+   "data_com": "2026-06-12",
+   "pagamento": "2026-06-26",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  },
+  {
+   "classe": "PNB",
+   "tipo": "JCP",
+   "valor": 0.22006263,
+   "data_com": "2026-06-12",
+   "pagamento": "2026-06-26",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.22006263,
+   "data_com": "2026-09-11",
+   "pagamento": "2026-09-28",
+   "ano_ref": 2026,
+   "referente": "3º Trimestre/2026"
+  },
+  {
+   "classe": "PNA",
+   "tipo": "JCP",
+   "valor": 0.22006263,
+   "data_com": "2026-09-11",
+   "pagamento": "2026-09-28",
+   "ano_ref": 2026,
+   "referente": "3º Trimestre/2026"
+  },
+  {
+   "classe": "PNB",
+   "tipo": "JCP",
+   "valor": 0.22006263,
+   "data_com": "2026-09-11",
+   "pagamento": "2026-09-28",
+   "ano_ref": 2026,
+   "referente": "3º Trimestre/2026"
+  }
+ ],
+ "CMIG": [
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.1458748316,
+   "data_com": "2025-12-22",
+   "pagamento": "2025-12-30",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.1458748316,
+   "data_com": "2025-12-22",
+   "pagamento": "2025-12-30",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.11840131614,
+   "data_com": "2025-12-23",
+   "pagamento": "2026-06-30",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.11840131614,
+   "data_com": "2025-12-23",
+   "pagamento": "2026-06-30",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.11500002917,
+   "data_com": "2026-03-24",
+   "pagamento": "2027-06-30",
+   "ano_ref": 2026,
+   "referente": "Anual/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.11500002917,
+   "data_com": "2026-03-24",
+   "pagamento": "2027-06-30",
+   "ano_ref": 2026,
+   "referente": "Anual/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.11817794282,
+   "data_com": "2026-04-30",
+   "pagamento": "2026-06-30",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.11817794282,
+   "data_com": "2026-04-30",
+   "pagamento": "2026-06-30",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.11020257159,
+   "data_com": "2026-06-23",
+   "pagamento": "2027-06-30",
+   "ano_ref": 2026,
+   "referente": "Anual/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.11020257159,
+   "data_com": "2026-06-23",
+   "pagamento": "2027-06-30",
+   "ano_ref": 2026,
+   "referente": "Anual/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.03495670057,
+   "data_com": "2026-09-22",
+   "pagamento": "2027-06-30",
+   "ano_ref": 2026,
+   "referente": "Anual/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.03495670057,
+   "data_com": "2026-09-22",
+   "pagamento": "2027-06-30",
+   "ano_ref": 2026,
+   "referente": "Anual/2026"
+  }
+ ],
+ "CPFE": [
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 3.731536204,
+   "data_com": "2026-04-29",
+   "pagamento": "2026-12-31",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  }
+ ],
+ "CPLE": [
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.45453469202,
+   "data_com": "2025-12-30",
+   "pagamento": "2026-06-30",
+   "ano_ref": 2025,
+   "referente": "1º Semestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.37036160091,
+   "data_com": "2025-12-30",
+   "pagamento": "2026-01-19",
+   "ano_ref": 2025,
+   "referente": "2º Trimestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.23770345099,
+   "data_com": "2026-04-29",
+   "pagamento": "2026-09-30",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  }
+ ],
+ "CSMG": [
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.3699770035,
+   "data_com": "2025-12-16",
+   "pagamento": "2025-12-26",
+   "ano_ref": 2025,
+   "referente": "Complementar/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.1574749869,
+   "data_com": "2025-12-16",
+   "pagamento": "2025-12-26",
+   "ano_ref": 2020,
+   "referente": "Complementar/2020"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.3640572198,
+   "data_com": "2025-12-22",
+   "pagamento": "2026-06-30",
+   "ano_ref": 2025,
+   "referente": "4º Trimestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.0018149288,
+   "data_com": "2026-03-06",
+   "pagamento": "2026-06-30",
+   "ano_ref": 2025,
+   "referente": "4º Trimestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.4683859622,
+   "data_com": "2026-03-23",
+   "pagamento": "2026-05-11",
+   "ano_ref": 2026,
+   "referente": "1º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.3758735617,
+   "data_com": "2026-06-23",
+   "pagamento": "2026-08-17",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.2556463313,
+   "data_com": "2026-09-21",
+   "pagamento": "2026-11-09",
+   "ano_ref": 2026,
+   "referente": "3º Trimestre/2026"
+  }
+ ],
+ "CXSE": [
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.35,
+   "data_com": "2026-01-02",
+   "pagamento": "2026-01-16",
+   "ano_ref": 2025,
+   "referente": "3º Trimestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "RENDIMENTO",
+   "valor": 0.002128404,
+   "data_com": "2026-01-02",
+   "pagamento": "2026-01-16",
+   "ano_ref": 2025,
+   "referente": "3º Trimestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.33,
+   "data_com": "2026-04-30",
+   "pagamento": "2026-05-15",
+   "ano_ref": 2025,
+   "referente": "Complementar/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.35,
+   "data_com": "2026-08-03",
+   "pagamento": "2026-08-17",
+   "ano_ref": 2026,
+   "referente": "1º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.35,
+   "data_com": "2026-11-03",
+   "pagamento": "2026-11-17",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  }
+ ],
+ "EGIE": [
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.08754276626,
+   "data_com": "2025-12-18",
+   "pagamento": "2026-05-20",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.48828975686,
+   "data_com": "2026-05-04",
+   "pagamento": "2026-05-20",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.54420747574,
+   "data_com": "2026-08-20",
+   "pagamento": "9999-12-31",
+   "ano_ref": 2026,
+   "referente": "1º Semestre/2026"
+  }
+ ],
+ "ENGI": [
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.14023106424,
+   "data_com": "2025-11-26",
+   "pagamento": "2025-12-19",
+   "ano_ref": 2025,
+   "referente": "3º Trimestre/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.14023106424,
+   "data_com": "2025-11-26",
+   "pagamento": "2025-12-19",
+   "ano_ref": 2025,
+   "referente": "3º Trimestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.1,
+   "data_com": "2026-08-11",
+   "pagamento": "2026-08-24",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.1,
+   "data_com": "2026-08-11",
+   "pagamento": "2026-08-24",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  }
+ ],
+ "EQTL": [
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.1332926295,
+   "data_com": "2025-12-29",
+   "pagamento": "2026-12-30",
+   "ano_ref": 2025,
+   "referente": "Complementar/2025"
+  }
+ ],
+ "ISAE": [
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.224999,
+   "data_com": "2025-11-24",
+   "pagamento": "2025-12-12",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.224999,
+   "data_com": "2025-11-24",
+   "pagamento": "2025-12-12",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.224999,
+   "data_com": "2025-12-17",
+   "pagamento": "2025-12-30",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.224999,
+   "data_com": "2025-12-17",
+   "pagamento": "2025-12-30",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.250553,
+   "data_com": "2025-12-29",
+   "pagamento": "2026-01-28",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.250553,
+   "data_com": "2025-12-29",
+   "pagamento": "2026-01-28",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.250553,
+   "data_com": "2026-01-29",
+   "pagamento": "2026-02-25",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.250553,
+   "data_com": "2026-01-29",
+   "pagamento": "2026-02-25",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.250553,
+   "data_com": "2026-02-26",
+   "pagamento": "2026-03-31",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.250553,
+   "data_com": "2026-02-26",
+   "pagamento": "2026-03-31",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.141311,
+   "data_com": "2026-03-12",
+   "pagamento": "2026-04-29",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.141311,
+   "data_com": "2026-03-12",
+   "pagamento": "2026-04-29",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.141311,
+   "data_com": "2026-04-02",
+   "pagamento": "2026-04-29",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.141311,
+   "data_com": "2026-04-02",
+   "pagamento": "2026-04-29",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.141311,
+   "data_com": "2026-04-17",
+   "pagamento": "2026-04-29",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.141311,
+   "data_com": "2026-04-17",
+   "pagamento": "2026-04-29",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.188959,
+   "data_com": "2026-10-08",
+   "pagamento": "2026-12-07",
+   "ano_ref": 2026,
+   "referente": "1º Semestre/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.188959,
+   "data_com": "2026-10-08",
+   "pagamento": "2026-12-07",
+   "ano_ref": 2026,
+   "referente": "1º Semestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.188959,
+   "data_com": "2026-11-09",
+   "pagamento": "2026-12-07",
+   "ano_ref": 2026,
+   "referente": "1º Semestre/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.188959,
+   "data_com": "2026-11-09",
+   "pagamento": "2026-12-07",
+   "ano_ref": 2026,
+   "referente": "1º Semestre/2026"
+  }
+ ],
+ "ITSA": [
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.0235295,
+   "data_com": "2025-11-28",
+   "pagamento": "2026-01-02",
+   "ano_ref": 2025,
+   "referente": "4º Trimestre/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.0235295,
+   "data_com": "2025-11-28",
+   "pagamento": "2026-01-02",
+   "ano_ref": 2025,
+   "referente": "4º Trimestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.775364,
+   "data_com": "2025-12-09",
+   "pagamento": "2025-12-19",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.0182,
+   "data_com": "2025-12-09",
+   "pagamento": "2026-03-06",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.775364,
+   "data_com": "2025-12-09",
+   "pagamento": "2025-12-19",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.0182,
+   "data_com": "2025-12-09",
+   "pagamento": "2026-03-06",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.0242425,
+   "data_com": "2026-02-27",
+   "pagamento": "2026-04-01",
+   "ano_ref": 2026,
+   "referente": "1º Trimestre/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.0242425,
+   "data_com": "2026-02-27",
+   "pagamento": "2026-04-01",
+   "ano_ref": 2026,
+   "referente": "1º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.116,
+   "data_com": "2026-03-19",
+   "pagamento": "2026-08-28",
+   "ano_ref": 2026,
+   "referente": "Anual/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.116,
+   "data_com": "2026-03-19",
+   "pagamento": "2026-08-28",
+   "ano_ref": 2026,
+   "referente": "Anual/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.0242425,
+   "data_com": "2026-05-29",
+   "pagamento": "2026-07-01",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.0242425,
+   "data_com": "2026-05-29",
+   "pagamento": "2026-07-01",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.138,
+   "data_com": "2026-06-18",
+   "pagamento": "2026-08-28",
+   "ano_ref": 2026,
+   "referente": "Anual/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.138,
+   "data_com": "2026-06-18",
+   "pagamento": "2026-08-28",
+   "ano_ref": 2026,
+   "referente": "Anual/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.0242425,
+   "data_com": "2026-08-31",
+   "pagamento": "2026-10-01",
+   "ano_ref": 2026,
+   "referente": "3º Trimestre/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.0242425,
+   "data_com": "2026-08-31",
+   "pagamento": "2026-10-01",
+   "ano_ref": 2026,
+   "referente": "3º Trimestre/2026"
+  }
+ ],
+ "ITUB": [
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.01765,
+   "data_com": "2025-11-28",
+   "pagamento": "2026-01-02",
+   "ano_ref": 2025,
+   "referente": "Mensal/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.01765,
+   "data_com": "2025-11-28",
+   "pagamento": "2026-01-02",
+   "ano_ref": 2025,
+   "referente": "Mensal/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 1.868223,
+   "data_com": "2025-12-09",
+   "pagamento": "2025-12-19",
+   "ano_ref": 2025,
+   "referente": "Complementar/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.36975,
+   "data_com": "2025-12-09",
+   "pagamento": "2026-03-06",
+   "ano_ref": 2025,
+   "referente": "2º Semestre/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 1.868223,
+   "data_com": "2025-12-09",
+   "pagamento": "2025-12-19",
+   "ano_ref": 2025,
+   "referente": "Complementar/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.36975,
+   "data_com": "2025-12-09",
+   "pagamento": "2026-03-06",
+   "ano_ref": 2025,
+   "referente": "2º Semestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.018182,
+   "data_com": "2025-12-30",
+   "pagamento": "2026-02-02",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.018182,
+   "data_com": "2025-12-30",
+   "pagamento": "2026-02-02",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.018182,
+   "data_com": "2026-01-30",
+   "pagamento": "2026-03-02",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.018182,
+   "data_com": "2026-01-30",
+   "pagamento": "2026-03-02",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.018182,
+   "data_com": "2026-02-27",
+   "pagamento": "2026-04-01",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.018182,
+   "data_com": "2026-02-27",
+   "pagamento": "2026-04-01",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.34888,
+   "data_com": "2026-03-19",
+   "pagamento": "2026-08-28",
+   "ano_ref": 2026,
+   "referente": "1º Trimestre/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.34888,
+   "data_com": "2026-03-19",
+   "pagamento": "2026-08-28",
+   "ano_ref": 2026,
+   "referente": "1º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.018182,
+   "data_com": "2026-03-31",
+   "pagamento": "2026-05-04",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.018182,
+   "data_com": "2026-03-31",
+   "pagamento": "2026-05-04",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.018182,
+   "data_com": "2026-04-30",
+   "pagamento": "2026-06-01",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.018182,
+   "data_com": "2026-04-30",
+   "pagamento": "2026-06-01",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.018182,
+   "data_com": "2026-05-29",
+   "pagamento": "2026-07-01",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.018182,
+   "data_com": "2026-05-29",
+   "pagamento": "2026-07-01",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.36188,
+   "data_com": "2026-06-18",
+   "pagamento": "2026-08-28",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.36188,
+   "data_com": "2026-06-18",
+   "pagamento": "2026-08-28",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.018182,
+   "data_com": "2026-06-30",
+   "pagamento": "2026-08-03",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.018182,
+   "data_com": "2026-06-30",
+   "pagamento": "2026-08-03",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.018182,
+   "data_com": "2026-07-31",
+   "pagamento": "2026-09-01",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.018182,
+   "data_com": "2026-07-31",
+   "pagamento": "2026-09-01",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.018182,
+   "data_com": "2026-08-31",
+   "pagamento": "2026-10-01",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.018182,
+   "data_com": "2026-08-31",
+   "pagamento": "2026-10-01",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.018182,
+   "data_com": "2026-09-30",
+   "pagamento": "2026-11-03",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.018182,
+   "data_com": "2026-09-30",
+   "pagamento": "2026-11-03",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.018182,
+   "data_com": "2026-10-30",
+   "pagamento": "2026-12-01",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.018182,
+   "data_com": "2026-10-30",
+   "pagamento": "2026-12-01",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  }
+ ],
+ "KLBN": [
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.04559717225,
+   "data_com": "2025-12-15",
+   "pagamento": "2026-02-27",
+   "ano_ref": 2025,
+   "referente": "3º Trimestre/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.04559717225,
+   "data_com": "2025-12-15",
+   "pagamento": "2026-02-27",
+   "ano_ref": 2025,
+   "referente": "3º Trimestre/2025"
+  }
+ ],
+ "PETR": [
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.29642144,
+   "data_com": "2025-12-22",
+   "pagamento": "2026-03-20",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.17518233,
+   "data_com": "2025-12-22",
+   "pagamento": "2026-03-20",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.47160378,
+   "data_com": "2025-12-22",
+   "pagamento": "2026-02-20",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.29642144,
+   "data_com": "2025-12-22",
+   "pagamento": "2026-03-20",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.17518233,
+   "data_com": "2025-12-22",
+   "pagamento": "2026-03-20",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.47160378,
+   "data_com": "2025-12-22",
+   "pagamento": "2026-02-20",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.31311454,
+   "data_com": "2026-04-22",
+   "pagamento": "2026-05-20",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "RENDIMENTO",
+   "valor": 0.01649003,
+   "data_com": "2026-04-22",
+   "pagamento": "2026-05-20",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "RENDIMENTO",
+   "valor": 0.02038398,
+   "data_com": "2026-04-22",
+   "pagamento": "2026-06-22",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.31311454,
+   "data_com": "2026-04-22",
+   "pagamento": "2026-05-20",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "RENDIMENTO",
+   "valor": 0.01649003,
+   "data_com": "2026-04-22",
+   "pagamento": "2026-05-20",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "RENDIMENTO",
+   "valor": 0.02038398,
+   "data_com": "2026-04-22",
+   "pagamento": "2026-06-22",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.35048636,
+   "data_com": "2026-06-01",
+   "pagamento": "2026-08-20",
+   "ano_ref": 2026,
+   "referente": "Anual/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.35048636,
+   "data_com": "2026-06-01",
+   "pagamento": "2026-08-20",
+   "ano_ref": 2026,
+   "referente": "Anual/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.47156696,
+   "data_com": "2026-08-21",
+   "pagamento": "2026-12-21",
+   "ano_ref": 2026,
+   "referente": "Anual/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.67407131,
+   "data_com": "2026-08-21",
+   "pagamento": "2026-11-23",
+   "ano_ref": 2026,
+   "referente": "Anual/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.20250435,
+   "data_com": "2026-08-21",
+   "pagamento": "2026-12-21",
+   "ano_ref": 2026,
+   "referente": "Anual/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.47156696,
+   "data_com": "2026-08-21",
+   "pagamento": "2026-12-21",
+   "ano_ref": 2026,
+   "referente": "Anual/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.20250435,
+   "data_com": "2026-08-21",
+   "pagamento": "2026-12-21",
+   "ano_ref": 2026,
+   "referente": "Anual/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.67407131,
+   "data_com": "2026-08-21",
+   "pagamento": "2026-11-23",
+   "ano_ref": 2026,
+   "referente": "Anual/2026"
+  }
+ ],
+ "PSSA": [
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.53760384028,
+   "data_com": "2025-12-26",
+   "pagamento": "2026-04-10",
+   "ano_ref": 2025,
+   "referente": "4º Trimestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.54231784082,
+   "data_com": "2026-03-30",
+   "pagamento": "2027-12-31",
+   "ano_ref": 2026,
+   "referente": "1º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.88610135766,
+   "data_com": "2026-03-31",
+   "pagamento": "2026-11-30",
+   "ano_ref": 2025,
+   "referente": "2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.51280364554,
+   "data_com": "2026-06-22",
+   "pagamento": "2027-04-30",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.52065720703,
+   "data_com": "2026-09-23",
+   "pagamento": "2027-04-30",
+   "ano_ref": 2026,
+   "referente": "3º Trimestre/2026"
+  }
+ ],
+ "SANB": [
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.07910367789,
+   "data_com": "2026-01-02",
+   "pagamento": "2026-02-05",
+   "ano_ref": 2025,
+   "referente": "4º Trimestre/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.08701404568,
+   "data_com": "2026-01-02",
+   "pagamento": "2026-02-05",
+   "ano_ref": 2025,
+   "referente": "4º Trimestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.25517315448,
+   "data_com": "2026-01-20",
+   "pagamento": "2026-02-05",
+   "ano_ref": 2026,
+   "referente": "1º Trimestre/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.28069046993,
+   "data_com": "2026-01-20",
+   "pagamento": "2026-02-05",
+   "ano_ref": 2026,
+   "referente": "1º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.25461944581,
+   "data_com": "2026-04-20",
+   "pagamento": "2026-05-07",
+   "ano_ref": 2026,
+   "referente": "1º Trimestre/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.28008139039,
+   "data_com": "2026-04-20",
+   "pagamento": "2026-05-07",
+   "ano_ref": 2026,
+   "referente": "1º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.2546161638,
+   "data_com": "2026-07-21",
+   "pagamento": "2026-08-06",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.28007778018,
+   "data_com": "2026-07-21",
+   "pagamento": "2026-08-06",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.19095423791,
+   "data_com": "2026-10-20",
+   "pagamento": "2026-11-09",
+   "ano_ref": 2026,
+   "referente": "3º Trimestre/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.21004966171,
+   "data_com": "2026-10-20",
+   "pagamento": "2026-11-09",
+   "ano_ref": 2026,
+   "referente": "3º Trimestre/2026"
+  }
+ ],
+ "SAPR": [
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.102298668,
+   "data_com": "2025-12-30",
+   "pagamento": "2026-06-26",
+   "ano_ref": 2025,
+   "referente": "2º Semestre/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.112528535,
+   "data_com": "2025-12-30",
+   "pagamento": "2026-06-26",
+   "ano_ref": 2025,
+   "referente": "2º Semestre/2025"
+  }
+ ],
+ "SBSP": [
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 2.64389299,
+   "data_com": "2025-12-23",
+   "pagamento": "2026-04-30",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.83342453884,
+   "data_com": "2026-03-19",
+   "pagamento": "2026-04-30",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.74986562544,
+   "data_com": "2026-11-10",
+   "pagamento": "2027-04-30",
+   "ano_ref": 2026,
+   "referente": "Anual/2026"
+  }
+ ],
+ "TAEE": [
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.17298440438,
+   "data_com": "2025-11-14",
+   "pagamento": "2026-01-28",
+   "ano_ref": 2025,
+   "referente": "3º Trimestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.13980241117,
+   "data_com": "2025-11-14",
+   "pagamento": "2026-01-28",
+   "ano_ref": 2025,
+   "referente": "3º Trimestre/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.17298440438,
+   "data_com": "2025-11-14",
+   "pagamento": "2026-01-28",
+   "ano_ref": 2025,
+   "referente": "3º Trimestre/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.13980241117,
+   "data_com": "2025-11-14",
+   "pagamento": "2026-01-28",
+   "ano_ref": 2025,
+   "referente": "3º Trimestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.05116204939,
+   "data_com": "2026-04-29",
+   "pagamento": "2026-05-27",
+   "ano_ref": 2025,
+   "referente": "4º Trimestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.25179137882,
+   "data_com": "2026-04-29",
+   "pagamento": "2026-05-27",
+   "ano_ref": 2025,
+   "referente": "4º Trimestre/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.05116204939,
+   "data_com": "2026-04-29",
+   "pagamento": "2026-05-27",
+   "ano_ref": 2025,
+   "referente": "4º Trimestre/2025"
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.25179137882,
+   "data_com": "2026-04-29",
+   "pagamento": "2026-05-27",
+   "ano_ref": 2025,
+   "referente": "4º Trimestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.18633271466,
+   "data_com": "2026-05-11",
+   "pagamento": "2026-08-26",
+   "ano_ref": 2026,
+   "referente": "1º Trimestre/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.18633271466,
+   "data_com": "2026-05-11",
+   "pagamento": "2026-08-26",
+   "ano_ref": 2026,
+   "referente": "1º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.08025458488,
+   "data_com": "2026-08-14",
+   "pagamento": "2026-11-26",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.11982485996,
+   "data_com": "2026-08-14",
+   "pagamento": "2026-11-26",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.08025458488,
+   "data_com": "2026-08-14",
+   "pagamento": "2026-11-26",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.11982485996,
+   "data_com": "2026-08-14",
+   "pagamento": "2026-11-26",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  }
+ ],
+ "TIMS": [
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.7491354635,
+   "data_com": "2025-12-19",
+   "pagamento": "2025-12-30",
+   "ano_ref": 2025,
+   "referente": "Anual/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.1757968072,
+   "data_com": "2025-12-22",
+   "pagamento": "2026-06-30",
+   "ano_ref": 2025,
+   "referente": "4º Trimestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.1632708888,
+   "data_com": "2026-03-23",
+   "pagamento": "2026-04-22",
+   "ano_ref": 2026,
+   "referente": "1º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.1674573219,
+   "data_com": "2026-06-22",
+   "pagamento": "2026-07-22",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.2166801148,
+   "data_com": "2026-09-22",
+   "pagamento": "2027-01-22",
+   "ano_ref": 2026,
+   "referente": "3º Trimestre/2026"
+  }
+ ],
+ "VALE": [
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 1.244102486,
+   "data_com": "2025-12-11",
+   "pagamento": "2026-01-07",
+   "ano_ref": 2025,
+   "referente": "2º Semestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.768133538,
+   "data_com": "2025-12-11",
+   "pagamento": "2026-03-04",
+   "ano_ref": 2025,
+   "referente": "2º Semestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 1.569535033,
+   "data_com": "2025-12-11",
+   "pagamento": "2026-03-04",
+   "ano_ref": 2025,
+   "referente": "2º Semestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.462016093,
+   "data_com": "2026-08-11",
+   "pagamento": "2026-09-02",
+   "ano_ref": 2026,
+   "referente": "1º Semestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 1.568705805,
+   "data_com": "2026-08-11",
+   "pagamento": "2026-09-02",
+   "ano_ref": 2026,
+   "referente": "1º Semestre/2026"
+  }
+ ],
+ "VIVT": [
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.1063014382,
+   "data_com": "2025-11-24",
+   "pagamento": "2026-04-14",
+   "ano_ref": 2025,
+   "referente": "4º Trimestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.10952537999,
+   "data_com": "2025-12-29",
+   "pagamento": "2026-04-14",
+   "ano_ref": 2025,
+   "referente": "4º Trimestre/2025"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.10170213856,
+   "data_com": "2026-02-23",
+   "pagamento": "2027-04-30",
+   "ano_ref": 2026,
+   "referente": "Mensal/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.06258593142,
+   "data_com": "2026-03-25",
+   "pagamento": "2027-04-30",
+   "ano_ref": 2026,
+   "referente": "1º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.11421932485,
+   "data_com": "2026-04-27",
+   "pagamento": "2027-04-30",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "REST CAP DIN",
+   "valor": 1.25171862845,
+   "data_com": "2026-05-22",
+   "pagamento": "2026-07-14",
+   "ano_ref": 2026,
+   "referente": "Anual/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.18775779427,
+   "data_com": "2026-05-27",
+   "pagamento": "2027-04-30",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.07197382114,
+   "data_com": "2026-06-26",
+   "pagamento": "2027-04-30",
+   "ano_ref": 2026,
+   "referente": "2º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.15646482856,
+   "data_com": "2026-07-27",
+   "pagamento": "2027-04-30",
+   "ano_ref": 2026,
+   "referente": "3º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.10952537999,
+   "data_com": "2026-08-26",
+   "pagamento": "2027-04-30",
+   "ano_ref": 2026,
+   "referente": "3º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.15646482856,
+   "data_com": "2026-09-25",
+   "pagamento": "2027-04-30",
+   "ano_ref": 2026,
+   "referente": "3º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.1408183457,
+   "data_com": "2026-10-26",
+   "pagamento": "9999-12-31",
+   "ano_ref": 2026,
+   "referente": "4º Trimestre/2026"
+  }
+ ]
+}
