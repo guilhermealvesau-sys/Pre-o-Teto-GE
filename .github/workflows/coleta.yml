@@ -1,0 +1,68 @@
+name: Coleta de dados
+
+on:
+  schedule:
+    - cron: "17 9 * * 2-6"   # diário, 06h17 de Brasília: fechamento do pregão anterior + PTAX
+    - cron: "37 8 * * 0"     # domingo, 05h37 de Brasília: coleta completa (CVM, proventos, preços anuais)
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "diario ou completo"
+        required: true
+        default: completo
+        type: choice
+        options: [completo, diario]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: coleta
+  cancel-in-progress: false
+
+jobs:
+  coleta:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Testar os cálculos (sem internet)
+        run: python -m tests.teste_offline
+
+      - name: Escolher o modo
+        id: modo
+        run: |
+          MODO="${{ github.event.inputs.modo }}"
+          if [ -z "$MODO" ]; then
+            if [ "${{ github.event.schedule }}" = "37 8 * * 0" ]; then MODO=completo; else MODO=diario; fi
+          fi
+          echo "modo=$MODO" >> "$GITHUB_OUTPUT"
+
+      - name: Reaproveitar downloads grandes (CVM e COTAHIST)
+        if: steps.modo.outputs.modo == 'completo'
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: downloads-${{ github.run_id }}
+          restore-keys: downloads-
+
+      - name: Coletar
+        run: python -m coletor.main "${{ steps.modo.outputs.modo }}"
+
+      - name: Gravar os dados no repositório
+        run: |
+          git config user.name "coletor-bot"
+          git config user.email "coletor-bot@users.noreply.github.com"
+          git add dados/
+          if ! git diff --cached --quiet; then
+            git commit -m "dados: coleta ${{ steps.modo.outputs.modo }} $(date -u +%F)"
+            git push
+          fi
