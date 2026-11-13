@@ -57,6 +57,7 @@ def montar(dados: Path) -> dict:
                    "itens": [{k: a.get(k) for k in ("emissor", "empresa", "data", "categoria", "assunto", "link",
                                                     "regra", "detectado_em", "novo")}
                              for a in (avs.get("itens") or [])[:60]]},
+        "macro": cot.get("macro") or {},
         "repositorio": "https://github.com/guilhermealvesau-sys/Pre-o-Teto-GE",
     }
 

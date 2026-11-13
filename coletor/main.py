@@ -53,6 +53,12 @@ def diario() -> dict:
             out["ptax"] = {"valor": p[0], "data": p[1], "fonte": "Banco Central – PTAX venda"}
     except Exception as e:  # noqa: BLE001
         out["avisos"].append(f"PTAX indisponível: {e}")
+    try:
+        m = bcb.macro()
+        if m:
+            out["macro"] = {**m, "fonte": "Banco Central – SGS"}
+    except Exception as e:  # noqa: BLE001
+        out["avisos"].append(f"Selic/IPCA indisponíveis: {e}")
     salvar_json(DADOS / "cotacoes.json", out)
     log.info("cotações: %s papéis, pregão %s", len(out["cotacoes"]), out["ref"])
     return out

@@ -183,6 +183,10 @@ def main_teste():
             import base64
             d = json.loads(base64.b64decode(url.rsplit("/", 1)[1]))
             return proventos_json(d["issuingCompany"]) if d["issuingCompany"] in EMP else [{"cashDividends": []}]
+        if "bcdata.sgs.432" in url:
+            return [{"data": "05/11/2026", "valor": "14.25"}]
+        if "bcdata.sgs.13522" in url:
+            return [{"data": "01/10/2026", "valor": "4,6"}]
         if "olinda" in url:
             return {"value": [{"cotacaoVenda": 5.0, "dataHoraCotacao": "2026-09-30 13:00:00.000"}]}
         return None
@@ -238,6 +242,11 @@ def main_teste():
     assert [a["emissor"] for a in n2] == ["ITUB"], n2
     assert (TMP / ".saida" / "avisos_novos.md").exists()
     print("ok  avisos: documento novo do Itaú dispara aviso")
+    main.diario()
+    cot = json.loads((main.DADOS / "cotacoes.json").read_text())
+    assert cot["macro"]["selic"] == {"valor": 14.25, "data": "2026-11-05", "descricao": bcb.SERIES["selic"][1], "serie": 432}, cot.get("macro")
+    assert cot["macro"]["ipca12m"]["valor"] == 4.6, cot["macro"]
+    print("ok  macro: Selic meta e IPCA 12 meses do SGS")
     fat = json.loads((main.DADOS / "fatos.json").read_text())["por_emissor"]
     assert [f["assunto"] for f in fat["PETR"]] == ["Pagamento de dividendos e JCP", "Revisão da Política de Remuneração aos Acionistas"], fat
     assert fat["ITUB"][0]["categoria"] == "Fato Relevante" and fat["TAEE"][0]["link"] == "http://x/113", fat
