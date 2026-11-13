@@ -55,8 +55,21 @@ def _ler_demo(z, prefixo: str, demo: str, ano: int, cnpjs: set[str]) -> pd.DataF
     con = _ler(z, f"{prefixo}_cia_aberta_{demo}_con_{ano}.csv", cnpjs)
     ind = _ler(z, f"{prefixo}_cia_aberta_{demo}_ind_{ano}.csv", cnpjs)
     if not ind.empty:
-        so_ind = set(ind["CNPJ_CIA"]) - set(con["CNPJ_CIA"]) if not con.empty else set(ind["CNPJ_CIA"])
-        con = pd.concat([con, ind[ind["CNPJ_CIA"].isin(so_ind)]], ignore_index=True)
+        # vale a individual quando não há consolidada ou quando a consolidada veio toda zerada (ex.: TIM)
+        chave = ["CNPJ_CIA", "DT_REFER"]
+        if con.empty:
+            usar_ind = set(map(tuple, ind[chave].drop_duplicates().values))
+        else:
+            soma = con.assign(_v=pd.to_numeric(con["VL_CONTA"], errors="coerce").abs()).groupby(chave)["_v"].sum()
+            zerados = {k for k, v in soma.items() if not v}
+            com_con = set(map(tuple, con[chave].drop_duplicates().values))
+            todos_ind = set(map(tuple, ind[chave].drop_duplicates().values))
+            usar_ind = (todos_ind - com_con) | zerados
+            if zerados:
+                con = con[~con[chave].apply(tuple, axis=1).isin(zerados)]
+        if usar_ind:
+            sel = ind[ind[chave].apply(tuple, axis=1).isin(usar_ind)]
+            con = pd.concat([con, sel], ignore_index=True)
     if con.empty:
         return con
     escala = con["ESCALA_MOEDA"].fillna("MIL").str.upper()

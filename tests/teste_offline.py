@@ -94,9 +94,15 @@ def fixtures():
                                       ("PENÚLTIMO", f"{y-1}-01-01", f"{y-1}-12-31", lucro_ano(em, y - 1))], banco=em == "ITUB")
             bpp += bpp_rows(em, ref)
             cap += cap_rows(em, ref, y)
+        ind = [HDR]
+        if y == ANO - 5:  # PETR entrega a consolidada zerada nesse ano; o lucro real está na individual
+            cnpj, cd, nome, *_ = EMP["PETR"]
+            dre = [l if not l.startswith(cnpj) else ";".join(l.split(";")[:13] + ["0", "S"]) for l in dre]
+            for ordem, ini, fim in (("ÚLTIMO", f"{y}-01-01", ref), ("PENÚLTIMO", f"{y-1}-01-01", f"{y-1}-12-31")):
+                ind.append(f"{cnpj};{ref};1;{nome};{cd};DF Individual - Demonstração do Resultado;REAL;MIL;{ordem};{ini};{fim};3.11;Lucro/Prejuízo do Período;77000000;S")
         p = TMP / f"dfp{y}.zip"
-        zipar(p, {f"dfp_cia_aberta_DRE_con_{y}.csv": dre, f"dfp_cia_aberta_BPP_con_{y}.csv": bpp,
-                  f"dfp_cia_aberta_composicao_capital_{y}.csv": cap})
+        zipar(p, {f"dfp_cia_aberta_DRE_con_{y}.csv": dre, f"dfp_cia_aberta_DRE_ind_{y}.csv": ind,
+                  f"dfp_cia_aberta_BPP_con_{y}.csv": bpp, f"dfp_cia_aberta_composicao_capital_{y}.csv": cap})
         arq[f"DFP/DADOS/dfp_cia_aberta_{y}.zip"] = p
     for y in (ANO - 1, ANO):
         ref = f"{y}-09-30"
@@ -196,6 +202,7 @@ def main_teste():
     ok("PETR ações com documento isolado em milhares", A["PETR4"]["qtd_mi"], 13000.0)
     ok("PETR lucro anual com linha de controladores zerada → consolidado",
        A["PETR4"]["detalhe"]["lucro_anual_mi"][ANO - 2], 100005)
+    ok("PETR lucro com consolidada zerada → individual", A["PETR4"]["detalhe"]["lucro_anual_mi"][ANO - 6], 77000)
     ok("ITUB lucro 12M (layout de banco)", i4["lucro12m_mi"], 33000 + 40000 - 30000)
     adj = (4 * (1 / 1.1) + 2 * 1.0) / 6 * 0.7
     ok("ITUB4 dividendo médio ajustado pela bonificação", i4["div_medio6"], adj)
