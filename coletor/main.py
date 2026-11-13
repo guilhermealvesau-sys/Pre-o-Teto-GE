@@ -71,10 +71,10 @@ def completo() -> dict:
         if info:
             pregao[e["emissor"]] = info.get("tradingName")
             log.info("B3: %s → pregão %r, CVM %s", e["emissor"], info.get("tradingName"), info.get("codeCVM"))
-        else:
-            log.warning("B3: emissor %s não encontrado no cadastro da bolsa", e["emissor"])
             if not e["cd_cvm"] and info.get("codeCVM"):
                 emp_cfg.at[i, "cd_cvm"] = info["codeCVM"]
+        else:
+            log.warning("B3: emissor %s não encontrado no cadastro da bolsa", e["emissor"])
     cad = cvm.cadastro()
     mapa = cvm.resolver(emp_cfg, cad)
     mapa.to_csv(DADOS / "mapa_cvm.csv", index=False)
