@@ -291,7 +291,10 @@ def coletar(mapa: pd.DataFrame, anos_hist: int = 7) -> dict[str, Empresa]:
         ser = {(r.DT_INI_EXERC[:4], r.DT_FIM_EXERC[5:7]): r.vl_mi for r in g.itertuples()}
         for (y, m), v in ser.items():
             if m == "12":
-                e.lucro_anual_mi[int(y)] = round(float(v), 3)
+                if v:
+                    e.lucro_anual_mi[int(y)] = round(float(v), 3)
+                else:  # lucro exatamente zero = demonstração ausente ou não preenchida
+                    e.avisos.append(f"lucro de {y} indisponível na CVM (fora das médias)")
         if not ser:
             e.avisos.append("lucro não encontrado na CVM")
             continue

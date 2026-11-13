@@ -107,11 +107,17 @@ def calcular(a: dict, emp, eventos: list[dict], precos: dict[int, dict], ano_atu
             continue
         d = 0.0
         # ON × ações ON + uma classe preferencial representativa × ações PN (a CVM soma PNA e PNB)
-        for cls, evs in (("ON", _prov_classe(eventos, "ON")), ("PN", _prov_classe(eventos, "PN"))):
+        ev_on, ev_pn = _prov_classe(eventos, "ON"), _prov_classe(eventos, "PN")
+        v_on = sum(e["valor"] for e in ev_on if e["ano_ref"] == y)
+        v_pn = sum(e["valor"] for e in ev_pn if e["ano_ref"] == y)
+        if not ev_on and v_pn and acoes("ON", y):  # ON não negociada: B3 só lista a PN
+            v_on = v_pn
+            if "proventos da ON estimados pelos da PN (ON não negociada)" not in out["avisos"]:
+                out["avisos"].append("proventos da ON estimados pelos da PN (ON não negociada)")
+        for cls, v in (("ON", v_on), ("PN", v_pn)):
             q = acoes(cls, y)
-            if not q:
-                continue
-            d += sum(e["valor"] for e in evs if e["ano_ref"] == y) * q / 1e6
+            if q:
+                d += v * q / 1e6
         dist += d
         luc += emp.lucro_anual_mi[y]
         anos_ok.append(y)
