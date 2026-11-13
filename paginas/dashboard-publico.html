@@ -125,6 +125,16 @@ label.ck .num{color:var(--muted);font-size:11px}
 .hb .row{display:contents}
 .legend{padding:0 16px 12px;font-size:12px;color:var(--muted)}
 .legend i{display:inline-block;width:14px;border-top:1.5px dashed var(--ink);opacity:.6;vertical-align:middle;margin-right:4px}
+.tabs{display:flex;gap:2px;overflow-x:auto;border-bottom:1px solid var(--line);scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:none;border:0;background:transparent;color:var(--muted);font:inherit;font-weight:600;font-size:14px;padding:10px 14px;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px}
+.tabs button:hover{color:var(--ink)}
+.tabs button[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+[role=tabpanel]{display:grid;gap:18px}
+[role=tabpanel][hidden]{display:none}
+.resumo h4{margin:8px 0 2px;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.resumo h4:first-child{margin-top:0}
+.resumo .disc a{color:var(--accent)}
 footer.aviso{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px 16px;font-size:12.5px;color:var(--muted);display:grid;gap:6px}
 footer.aviso b{color:var(--ink)}
 footer.aviso ul{margin:0;padding-left:18px;display:grid;gap:4px}
@@ -142,21 +152,14 @@ footer.aviso ul{margin:0;padding-left:18px;display:grid;gap:4px}
     <div class="status" id="status" aria-live="polite"><span class="chip"><span class="dot"></span>Carregando…</span></div>
   </header>
 
+  <nav class="tabs" role="tablist" aria-label="Seções" id="tabs">
+    <button role="tab" id="t-dash" aria-controls="p-dash" aria-selected="true" data-tab="dash">Dashboard</button>
+    <button role="tab" id="t-setores" aria-controls="p-setores" aria-selected="false" data-tab="setores" tabindex="-1">Comparação por setor</button>
+  </nav>
+
+  <section role="tabpanel" id="p-dash" aria-labelledby="t-dash">
   <div class="controls" role="group" aria-label="Opções do painel">
-    <div class="ctl"><span class="muted">Base</span>
-      <div class="seg" id="segBase">
-        <button type="button" data-v="PROJETADO" aria-pressed="true">Projetado</button>
-        <button type="button" data-v="CONSERVADOR" aria-pressed="false" title="Menor entre o dividendo projetado e o dividendo médio de 6 anos">Conservador</button>
-      </div>
-    </div>
-    <div class="ctl"><span class="muted">Payout</span>
-      <div class="seg" id="segPay">
-        <button type="button" data-v="MEDIANO" aria-pressed="true" title="Mediana dos payouts dos 3 últimos anos completos">Mediano 3 anos</button>
-        <button type="button" data-v="MEDIA" aria-pressed="false" title="Média simples dos payouts anuais dos 6 últimos anos completos (5, se faltar um ano)">Média 5–6 anos</button>
-        <button type="button" data-v="ATUAL" aria-pressed="false" title="Proventos dos últimos 12 meses ÷ lucro dos últimos 12 meses">Atual 12 meses</button>
-      </div>
-    </div>
-    <label class="switch ctl"><input type="checkbox" id="uma"> Uma classe por empresa</label>
+    <span class="small"><b>Base projetada</b> · <b>payout dos últimos 12 meses</b> <span class="muted">(commodities: payout da política)</span></span>
     <label class="ctl" for="dymin"><span class="muted">Simular DY mínimo</span> <input type="number" id="dymin" step="0.5" min="1" max="20" inputmode="decimal"> %</label>
     <span class="muted small" id="ctlNote"></span>
   </div>
@@ -175,6 +178,9 @@ footer.aviso ul{margin:0;padding-left:18px;display:grid;gap:4px}
     <aside class="panel side" id="side" aria-label="Notícias do papel escolhido"><div class="empty">Escolha um papel na lista.</div></aside>
   </div>
 
+  </section>
+
+  <section role="tabpanel" id="p-setores" aria-labelledby="t-setores" hidden>
   <section class="panel" aria-labelledby="hS">
     <div class="panel-head"><h2 id="hS">Comparação por setor</h2><p id="setSub"></p></div>
     <div class="inner">
@@ -184,10 +190,11 @@ footer.aviso ul{margin:0;padding-left:18px;display:grid;gap:4px}
     </div>
     <div id="setChart"><div class="empty">Carregando…</div></div>
   </section>
+  </section>
 
   <footer class="aviso">
-    <div><b>Como ler.</b> BESST: dividendo projetado = lucro de consenso por ação × payout. Commodities: payout da política × (consenso − CAPEX) por ação. Desconto = 1 − cotação ÷ preço teto. Conservador usa o menor entre o dividendo projetado e o dividendo médio de 6 anos. Os seletores refazem o cálculo só na sua tela.</div>
-    <div><b>Fontes.</b> Cotações de fechamento da B3; balanços entregues à CVM; proventos e preços históricos da B3; câmbio PTAX do Banco Central; documentos eventuais da CVM e manchetes do Google Notícias. O consenso de lucro é uma premissa do autor.</div>
+    <div><b>Como ler.</b> BESST: dividendo projetado = lucro de consenso por ação × payout dos últimos 12 meses (proventos dos últimos 12 meses ÷ lucro dos últimos 12 meses). Commodities: payout da política × (consenso − CAPEX) por ação. Preço teto = dividendo projetado ÷ DY mínimo; desconto = 1 − cotação ÷ preço teto. O simulador de DY mínimo refaz o cálculo só na sua tela. O payout de 12 meses oscila com distribuições extraordinárias.</div>
+    <div><b>Fontes.</b> Cotações de fechamento da B3; balanços entregues à CVM; proventos e preços históricos da B3; câmbio PTAX, Selic e IPCA do Banco Central; documentos eventuais da CVM e manchetes do Google Notícias. O panorama de cada empresa é montado por IA a partir do site de RI e das fontes citadas nele. O consenso de lucro é uma premissa do autor.</div>
     <div><b>Aviso.</b> Conteúdo informativo, gerado por um modelo a partir de dados públicos e premissas próprias. Não é recomendação de compra ou venda de valores mobiliários. Os números podem conter erros ou estar desatualizados; confira nas fontes.</div>
   </footer>
 </div>
@@ -216,8 +223,8 @@ footer.aviso ul{margin:0;padding-left:18px;display:grid;gap:4px}
   const setRot = (s) => SETOR_ROT[s] || s;
 
   const S = {
-    D: null, ativos: new Map(), base: store.get("base", "PROJETADO"), payBase: store.get("payBase", "MEDIANO"),
-    uma: store.get("uma", false), dymin: store.get("dymin", null), setores: store.get("setores", null), metrica: store.get("metrica", "pl"),
+    D: null, ativos: new Map(), base: "PROJETADO", payBase: "ATUAL", uma: false, tab: "dash",
+    dymin: store.get("dymin", null), setores: store.get("setores", null), metrica: store.get("metrica", "pl"),
     sel: null, selTk: null, picked: false,
   };
   const recente = (v) => v.novo && (Date.now() - new Date(v.detectado_em || v.data).getTime()) / 864e5 < 30;
@@ -305,14 +312,22 @@ footer.aviso ul{margin:0;padding-left:18px;display:grid;gap:4px}
       return `<tr class="pickrow ${on ? "sel" : ""}" data-tk="${esc(a.ticker)}"><td class="rk num">${i + 1}</td>
         <td class="l"><button type="button" class="lk" data-tk="${esc(a.ticker)}" aria-pressed="${on}"><span class="tk">${esc(a.ticker)}</span><span class="nm">${esc(a.nome)}</span></button></td>
         <td class="num">${fBRL(r.price)}${chg}</td><td class="num">${fBRL(r.ptB)}</td><td>${bar(r.descB)}</td>
-        <td class="num">${fPct(r.dy, 2)}</td><td class="num">${fPct(payUsado(a).v, 0)}</td><td class="l">${al}</td></tr>`;
+        <td class="num">${fPct(r.dy, 2)}</td><td class="num">${fPct(a.dy_medio, 2)}</td><td class="l">${al}</td></tr>`;
     }).join("");
-    return `<table><thead><tr><th>#</th><th class="l">Papel</th><th>Cotação</th><th>Preço teto</th><th>Desconto</th><th>DY proj.</th><th>Payout</th><th class="l">Alertas</th></tr></thead><tbody>${body}</tbody></table>`;
+    return `<table><thead><tr><th>#</th><th class="l">Papel</th><th>Cotação</th><th>Preço teto</th><th>Desconto</th><th>DY proj.</th><th>DY médio 6a</th><th class="l">Alertas</th></tr></thead><tbody>${body}</tbody></table>`;
+  }
+  function fontesHtml(fs) {
+    return (fs || []).filter((f) => safeUrl(f.url)).slice(0, 6).map((f) => {
+      let host = ""; try { host = new URL(f.url).hostname.replace(/^www\./, ""); } catch {}
+      return `<a href="${esc(f.url)}" target="_blank" rel="noopener noreferrer" title="${esc(f.titulo || "")}">${esc(host || f.titulo || "fonte")}</a>`;
+    }).join(" · ");
   }
   function txtResumo(t) {
     const lines = esc(t).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").split(/\n+/).map((l) => l.trim()).filter(Boolean);
     let html = "", inList = false;
     for (const l of lines) {
+      const h = l.match(/^#{1,4}\s+(.*)$/);
+      if (h) { if (inList) { html += "</ul>"; inList = false; } html += `<h4>${h[1]}</h4>`; continue; }
       const m = l.match(/^[-•*]\s+(.*)$/);
       if (m) { if (!inList) { html += "<ul>"; inList = true; } html += `<li>${m[1]}</li>`; }
       else { if (inList) { html += "</ul>"; inList = false; } html += `<p>${l}</p>`; }
@@ -342,10 +357,10 @@ footer.aviso ul{margin:0;padding-left:18px;display:grid;gap:4px}
         <div class="kpi"><span>Desconto</span><b class="${r.descB >= 0 ? "var-pos" : "var-neg"}">${fPct(r.descB, 0)}</b></div>
         <div class="kpi"><span>DY proj.</span><b>${fPct(r.dy, 1)}</b></div>
       </div>
-      <div class="pad small muted pay" style="padding-bottom:0">${a.modelo === "POLITICA" ? `Payout: ${payCell(a)}` : `Payout mediano · média · 12M: ${payCell(a)} <span>(em negrito, o usado)</span>`} · P/L ${fNum(r.pl, 1)} (médio ${fNum(a.pl_medio, 1)})</div>
+      <div class="pad small muted pay" style="padding-bottom:0">${a.modelo === "POLITICA" ? `Payout: ${payCell(a)}` : `Payout 12 meses <b>${fPct(a.payout_12m, 0)}</b> · mediano 3 anos ${fPct(a.payout, 0)} · média 5–6 anos ${fPct(a.payout_media, 0)}`} · P/L ${fNum(r.pl, 1)} (médio ${fNum(a.pl_medio, 1)})</div>
       ${r.alerts.length ? `<div class="pad" style="padding-bottom:0">${r.alerts.map(([t, k]) => `<span class="tag ${k || ""}">${esc(t)}</span>`).join("")}</div>` : ""}
-      <div class="subh">Resumo das notícias</div>
-      <div class="resumo">${R ? txtResumo(R.texto) + `<div class="disc">Resumo automático de ${fDateTime(R.gerado_em)}, feito só com títulos e assuntos; confira nas fontes.</div>` : '<p class="muted">Ainda não há resumo publicado para esta empresa.</p>'}</div>
+      <div class="subh">Panorama da empresa</div>
+      <div class="resumo">${R ? txtResumo(R.texto) + `<div class="disc">${R.formato === 2 ? `${R.referencia ? `Dados de ${esc(R.referencia)} · ` : ""}atualizado em ${fDateTime(R.gerado_em)}${fontesHtml(R.fontes) ? ` · Fontes: ${fontesHtml(R.fontes)}` : ""}. Texto informativo montado por IA a partir das fontes citadas; confira nas fontes.` : `Resumo de ${fDateTime(R.gerado_em)}, feito só com títulos de manchetes.`}</div>` : '<p class="muted">Ainda não há panorama publicado para esta empresa.</p>'}</div>
       <div class="subh">Manchetes recentes</div>
       <div class="list">${nots.length ? nots.map((n) => it(n.data, n.fonte, n.titulo, n.link)).join("") : '<div class="empty" style="padding:8px 16px">Nenhuma manchete nos últimos 14 dias.</div>'}</div>
       <div class="subh">Documentos na CVM</div>
@@ -396,13 +411,12 @@ footer.aviso ul{margin:0;padding-left:18px;display:grid;gap:4px}
     const st = S.D?.status || {}, chips = [];
     if (st.cotacoes_ref) { const age = (Date.now() - new Date(st.cotacoes_ref + "T21:00:00").getTime()) / 864e5; chips.push(`<span class="chip ${age > 4 ? "warn" : "ok"}"><span class="dot"></span>Cotações: fechamento de ${fDate(st.cotacoes_ref)}</span>`); }
     if (st.base_gerado_em) chips.push(`<span class="chip ok"><span class="dot"></span>Dados oficiais: ${fDate(st.base_gerado_em)}${st.contabil_ate ? ` · balanços até ${fDate(st.contabil_ate + "-01").slice(3)}` : ""}</span>`);
+    const mc = S.D?.macro || {};
+    if (mc.selic) chips.push(`<span class="chip" title="Banco Central: Selic meta em ${fDate(mc.selic.data)}"><span class="dot"></span>Selic ${fNum(mc.selic.valor, 2)}%${mc.ipca12m ? ` · IPCA 12m ${fNum(mc.ipca12m.valor, 2)}%` : ""}</span>`);
     if (S.D?.publicado_em) chips.push(`<span class="chip"><span class="dot"></span>Publicado em ${fDateTime(S.D.publicado_em)}</span>`);
     $("status").innerHTML = chips.join("");
   }
   function render() {
-    $("segBase").querySelectorAll("button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.v === S.base)));
-    $("segPay").querySelectorAll("button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.v === S.payBase)));
-    $("uma").checked = !!S.uma;
     const pDy = S.D?.params?.dy_min ?? 0.06;
     if (document.activeElement !== $("dymin")) $("dymin").value = String(+(((isNum(S.dymin) ? S.dymin : pDy) * 100).toFixed(2)));
     $("ctlNote").textContent = isNum(S.dymin) && Math.abs(S.dymin - pDy) > 1e-9 ? `Simulação só nesta tela (padrão: ${fPct(pDy, 1)})` : "";
@@ -421,9 +435,18 @@ footer.aviso ul{margin:0;padding-left:18px;display:grid;gap:4px}
 
   // ---------- controles ----------
   document.addEventListener("click", (e) => { const row = e.target.closest("tr.pickrow[data-tk]"); if (row) { S.selTk = row.dataset.tk; S.picked = true; render(); } });
-  $("segBase").addEventListener("click", (e) => { const v = e.target.closest("button")?.dataset.v; if (v) { S.base = v; store.set("base", v); render(); } });
-  $("segPay").addEventListener("click", (e) => { const v = e.target.closest("button")?.dataset.v; if (v) { S.payBase = v; store.set("payBase", v); render(); } });
-  $("uma").addEventListener("change", (e) => { S.uma = e.target.checked; store.set("uma", S.uma); render(); });
+  const TABS = ["dash", "setores"];
+  function showTab(t, focus) {
+    if (!TABS.includes(t)) t = "dash";
+    S.tab = t;
+    for (const x of TABS) { const on = x === t; $("t-" + x).setAttribute("aria-selected", String(on)); $("t-" + x).tabIndex = on ? 0 : -1; $("p-" + x).hidden = !on; }
+    if (focus) $("t-" + t).focus();
+    try { history.replaceState(null, "", "#" + t); } catch {}
+  }
+  $("tabs").addEventListener("click", (e) => { const b = e.target.closest("[data-tab]"); if (b) showTab(b.dataset.tab); });
+  $("tabs").addEventListener("keydown", (e) => { if (e.key === "ArrowRight" || e.key === "ArrowLeft") { e.preventDefault(); showTab(S.tab === "dash" ? "setores" : "dash", true); } });
+  window.addEventListener("hashchange", () => { const h = location.hash.slice(1); if (TABS.includes(h) && h !== S.tab) showTab(h); });
+  showTab(TABS.includes(location.hash.slice(1)) ? location.hash.slice(1) : "dash");
   $("dymin").addEventListener("change", (e) => { const v = parseFloat(String(e.target.value).replace(",", ".")); S.dymin = isNum(v) && v > 0 ? v / 100 : null; store.set("dymin", S.dymin); render(); });
   $("setChecks").addEventListener("change", () => { S.setores = [...$("setChecks").querySelectorAll("input:checked")].map((i) => i.value); store.set("setores", S.setores); renderSetores(); });
   $("setTodos").addEventListener("click", () => { S.setores = null; store.set("setores", null); renderSetores(); });
