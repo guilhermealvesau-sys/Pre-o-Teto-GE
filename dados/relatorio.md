@@ -1,83 +1,85 @@
-# Coleta de 2026-11-13T17:42:53+00:00
+# Coleta de 2026-11-13T17:47:39+00:00
 
 ## Empresas na CVM
 
-| Emissor | CVM | Razão social | Pendência |
-|---|---|---|---|
-| ABCB |  |  | nenhum candidato |
-| ALUP | 21490 | ALUPAR INVESTIMENTO S/A |  |
-| BRSR |  |  | nenhum candidato |
-| BBSE | 23159 | BB SEGURIDADE PARTICIPAÇÕES S.A. |  |
-| BBDC |  |  | nenhum candidato |
-| BBAS |  |  | nenhum candidato |
-| BPAC |  |  | nenhum candidato |
-| CXSE | 23795 | CAIXA SEGURIDADE PARTICIPAÇÕES S.A. |  |
-| CMIG |  |  | nenhum candidato |
-| CSMG |  |  | nenhum candidato |
-| CPLE |  |  | nenhum candidato |
-| CPFE |  |  | 18660:CPFL ENERGIA SA; 18660:CPFL ENERGIA SA |
-| ENGI |  |  | nenhum candidato |
-| EGIE |  |  | 17329:ENGIE BRASIL ENERGIA S.A.; 17329:ENGIE BRASIL ENERGIA S.A.; 17329:ENGIE BRASIL ENERGIA S.A. |
-| EQTL |  |  | 16608:EQUATORIAL MARANHÃO DISTRIBUIDORA DE ENERGIA S.A.; 18309:EQUATORIAL PARÁ DISTRIBUIDORA DE ENERGIA S.A.; 20010:EQUATORIAL S.A. |
-| ISAE |  |  | 18376:ISA ENERGIA BRASIL S.A.; 18376:ISA ENERGIA BRASIL S.A. |
-| ITUB | 19348 | ITAÚ UNIBANCO HOLDING S.A. |  |
-| ITSA |  |  | 7617:ITAUSA S.A.; 7617:ITAUSA S.A. |
-| PSSA | 16659 | PORTO SEGURO SA |  |
-| SBSP |  |  | nenhum candidato |
-| SAPR |  |  | nenhum candidato |
-| SANB |  |  | nenhum candidato |
-| VIVT | 17671 | TELEFÔNICA BRASIL S.A. |  |
-| TIMS |  |  | 28126:BANCO VOTORANTIM S.A.; 24929:TIM S.A. |
-| TAEE |  |  | 20257:TRANSMISSORA ALIANÇA DE ENERGIA ELÉTRICA S.A.; 20257:TRANSMISSORA ALIANÇA DE ENERGIA ELÉTRICA S.A. |
-| KLBN | 12653 | KLABIN S.A. |  |
-| PETR |  |  | 9512:PETRÓLEO BRASILEIRO S.A. - PETROBRAS; 9512:PETRÓLEO BRASILEIRO S.A. - PETROBRAS |
-| VALE |  |  | 4170:VALE S.A.; 4170:VALE S.A. |
+| Emissor | CVM | Razão social | Conta do lucro | Pendência |
+|---|---|---|---|---|
+| ABCB | 20958 | BANCO ABC BRASIL S/A | 3.11 Lucro ou Prejuízo Líquido do Período (ITR 2026) |  |
+| ALUP | 21490 | ALUPAR INVESTIMENTO S/A | 3.11.01 Atribuído a Sócios da Empresa Controladora (ITR 2026) |  |
+| BRSR | 1210 | BANCO DO ESTADO DO RIO GRANDE DO SUL SA | 3.11.01 Atribuído aos Sócios da Empresa Controladora (ITR 2026) |  |
+| BBSE | 23159 | BB SEGURIDADE PARTICIPAÇÕES S.A. | 3.13.01 Atribuído a Sócios da Empresa Controladora (ITR 2026) |  |
+| BBDC | 906 | BANCO BRADESCO S.A. | 3.11.01 Atribuído aos Sócios da Empresa Controladora (ITR 2026) |  |
+| BBAS | 1023 | BANCO DO BRASIL S.A. | 3.11.01 Atribuído aos Sócios da Empresa Controladora (ITR 2026) |  |
+| BPAC | 22616 | BANCO BTG PACTUAL S/A | 3.09.01 Atribuído a Sócios da Empresa Controladora (ITR 2026) |  |
+| CXSE | 23795 | CAIXA SEGURIDADE PARTICIPAÇÕES S.A. | 3.11.01 Atribuído a Sócios da Empresa Controladora (ITR 2026) |  |
+| CMIG | 2453 | CIA ENERG MINAS GERAIS - CEMIG | 3.11.01 Atribuído a Sócios da Empresa Controladora (ITR 2026) |  |
+| CSMG | 19445 | COMPANHIA DE SANEAMENTO DE MINAS GERAIS | 3.11.01 Atribuído a Sócios da Empresa Controladora (ITR 2026) |  |
+| CPLE | 14311 | COMPANHIA PARANAENSE DE ENERGIA COPEL | 3.11.01 Atribuído a Sócios da Empresa Controladora (ITR 2026) |  |
+| CPFE | 18660 | CPFL ENERGIA SA | 3.11.01 Atribuído a Sócios da Empresa Controladora (ITR 2026) |  |
+| ENGI | 15253 | ENERGISA SA | 3.11.01 Atribuído a Sócios da Empresa Controladora (ITR 2026) |  |
+| EGIE | 17329 | ENGIE BRASIL ENERGIA S.A. | 3.11.01 Atribuído a Sócios da Empresa Controladora (ITR 2026) |  |
+| EQTL | 20010 | EQUATORIAL S.A. | 3.11.01 Atribuído a Sócios da Empresa Controladora (ITR 2026) |  |
+| ISAE | 18376 | ISA ENERGIA BRASIL S.A. | 3.11.01 Atribuído a Sócios da Empresa Controladora (ITR 2026) |  |
+| ITUB | 19348 | ITAÚ UNIBANCO HOLDING S.A. | 3.09.01 Atribuído a Sócios da Empresa Controladora (ITR 2026) |  |
+| ITSA | 7617 | ITAUSA S.A. | 3.11.01 Atribuído a Sócios da Empresa Controladora (ITR 2026) |  |
+| PSSA | 16659 | PORTO SEGURO SA | 3.11.01 Atribuído a Sócios da Empresa Controladora (ITR 2026) |  |
+| SBSP | 14443 | CIA SANEAMENTO BÁSICO ESTADO SÃO PAULO | 3.11.01 Atribuído a Sócios da Empresa Controladora (ITR 2026) |  |
+| SAPR | 18627 | CIA. DE SANEAMENTO DO PARANÁ - SANEPAR | 3.11 Lucro/Prejuízo do Período (ITR 2026) |  |
+| SANB | 20532 | BANCO SANTANDER (BRASIL) S.A. | 3.09.01 Atribuído a Sócios da Empresa Controladora (ITR 2026) |  |
+| VIVT | 17671 | TELEFÔNICA BRASIL S.A. | 3.11.01 Atribuído a Sócios da Empresa Controladora (ITR 2026) |  |
+| TIMS | 24929 | TIM S.A. | 3.11.01 Atribuído a Sócios da Empresa Controladora (ITR 2026) |  |
+| TAEE | 20257 | TRANSMISSORA ALIANÇA DE ENERGIA ELÉTRICA S.A. | 3.11.01 Atribuído a Sócios da Empresa Controladora (ITR 2026) |  |
+| KLBN | 12653 | KLABIN S.A. | 3.11.01 Atribuído a Sócios da Empresa Controladora (ITR 2026) |  |
+| PETR | 9512 | PETRÓLEO BRASILEIRO S.A. - PETROBRAS | 3.11.01 Atribuído a Sócios da Empresa Controladora (ITR 2026) |  |
+| VALE | 4170 | VALE S.A. | 3.11.01 Atribuído a Sócios da Empresa Controladora (ITR 2026) |  |
 
 ## Papéis
 
 | Papel | Ações (mi) | Lucro 12M (R$ mi) | Até | VPA | Payout | DY médio | Div. médio | % JCP | P/L médio | Avisos |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ABCB4 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| ALUP11 | 988.88 | 1,030.7 | 2026-09 | 29.33 | 0.036 | 0.0035 | 0.105 | 0.00 | 8.73 |  |
-| BRSR6 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| BBSE3 | 1,941.25 | 9,188.3 | 2026-09 | 6.94 | 0.128 |  |  |  | 9.73 | sem proventos na B3 para a janela |
-| BBDC3 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| BBDC4 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| BBAS3 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| BPAC11 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| CXSE3 | 3.00 | 4,291.6 | 2026-06 | 4,598.20 | 0.000 |  |  |  |  | sem proventos na B3 para a janela |
-| CMIG4 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| CMIG3 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| CSMG3 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| CPLE3 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| CPFE3 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| ENGI4 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| ENGI3 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| ENGI11 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| EGIE3 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| EQTL3 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| ISAE4 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| ISAE3 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| ITUB3 | 11.02 | 47,749.0 | 2026-09 | 20,801.08 | 0.000 | 0.0118 | 0.379 | 0.18 | 0.01 |  |
-| ITUB4 | 11.02 | 47,749.0 | 2026-09 | 20,801.08 | 0.000 | 0.0105 | 0.379 | 0.18 | 0.01 |  |
-| ITSA4 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| ITSA3 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| PSSA3 | 634.22 | 3,691.1 | 2026-09 | 26.35 | 0.000 | 0.0019 | 0.000 | 1.00 | 0.01 |  |
-| SBSP3 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| SAPR4 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| SAPR3 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| SAPR11 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| SANB3 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| SANB4 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| SANB11 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| VIVT3 | 3,195.61 | 6,598.9 | 2026-06 | 20.54 | 0.022 | 0.0010 | 0.036 | 1.00 | 11.15 |  |
-| TIMS3 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| TAEE3 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| TAEE4 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| TAEE11 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
+| ABCB4 | 258.29 | 1,036.7 | 2026-09 | 29.12 | 0.530 | 0.0745 | 1.287 | 1.00 |  |  |
+| ALUP11 | 988.88 | 1,030.7 | 2026-09 | 29.33 | 0.338 | 0.0385 | 1.016 | 0.00 | 8.73 |  |
+| BRSR6 | 408.97 | 1,641.8 | 2026-06 | 28.96 | 0.407 | 0.0838 | 1.001 | 0.91 | 6.41 | composição do capital informada em milhares (corrigida) |
+| BBSE3 | 1,941.25 | 9,188.3 | 2026-09 | 6.94 | 0.998 | 0.0946 | 2.961 | 0.00 | 9.73 |  |
+| BBDC3 | 10,570.71 | 26,148.4 | 2026-09 | 18.45 | 0.544 | 0.0656 | 0.943 | 1.00 | 8.73 |  |
+| BBDC4 | 10,570.71 | 26,148.4 | 2026-09 | 18.45 | 0.544 | 0.0636 | 1.037 | 1.00 | 9.91 |  |
+| BBAS3 | 5,708.97 | 12,272.0 | 2026-06 | 32.59 | 0.486 | 0.0788 | 1.778 | 0.85 | 6.50 |  |
+| BPAC11 | 11,587.65 | 18,458.1 | 2026-06 | 21.52 | 0.336 | 0.0241 | 0.798 | 1.00 | 16.03 |  |
+| CXSE3 | 3,000.00 | 4,291.6 | 2026-06 | 4.60 | 1.858 | 0.0722 | 0.708 | 0.00 |  | composição do capital informada em milhares (corrigida) |
+| CMIG4 | 2,860.68 | 4,595.1 | 2026-06 | 10.20 | 0.371 | 0.0623 | 0.596 | 0.54 | 5.66 | composição do capital informada em milhares (corrigida) |
+| CMIG3 | 2,860.68 | 4,595.1 | 2026-06 | 10.20 | 0.371 | 0.0476 | 0.596 | 0.54 | 7.35 | composição do capital informada em milhares (corrigida) |
+| CSMG3 | 379.18 | 1,293.0 | 2026-06 | 23.35 | 1.060 | 0.1049 | 2.940 | 0.62 | 9.77 | composição do capital informada em milhares (corrigida) |
+| CPLE3 | 2,970.12 | 3,134.1 | 2026-06 | 8.12 | 0.645 | 0.0725 | 0.602 | 0.50 | 16.87 |  |
+| CPFE3 | 1,152.25 | 6,004.9 | 2026-06 | 19.72 | 0.742 | 0.0793 | 2.593 | 0.00 | 7.77 |  |
+| ENGI4 | 2,515.33 | 1,516.8 | 2026-06 | 7.75 | 0.386 | 0.0550 | 0.352 | 0.00 | 7.69 |  |
+| ENGI3 | 2,515.33 | 1,516.8 | 2026-06 | 7.75 | 0.386 | 0.0303 | 0.368 | 0.00 | 13.33 |  |
+| ENGI11 | 2,515.33 | 1,516.8 | 2026-06 | 38.76 | 0.386 | 0.0470 | 1.776 | 0.00 | 8.83 |  |
+| EGIE3 | 1,142.30 | 3,959.3 | 2026-06 | 13.14 | 0.723 | 0.0562 | 1.745 | 0.08 | 13.59 |  |
+| EQTL3 | 1,255.03 | 958.4 | 2026-06 | 20.82 | 0.389 | 0.0273 | 0.755 | 0.58 | 15.21 |  |
+| ISAE4 | 703.33 | 2,946.2 | 2026-09 | 33.91 | 0.484 |  | 1.707 | 1.00 |  |  |
+| ISAE3 | 703.33 | 2,946.2 | 2026-09 | 33.91 | 0.484 |  | 2.145 | 1.00 |  |  |
+| ITUB3 | 11,022.03 | 47,749.0 | 2026-09 | 20.80 | 0.616 | 0.0697 | 1.804 | 0.49 | 8.52 | composição do capital informada em milhares (corrigida) |
+| ITUB4 | 11,022.03 | 47,749.0 | 2026-09 | 20.80 | 0.616 | 0.0615 | 1.814 | 0.49 | 9.61 | composição do capital informada em milhares (corrigida) |
+| ITSA4 | 11,207.35 | 18,161.0 | 2026-06 | 8.37 | 0.612 | 0.0762 | 0.707 | 0.47 | 8.08 | composição do capital informada em milhares (corrigida) |
+| ITSA3 | 11,207.35 | 18,161.0 | 2026-06 | 8.37 | 0.612 | 0.0744 | 0.707 | 0.47 | 8.40 | composição do capital informada em milhares (corrigida) |
+| PSSA3 | 634.22 | 3,691.1 | 2026-09 | 26.35 | 0.569 | 0.0520 | 1.746 | 0.87 | 10.70 |  |
+| SBSP3 | 3,506.72 | -1,196.6 | 2026-09 | 13.32 | 2.672 | 0.0254 | 0.389 | 0.88 |  |  |
+| SAPR4 | 1,511.21 | 455.3 | 2026-06 | 8.01 | 0.304 | 0.0584 | 0.293 | 1.00 | 6.30 |  |
+| SAPR3 | 1,511.21 | 455.3 | 2026-06 | 8.01 | 0.304 | 0.0539 | 0.266 | 1.00 | 6.34 |  |
+| SAPR11 | 1,511.21 | 455.3 | 2026-06 | 40.05 | 0.304 | 0.0575 | 1.437 | 1.00 | 6.31 |  |
+| SANB3 | 7,487.69 | 13,160.8 | 2026-09 | 17.14 | 0.624 | 0.0686 | 1.030 | 0.97 | 8.56 | composição do capital informada em milhares (corrigida) |
+| SANB4 | 7,487.69 | 13,160.8 | 2026-09 | 17.14 | 0.624 | 0.0688 | 1.133 | 0.97 | 9.42 | composição do capital informada em milhares (corrigida) |
+| SANB11 | 7,487.69 | 13,160.8 | 2026-09 | 34.27 | 0.624 | 0.0687 | 2.164 | 0.97 | 8.99 | composição do capital informada em milhares (corrigida) |
+| VIVT3 | 3,195.61 | 6,598.9 | 2026-06 | 20.54 | 1.021 | 0.0640 | 1.696 | 0.64 | 16.02 |  |
+| TIMS3 | 2,388.67 | 1,786.7 | 2026-06 | 10.47 | 7.259 | 0.0569 | 0.934 | 0.53 |  |  |
+| TAEE3 | 1,033.50 | 1,635.7 | 2026-06 | 7.81 | 0.755 | 0.1045 | 1.236 | 0.41 | 7.25 | composição do capital informada em milhares (corrigida) |
+| TAEE4 | 1,033.50 | 1,635.7 | 2026-06 | 7.81 | 0.755 | 0.1041 | 1.236 | 0.41 | 7.28 | composição do capital informada em milhares (corrigida) |
+| TAEE11 | 1,033.50 | 1,635.7 | 2026-06 | 23.43 | 0.755 | 0.1045 | 3.708 | 0.41 | 7.26 | composição do capital informada em milhares (corrigida) |
 | KLBN4 | 6,116.68 | 0.0 | 2026-09 | 1.62 | 0.029 | 0.0020 | 0.008 | 0.00 | 9.35 |  |
 | KLBN11 | 6,116.68 | 0.0 | 2026-09 | 8.08 | 0.029 | 0.0020 | 0.038 | 0.00 | 9.46 |  |
 | KLBN3 | 6,116.68 | 0.0 | 2026-09 | 1.62 | 0.029 | 0.0019 | 0.008 | 0.00 | 9.92 |  |
-| PETR4 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| PETR3 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
-| VALE3 |  |  |  |  |  |  |  |  |  | empresa sem dados da CVM |
+| PETR4 | 12,888.73 | 133,376.0 | 2026-06 | 37.32 | 0.898 | 0.2105 | 6.645 | 0.29 | 11.12 |  |
+| PETR3 | 12,888.73 | 133,376.0 | 2026-06 | 37.32 | 0.898 | 0.1968 | 6.566 | 0.29 | 11.63 |  |
+| VALE3 | 4,072.37 | 2,188.0 | 2026-09 | 47.82 | 0.604 | 0.0985 | 8.134 | 0.46 | 8.77 | composição do capital informada em milhares (corrigida) |
+
+Petrobras: dívida bruta US$ 70.81 bi em 2026-06-30 (PTAX 5.1766).
