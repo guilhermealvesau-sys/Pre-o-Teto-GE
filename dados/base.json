@@ -1,12 +1,13 @@
 {
- "gerado_em": "2026-11-13T18:03:16+00:00",
+ "gerado_em": "2026-11-13T18:05:50+00:00",
  "janela_anos": 6,
  "ativos": {
   "ABCB4": {
    "fator": 1,
    "janela": "2020-2025",
    "avisos": [
-    "lucro de 2024 indisponível na CVM (fora das médias)"
+    "lucro de 2024 indisponível na CVM (fora das médias)",
+    "proventos da ON estimados pelos da PN (ON não negociada)"
    ],
    "qtd_mi": 258.292,
    "acoes_ref": "2026-09-30",
@@ -17,7 +18,7 @@
    "div_medio6": 1.287,
    "dy_medio": 0.0745,
    "pct_jcp": 1.0,
-   "payout": 0.2225,
+   "payout": 0.4559,
    "payout_anos": "2020-2025",
    "pl_medio": 5.2,
    "detalhe": {
@@ -47,31 +48,31 @@
     },
     "payout_por_ano": {
      "2020": {
-      "distribuido_mi": 16.9,
+      "distribuido_mi": 34.5,
       "lucro_mi": 340.688,
       "acoes_on": 110795134.0,
       "acoes_pn": 106560401.0
      },
      "2021": {
-      "distribuido_mi": 133.8,
+      "distribuido_mi": 276.0,
       "lucro_mi": 562.89,
       "acoes_on": 113445475.0,
       "acoes_pn": 106647086.0
      },
      "2022": {
-      "distribuido_mi": 150.0,
+      "distribuido_mi": 308.5,
       "lucro_mi": 789.718,
       "acoes_on": 113445475.0,
       "acoes_pn": 107407332.0
      },
      "2023": {
-      "distribuido_mi": 179.1,
+      "distribuido_mi": 366.7,
       "lucro_mi": 851.582,
       "acoes_on": 119010510.0,
       "acoes_pn": 113539858.0
      },
      "2025": {
-      "distribuido_mi": 309.5,
+      "distribuido_mi": 631.4,
       "lucro_mi": 1002.0,
       "acoes_on": 122961704.0,
       "acoes_pn": 118201327.0
@@ -175,7 +176,7 @@
    "div_medio6": 1.0012,
    "dy_medio": 0.0838,
    "pct_jcp": 0.9128,
-   "payout": 0.2077,
+   "payout": 0.4143,
    "payout_anos": "2020-2025",
    "pl_medio": 4.923,
    "detalhe": {
@@ -205,37 +206,37 @@
     },
     "payout_por_ano": {
      "2020": {
-      "distribuido_mi": 134.7,
+      "distribuido_mi": 268.6,
       "lucro_mi": 619.662,
       "acoes_on": 205065000.0,
       "acoes_pn": 203909000.0
      },
      "2021": {
-      "distribuido_mi": 195.6,
+      "distribuido_mi": 390.1,
       "lucro_mi": 1084.465,
       "acoes_on": 205065000.0,
       "acoes_pn": 203909000.0
      },
      "2022": {
-      "distribuido_mi": 180.7,
+      "distribuido_mi": 360.5,
       "lucro_mi": 842.242,
       "acoes_on": 205065000.0,
       "acoes_pn": 203909000.0
      },
      "2023": {
-      "distribuido_mi": 188.1,
+      "distribuido_mi": 375.1,
       "lucro_mi": 1012.434,
       "acoes_on": 205065000.0,
       "acoes_pn": 203909000.0
      },
      "2024": {
-      "distribuido_mi": 204.0,
+      "distribuido_mi": 406.9,
       "lucro_mi": 727.253,
       "acoes_on": 205065000.0,
       "acoes_pn": 203909000.0
      },
      "2025": {
-      "distribuido_mi": 343.2,
+      "distribuido_mi": 684.5,
       "lucro_mi": 1713.913,
       "acoes_on": 205065000.0,
       "acoes_pn": 203909000.0
@@ -993,7 +994,7 @@
    "div_medio6": 0.6016,
    "dy_medio": 0.0725,
    "pct_jcp": 0.4989,
-   "payout": 0.6446,
+   "payout": 1.1499,
    "payout_anos": "2020-2025",
    "pl_medio": 11.083,
    "detalhe": {
@@ -1023,31 +1024,31 @@
     },
     "payout_por_ano": {
      "2020": {
-      "distribuido_mi": 4087.4,
+      "distribuido_mi": 8075.0,
       "lucro_mi": 3904.202,
       "acoes_on": 1450310800.0,
       "acoes_pn": 1286242950.0
      },
      "2021": {
-      "distribuido_mi": 1254.9,
+      "distribuido_mi": 3458.2,
       "lucro_mi": 4952.573,
       "acoes_on": 1054090460.0,
       "acoes_pn": 1682463290.0
      },
      "2022": {
-      "distribuido_mi": 848.6,
+      "distribuido_mi": 2338.7,
       "lucro_mi": 1112.007,
       "acoes_on": 1054090460.0,
       "acoes_pn": 1682463290.0
      },
      "2023": {
-      "distribuido_mi": 395.3,
+      "distribuido_mi": 958.0,
       "lucro_mi": 2258.81,
       "acoes_on": 1300347300.0,
       "acoes_pn": 1682463291.0
      },
      "2024": {
-      "distribuido_mi": 500.8,
+      "distribuido_mi": 1213.7,
       "lucro_mi": 2809.631,
       "acoes_on": 1297723500.0,
       "acoes_pn": 1679388691.0
