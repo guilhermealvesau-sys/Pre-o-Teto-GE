@@ -1,11 +1,13 @@
 {
- "gerado_em": "2026-11-13T17:58:29+00:00",
+ "gerado_em": "2026-11-13T18:00:45+00:00",
  "janela_anos": 6,
  "ativos": {
   "ABCB4": {
    "fator": 1,
    "janela": "2020-2025",
-   "avisos": [],
+   "avisos": [
+    "lucro de 2024 indisponível na CVM (fora das médias)"
+   ],
    "qtd_mi": 258.292,
    "acoes_ref": "2026-09-30",
    "lucro12m_mi": 1036.748,
@@ -15,7 +17,7 @@
    "div_medio6": 1.287,
    "dy_medio": 0.0745,
    "pct_jcp": 1.0,
-   "payout": 0.2769,
+   "payout": 0.2225,
    "payout_anos": "2020-2025",
    "pl_medio": 5.2,
    "detalhe": {
@@ -32,7 +34,7 @@
      "2021": 562.89,
      "2022": 789.718,
      "2023": 851.582,
-     "2024": 0.0,
+     "2024": null,
      "2025": 1002.0
     },
     "preco_medio_ano": {
