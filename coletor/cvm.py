@@ -50,6 +50,19 @@ def _ler(z: zipfile.ZipFile, sufixo: str, cnpjs: set[str]) -> pd.DataFrame:
     return df
 
 
+def _ler_ind(z, prefixo: str, demo: str, ano: int, cnpjs: set[str]) -> pd.DataFrame:
+    """Só a demonstração individual (reserva para períodos que a consolidada traz zerados)."""
+    ind = _ler(z, f"{prefixo}_cia_aberta_{demo}_ind_{ano}.csv", cnpjs)
+    if ind.empty:
+        return ind
+    escala = ind["ESCALA_MOEDA"].fillna("MIL").str.upper()
+    ind["vl_mi"] = pd.to_numeric(ind["VL_CONTA"], errors="coerce") * escala.map(lambda e: 1000.0 if e.startswith("MIL") else 1.0) / 1e6
+    ind["ds"] = ind["DS_CONTA"].map(norm)
+    ind["nivel"] = ind["CD_CONTA"].str.count(r"\.")
+    ind["origem"] = f"{prefixo.upper()} {ano} individual"
+    return ind
+
+
 def _ler_demo(z, prefixo: str, demo: str, ano: int, cnpjs: set[str]) -> pd.DataFrame:
     """Demonstração consolidada; para quem não consolida, a individual."""
     con = _ler(z, f"{prefixo}_cia_aberta_{demo}_con_{ano}.csv", cnpjs)
@@ -227,13 +240,14 @@ def coletar(mapa: pd.DataFrame, anos_hist: int = 7) -> dict[str, Empresa]:
     res = {r.emissor: Empresa(r.cnpj, str(r.cd_cvm), r.nome) for r in mapa.itertuples() if r.cnpj}
     por_cnpj = {e.cnpj: k for k, e in res.items()}
 
-    dres, bpps, caps = [], [], []
+    dres, bpps, caps, inds = [], [], [], []
     for ano in range(hoje.year - anos_hist, hoje.year):
         z = _zip("DFP", ano)
         if z is None:
             log.info("DFP %s ainda não publicado", ano)
             continue
         dres.append(_ler_demo(z, "dfp", "DRE", ano, cnpjs))
+        inds.append(_ler_ind(z, "dfp", "DRE", ano, cnpjs))
         bpps.append(_ler_demo(z, "dfp", "BPP", ano, cnpjs))
         caps.append(_ler(z, f"dfp_cia_aberta_composicao_capital_{ano}.csv", cnpjs))
     for ano in (hoje.year - 1, hoje.year):
@@ -241,6 +255,7 @@ def coletar(mapa: pd.DataFrame, anos_hist: int = 7) -> dict[str, Empresa]:
         if z is None:
             continue
         dres.append(_ler_demo(z, "itr", "DRE", ano, cnpjs))
+        inds.append(_ler_ind(z, "itr", "DRE", ano, cnpjs))
         bpps.append(_ler_demo(z, "itr", "BPP", ano, cnpjs))
         caps.append(_ler(z, f"itr_cia_aberta_composicao_capital_{ano}.csv", cnpjs))
 
@@ -253,7 +268,23 @@ def coletar(mapa: pd.DataFrame, anos_hist: int = 7) -> dict[str, Empresa]:
     for cnpj, g in luc.groupby("CNPJ_CIA"):  # conta usada no documento mais recente, para auditoria
         u = g.sort_values("DT_REFER").iloc[-1]
         res[por_cnpj[cnpj]].conta_lucro = f"{u['CD_CONTA']} {u['DS_CONTA']} ({u['origem']})"
-    luc = luc.sort_values(["DT_REFER", "VERSAO"]).drop_duplicates(["CNPJ_CIA", "DT_INI_EXERC", "DT_FIM_EXERC"], keep="last")
+    chave = ["CNPJ_CIA", "DT_INI_EXERC", "DT_FIM_EXERC"]
+    luc = luc.sort_values(["DT_REFER", "VERSAO"]).drop_duplicates(chave, keep="last")
+    # período zerado na consolidada (TIM, ABC, Sabesp em alguns anos): vale o mesmo período da individual
+    ind = pd.concat([d for d in inds if not d.empty], ignore_index=True) if any(not d.empty for d in inds) else None
+    if ind is not None:
+        li = _linhas_lucro(ind).sort_values(["DT_REFER", "VERSAO"]).drop_duplicates(chave, keep="last")
+        li = li[li["vl_mi"].fillna(0) != 0].set_index(chave)["vl_mi"]
+        z = luc["vl_mi"].fillna(0) == 0
+        for i in luc.index[z]:
+            k = tuple(luc.loc[i, chave])
+            if k in li.index:
+                luc.at[i, "vl_mi"] = li.loc[k]
+        faltam = [k for k in li.index if k not in set(map(tuple, luc[chave].values))]
+        if faltam:
+            extra = li.loc[faltam].reset_index()
+            extra["DT_REFER"], extra["VERSAO"] = extra["DT_FIM_EXERC"], 0
+            luc = pd.concat([luc, extra], ignore_index=True)
     for cnpj, g in luc.groupby("CNPJ_CIA"):
         e = res[por_cnpj[cnpj]]
         g = g[g["DT_INI_EXERC"].str[5:] == "01-01"]  # só acumulados do ano (YTD) e anuais
