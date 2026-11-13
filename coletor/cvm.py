@@ -265,12 +265,15 @@ def coletar(mapa: pd.DataFrame, anos_hist: int = 7) -> dict[str, Empresa]:
             e.lucro12m_mi = round(e.lucro12m_mi, 3)
 
     for e in res.values():  # diagnóstico: lucro ausente ou zerado → mostra as contas da DRE no log
-        if e.lucro12m_mi:
+        zerados = [y for y, v in e.lucro_anual_mi.items() if not v]
+        if e.lucro12m_mi and not zerados:
             continue
         g = dre[(dre["CNPJ_CIA"] == e.cnpj)]
         if g.empty:
             continue
-        g = g[g["DT_REFER"] == g["DT_REFER"].max()]
+        ref = f"{zerados[-1]}-12-31" if zerados and (g["DT_REFER"] == f"{zerados[-1]}-12-31").any() else g["DT_REFER"].max()
+        log.warning("CVM: %s com lucro zerado nos anos %s", e.nome, zerados)
+        g = g[(g["DT_REFER"] == ref) & (g["ORDEM_EXERC"].map(norm) == "ultimo")]
         g = g[g["CD_CONTA"].str.startswith("3.") & (g["nivel"] <= 2)].drop_duplicates("CD_CONTA")
         log.warning("CVM: lucro de %s zerado/ausente (conta usada: %s). Contas da DRE:\n%s", e.nome, e.conta_lucro,
                     "\n".join(f"   {r.CD_CONTA} {r.DS_CONTA} = {r.vl_mi:.1f}" for r in g.itertuples()))

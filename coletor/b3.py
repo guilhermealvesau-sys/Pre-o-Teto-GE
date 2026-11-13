@@ -117,11 +117,14 @@ def proventos(emissor: str, trading_name: str | None = None) -> list[dict]:
     O histórico vem de GetListedCashDividends (todas as datas); os eventos recentes de
     GetListedSupplementCompany trazem também o período a que se referem (usado no payout)."""
     eventos: list[dict] = []
-    if trading_name:
+    for nome in [n for n in (trading_name, (trading_name or "").replace("/", " ").strip(), emissor) if n]:
         try:
-            eventos += proventos_historico(trading_name)
+            eventos = proventos_historico(nome)
         except Exception as e:  # noqa: BLE001
-            log.warning("B3: histórico de proventos de %s falhou: %s", emissor, e)
+            log.warning("B3: histórico de proventos de %s (%r) falhou: %s", emissor, nome, e)
+        if eventos:
+            break
+        log.warning("B3: histórico vazio para %s com o nome %r", emissor, nome)
     js = get_json(f"{PROXY}/GetListedSupplementCompany/{_b64({'issuingCompany': emissor, 'language': 'pt-br'})}")
     bloco = js[0] if isinstance(js, list) and js else (js or {})
     for ev in bloco.get("cashDividends") or []:

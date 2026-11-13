@@ -70,6 +70,9 @@ def completo() -> dict:
             log.warning("B3: cadastro de %s indisponível: %s", e["emissor"], ex)
         if info:
             pregao[e["emissor"]] = info.get("tradingName")
+            log.info("B3: %s → pregão %r, CVM %s", e["emissor"], info.get("tradingName"), info.get("codeCVM"))
+        else:
+            log.warning("B3: emissor %s não encontrado no cadastro da bolsa", e["emissor"])
             if not e["cd_cvm"] and info.get("codeCVM"):
                 emp_cfg.at[i, "cd_cvm"] = info["codeCVM"]
     cad = cvm.cadastro()
