@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-13T19:50:49+00:00",
+ "gerado_em": "2026-11-13T21:45:33+00:00",
  "fonte": "B3 – COTAHIST (arquivo diário)",
  "ref": "2026-11-12",
  "cotacoes": {
@@ -185,5 +185,20 @@
   "valor": 5.6518,
   "data": "2026-11-13",
   "fonte": "Banco Central – PTAX venda"
+ },
+ "macro": {
+  "selic": {
+   "valor": 13.75,
+   "data": "2026-12-09",
+   "descricao": "Meta Selic definida pelo Copom (% a.a.)",
+   "serie": 432
+  },
+  "ipca12m": {
+   "valor": 4.63,
+   "data": "2026-10-01",
+   "descricao": "IPCA acumulado em 12 meses (%)",
+   "serie": 13522
+  },
+  "fonte": "Banco Central – SGS"
  }
 }
