@@ -319,7 +319,7 @@ footer.aviso ul{margin:0;padding-left:18px;display:grid;gap:4px}
   function fontesHtml(fs) {
     return (fs || []).filter((f) => safeUrl(f.url)).slice(0, 6).map((f) => {
       let host = ""; try { host = new URL(f.url).hostname.replace(/^www\./, ""); } catch {}
-      return `<a href="${esc(f.url)}" target="_blank" rel="noopener noreferrer" title="${esc(f.titulo || "")}">${esc(host || f.titulo || "fonte")}</a>`;
+      return `<a href="${esc(f.url)}" target="_blank" rel="noopener noreferrer" title="${esc(f.titulo || "")}">${f.tipo ? esc(f.tipo) + ": " : ""}${esc(host || f.titulo || "fonte")}</a>`;
     }).join(" · ");
   }
   function txtResumo(t) {
