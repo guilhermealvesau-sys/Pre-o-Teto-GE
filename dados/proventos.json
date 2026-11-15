@@ -1186,18 +1186,18 @@
    "tipo": "DIVIDENDO",
    "valor": 0.1,
    "data_com": "2025-11-13",
-   "pagamento": "2026-01-06",
+   "pagamento": null,
    "ano_ref": 2025,
-   "referente": "3º Trimestre/2025"
+   "referente": ""
   },
   {
    "classe": "PN",
    "tipo": "DIVIDENDO",
    "valor": 0.1,
    "data_com": "2025-11-13",
-   "pagamento": "2026-01-06",
+   "pagamento": null,
    "ano_ref": 2025,
-   "referente": "3º Trimestre/2025"
+   "referente": ""
   },
   {
    "classe": "ON",

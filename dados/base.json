@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-13T19:50:48+00:00",
+ "gerado_em": "2026-11-15T09:19:17+00:00",
  "janela_anos": 6,
  "ativos": {
   "ABCB4": {
@@ -24,7 +24,7 @@
    "payout_media": 0.4086,
    "payout_media_anos": "2020-2025 (média de 5 anos, sem 2024)",
    "payout_12m": 0.6727,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 5.2,
    "detalhe": {
     "proventos_por_ano": {
@@ -104,7 +104,7 @@
    "payout_media": 0.3609,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.3166,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 8.346,
    "detalhe": {
     "proventos_por_ano": {
@@ -193,7 +193,7 @@
    "payout_media": 0.4251,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.3831,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 4.923,
    "detalhe": {
     "proventos_por_ano": {
@@ -281,7 +281,7 @@
    "payout_media": 0.9203,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.9698,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 8.337,
    "detalhe": {
     "proventos_por_ano": {
@@ -367,7 +367,7 @@
    "payout_media": 0.5775,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.623,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 8.28,
    "detalhe": {
     "proventos_por_ano": {
@@ -453,7 +453,7 @@
    "payout_media": 0.5775,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.623,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 9.743,
    "detalhe": {
     "proventos_por_ano": {
@@ -539,7 +539,7 @@
    "payout_media": 0.477,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.3212,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 6.282,
    "detalhe": {
     "proventos_por_ano": {
@@ -625,7 +625,7 @@
    "payout_media": 0.3365,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.2972,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 12.495,
    "detalhe": {
     "proventos_por_ano": {
@@ -713,7 +713,7 @@
    "payout_media": 0.6833,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.9167,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 10.415,
    "detalhe": {
     "proventos_por_ano": {
@@ -801,7 +801,7 @@
    "payout_media": 0.3619,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.4001,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 6.04,
    "detalhe": {
     "proventos_por_ano": {
@@ -889,7 +889,7 @@
    "payout_media": 0.3619,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.4001,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 6.983,
    "detalhe": {
     "proventos_por_ano": {
@@ -977,7 +977,7 @@
    "payout_media": 1.1599,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.5845,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 6.947,
    "detalhe": {
     "proventos_por_ano": {
@@ -1063,7 +1063,7 @@
    "payout_media": 1.2233,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 1.007,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 11.083,
    "detalhe": {
     "proventos_por_ano": {
@@ -1149,7 +1149,7 @@
    "payout_media": 0.7314,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.716,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 7.268,
    "detalhe": {
     "proventos_por_ano": {
@@ -1235,7 +1235,7 @@
    "payout_media": 0.4013,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.3984,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 7.747,
    "detalhe": {
     "proventos_por_ano": {
@@ -1321,7 +1321,7 @@
    "payout_media": 0.4013,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.3984,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 13.76,
    "detalhe": {
     "proventos_por_ano": {
@@ -1407,7 +1407,7 @@
    "payout_media": 0.4013,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.3984,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 9.1,
    "detalhe": {
     "proventos_por_ano": {
@@ -1493,7 +1493,7 @@
    "payout_media": 0.7639,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.3231,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 12.666,
    "detalhe": {
     "proventos_por_ano": {
@@ -1581,7 +1581,7 @@
    "payout_media": 0.4974,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.1745,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 15.575,
    "detalhe": {
     "proventos_por_ano": {
@@ -1667,7 +1667,7 @@
    "payout_media": 0.5131,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.4783,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 5.491,
    "detalhe": {
     "proventos_por_ano": {
@@ -1753,7 +1753,7 @@
    "payout_media": 0.5131,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.4783,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 6.902,
    "detalhe": {
     "proventos_por_ano": {
@@ -1841,7 +1841,7 @@
    "payout_media": 0.5752,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.7309,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 7.649,
    "detalhe": {
     "proventos_por_ano": {
@@ -1929,7 +1929,7 @@
    "payout_media": 0.5752,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.7309,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 8.752,
    "detalhe": {
     "proventos_por_ano": {
@@ -2017,7 +2017,7 @@
    "payout_media": 0.601,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.7059,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 7.356,
    "detalhe": {
     "proventos_por_ano": {
@@ -2105,7 +2105,7 @@
    "payout_media": 0.601,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.7059,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 7.382,
    "detalhe": {
     "proventos_por_ano": {
@@ -2191,7 +2191,7 @@
    "payout_media": 0.5941,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.5154,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 9.387,
    "detalhe": {
     "proventos_por_ano": {
@@ -2277,7 +2277,7 @@
    "payout_media": 0.373,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 2.0403,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 10.643,
    "detalhe": {
     "proventos_por_ano": {
@@ -2363,7 +2363,7 @@
    "payout_media": 0.3079,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.3622,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 5.108,
    "detalhe": {
     "proventos_por_ano": {
@@ -2449,7 +2449,7 @@
    "payout_media": 0.3079,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.3622,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 5.056,
    "detalhe": {
     "proventos_por_ano": {
@@ -2535,7 +2535,7 @@
    "payout_media": 0.3079,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.3622,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 5.066,
    "detalhe": {
     "proventos_por_ano": {
@@ -2624,7 +2624,7 @@
    "payout_media": 0.6243,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.6174,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 8.409,
    "detalhe": {
     "proventos_por_ano": {
@@ -2713,7 +2713,7 @@
    "payout_media": 0.6243,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.6174,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 9.057,
    "detalhe": {
     "proventos_por_ano": {
@@ -2802,7 +2802,7 @@
    "payout_media": 0.6243,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.6174,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 8.748,
    "detalhe": {
     "proventos_por_ano": {
@@ -2890,7 +2890,7 @@
    "payout_media": 0.8763,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.6379,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 15.993,
    "detalhe": {
     "proventos_por_ano": {
@@ -2976,7 +2976,7 @@
    "payout_media": 0.7055,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.813,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 12.686,
    "detalhe": {
     "proventos_por_ano": {
@@ -3063,8 +3063,8 @@
    "payout_anos": "2023-2025 (mediana)",
    "payout_media": 0.7831,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
-   "payout_12m": 0.6332,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m": 0.4356,
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 7.408,
    "detalhe": {
     "proventos_por_ano": {
@@ -3151,8 +3151,8 @@
    "payout_anos": "2023-2025 (mediana)",
    "payout_media": 0.7831,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
-   "payout_12m": 0.6332,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m": 0.4356,
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 7.471,
    "detalhe": {
     "proventos_por_ano": {
@@ -3239,8 +3239,8 @@
    "payout_anos": "2023-2025 (mediana)",
    "payout_media": 0.7831,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
-   "payout_12m": 0.6332,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m": 0.4356,
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 7.447,
    "detalhe": {
     "proventos_por_ano": {
@@ -3326,7 +3326,7 @@
    "payout_media": 0.5386,
    "payout_media_anos": "2020-2025 (média de 5 anos, sem 2020)",
    "payout_12m": 0.6181,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 9.247,
    "detalhe": {
     "proventos_por_ano": {
@@ -3412,7 +3412,7 @@
    "payout_media": 0.5386,
    "payout_media_anos": "2020-2025 (média de 5 anos, sem 2020)",
    "payout_12m": 0.6181,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 9.569,
    "detalhe": {
     "proventos_por_ano": {
@@ -3498,7 +3498,7 @@
    "payout_media": 0.5386,
    "payout_media_anos": "2020-2025 (média de 5 anos, sem 2020)",
    "payout_12m": 0.6181,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 10.842,
    "detalhe": {
     "proventos_por_ano": {
@@ -3584,7 +3584,7 @@
    "payout_media": 0.9227,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.2891,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 3.556,
    "detalhe": {
     "proventos_por_ano": {
@@ -3670,7 +3670,7 @@
    "payout_media": 0.9227,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.2891,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 3.768,
    "detalhe": {
     "proventos_por_ano": {
@@ -3758,7 +3758,7 @@
    "payout_media": 0.8556,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 10.4461,
-   "payout_12m_ate": "2026-11-13",
+   "payout_12m_ate": "2026-11-15",
    "pl_medio": 8.177,
    "detalhe": {
     "proventos_por_ano": {

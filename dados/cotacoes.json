@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-14T10:02:44+00:00",
+ "gerado_em": "2026-11-15T09:19:19+00:00",
  "fonte": "B3 – COTAHIST (arquivo diário)",
  "ref": "2026-11-13",
  "cotacoes": {
@@ -180,12 +180,25 @@
    "var": 0.012493
   }
  },
- "avisos": [
-  "Selic/IPCA indisponíveis: falha em https://api.bcb.gov.br/dados/serie/bcdata.sgs.13522/dados/ultimos/1?formato=json: Expecting value: line 1 column 1 (char 0)"
- ],
+ "avisos": [],
  "ptax": {
   "valor": 5.6518,
   "data": "2026-11-13",
   "fonte": "Banco Central – PTAX venda"
+ },
+ "macro": {
+  "selic": {
+   "valor": 13.75,
+   "data": "2026-11-15",
+   "descricao": "Meta Selic definida pelo Copom (% a.a.)",
+   "serie": 432
+  },
+  "ipca12m": {
+   "valor": 4.63,
+   "data": "2026-10-01",
+   "descricao": "IPCA acumulado em 12 meses (%)",
+   "serie": 13522
+  },
+  "fonte": "Banco Central – SGS"
  }
 }
