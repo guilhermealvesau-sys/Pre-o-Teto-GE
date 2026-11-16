@@ -8,7 +8,7 @@ import re
 import zipfile
 from datetime import date, datetime, timedelta
 
-from .util import baixar, get_json, log, norm
+from .util import CACHE, baixar, get_json, log, norm
 
 PROXY = "https://sistemaswebb3-listados.b3.com.br/listedCompaniesProxy/CompanyCall"
 SERHIST = "https://bvmf.bmfbovespa.com.br/InstDados/SerHist"
@@ -126,11 +126,57 @@ def proventos_historico(trading_name: str, paginas: int = 20) -> list[dict]:
     return eventos
 
 
-def proventos(emissor: str, trading_name: str | None = None) -> list[dict]:
-    """Proventos em dinheiro do emissor: classe, tipo, valor por ação (bruto), data com, ano de referência.
+def _fator_evento(label: str, fator: float) -> float | None:
+    """Quantas ações passa a valer cada ação: desdobramento e bonificação de f% → 1 + f/100; grupamento → f."""
+    r = norm(label)
+    if "grupamento" in r:
+        return fator if fator > 0 else None
+    if "desdobramento" in r or "bonificacao" in r:
+        return 1 + fator / 100
+    return None
 
-    O histórico vem de GetListedCashDividends (todas as datas); os eventos recentes de
-    GetListedSupplementCompany trazem também o período a que se referem (usado no payout)."""
+
+def suplemento(emissor: str) -> dict:
+    js = get_json(f"{PROXY}/GetListedSupplementCompany/{_b64({'issuingCompany': emissor, 'language': 'pt-br'})}")
+    return js[0] if isinstance(js, list) and js else (js or {})
+
+
+def eventos_acoes(bloco: dict) -> list[dict]:
+    """Desdobramentos, grupamentos e bonificações: classe, fator (ações novas por ação antiga) e data com.
+
+    Os valores de proventos da B3 são os declarados na época (não são ajustados depois de um desdobramento),
+    então os cálculos convertem cada provento para a base de ações de hoje com estes fatores."""
+    out, vistos = [], set()
+    for ev in bloco.get("stockDividends") or []:
+        classe = _classe(ev.get("isinCode") or ev.get("assetIssued"))
+        f, dc = _num(ev.get("factor")), _data(ev.get("lastDatePrior"))
+        k = _fator_evento(ev.get("label") or "", f) if f is not None else None
+        if not classe or not dc or not k or k == 1:
+            continue
+        chave = (classe, dc.isoformat(), round(k, 10), norm(ev.get("label")))
+        if chave in vistos:
+            continue
+        vistos.add(chave)
+        out.append({"classe": classe, "data_com": dc.isoformat(), "fator": k, "tipo": (ev.get("label") or "").upper()})
+    return sorted(out, key=lambda e: e["data_com"])
+
+
+def acoes_b3(bloco: dict) -> dict:
+    """Quantidade de ações no cadastro da B3 (inclui tesouraria) e subscrições recentes (aumentos de capital)."""
+    sub = []
+    for ev in bloco.get("subscriptions") or []:
+        d = _data(ev.get("subscriptionDate")) or _data(ev.get("lastDatePrior"))
+        if d:
+            sub.append({"data": d.isoformat(), "percentual": _num(ev.get("percentage")), "classe": _classe(ev.get("isinCode"))})
+    return {"on": _num(bloco.get("numberCommonShares")), "pn": _num(bloco.get("numberPreferredShares")),
+            "total": _num(bloco.get("totalNumberShares")), "subscricoes": sub}
+
+
+def proventos(emissor: str, trading_name: str | None = None, bloco: dict | None = None) -> list[dict]:
+    """Proventos em dinheiro do emissor: classe, tipo, valor por ação (bruto, como declarado), data com.
+
+    O histórico vem de GetListedCashDividends (todas as datas; um registro por parcela de pagamento) e os
+    eventos recentes de GetListedSupplementCompany (com data de pagamento e período de referência)."""
     eventos: list[dict] = []
     for nome in [n for n in (trading_name, (trading_name or "").replace("/", " ").strip(), emissor) if n]:
         try:
@@ -140,33 +186,42 @@ def proventos(emissor: str, trading_name: str | None = None) -> list[dict]:
         if eventos:
             break
         log.warning("B3: histórico vazio para %s com o nome %r", emissor, nome)
-    js = get_json(f"{PROXY}/GetListedSupplementCompany/{_b64({'issuingCompany': emissor, 'language': 'pt-br'})}")
-    bloco = js[0] if isinstance(js, list) and js else (js or {})
+    hist = eventos
+    if bloco is None:
+        bloco = suplemento(emissor)
+    sup = []
     for ev in bloco.get("cashDividends") or []:
         classe = _classe(ev.get("isinCode") or ev.get("assetIssued"))
         valor, dc = _num(ev.get("rate")), _data(ev.get("lastDatePrior"))
         if not classe or valor is None or dc is None:
             continue
-        eventos.append({"classe": classe, "tipo": _tipo(ev.get("label")), "valor": valor,
-                        "data_com": dc.isoformat(), "pagamento": (_data(ev.get("paymentDate")) or dc).isoformat(),
-                        "ano_ref": _ano_ref(ev.get("relatedTo"), dc), "referente": ev.get("relatedTo") or ""})
+        sup.append({"classe": classe, "tipo": _tipo(ev.get("label")), "valor": valor,
+                    "data_com": dc.isoformat(), "pagamento": (_data(ev.get("paymentDate")) or dc).isoformat(),
+                    "ano_ref": dc.year, "referente": ev.get("relatedTo") or ""})
+    # suplemento: o mesmo evento repetido (mesma data com e de pagamento, valor revisado na 4ª casa) conta uma vez;
+    # parcelas do mesmo provento têm datas de pagamento diferentes e contam todas
+    unicos_sup: list[dict] = []
+    for e in sup:
+        if not any(m["classe"] == e["classe"] and m["tipo"] == e["tipo"] and m["data_com"] == e["data_com"]
+                   and m["pagamento"] == e["pagamento"] and abs(m["valor"] - e["valor"]) <= 0.02 * max(abs(m["valor"]), 1e-9)
+                   for m in unicos_sup):
+            unicos_sup.append(e)
+    # as duas listagens repetem os eventos recentes: cada evento do suplemento substitui UM registro equivalente
+    # do histórico (pareamento um a um). Registros iguais no histórico são parcelas (ex.: Cemig e Petrobras pagam
+    # em duas parcelas) e não podem ser fundidos.
+    usados: set[int] = set()
+    for s in unicos_sup:
+        for i, h in enumerate(hist):
+            if i in usados or h["classe"] != s["classe"] or h["tipo"] != s["tipo"] or h["data_com"] != s["data_com"]:
+                continue
+            if abs(h["valor"] - s["valor"]) <= 0.02 * max(abs(s["valor"]), 1e-9):
+                usados.add(i)
+                break
+    eventos = [h for i, h in enumerate(hist) if i not in usados] + unicos_sup
     if not eventos:
-        chaves = list(bloco.keys()) if isinstance(bloco, dict) else type(js).__name__
+        chaves = list(bloco.keys()) if isinstance(bloco, dict) else type(bloco).__name__
         log.warning("B3: nenhum provento para %s (resposta: %s)", emissor, chaves)
-    # as duas listagens repetem eventos, às vezes com o valor revisado na 4ª casa: mesmo (classe, tipo,
-    # data com) e valores a menos de 2% um do outro contam uma vez, ficando o que traz o período de referência
-    grupos: dict = {}
-    for e in eventos:
-        grupos.setdefault((e["classe"], e["tipo"], e["data_com"]), []).append(e)
-    unicos = []
-    for evs in grupos.values():
-        evs.sort(key=lambda e: (not e["referente"],))
-        mantidos: list[dict] = []
-        for e in evs:
-            if not any(abs(e["valor"] - m["valor"]) <= 0.02 * max(abs(m["valor"]), 1e-9) for m in mantidos):
-                mantidos.append(e)
-        unicos += mantidos
-    return sorted(unicos, key=lambda e: e["data_com"])
+    return sorted(eventos, key=lambda e: (e["data_com"], e["classe"], e["tipo"]))
 
 
 # ---------------------------------------------------------------- COTAHIST
@@ -182,19 +237,53 @@ def _linhas_cotahist(z: zipfile.ZipFile, tickers: set[str]):
             yield tk, raw[2:10], int(raw[108:121]) / 100 / fat
 
 
-def precos_ano(ano: int, tickers: set[str]) -> dict[str, dict]:
-    """Preço médio de fechamento e último fechamento do ano, por ticker."""
+def fechamentos_ano(ano: int, tickers: set[str]) -> dict[str, list]:
+    """Fechamentos diários do ano por ticker: [[AAAA-MM-DD, preço], ...] (cache local, fora do repositório)."""
+    cache = CACHE / f"fechamentos_{ano}.json"
+    if ano < date.today().year and cache.exists():
+        try:
+            js = json.loads(cache.read_text())
+            if set(js.get("tickers", [])) >= set(tickers):
+                return {tk: v for tk, v in js["dados"].items() if tk in tickers}
+        except ValueError:
+            pass
     p = baixar(f"{SERHIST}/COTAHIST_A{ano}.ZIP", reusar=ano < date.today().year, timeout=600)
     if p is None:
         return {}
-    soma: dict[str, list] = {}
+    out: dict[str, list] = {}
     for tk, dia, px in _linhas_cotahist(zipfile.ZipFile(p), tickers):
-        s = soma.setdefault(tk, [0.0, 0, "", 0.0])
-        s[0] += px
-        s[1] += 1
-        if dia >= s[2]:
-            s[2], s[3] = dia, px
-    return {tk: {"media": round(v[0] / v[1], 4), "fim": v[3], "dias": v[1]} for tk, v in soma.items()}
+        out.setdefault(tk, []).append([f"{dia[:4]}-{dia[4:6]}-{dia[6:]}", px])
+    for v in out.values():
+        v.sort()
+    if ano < date.today().year:
+        cache.write_text(json.dumps({"tickers": sorted(tickers), "dados": out}))
+    return out
+
+
+def precos_ano(ano: int, tickers: set[str], fatores: dict[str, list] | None = None) -> dict[str, dict]:
+    """Preço médio de fechamento e último fechamento do ano, por ticker.
+
+    `media` usa os preços como negociados; `media_aj` converte cada dia para a base de ações de hoje com os
+    fatores de desdobramento/bonificação/grupamento posteriores a ele ({ticker: [(data_com, fator), ...]})."""
+    fatores = fatores or {}
+    out = {}
+    for tk, serie in fechamentos_ano(ano, tickers).items():
+        if not serie:
+            continue
+        fs = fatores.get(tk, [])
+        aj = [px / fator_ate_hoje(fs, dia) for dia, px in serie]
+        out[tk] = {"media": round(sum(px for _, px in serie) / len(serie), 4), "fim": serie[-1][1], "dias": len(serie),
+                   "media_aj": round(sum(aj) / len(aj), 4), "fim_aj": round(aj[-1], 4)}
+    return out
+
+
+def fator_ate_hoje(fatores: list, data_iso: str) -> float:
+    """Produto dos fatores de eventos com data com em `data_iso` ou depois (na data com a ação ainda é a antiga)."""
+    g = 1.0
+    for d, k in fatores:
+        if d >= data_iso:
+            g *= k
+    return g
 
 
 def ultimos_pregoes(tickers: set[str], n: int = 2, recuo: int = 10) -> list[tuple[str, dict]]:

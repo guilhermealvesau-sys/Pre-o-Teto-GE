@@ -1,15 +1,19 @@
 """Indicadores do modelo a partir dos dados brutos (CVM + B3), com as definições documentadas no README.
 
 Janela: os 6 últimos anos completos (ex.: em 2026, de 2020 a 2025).
-  - payout (modelo): mediana dos payouts anuais dos 3 últimos anos completos (proventos referentes ao ano ÷ lucro)
-  - payout 12M (comparação): proventos com data com nos últimos 12 meses ÷ lucro dos últimos 12 meses
+Base de ações: a B3 publica cada provento com o valor declarado na época. Antes de qualquer soma, cada valor é
+convertido para a base de ações de hoje com os desdobramentos, grupamentos e bonificações posteriores à data com
+(fatores da própria B3). Sem isso, um desdobramento de 1 para 5 multiplica por 5 os proventos antigos.
+  - payout (modelo): mediana dos payouts anuais dos 3 últimos anos completos
+    (proventos com data com no ano × ações do fim do ano ÷ lucro do ano)
+  - payout 12M (comparação): proventos com data com nos últimos 12 meses × ações de hoje ÷ lucro dos últimos 12 meses
   - payout média (opção): média simples dos payouts anuais dos 6 últimos anos completos (5, se faltar um ano)
   - payout média 6 anos agregada (referência): soma dos proventos da janela ÷ soma dos lucros
-  - DY médio: média dos DY anuais (proventos com data com no ano ÷ preço médio de fechamento do ano)
-  - dividendo médio (R$): média anual dos proventos por papel, ajustada à quantidade de ações de hoje
-    (bonificações e desdobramentos ficam corrigidos sem precisar dos fatores)
+  - DY médio: média dos DY anuais (proventos com data com no ano ÷ preço médio do ano, ambos na base de hoje)
+  - dividendo médio (R$): média anual dos proventos por papel na base de ações de hoje
   - % em JCP: parcela dos proventos dos últimos 3 anos completos paga como JCP
   - P/L médio: mediana dos P/L anuais (preço médio do ano ÷ lucro por ação do ano), ignorando anos com prejuízo
+O ano de um provento é o da data com (critério de caixa, igual para todos os anos da janela).
 """
 from __future__ import annotations
 
@@ -47,10 +51,32 @@ def _prov_classe(eventos: list[dict], classe: str) -> list[dict]:
     return [e for e in eventos if e["classe"] in PN_CLASSES and alvo.get(e["data_com"][:4]) == e["classe"]]
 
 
+def fatores_por_data(fatores: list[dict] | None) -> list[tuple[str, float]]:
+    """Um fator por data com (a B3 repete o evento por classe e pela unit)."""
+    por_data: dict[str, float] = {}
+    for f in fatores or []:
+        por_data.setdefault(f["data_com"], f["fator"])
+    return sorted(por_data.items())
+
+
+def _g(fs: list[tuple[str, float]], data_iso: str) -> float:
+    """Ações de hoje por ação existente em `data_iso` (eventos com data com nessa data ou depois)."""
+    g = 1.0
+    for d, k in fs:
+        if d >= data_iso:
+            g *= k
+    return g
+
+
 def calcular(a: dict, emp, eventos: list[dict], precos: dict[int, dict], ano_atual: int,
-             anos: int = 6, hoje: date | None = None) -> dict:
-    """`a`: linha de config/ativos.csv; `emp`: cvm.Empresa; `precos`: {ano: {media, fim}} do ticker."""
+             anos: int = 6, hoje: date | None = None, fatores: list[dict] | None = None) -> dict:
+    """`a`: linha de config/ativos.csv; `emp`: cvm.Empresa; `precos`: {ano: {media, media_aj, fim}} do ticker;
+    `fatores`: desdobramentos/grupamentos/bonificações do emissor (b3.eventos_acoes)."""
     janela = list(range(ano_atual - anos, ano_atual))
+    fs = fatores_por_data(fatores)
+    vh = lambda e: e["valor"] / _g(fs, e["data_com"])  # noqa: E731  (valor na base de ações de hoje)
+    fim_ano = lambda y: _g(fs, f"{y}-12-31")  # noqa: E731  (ações de hoje por ação do fim do ano y)
+    preco_aj = lambda y: precos.get(y, {}).get("media_aj") or precos.get(y, {}).get("media")  # noqa: E731
     fator = a["unit_on"] + a["unit_pn"] if a["classe"] == "UNIT" else 1
     out: dict = {"fator": fator, "janela": f"{janela[0]}-{janela[-1]}", "avisos": list(emp.avisos) if emp else []}
     if emp is None:
@@ -83,27 +109,20 @@ def calcular(a: dict, emp, eventos: list[dict], precos: dict[int, dict], ano_atu
     comp = _componentes(a)
     por_cls = {c: _prov_classe(eventos, c) for c, _ in comp}
 
-    # ---- proventos por papel e por ano (data com), brutos e ajustados à base de ações de hoje
-    prov_ano, prov_adj = {}, {}
+    # ---- proventos por papel e por ano (data com), na base de ações de hoje
+    prov_ano = {}
     for y in janela:
-        bruto = ajustado = 0.0
-        for c, n in comp:
-            hoje_c = acoes(c, None)
-            for e in por_cls[c]:
-                if int(e["data_com"][:4]) != y:
-                    continue
-                bruto += n * e["valor"]
-                then_c = acoes(c, y)
-                ajustado += n * e["valor"] * ((then_c / hoje_c) if then_c and hoje_c else 1.0)
-        prov_ano[y], prov_adj[y] = bruto, ajustado
+        prov_ano[y] = sum(n * vh(e) for c, n in comp for e in por_cls[c] if int(e["data_com"][:4]) == y)
     tem_hist = any(prov_ano.values())
     if tem_hist:
-        out["div_medio6"] = round(mean(prov_adj.values()), 4)
-        dys = [prov_ano[y] / precos[y]["media"] for y in janela if precos.get(y, {}).get("media")]
+        out["div_medio6"] = round(mean(prov_ano.values()), 4)
+        dys = [prov_ano[y] / preco_aj(y) for y in janela if preco_aj(y)]
         if len(dys) >= 3:
             out["dy_medio"] = round(mean(dys), 4)
     else:
         out["avisos"].append("sem proventos na B3 para a janela")
+    if any(d[:4] >= str(janela[0]) for d, _ in fs):
+        out["eventos_acoes"] = [f"{d}: ×{k:g}" for d, k in fs if d[:4] >= str(janela[0])]
 
     # ---- % em JCP: últimos 3 anos completos
     ult3 = set(janela[-3:])
@@ -111,8 +130,8 @@ def calcular(a: dict, emp, eventos: list[dict], precos: dict[int, dict], ano_atu
     for c, n in comp:
         for e in por_cls[c]:
             if int(e["data_com"][:4]) in ult3:
-                tot += n * e["valor"]
-                jcp += n * e["valor"] if e["tipo"] == "JCP" else 0.0
+                tot += n * vh(e)
+                jcp += n * vh(e) if e["tipo"] == "JCP" else 0.0
     if tot > 0:
         out["pct_jcp"] = round(jcp / tot, 4)
 
@@ -126,9 +145,10 @@ def calcular(a: dict, emp, eventos: list[dict], precos: dict[int, dict], ano_atu
             continue
         d = 0.0
         # ON × ações ON + uma classe preferencial representativa × ações PN (a CVM soma PNA e PNB)
+        # valores na base de ações do fim do ano y (a mesma das quantidades da CVM em 31/12/y)
         ev_on, ev_pn = _prov_classe(eventos, "ON"), _prov_classe(eventos, "PN")
-        v_on = sum(e["valor"] for e in ev_on if e["ano_ref"] == y)
-        v_pn = sum(e["valor"] for e in ev_pn if e["ano_ref"] == y)
+        v_on = sum(vh(e) * fim_ano(y) for e in ev_on if int(e["data_com"][:4]) == y)
+        v_pn = sum(vh(e) * fim_ano(y) for e in ev_pn if int(e["data_com"][:4]) == y)
         if not v_on and v_pn and acoes("ON", y):  # ON não negociada no ano: a B3 só lista a PN
             v_on = v_pn
             if "proventos da ON estimados pelos da PN (ON não negociada)" not in out["avisos"]:
@@ -165,7 +185,7 @@ def calcular(a: dict, emp, eventos: list[dict], precos: dict[int, dict], ano_atu
         ev_on = [e for e in rec if e["classe"] == "ON"]
         pn_cls = next((c for c in ("PN", "PNB", "PNA", "PNC") if any(e["classe"] == c for e in rec)), None)
         ev_pn = [e for e in rec if e["classe"] == pn_cls]
-        v_on, v_pn = sum(e["valor"] for e in ev_on), sum(e["valor"] for e in ev_pn)
+        v_on, v_pn = sum(vh(e) for e in ev_on), sum(vh(e) for e in ev_pn)
         if not v_on and v_pn and emp.acoes_on:
             v_on = v_pn
         d12 = (v_on * (emp.acoes_on or 0) + v_pn * (emp.acoes_pn or 0)) / 1e6
@@ -176,12 +196,12 @@ def calcular(a: dict, emp, eventos: list[dict], precos: dict[int, dict], ano_atu
     # ---- P/L médio
     pls = []
     for y in janela:
-        px = precos.get(y, {}).get("media")
+        px = preco_aj(y)
         ll = emp.lucro_anual_mi.get(y)
         q = emp.acoes_ano.get(y)
         if not px or ll is None or not q or ll <= 0:
             continue
-        lpa = ll * 1e6 / (q["on"] + q["pn"]) * fator
+        lpa = ll * 1e6 / ((q["on"] + q["pn"]) * fim_ano(y)) * fator  # lucro por ação na base de hoje
         pls.append(px / lpa)
     if len(pls) >= 3:
         out["pl_medio"] = round(median(pls), 3)
@@ -189,7 +209,7 @@ def calcular(a: dict, emp, eventos: list[dict], precos: dict[int, dict], ano_atu
     out["detalhe"] = {
         "proventos_por_ano": {y: round(v, 4) for y, v in prov_ano.items()},
         "lucro_anual_mi": {y: emp.lucro_anual_mi.get(y) for y in janela},
-        "preco_medio_ano": {y: precos.get(y, {}).get("media") for y in janela},
+        "preco_medio_ano": {y: preco_aj(y) for y in janela},
         "payout_por_ano": payout_ano,
     }
     return out

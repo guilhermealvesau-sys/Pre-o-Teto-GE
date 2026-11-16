@@ -63,10 +63,20 @@ def _ler_ind(z, prefixo: str, demo: str, ano: int, cnpjs: set[str]) -> pd.DataFr
     return ind
 
 
-def _ler_demo(z, prefixo: str, demo: str, ano: int, cnpjs: set[str]) -> pd.DataFrame:
-    """Demonstração consolidada; para quem não consolida, a individual."""
+def _ler_demo(z, prefixo: str, demo: str, ano: int, cnpjs: set[str], so_ind: set[str] = frozenset()) -> pd.DataFrame:
+    """Demonstração consolidada; para quem não consolida, a individual.
+
+    `so_ind`: CNPJs que usam sempre a individual. Bancos: a consolidada da CVM é IFRS e a individual segue o
+    padrão do Banco Central (BR GAAP), que é o dos releases e o usado pelo mercado (ex.: o ágio do Santander)."""
     con = _ler(z, f"{prefixo}_cia_aberta_{demo}_con_{ano}.csv", cnpjs)
     ind = _ler(z, f"{prefixo}_cia_aberta_{demo}_ind_{ano}.csv", cnpjs)
+    if so_ind:
+        if not con.empty:
+            con = con[~con["CNPJ_CIA"].isin(so_ind)]
+        if not ind.empty:
+            forc = ind[ind["CNPJ_CIA"].isin(so_ind)]
+            con = pd.concat([con, forc], ignore_index=True) if not con.empty else forc.copy()
+            ind = ind[~ind["CNPJ_CIA"].isin(so_ind)]
     if not ind.empty:
         # vale a individual quando não há consolidada ou quando a consolidada veio toda zerada (ex.: TIM)
         chave = ["CNPJ_CIA", "DT_REFER"]
@@ -109,25 +119,33 @@ def _linhas_lucro(dre: pd.DataFrame) -> pd.DataFrame:
         g3 = g[g["CD_CONTA"].str.startswith("3.")]
         alvo = g3[g3["ds"].apply(lambda s: any(k in s for k in _CONTROL))]
         if not alvo.empty:
-            cod = alvo.sort_values("nivel")["CD_CONTA"].iloc[0]
+            # alguns modelos (ex.: Banco do Brasil) repetem a quebra sob "antes das participações" (3.09.01) com zeros;
+            # vale a do lucro líquido, que é a de maior código no menor nível
+            niv = alvo["nivel"].min()
+            cods = alvo[alvo["nivel"] == niv]["CD_CONTA"].unique()
+            cod = sorted(cods, key=lambda c: [int(x) for x in c.split(".")])[-1]
         else:  # sem quebra controlador/minoritário: lucro do período (nível 2, maior código)
             n2 = g3[(g3["nivel"] == 1) & g3["ds"].str.contains("lucro") & g3["ds"].str.contains("periodo")]
             if n2.empty:
                 continue
             cod = sorted(n2["CD_CONTA"].unique(), key=lambda c: [int(x) for x in c.split(".")])[-1]
         linhas = g[g["CD_CONTA"] == cod].copy()
-        # companhia sem minoritários costuma deixar a linha "atribuído aos controladores" zerada:
-        # nesse período vale o lucro consolidado (conta-mãe)
+        # linha dos controladores zerada (comum sem minoritários, mas também em quem tem minoritários, ex.: Klabin):
+        # guarda o total consolidado e a parcela dos não controladores; o coletor tenta antes a individual
+        # (lucro da controladora = atribuído aos controladores) e só depois total − não controladores
+        linhas["vl_total"], linhas["vl_nc"] = None, None
         pai = cod.rsplit(".", 1)[0] if cod.count(".") >= 2 else None
         if pai:
-            mae = g[g["CD_CONTA"] == pai].set_index(["ORDEM_EXERC", "DT_INI_EXERC", "DT_FIM_EXERC"])["vl_mi"]
+            k = ["ORDEM_EXERC", "DT_INI_EXERC", "DT_FIM_EXERC"]
+            mae = g[g["CD_CONTA"] == pai].set_index(k)["vl_mi"]
             mae = mae[~mae.index.duplicated()]
+            irm = g[g["CD_CONTA"].str.startswith(pai + ".") & g["ds"].str.contains("nao controlador")]
+            nc = irm.set_index(k)["vl_mi"]
+            nc = nc[~nc.index.duplicated()]
             for i, r in linhas.iterrows():
-                if not r["vl_mi"]:
-                    v = mae.get((r["ORDEM_EXERC"], r["DT_INI_EXERC"], r["DT_FIM_EXERC"]))
-                    if v:
-                        linhas.at[i, "vl_mi"] = v
-                        linhas.at[i, "DS_CONTA"] = f"{r['DS_CONTA']} (zerada; usado {pai})"
+                chave = (r["ORDEM_EXERC"], r["DT_INI_EXERC"], r["DT_FIM_EXERC"])
+                linhas.at[i, "vl_total"] = mae.get(chave)
+                linhas.at[i, "vl_nc"] = nc.get(chave)
         out.append(linhas)
     return pd.concat(out, ignore_index=True) if out else dre.iloc[0:0]
 
@@ -177,6 +195,7 @@ def _acoes(cap: pd.DataFrame) -> pd.DataFrame:
     out = cap[["CNPJ_CIA", "DT_REFER"]].copy()
     out["on"] = num(on_i) - num(on_t)
     out["pn"] = num(pn_i) - num(pn_t)
+    out["tes_on"], out["tes_pn"] = num(on_t), num(pn_t)
     out["total"] = out["on"] + out["pn"]
     return out
 
@@ -196,6 +215,8 @@ class Empresa:
     acoes_pn: float | None = None
     acoes_ref: str | None = None
     acoes_ano: dict[int, dict] = field(default_factory=dict)
+    tesouraria_on: float = 0.0
+    tesouraria_pn: float = 0.0
     divida_bruta_mi: float | None = None
     conta_lucro: str | None = None
     avisos: list[str] = field(default_factory=list)
@@ -203,6 +224,8 @@ class Empresa:
     def escalar_acoes(self, fator: float) -> None:
         self.acoes_on = (self.acoes_on or 0) * fator
         self.acoes_pn = (self.acoes_pn or 0) * fator
+        self.tesouraria_on *= fator
+        self.tesouraria_pn *= fator
         self.acoes_ano = {y: {"on": v["on"] * fator, "pn": v["pn"] * fator} for y, v in self.acoes_ano.items()}
 
 
@@ -233,10 +256,11 @@ def resolver(empresas: pd.DataFrame, cad: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(linhas)
 
 
-def coletar(mapa: pd.DataFrame, anos_hist: int = 7) -> dict[str, Empresa]:
-    """`mapa`: colunas emissor, cnpj, cd_cvm, nome (cnpj obrigatório)."""
+def coletar(mapa: pd.DataFrame, anos_hist: int = 7, so_ind: set[str] = frozenset()) -> dict[str, Empresa]:
+    """`mapa`: colunas emissor, cnpj, cd_cvm, nome (cnpj obrigatório). `so_ind`: CNPJs que usam a individual."""
     hoje = date.today()
     cnpjs = set(mapa["cnpj"].dropna())
+    so_ind = set(so_ind) & cnpjs
     res = {r.emissor: Empresa(r.cnpj, str(r.cd_cvm), r.nome) for r in mapa.itertuples() if r.cnpj}
     por_cnpj = {e.cnpj: k for k, e in res.items()}
 
@@ -246,17 +270,17 @@ def coletar(mapa: pd.DataFrame, anos_hist: int = 7) -> dict[str, Empresa]:
         if z is None:
             log.info("DFP %s ainda não publicado", ano)
             continue
-        dres.append(_ler_demo(z, "dfp", "DRE", ano, cnpjs))
-        inds.append(_ler_ind(z, "dfp", "DRE", ano, cnpjs))
-        bpps.append(_ler_demo(z, "dfp", "BPP", ano, cnpjs))
+        dres.append(_ler_demo(z, "dfp", "DRE", ano, cnpjs, so_ind))
+        inds.append(_ler_ind(z, "dfp", "DRE", ano, cnpjs - so_ind))
+        bpps.append(_ler_demo(z, "dfp", "BPP", ano, cnpjs, so_ind))
         caps.append(_ler(z, f"dfp_cia_aberta_composicao_capital_{ano}.csv", cnpjs))
     for ano in (hoje.year - 1, hoje.year):
         z = _zip("ITR", ano)
         if z is None:
             continue
-        dres.append(_ler_demo(z, "itr", "DRE", ano, cnpjs))
-        inds.append(_ler_ind(z, "itr", "DRE", ano, cnpjs))
-        bpps.append(_ler_demo(z, "itr", "BPP", ano, cnpjs))
+        dres.append(_ler_demo(z, "itr", "DRE", ano, cnpjs, so_ind))
+        inds.append(_ler_ind(z, "itr", "DRE", ano, cnpjs - so_ind))
+        bpps.append(_ler_demo(z, "itr", "BPP", ano, cnpjs, so_ind))
         caps.append(_ler(z, f"itr_cia_aberta_composicao_capital_{ano}.csv", cnpjs))
 
     dre = pd.concat([d for d in dres if not d.empty], ignore_index=True)
@@ -285,6 +309,17 @@ def coletar(mapa: pd.DataFrame, anos_hist: int = 7) -> dict[str, Empresa]:
             extra = li.loc[faltam].reset_index()
             extra["DT_REFER"], extra["VERSAO"] = extra["DT_FIM_EXERC"], 0
             luc = pd.concat([luc, extra], ignore_index=True)
+    # ainda zerado (sem individual para o período): total consolidado − não controladores; sem essa quebra, o total
+    if "vl_total" in luc:
+        z = (luc["vl_mi"].fillna(0) == 0) & luc["vl_total"].notna()
+        for i in luc.index[z]:
+            tot, nc = luc.at[i, "vl_total"], luc.at[i, "vl_nc"]
+            if tot:
+                luc.at[i, "vl_mi"] = tot - (nc or 0)
+                em_ = por_cnpj.get(luc.at[i, "CNPJ_CIA"])
+                if em_ and not nc:
+                    res[em_].avisos.append(f"lucro de {luc.at[i, 'DT_FIM_EXERC'][:7]} sem a parcela dos controladores na CVM: "
+                                           "usado o consolidado")
     for cnpj, g in luc.groupby("CNPJ_CIA"):
         e = res[por_cnpj[cnpj]]
         g = g[g["DT_INI_EXERC"].str[5:] == "01-01"]  # só acumulados do ano (YTD) e anuais
@@ -343,9 +378,11 @@ def coletar(mapa: pd.DataFrame, anos_hist: int = 7) -> dict[str, Empresa]:
         # documento com total 100× menor que o maior da série é reescalado (×1000)
         mx = g["total"].max()
         esc = g["total"].apply(lambda t: 1000.0 if 0 < t < mx / 100 else 1.0)
-        g = g.assign(on=g["on"] * esc, pn=g["pn"] * esc, total=g["total"] * esc)
+        g = g.assign(on=g["on"] * esc, pn=g["pn"] * esc, total=g["total"] * esc,
+                     tes_on=g["tes_on"] * esc, tes_pn=g["tes_pn"] * esc)
         ult = g.iloc[-1]
         e.acoes_on, e.acoes_pn, e.acoes_ref = float(ult["on"]), float(ult["pn"]), ult["DT_REFER"]
+        e.tesouraria_on, e.tesouraria_pn = float(ult["tes_on"]), float(ult["tes_pn"])
         for r in g[g["DT_REFER"].str[5:] == "12-31"].itertuples():
             e.acoes_ano[int(r.DT_REFER[:4])] = {"on": float(r.on), "pn": float(r.pn)}
         if not e.acoes_on and not e.acoes_pn:

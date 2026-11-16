@@ -49,7 +49,7 @@ def dre_rows(em, ref, periodos, banco=False):
     cod = ("3.09", "3.09.01") if banco else ("3.11", "3.11.01")
     for ordem, ini, fim, v in periodos:
         mil = int(v * 1000)  # MIL
-        ctrl = 0 if (em == "PETR" and fim == f"{ANO - 2}-12-31") else mil  # linha de controladores zerada
+        ctrl = 0 if (em == "PETR" and fim in (f"{ANO - 2}-12-31", f"{ANO - 4}-12-31")) else mil  # controladores zerada
         out.append(f"{cnpj};{ref};1;{nome};{cd};DF Consolidado - Demonstração do Resultado;REAL;MIL;{ordem};{ini};{fim};{cod[0]};Lucro/Prejuízo Consolidado do Período;{mil + 5000};S")
         out.append(f"{cnpj};{ref};1;{nome};{cd};DF Consolidado - Demonstração do Resultado;REAL;MIL;{ordem};{ini};{fim};{cod[1]};Atribuído a Sócios da Empresa Controladora;{ctrl};S")
     return out
@@ -66,6 +66,18 @@ def bpp_rows(em, ref):
               f"{base};2.01.05;Outras Obrigações;50000000;S",
               f"{base};2.01.05.02.03;Arrendamentos;10000000;N"]
     return r
+
+
+def dre_ind_banco(ref, periodos):
+    """Individual do banco (padrão Banco Central): lucro 95% do consolidado IFRS, na conta 3.13."""
+    cnpj, cd, nome, *_ = EMP["ITUB"]
+    return [f"{cnpj};{ref};1;{nome};{cd};DF Individual - Demonstração do Resultado;REAL;MIL;{o};{i};{f};3.13;Lucro/Prejuízo do Período;{int(v * 950)};S"
+            for o, i, f, v in periodos]
+
+
+def bpp_ind_banco(ref):
+    cnpj, cd, nome, *_ = EMP["ITUB"]
+    return [f"{cnpj};{ref};1;{nome};{cd};DF Individual - Balanço Patrimonial Passivo;REAL;MIL;ÚLTIMO;{ref};2.05;Patrimônio Líquido;7600000;S"]
 
 
 def cap_rows(em, ref, ano):
@@ -94,7 +106,13 @@ def fixtures():
                                       ("PENÚLTIMO", f"{y-1}-01-01", f"{y-1}-12-31", lucro_ano(em, y - 1))], banco=em == "ITUB")
             bpp += bpp_rows(em, ref)
             cap += cap_rows(em, ref, y)
-        ind = [HDR]
+        ind = [HDR] + dre_ind_banco(ref, [("ÚLTIMO", f"{y}-01-01", ref, lucro_ano("ITUB", y)),
+                                          ("PENÚLTIMO", f"{y-1}-01-01", f"{y-1}-12-31", lucro_ano("ITUB", y - 1))])
+        bpp_ind = [HDR_BPP] + bpp_ind_banco(ref)
+        if y == ANO - 2:  # PETR: linha dos controladores zerada e minoritários relevantes → vale a individual
+            cnpj, cd, nome, *_ = EMP["PETR"]
+            for ordem, ini, fim, v in (("ÚLTIMO", f"{y}-01-01", ref, 90000000), ("PENÚLTIMO", f"{y-1}-01-01", f"{y-1}-12-31", 100000000)):
+                ind.append(f"{cnpj};{ref};1;{nome};{cd};DF Individual - Demonstração do Resultado;REAL;MIL;{ordem};{ini};{fim};3.11;Lucro/Prejuízo do Período;{v};S")
         if y == ANO - 5:  # PETR entrega a consolidada zerada nesse ano; o lucro real está na individual
             cnpj, cd, nome, *_ = EMP["PETR"]
             dre = [l if not l.startswith(cnpj) else ";".join(l.split(";")[:13] + ["0", "S"]) for l in dre]
@@ -102,7 +120,8 @@ def fixtures():
                 ind.append(f"{cnpj};{ref};1;{nome};{cd};DF Individual - Demonstração do Resultado;REAL;MIL;{ordem};{ini};{fim};3.11;Lucro/Prejuízo do Período;77000000;S")
         p = TMP / f"dfp{y}.zip"
         zipar(p, {f"dfp_cia_aberta_DRE_con_{y}.csv": dre, f"dfp_cia_aberta_DRE_ind_{y}.csv": ind,
-                  f"dfp_cia_aberta_BPP_con_{y}.csv": bpp, f"dfp_cia_aberta_composicao_capital_{y}.csv": cap})
+                  f"dfp_cia_aberta_BPP_con_{y}.csv": bpp, f"dfp_cia_aberta_BPP_ind_{y}.csv": bpp_ind,
+                  f"dfp_cia_aberta_composicao_capital_{y}.csv": cap})
         arq[f"DFP/DADOS/dfp_cia_aberta_{y}.zip"] = p
     for y in (ANO - 1, ANO):
         ref = f"{y}-09-30"
@@ -113,8 +132,11 @@ def fixtures():
                                       ("PENÚLTIMO", f"{y-1}-01-01", f"{y-1}-09-30", ytd[1])], banco=em == "ITUB")
             bpp += bpp_rows(em, ref)
             cap += cap_rows(em, ref, y)
+        ytd_b = (33000, 30000)
+        ind = [HDR] + dre_ind_banco(ref, [("ÚLTIMO", f"{y}-01-01", ref, ytd_b[0]), ("PENÚLTIMO", f"{y-1}-01-01", f"{y-1}-09-30", ytd_b[1])])
         p = TMP / f"itr{y}.zip"
-        zipar(p, {f"itr_cia_aberta_DRE_con_{y}.csv": dre, f"itr_cia_aberta_BPP_con_{y}.csv": bpp,
+        zipar(p, {f"itr_cia_aberta_DRE_con_{y}.csv": dre, f"itr_cia_aberta_DRE_ind_{y}.csv": ind,
+                  f"itr_cia_aberta_BPP_con_{y}.csv": bpp, f"itr_cia_aberta_BPP_ind_{y}.csv": [HDR_BPP] + bpp_ind_banco(ref),
                   f"itr_cia_aberta_composicao_capital_{y}.csv": cap})
         arq[f"ITR/DADOS/itr_cia_aberta_{y}.zip"] = p
     ipe_hdr = "CNPJ_Companhia;Nome_Companhia;Codigo_CVM;Data_Referencia;Categoria;Tipo;Especie;Assunto;Data_Entrega;Tipo_Apresentacao;Protocolo_Entrega;Versao;Link_Download"
@@ -164,10 +186,66 @@ def proventos_json(emissor):
     ev.append(dict(ev[0]))  # duplicado proposital
     quase = dict(ev[0]); quase["rate"] = "0,50040000000"; quase["relatedTo"] = ""  # revisão na 4ª casa
     ev.append(quase)
-    return [{"code": emissor, "cashDividends": ev}]
+    sd = []
+    if emissor == "ITUB":  # bonificação de 10% em março de dois anos atrás (as ações da CVM já refletem)
+        sd = [{"isinCode": f"BRITUB{c}1", "label": "BONIFICACAO", "factor": "10,00000000000", "lastDatePrior": f"01/03/{ANO - 2}"}
+              for c in ("ACNOR", "ACNPR")]
+    if emissor == "PETR":  # desdobramento de 1 para 2 depois do formulário de 30/09 (valores antigos não ajustados)
+        sd = [{"isinCode": f"BRPETR{c}1", "label": "DESDOBRAMENTO", "factor": "100,00000000000", "lastDatePrior": f"01/10/{ANO}"}
+              for c in ("ACNOR", "ACNPR", "CDAM")]
+    return [{"code": emissor, "cashDividends": ev, "stockDividends": sd}]
+
+
+def teste_proventos_parcelas():
+    hist_js = {"page": {"totalPages": 1}, "results": [
+        {"typeStock": "ON", "valueCash": "0,30", "lastDatePriorEx": "15/03/2025", "corporateAction": "DIVIDENDO"},
+        {"typeStock": "ON", "valueCash": "0,30", "lastDatePriorEx": "15/03/2025", "corporateAction": "DIVIDENDO"},
+        {"typeStock": "ON", "valueCash": "0,50", "lastDatePriorEx": "15/06/2025", "corporateAction": "DIVIDENDO"}]}
+    bloco = {"cashDividends": [
+        {"isinCode": "BRXXXXACNOR1", "rate": "0,50", "label": "DIVIDENDO", "lastDatePrior": "15/06/2025", "paymentDate": "30/06/2025"},
+        {"isinCode": "BRXXXXACNOR1", "rate": "0,30", "label": "DIVIDENDO", "lastDatePrior": "15/03/2025", "paymentDate": "30/03/2025"}],
+        "stockDividends": [
+        {"isinCode": "BRXXXXACNOR1", "label": "DESDOBRAMENTO", "factor": "400,00", "lastDatePrior": "28/04/2026"},
+        {"isinCode": "BRXXXXCDAM11", "label": "DESDOBRAMENTO", "factor": "400,00", "lastDatePrior": "28/04/2026"},
+        {"isinCode": "BRXXXXACNOR1", "label": "BONIFICACAO", "factor": "2,9647", "lastDatePrior": "23/12/2025"},
+        {"isinCode": "BRXXXXACNOR1", "label": "GRUPAMENTO", "factor": "0,025", "lastDatePrior": "14/04/2025"},
+        {"isinCode": "BRXXXXACNOR1", "label": "RESG TOTAL RV", "factor": "100,00", "lastDatePrior": "14/04/2025"}]}
+    orig = b3.get_json
+    b3.get_json = lambda url, **kw: hist_js if "GetListedCashDividends" in url else None
+    try:
+        ev = b3.proventos("XXXX", "NOME", bloco=bloco)
+    finally:
+        b3.get_json = orig
+    got = sorted((e["data_com"], e["valor"]) for e in ev)
+    assert got == [("2025-03-15", 0.3), ("2025-03-15", 0.3), ("2025-06-15", 0.5)], got
+    print("ok  proventos: parcelas iguais no histórico contam todas; o suplemento substitui um registro cada")
+    f = [(x["data_com"], round(x["fator"], 6)) for x in b3.eventos_acoes(bloco)]
+    assert f == [("2025-04-14", 0.025), ("2025-12-23", 1.029647), ("2026-04-28", 5.0)], f
+    print("ok  eventos em ações: grupamento, bonificação e desdobramento com os fatores da B3")
+
+
+def teste_acoes_hoje():
+    e = cvm.Empresa("x", "1", "Banco X", acoes_on=5_585_000_000, acoes_pn=4_985_700_000, acoes_ref="2026-09-30",
+                    tesouraria_on=10_000_000, tesouraria_pn=11_300_000)
+    info = {"on": 5_606_747_177, "pn": 5_590_117_604, "total": 11_196_864_781,
+            "subscricoes": [{"data": "2026-09-04", "percentual": 5.72, "classe": "ON"}]}
+    main._atualizar_acoes(e, [], info)
+    assert round(e.acoes_on + e.acoes_pn) == 11_196_864_781 - 21_300_000, (e.acoes_on, e.acoes_pn)
+    print("ok  ações: aumento de capital no cadastro da B3 e fora do formulário da CVM entra na conta")
+    v = cvm.Empresa("y", "2", "Mineradora Y", acoes_on=4_072_366_000, acoes_pn=0, acoes_ref="2026-09-30",
+                    tesouraria_on=183_396_000)
+    main._atualizar_acoes(v, [], {"on": 4_439_159_752, "pn": 12, "total": 4_439_159_764, "subscricoes": []})
+    assert v.acoes_on == 4_072_366_000, v.acoes_on
+    print("ok  ações: cadastro da B3 desatualizado (cancelamento) sem subscrição não altera o formulário da CVM")
+    s = cvm.Empresa("z", "3", "Saneamento Z", acoes_on=700_000_000, acoes_pn=0, acoes_ref="2026-03-31", tesouraria_on=3_500_000)
+    main._atualizar_acoes(s, [{"classe": "ON", "data_com": "2026-04-28", "fator": 5.0, "tipo": "DESDOBRAMENTO"}], {})
+    assert s.acoes_on == 3_500_000_000 and s.tesouraria_on == 17_500_000, (s.acoes_on, s.tesouraria_on)
+    print("ok  ações: desdobramento depois do formulário multiplica as ações")
 
 
 def main_teste():
+    teste_proventos_parcelas()
+    teste_acoes_hoje()
     arq = fixtures()
 
     def fake_baixar(url, destino=None, **kw):
@@ -215,11 +293,18 @@ def main_teste():
     assert t11["payout_media_anos"].endswith("(média de 6 anos)"), t11["payout_media_anos"]
     ok("TAEE11 P/L médio", t11["pl_medio"], 30 / (1000e6 / 1033e6 * 3))
     ok("ITUB ações corrigidas de milhares", i4["qtd_mi"], 10000.0)
-    ok("PETR ações com documento isolado em milhares", A["PETR4"]["qtd_mi"], 13000.0)
-    ok("PETR lucro anual com linha de controladores zerada → consolidado",
-       A["PETR4"]["detalhe"]["lucro_anual_mi"][ANO - 2], 100005)
+    ok("PETR ações: documento isolado em milhares e desdobramento 1:2 posterior ao formulário", A["PETR4"]["qtd_mi"], 26000.0)
+    ok("PETR lucro anual com linha de controladores zerada → individual (não o consolidado com minoritários)",
+       A["PETR4"]["detalhe"]["lucro_anual_mi"][ANO - 2], 90000)
+    ok("PETR lucro anual com controladores zerados e sem individual → consolidado (com aviso)",
+       A["PETR4"]["detalhe"]["lucro_anual_mi"][ANO - 4], 100005, tol=1e-7)
+    assert any("usado o consolidado" in x for x in A["PETR4"]["avisos"]), A["PETR4"]["avisos"]
     ok("PETR lucro com consolidada zerada → individual", A["PETR4"]["detalhe"]["lucro_anual_mi"][ANO - 6], 77000)
-    ok("ITUB lucro 12M (layout de banco)", i4["lucro12m_mi"], 33000 + 40000 - 30000)
+    ok("ITUB lucro 12M (banco: individual, padrão Banco Central)", i4["lucro12m_mi"], (33000 + 40000 - 30000) * 0.95)
+    ok("ITUB4 VPA (banco: patrimônio da individual)", i4["vpa"], 7600e6 / 10000e6)
+    ok("PETR4 dividendo médio na base de ações de hoje (÷2)", A["PETR4"]["div_medio6"], 0.35)
+    ok("PETR4 DY médio igual antes e depois do desdobramento", A["PETR4"]["dy_medio"], 0.7 / 30)
+    ok("PETR payout 12M não muda com o desdobramento", A["PETR4"]["payout_12m"], 0.7 * 13000 / 95000)
     adj = (4 * (1 / 1.1) + 2 * 1.0) / 6 * 0.7
     ok("ITUB4 dividendo médio ajustado pela bonificação", i4["div_medio6"], adj)
     ok("Petrobras dívida bruta (US$ bi)", base["petrobras"]["divida_bruta_usd_bi"], 310000 / 5.0 / 1000)

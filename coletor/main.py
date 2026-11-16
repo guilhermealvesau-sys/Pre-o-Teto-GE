@@ -9,7 +9,7 @@ e dados/noticias.json (manchetes do Google Notícias).
 from __future__ import annotations
 
 import sys
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 
 import pandas as pd
 
@@ -95,21 +95,42 @@ def completo() -> dict:
     for r in pend.itertuples():
         log.warning("CVM: %s sem correspondência única (%s)", r.emissor, r.candidatos or "nenhum candidato")
 
-    # 2) contábeis
-    emps = cvm.coletar(mapa[mapa["cnpj"].notna()])
+    # 1b) B3: proventos, eventos em ações (desdobramentos, bonificações) e quantidade de ações do cadastro
+    prov, fatores, acoes_b3 = {}, {}, {}
+    for em in sorted(set(a["emissor"])):
+        try:
+            bloco = b3.suplemento(em)
+        except Exception as e:  # noqa: BLE001
+            log.warning("B3: dados complementares de %s falharam: %s", em, e)
+            bloco = {}
+        fatores[em] = b3.eventos_acoes(bloco)
+        acoes_b3[em] = b3.acoes_b3(bloco)
+        try:
+            prov[em] = b3.proventos(em, pregao.get(em), bloco=bloco)
+        except Exception as e:  # noqa: BLE001
+            log.warning("B3: proventos de %s falharam: %s", em, e)
+            prov[em] = []
+    salvar_json(DADOS / "proventos.json", prov)
 
-    # 3) preços anuais (anos fechados ficam em cache no repositório)
+    # 2) contábeis (bancos: demonstração individual, padrão Banco Central, como nos releases)
+    col = emp_cfg.set_index("emissor").get("demonstracao")
+    so_ind = set(mapa[mapa["emissor"].map(lambda x: str(col.get(x, "") if col is not None else "").strip() == "individual")]["cnpj"].dropna())
+    emps = cvm.coletar(mapa[mapa["cnpj"].notna()], so_ind=so_ind)
+
+    # 3) preços anuais: médias como negociadas e na base de ações de hoje (fatores posteriores a cada dia)
     hist = ler_json(DADOS / "precos_anuais.json", {}) or {}
+    hist.pop("_processado", None)
     antigos = {r["ticker"]: [x for x in str(r.get("antigos") or "").split(";") if x and x != "nan"]
                for r in a.to_dict("records")}
     todos = set(a["ticker"]) | {x for v in antigos.values() for x in v}
-    feitos = hist.setdefault("_processado", {})
+    emissor_de = dict(zip(a["ticker"], a["emissor"]))
+    for tk, olds in antigos.items():
+        for old in olds:
+            emissor_de[old] = emissor_de[tk]
+    fat_tk = {tk: indicadores.fatores_por_data(fatores.get(em, [])) for tk, em in emissor_de.items()}
     for y in range(hoje.year - 6, hoje.year):
-        if sorted(feitos.get(str(y), [])) == sorted(todos):
-            continue
-        for tk, v in b3.precos_ano(y, todos).items():
+        for tk, v in b3.precos_ano(y, todos, fat_tk).items():
             hist.setdefault(tk, {})[str(y)] = v
-        feitos[str(y)] = sorted(todos)
     for tk, olds in antigos.items():  # anos sem negócio no código atual vêm do código antigo
         for old in olds:
             for y, v in hist.get(old, {}).items():
@@ -126,15 +147,9 @@ def completo() -> dict:
                 e.escalar_acoes(1000)
                 e.avisos.append("composição do capital informada em milhares (corrigida)")
 
-    # 4) proventos por emissor
-    prov = {}
-    for em in sorted(set(a["emissor"])):
-        try:
-            prov[em] = b3.proventos(em, pregao.get(em))
-        except Exception as e:  # noqa: BLE001
-            log.warning("B3: proventos de %s falharam: %s", em, e)
-            prov[em] = []
-    salvar_json(DADOS / "proventos.json", prov)
+    # 4) ações de hoje: eventos em ações e aumentos de capital posteriores ao formulário da CVM
+    for em, e in emps.items():
+        _atualizar_acoes(e, fatores.get(em, []), acoes_b3.get(em, {}))
 
     # 5) indicadores por papel
     base = {"gerado_em": _agora(), "janela_anos": 6, "ativos": {}, "sites": {k: v for k, v in sites.items() if v},
@@ -144,7 +159,8 @@ def completo() -> dict:
     for r in a.to_dict("records"):
         emp = emps.get(r["emissor"])
         precos = {int(y): v for y, v in hist.get(r["ticker"], {}).items()}
-        base["ativos"][r["ticker"]] = indicadores.calcular(r, emp, prov.get(r["emissor"], []), precos, hoje.year, hoje=hoje)
+        base["ativos"][r["ticker"]] = indicadores.calcular(r, emp, prov.get(r["emissor"], []), precos, hoje.year, hoje=hoje,
+                                                           fatores=fatores.get(r["emissor"], []))
 
     # 6) Petrobras: dívida bruta em US$ pela PTAX da data do balanço
     pe = emps.get("PETR")
@@ -160,6 +176,39 @@ def completo() -> dict:
     salvar_json(DADOS / "base.json", base)
     _relatorio(base, mapa, {k: e.conta_lucro or "" for k, e in emps.items()})
     return base
+
+
+def _atualizar_acoes(e, fatores: list[dict], b3info: dict) -> None:
+    """Leva a quantidade de ações do último formulário da CVM para hoje.
+
+    1. Desdobramentos, grupamentos e bonificações com data com depois do formulário multiplicam as ações.
+    2. Aumento de capital ainda fora do formulário (o banco precisa da homologação do Banco Central, por exemplo):
+       se o cadastro da B3 tem mais ações que as emitidas na CVM e houve subscrição recente, vale a B3,
+       menos as ações em tesouraria do formulário."""
+    if not e.acoes_ref:
+        return
+    k = 1.0
+    for d, f in indicadores.fatores_por_data(fatores):
+        if d >= e.acoes_ref:
+            k *= f
+    if abs(k - 1) > 1e-9:
+        e.acoes_on = (e.acoes_on or 0) * k
+        e.acoes_pn = (e.acoes_pn or 0) * k
+        e.tesouraria_on *= k
+        e.tesouraria_pn *= k
+        e.avisos.append(f"ações do formulário de {e.acoes_ref} multiplicadas por {k:g} (evento em ações posterior)")
+    tot_b3 = b3info.get("total") or 0
+    emitidas = (e.acoes_on or 0) + (e.acoes_pn or 0) + e.tesouraria_on + e.tesouraria_pn
+    desde = (date.fromisoformat(e.acoes_ref) - timedelta(days=120)).isoformat()
+    subs = sorted(s["data"] for s in b3info.get("subscricoes", []) if s["data"] >= desde)
+    if tot_b3 and emitidas and tot_b3 > emitidas * 1.002 and subs:
+        on_b3, pn_b3 = b3info.get("on") or 0, b3info.get("pn") or 0
+        if on_b3 + pn_b3 <= 0:
+            return
+        e.acoes_on = max(on_b3 - e.tesouraria_on, 0)
+        e.acoes_pn = max(pn_b3 - e.tesouraria_pn, 0)
+        e.avisos.append(f"ações atualizadas pelo cadastro da B3: aumento de capital (subscrição de {subs[-1]}) "
+                        f"ainda fora do formulário da CVM de {e.acoes_ref}")
 
 
 def _relatorio(base: dict, mapa: pd.DataFrame, contas: dict | None = None) -> None:
