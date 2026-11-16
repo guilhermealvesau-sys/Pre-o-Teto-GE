@@ -2,6 +2,13 @@ name: Auditoria (referências independentes)
 
 on:
   workflow_dispatch:
+    inputs:
+      parte:
+        description: "referencias, detalhe ou ambas"
+        required: true
+        default: ambas
+        type: choice
+        options: [ambas, referencias, detalhe]
 
 permissions:
   contents: write
@@ -25,7 +32,12 @@ jobs:
       - run: pip install -r requirements.txt
 
       - name: Coletar referências
+        if: inputs.parte != 'detalhe'
         run: python -m ferramentas.auditoria_referencias
+
+      - name: Coletar registros brutos para diagnóstico
+        if: inputs.parte != 'referencias'
+        run: python -m ferramentas.auditoria_detalhe
 
       - name: Gravar no repositório
         run: |
