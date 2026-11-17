@@ -49526,36 +49526,36 @@
    "tipo": "DIVIDENDO",
    "valor": 0.17298440438,
    "data_com": "2025-11-14",
-   "pagamento": "2026-01-28",
+   "pagamento": null,
    "ano_ref": 2025,
-   "referente": "3º Trimestre/2025"
+   "referente": ""
   },
   {
    "classe": "ON",
    "tipo": "JCP",
    "valor": 0.13980241117,
    "data_com": "2025-11-14",
-   "pagamento": "2026-01-28",
+   "pagamento": null,
    "ano_ref": 2025,
-   "referente": "3º Trimestre/2025"
+   "referente": ""
   },
   {
    "classe": "PN",
    "tipo": "DIVIDENDO",
    "valor": 0.17298440438,
    "data_com": "2025-11-14",
-   "pagamento": "2026-01-28",
+   "pagamento": null,
    "ano_ref": 2025,
-   "referente": "3º Trimestre/2025"
+   "referente": ""
   },
   {
    "classe": "PN",
    "tipo": "JCP",
    "valor": 0.13980241117,
    "data_com": "2025-11-14",
-   "pagamento": "2026-01-28",
+   "pagamento": null,
    "ano_ref": 2025,
-   "referente": "3º Trimestre/2025"
+   "referente": ""
   },
   {
    "classe": "ON",
@@ -49646,6 +49646,24 @@
    "pagamento": "2026-11-26",
    "ano_ref": 2026,
    "referente": "2º Trimestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "DIVIDENDO",
+   "valor": 0.35203605232,
+   "data_com": "2026-11-16",
+   "pagamento": "2027-01-27",
+   "ano_ref": 2026,
+   "referente": "3º Trimestre/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "DIVIDENDO",
+   "valor": 0.35203605232,
+   "data_com": "2026-11-16",
+   "pagamento": "2027-01-27",
+   "ano_ref": 2026,
+   "referente": "3º Trimestre/2026"
   }
  ],
  "TIMS": [

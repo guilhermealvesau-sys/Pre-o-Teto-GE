@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-17T10:26:06+00:00",
+ "gerado_em": "2026-11-17T18:17:03+00:00",
  "janela_anos": 6,
  "ativos": {
   "ABCB4": {
@@ -7,13 +7,14 @@
    "janela": "2020-2025",
    "avisos": [
     "lucro de 2024 indisponível na CVM (fora das médias)",
+    "ações atualizadas pelo cadastro da B3: aumento de capital (subscrição de 2026-07-31) ainda fora do formulário da CVM de 2026-09-30",
     "proventos da ON estimados pelos da PN (ON não negociada)"
    ],
-   "qtd_mi": 258.292,
+   "qtd_mi": 266.9558,
    "acoes_ref": "2026-09-30",
    "lucro12m_mi": 1036.748,
    "lucro12m_ate": "2026-09",
-   "vpa": 29.1157,
+   "vpa": 28.1708,
    "vpa_ref": "2026-09-30",
    "div_medio6": 1.4416,
    "dy_medio": 0.0745,
@@ -23,7 +24,7 @@
    "payout_anos": "2023-2025 (mediana)",
    "payout_media": 0.4072,
    "payout_media_anos": "2020-2025 (média de 5 anos, sem 2024)",
-   "payout_12m": 0.6727,
+   "payout_12m": 0.6952,
    "payout_12m_ate": "2026-11-17",
    "pl_medio": 5.2,
    "detalhe": {
@@ -350,13 +351,14 @@
    "fator": 1,
    "janela": "2020-2025",
    "avisos": [
-    "lucro de 2024 indisponível na CVM (fora das médias)"
+    "lucro de 2024 indisponível na CVM (fora das médias)",
+    "ações atualizadas pelo cadastro da B3: aumento de capital (subscrição de 2026-09-04) ainda fora do formulário da CVM de 2026-09-30"
    ],
-   "qtd_mi": 10570.712,
+   "qtd_mi": 11175.5648,
    "acoes_ref": "2026-09-30",
    "lucro12m_mi": 25664.362,
    "lucro12m_ate": "2026-09",
-   "vpa": 17.8299,
+   "vpa": 16.8649,
    "vpa_ref": "2026-09-30",
    "div_medio6": 0.9455,
    "dy_medio": 0.0657,
@@ -369,7 +371,7 @@
    "payout_anos": "2023-2025 (mediana)",
    "payout_media": 0.5457,
    "payout_media_anos": "2020-2025 (média de 5 anos, sem 2024)",
-   "payout_12m": 0.6347,
+   "payout_12m": 0.671,
    "payout_12m_ate": "2026-11-17",
    "pl_medio": 9.043,
    "detalhe": {
@@ -435,13 +437,14 @@
    "fator": 1,
    "janela": "2020-2025",
    "avisos": [
-    "lucro de 2024 indisponível na CVM (fora das médias)"
+    "lucro de 2024 indisponível na CVM (fora das médias)",
+    "ações atualizadas pelo cadastro da B3: aumento de capital (subscrição de 2026-09-04) ainda fora do formulário da CVM de 2026-09-30"
    ],
-   "qtd_mi": 10570.712,
+   "qtd_mi": 11175.5648,
    "acoes_ref": "2026-09-30",
    "lucro12m_mi": 25664.362,
    "lucro12m_ate": "2026-09",
-   "vpa": 17.8299,
+   "vpa": 16.8649,
    "vpa_ref": "2026-09-30",
    "div_medio6": 1.0401,
    "dy_medio": 0.0636,
@@ -454,7 +457,7 @@
    "payout_anos": "2023-2025 (mediana)",
    "payout_media": 0.5457,
    "payout_media_anos": "2020-2025 (média de 5 anos, sem 2024)",
-   "payout_12m": 0.6347,
+   "payout_12m": 0.671,
    "payout_12m_ate": "2026-11-17",
    "pl_medio": 10.445,
    "detalhe": {
@@ -2903,28 +2906,28 @@
    "lucro12m_ate": "2026-09",
    "vpa": 20.8911,
    "vpa_ref": "2026-09-30",
-   "div_medio6": 0.1724,
-   "dy_medio": 0.0562,
+   "div_medio6": 1.3319,
+   "dy_medio": 0.0557,
    "eventos_acoes": [
-    "2025-04-14: ×80"
+    "2025-04-14: ×2"
    ],
-   "pct_jcp": 0.9932,
-   "payout_media6": 0.8132,
+   "pct_jcp": 0.9177,
+   "payout_media6": 0.8319,
    "payout": 0.5557,
    "payout_anos": "2023-2025 (mediana)",
-   "payout_media": 0.8436,
+   "payout_media": 0.8597,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.5874,
    "payout_12m_ate": "2026-11-17",
-   "pl_medio": 14.495,
+   "pl_medio": 15.17,
    "detalhe": {
     "proventos_por_ano": {
-     "2020": 0.0427,
-     "2021": 0.0433,
-     "2022": 0.0382,
-     "2023": 0.0257,
-     "2024": 0.0237,
-     "2025": 0.8607
+     "2020": 1.7076,
+     "2021": 1.7313,
+     "2022": 1.5281,
+     "2023": 1.0292,
+     "2024": 0.9477,
+     "2025": 1.0472
     },
     "lucro_anual_mi": {
      "2020": 4770.527,
@@ -2935,12 +2938,12 @@
      "2025": 6167.906
     },
     "preco_medio_ano": {
-     "2020": 0.6059,
-     "2021": 0.5613,
-     "2022": 0.5736,
-     "2023": 0.5386,
-     "2024": 0.6323,
-     "2025": 22.9536
+     "2020": 24.2357,
+     "2021": 22.4533,
+     "2022": 22.945,
+     "2023": 21.5423,
+     "2024": 25.2932,
+     "2025": 29.9325
     },
     "payout_por_ano": {
      "2020": {
@@ -2974,7 +2977,7 @@
       "acoes_pn": null
      },
      "2025": {
-      "distribuido_mi": 2750.5,
+      "distribuido_mi": 3346.4,
       "lucro_mi": 6167.906,
       "acoes_on": 3195606352.0,
       "acoes_pn": null
@@ -2992,28 +2995,25 @@
    "lucro12m_ate": "2026-09",
    "vpa": 10.6208,
    "vpa_ref": "2026-09-30",
-   "div_medio6": 0.2174,
-   "dy_medio": 0.0586,
-   "eventos_acoes": [
-    "2025-07-02: ×100"
-   ],
-   "pct_jcp": 0.4065,
-   "payout_media6": 0.6869,
-   "payout": 0.7753,
+   "div_medio6": 1.0035,
+   "dy_medio": 0.0609,
+   "pct_jcp": 0.4772,
+   "payout_media6": 0.8641,
+   "payout": 0.8753,
    "payout_anos": "2023-2025 (mediana)",
-   "payout_media": 0.6889,
+   "payout_media": 0.8038,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.8517,
    "payout_12m_ate": "2026-11-17",
-   "pl_medio": 12.688,
+   "pl_medio": 12.686,
    "detalhe": {
     "proventos_por_ano": {
-     "2020": 0.0045,
-     "2021": 0.0043,
-     "2022": 0.0058,
-     "2023": 0.0091,
-     "2024": 0.0114,
-     "2025": 1.2694
+     "2020": 0.4474,
+     "2021": 0.4328,
+     "2022": 0.5784,
+     "2023": 0.9088,
+     "2024": 1.1404,
+     "2025": 2.5132
     },
     "lucro_anual_mi": {
      "2020": 1843.69,
@@ -3024,12 +3024,12 @@
      "2025": 4311.984
     },
     "preco_medio_ano": {
-     "2020": 0.1348,
-     "2021": 0.1256,
-     "2022": 0.1296,
-     "2023": 0.1428,
-     "2024": 0.1719,
-     "2025": 11.6128
+     "2020": 13.4828,
+     "2021": 12.5551,
+     "2022": 12.9634,
+     "2023": 14.2778,
+     "2024": 17.1867,
+     "2025": 20.3727
     },
     "payout_por_ano": {
      "2020": {
@@ -3063,7 +3063,7 @@
       "acoes_pn": null
      },
      "2025": {
-      "distribuido_mi": 3032.1,
+      "distribuido_mi": 6003.1,
       "lucro_mi": 4311.984,
       "acoes_on": 2388668322.0,
       "acoes_pn": null
@@ -3091,7 +3091,7 @@
    "payout_anos": "2023-2025 (mediana)",
    "payout_media": 0.7501,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
-   "payout_12m": 0.4329,
+   "payout_12m": 0.654,
    "payout_12m_ate": "2026-11-17",
    "pl_medio": 7.408,
    "detalhe": {
@@ -3179,7 +3179,7 @@
    "payout_anos": "2023-2025 (mediana)",
    "payout_media": 0.7501,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
-   "payout_12m": 0.4329,
+   "payout_12m": 0.654,
    "payout_12m_ate": "2026-11-17",
    "pl_medio": 7.471,
    "detalhe": {
@@ -3267,7 +3267,7 @@
    "payout_anos": "2023-2025 (mediana)",
    "payout_media": 0.7501,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
-   "payout_12m": 0.4329,
+   "payout_12m": 0.654,
    "payout_12m_ate": "2026-11-17",
    "pl_medio": 7.447,
    "detalhe": {

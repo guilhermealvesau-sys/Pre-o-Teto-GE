@@ -1,4 +1,4 @@
-# Coleta de 2026-11-17T10:26:06+00:00
+# Coleta de 2026-11-17T18:17:03+00:00
 
 ## Empresas na CVM
 
@@ -37,12 +37,12 @@
 
 | Papel | Ações (mi) | Lucro 12M (R$ mi) | Até | VPA | Payout | DY médio | Div. médio | % JCP | P/L médio | Avisos |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ABCB4 | 258.29 | 1,036.7 | 2026-09 | 29.12 | 0.530 | 0.0745 | 1.442 | 1.00 | 5.20 | lucro de 2024 indisponível na CVM (fora das médias); proventos da ON estimados pelos da PN (ON não negociada) |
+| ABCB4 | 266.96 | 1,036.7 | 2026-09 | 28.17 | 0.530 | 0.0745 | 1.442 | 1.00 | 5.20 | lucro de 2024 indisponível na CVM (fora das médias); ações atualizadas pelo cadastro da B3: aumento de capital (subscrição de 2026-07-31) ainda fora do formulário da CVM de 2026-09-30; proventos da ON estimados pelos da PN (ON não negociada) |
 | ALUP11 | 988.88 | 1,030.7 | 2026-09 | 29.33 | 0.411 | 0.0434 | 1.170 | 0.00 | 8.30 |  |
 | BRSR6 | 408.97 | 1,360.9 | 2026-09 | 28.42 | 0.420 | 0.0838 | 1.001 | 0.91 | 5.53 | lucro de 2024 indisponível na CVM (fora das médias); composição do capital informada em milhares (corrigida); 3 devolução(ões) de capital fora das médias |
 | BBSE3 | 1,941.25 | 9,188.3 | 2026-09 | 6.94 | 0.867 | 0.0865 | 2.692 | 0.00 | 8.34 | 1 devolução(ões) de capital fora das médias |
-| BBDC3 | 10,570.71 | 25,664.4 | 2026-09 | 17.83 | 0.865 | 0.0657 | 0.946 | 1.00 | 9.04 | lucro de 2024 indisponível na CVM (fora das médias) |
-| BBDC4 | 10,570.71 | 25,664.4 | 2026-09 | 17.83 | 0.865 | 0.0636 | 1.040 | 1.00 | 10.45 | lucro de 2024 indisponível na CVM (fora das médias) |
+| BBDC3 | 11,175.56 | 25,664.4 | 2026-09 | 16.86 | 0.865 | 0.0657 | 0.946 | 1.00 | 9.04 | lucro de 2024 indisponível na CVM (fora das médias); ações atualizadas pelo cadastro da B3: aumento de capital (subscrição de 2026-09-04) ainda fora do formulário da CVM de 2026-09-30 |
+| BBDC4 | 11,175.56 | 25,664.4 | 2026-09 | 16.86 | 0.865 | 0.0636 | 1.040 | 1.00 | 10.45 | lucro de 2024 indisponível na CVM (fora das médias); ações atualizadas pelo cadastro da B3: aumento de capital (subscrição de 2026-09-04) ainda fora do formulário da CVM de 2026-09-30 |
 | BBAS3 | 5,709.02 | 12,665.1 | 2026-09 | 31.75 | 0.380 | 0.0795 | 1.673 | 0.85 | 4.58 | lucro de 2024 indisponível na CVM (fora das médias) |
 | BPAC11 | 11,587.65 | 18,199.4 | 2026-06 | 20.60 | 0.320 | 0.0244 | 0.731 | 1.00 | 11.52 | lucro de 2024 indisponível na CVM (fora das médias) |
 | CXSE3 | 3,000.00 | 4,561.7 | 2026-09 | 4.67 | 0.861 | 0.0722 | 0.708 | 0.00 | 10.41 | composição do capital informada em milhares (corrigida) |
@@ -70,8 +70,8 @@
 | SANB3 | 7,487.69 | 14,111.3 | 2026-09 | 13.29 | 0.576 | 0.0686 | 1.035 | 0.97 | 8.83 | lucro de 2024 indisponível na CVM (fora das médias); composição do capital informada em milhares (corrigida); 2 devolução(ões) de capital fora das médias |
 | SANB4 | 7,487.69 | 14,111.3 | 2026-09 | 13.29 | 0.576 | 0.0688 | 1.138 | 0.97 | 9.77 | lucro de 2024 indisponível na CVM (fora das médias); composição do capital informada em milhares (corrigida); 2 devolução(ões) de capital fora das médias |
 | SANB11 | 7,487.69 | 14,111.3 | 2026-09 | 26.58 | 0.576 | 0.0687 | 2.173 | 0.97 | 9.28 | lucro de 2024 indisponível na CVM (fora das médias); composição do capital informada em milhares (corrigida); 2 devolução(ões) de capital fora das médias |
-| VIVT3 | 3,195.61 | 7,166.9 | 2026-09 | 20.89 | 0.556 | 0.0562 | 0.172 | 0.99 | 14.49 | 3 devolução(ões) de capital fora das médias |
-| TIMS3 | 2,376.77 | 4,108.7 | 2026-09 | 10.62 | 0.775 | 0.0586 | 0.217 | 0.41 | 12.69 |  |
+| VIVT3 | 3,195.61 | 7,166.9 | 2026-09 | 20.89 | 0.556 | 0.0557 | 1.332 | 0.92 | 15.17 | 3 devolução(ões) de capital fora das médias |
+| TIMS3 | 2,376.77 | 4,108.7 | 2026-09 | 10.62 | 0.875 | 0.0609 | 1.004 | 0.48 | 12.69 |  |
 | TAEE3 | 1,033.50 | 1,645.6 | 2026-09 | 7.96 | 0.718 | 0.1045 | 1.236 | 0.41 | 7.41 | composição do capital informada em milhares (corrigida) |
 | TAEE4 | 1,033.50 | 1,645.6 | 2026-09 | 7.96 | 0.718 | 0.1041 | 1.236 | 0.41 | 7.47 | composição do capital informada em milhares (corrigida) |
 | TAEE11 | 1,033.50 | 1,645.6 | 2026-09 | 23.87 | 0.718 | 0.1045 | 3.708 | 0.41 | 7.45 | composição do capital informada em milhares (corrigida) |
