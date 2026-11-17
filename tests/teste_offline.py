@@ -340,7 +340,8 @@ def main_teste():
     print("ok  avisos: documento novo do Itaú dispara aviso")
     main.diario()
     cot = json.loads((main.DADOS / "cotacoes.json").read_text())
-    assert cot["macro"]["selic"] == {"valor": 14.25, "data": "2026-11-05", "descricao": bcb.SERIES["selic"][1], "serie": 432}, cot.get("macro")
+    assert cot["macro"]["selic"] == {"valor": 14.25, "data": "2026-11-05", "descricao": bcb.SERIES["selic"][1], "serie": 432,
+                                     "vigente_desde": "2026-11-05"}, cot.get("macro")
     assert cot["macro"]["ipca12m"]["valor"] == 4.6, cot["macro"]
     print("ok  macro: Selic meta e IPCA 12 meses do SGS")
     fat = json.loads((main.DADOS / "fatos.json").read_text())["por_emissor"]

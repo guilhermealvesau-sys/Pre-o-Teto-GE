@@ -34,15 +34,25 @@ def _data_iso(d: str) -> str:
 
 
 def macro() -> dict:
-    """Último valor da Selic meta e do IPCA 12 meses: {nome: {valor (%), data ISO, descricao, serie}}."""
+    """Último valor da Selic meta e do IPCA 12 meses: {nome: {valor (%), data ISO, descricao, serie}}.
+
+    Selic: `data` é a leitura (hoje) e `vigente_desde`, o primeiro dia do valor atual (efeito da última decisão do
+    Copom). IPCA: `data` é o mês de referência."""
     out = {}
     hoje = date.today()
     for nome, (serie, desc) in SERIES.items():
-        url = (SGS_ATE.format(serie=serie, ini=f"{hoje - timedelta(days=15):%d/%m/%Y}", fim=f"{hoje:%d/%m/%Y}")
+        url = (SGS_ATE.format(serie=serie, ini=f"{hoje - timedelta(days=400):%d/%m/%Y}", fim=f"{hoje:%d/%m/%Y}")
                if nome == "selic" else SGS.format(serie=serie))
         js = get_json(url)
         if isinstance(js, list) and js:
             ult = js[-1]
-            out[nome] = {"valor": float(str(ult["valor"]).replace(",", ".")), "data": _data_iso(ult["data"]),
-                         "descricao": desc, "serie": serie}
+            v = float(str(ult["valor"]).replace(",", "."))
+            out[nome] = {"valor": v, "data": _data_iso(ult["data"]), "descricao": desc, "serie": serie}
+            if nome == "selic":
+                desde = ult["data"]
+                for r in reversed(js):
+                    if float(str(r["valor"]).replace(",", ".")) != v:
+                        break
+                    desde = r["data"]
+                out[nome]["vigente_desde"] = _data_iso(desde)
     return out

@@ -412,7 +412,7 @@ footer.aviso ul{margin:0;padding-left:18px;display:grid;gap:4px}
     if (st.cotacoes_ref) { const age = (Date.now() - new Date(st.cotacoes_ref + "T21:00:00").getTime()) / 864e5; chips.push(`<span class="chip ${age > 4 ? "warn" : "ok"}"><span class="dot"></span>Cotações: fechamento de ${fDate(st.cotacoes_ref)}</span>`); }
     if (st.base_gerado_em) chips.push(`<span class="chip ok"><span class="dot"></span>Dados oficiais: ${fDate(st.base_gerado_em)}${st.contabil_ate ? ` · balanços até ${fDate(st.contabil_ate + "-01").slice(3)}` : ""}</span>`);
     const mc = S.D?.macro || {};
-    if (mc.selic) chips.push(`<span class="chip" title="Banco Central: Selic meta em ${fDate(mc.selic.data)}"><span class="dot"></span>Selic ${fNum(mc.selic.valor, 2)}%${mc.ipca12m ? ` · IPCA 12m ${fNum(mc.ipca12m.valor, 2)}%` : ""}</span>`);
+    if (mc.selic) chips.push(`<span class="chip" title="Banco Central: Selic meta ${mc.selic.vigente_desde ? `vigente desde ${fDate(mc.selic.vigente_desde)}` : `em ${fDate(mc.selic.data)}`}"><span class="dot"></span>Selic ${fNum(mc.selic.valor, 2)}%${mc.ipca12m ? ` · IPCA 12m ${fNum(mc.ipca12m.valor, 2)}%` : ""}</span>`);
     if (S.D?.publicado_em) chips.push(`<span class="chip"><span class="dot"></span>Publicado em ${fDateTime(S.D.publicado_em)}</span>`);
     $("status").innerHTML = chips.join("");
   }
