@@ -52,11 +52,19 @@ def _prov_classe(eventos: list[dict], classe: str) -> list[dict]:
 
 
 def fatores_por_data(fatores: list[dict] | None) -> list[tuple[str, float]]:
-    """Um fator por data com (a B3 repete o evento por classe e pela unit)."""
-    por_data: dict[str, float] = {}
+    """Fator combinado por data com. A B3 repete cada evento por classe (ON, PN, unit), que conta uma vez; eventos
+    diferentes na mesma data se multiplicam (ex.: Vivo, abr/2025: desdobramento ×80 e grupamento ×0,025 = ×2)."""
+    eventos: dict[str, set] = {}
     for f in fatores or []:
-        por_data.setdefault(f["data_com"], f["fator"])
-    return sorted(por_data.items())
+        eventos.setdefault(f["data_com"], set()).add((f.get("tipo") or "", round(f["fator"], 10)))
+    out = []
+    for d, evs in sorted(eventos.items()):
+        k = 1.0
+        for _, fator in evs:
+            k *= fator
+        if abs(k - 1) > 1e-12:
+            out.append((d, k))
+    return out
 
 
 def _g(fs: list[tuple[str, float]], data_iso: str) -> float:

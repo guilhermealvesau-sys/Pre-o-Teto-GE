@@ -168,8 +168,11 @@ def acoes_b3(bloco: dict) -> dict:
         d = _data(ev.get("subscriptionDate")) or _data(ev.get("lastDatePrior"))
         if d:
             sub.append({"data": d.isoformat(), "percentual": _num(ev.get("percentage")), "classe": _classe(ev.get("isinCode"))})
-    return {"on": _num(bloco.get("numberCommonShares")), "pn": _num(bloco.get("numberPreferredShares")),
-            "total": _num(bloco.get("totalNumberShares")), "subscricoes": sub}
+    def inteiro(v):  # a B3 manda "11.196.864.781" (ponto como separador de milhar)
+        s = re.sub(r"\D", "", str(v or ""))
+        return float(s) if s else None
+    return {"on": inteiro(bloco.get("numberCommonShares")), "pn": inteiro(bloco.get("numberPreferredShares")),
+            "total": inteiro(bloco.get("totalNumberShares")), "subscricoes": sub}
 
 
 def proventos(emissor: str, trading_name: str | None = None, bloco: dict | None = None) -> list[dict]:

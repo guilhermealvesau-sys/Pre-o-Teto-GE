@@ -20,7 +20,7 @@ import coletor.util as util  # noqa: E402
 util.CACHE = TMP / "cache"
 util.CACHE.mkdir()
 
-from coletor import avisos, b3, bcb, cvm, main, noticias  # noqa: E402
+from coletor import avisos, b3, bcb, cvm, indicadores, main, noticias  # noqa: E402
 
 EMP = {  # cnpj, cd_cvm, razão social, ações ON/PN por ano (None = constante)
     "TAEE": ("07.859.971/0001-30", "20257", "TRANSMISSORA ALIANCA DE ENERGIA ELETRICA S.A.", 590e6, 443e6),
@@ -222,6 +222,17 @@ def teste_proventos_parcelas():
     f = [(x["data_com"], round(x["fator"], 6)) for x in b3.eventos_acoes(bloco)]
     assert f == [("2025-04-14", 0.025), ("2025-12-23", 1.029647), ("2026-04-28", 5.0)], f
     print("ok  eventos em ações: grupamento, bonificação e desdobramento com os fatores da B3")
+    vivo = {"stockDividends": [
+        {"isinCode": "BRVIVTACNOR1", "label": "DESDOBRAMENTO", "factor": "7.900,00000000000", "lastDatePrior": "14/04/2025"},
+        {"isinCode": "BRVIVTACNOR1", "label": "GRUPAMENTO", "factor": "0,02500000000", "lastDatePrior": "14/04/2025"},
+        {"isinCode": "BRVIVTACNPR1", "label": "DESDOBRAMENTO", "factor": "7.900,00000000000", "lastDatePrior": "14/04/2025"}]}
+    fv = indicadores.fatores_por_data(b3.eventos_acoes(vivo))
+    assert len(fv) == 1 and abs(fv[0][1] - 2.0) < 1e-9, fv
+    print("ok  eventos em ações: desdobramento e grupamento no mesmo dia se combinam (Vivo ×80 × 0,025 = ×2)")
+    info = b3.acoes_b3({"numberCommonShares": "5.606.747.177", "numberPreferredShares": "5.590.117.604",
+                        "totalNumberShares": "11.196.864.781"})
+    assert info["total"] == 11196864781 and info["on"] == 5606747177, info
+    print("ok  cadastro da B3: quantidade de ações com ponto de milhar")
 
 
 def teste_acoes_hoje():
