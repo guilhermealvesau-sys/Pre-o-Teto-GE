@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-18T12:32:52+00:00",
+ "gerado_em": "2026-11-18T12:36:40+00:00",
  "janela_anos": 6,
  "ativos": {
   "ABCB4": {
@@ -732,10 +732,10 @@
    "div_medio6": 0.7076,
    "dy_medio": 0.0722,
    "pct_jcp": 0.0,
-   "payout_media6": 0.6977,
+   "payout_media6": 0.6955,
    "payout": 0.8608,
    "payout_anos": "2023-2025 (mediana)",
-   "payout_media": 0.6058,
+   "payout_media": 0.6038,
    "payout_media_anos": "2020-2025 (média de 6 anos)",
    "payout_12m": 0.909,
    "payout_12m_ate": "2026-11-18",
@@ -752,7 +752,7 @@
     "lucro_anual_mi": {
      "2020": 1769.413,
      "2021": 1896.152,
-     "2022": 2952.84,
+     "2022": 3008.963,
      "2023": 3582.244,
      "2024": 3765.184,
      "2025": 4291.56
@@ -780,7 +780,7 @@
      },
      "2022": {
       "distribuido_mi": 1945.7,
-      "lucro_mi": 2952.84,
+      "lucro_mi": 3008.963,
       "acoes_on": 3000000000.0,
       "acoes_pn": null
      },

@@ -1,7 +1,9 @@
 {
- "atualizado_em": "2026-11-18T12:33:04+00:00",
+ "atualizado_em": "2026-11-18T12:36:51+00:00",
  "fonte": "Google Notícias (RSS, edição Brasil, últimos 14 dias)",
- "falhas": [],
+ "falhas": [
+  "SAPR"
+ ],
  "por_emissor": {
   "ABCB": [
    {
@@ -255,6 +257,12 @@
   ],
   "BBAS": [
    {
+    "titulo": "Banco do Brasil consegue desconto e renova 23 contratos com FII",
+    "fonte": "Investidor10",
+    "data": "2026-11-18T12:21:38+00:00",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOR3RZa1ZuRDB2b0VDdy1HVmhDbVVIVXN4T0duZDM2X0xYaWNfcGhMTWtVNW1IZlJnMTFpbWJNRmVsT1YxbDhCMVV5RmFYT1dPUjhZVVBOb0x2MTN2ZFhGUkxhMG9nM3VGTlBVV3NiRkpITHhCUUdYUTRQNWl2YWRDQWpLS1NsbzVXVGpuRkFaX1Q3OW5QYzNVeEZfS1RoNGpnMThhbGZjQVhQT3F30gGyAUFVX3lxTE9ZRTVSQkZSaEplUmRxcVBoZHJBeW4tMGdKd054c3NSckNRbS1qQmdWZjdTQ3NKZnA0QUN2NmRiR0JMX1NzRlg5SDU1Z09wSGswU29DSTdISS15NE5RcWlZa1d2SDdtazFWQjVZVUxBNHBjV3lvT3V4cFlYSDNabjBDUGFvUklwSm5oNm14c1Q4ZlRxaFVEU3JBNGh4YU9GVHhPeWhGTVR1OEdxd2VzbzRUN0E?oc=5"
+   },
+   {
     "titulo": "TVRI11 renova 23 contratos com Banco do Brasil e amplia prazo",
     "fonte": "Clube FII News",
     "data": "2026-11-18T12:11:00+00:00",
@@ -265,6 +273,12 @@
     "fonte": "Seu Dinheiro",
     "data": "2026-11-18T12:07:04+00:00",
     "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPY3lEd1NjOUZ0dG1LTElJREdTajRaVW9LY3FtdGVZR2VkczlmV1gxSUlWMHBhMFM5RTNNSG5mbkdHTVlOQTlMcEZ3dklmVUxBMXdtSkZWaldhdVpJQ3k1R19aaU5qaDlOdjAyd2hId3VaX0dHdXJjaU9sdzBYYlp2dW1LZkdXaW5VTUk0YUFnblFyRHRWd2IwWi1CSGVHbExVd0xKWk84UFVINWVrY2FESE4zNmlRNXpyQ0NadVFlZHZMZnp0UmZ1UXN4ZHZRNXUzU3VPaHBES0dtWFYwSDJoQg?oc=5"
+   },
+   {
+    "titulo": "BBAS3 - Banco Do Brasil - Resultados, Dividendos, Cotação e Indicadores",
+    "fonte": "Investidor10",
+    "data": "2026-11-18T10:55:02+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9oTDZzOFBaRmZxRFp3elFsOXoyT0xrczFPX0hZOERzNFJSYk11czNwbWJtRmQ5bjdSMGx1ajRXNktuQXlpRk1yOUIteVV6WFR6QXc?oc=5"
    },
    {
     "titulo": "Fundo imobiliário renova contratos com Banco do Brasil (BBAS3), mas prevê queda na receita; IFIX recua",
@@ -289,18 +303,6 @@
     "fonte": "Nord Investimentos",
     "data": "2026-11-18T02:59:45+00:00",
     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxObEJDbmMyMmFkb1ktTjJhdjJDeG1ReVAtYlJDSWsxZlI2blJRdVlieWstdzZaM3NEMTVoM3V1aEplajQySFpwanU0UVRDRVFTN3VVRVh2WFdLSmlrSFFKSXBiS3VPakZWa3NjRVNPNE9ISUc1TlpacHBZLVRsWmw3endtSjdUbU3SAYwBQVVfeXFMTlV0aHJhdjczQ2xpcWNfUTVKRFN1cVNsSVdJa1NPRklUQWFOQ3IwRHlwRnFPQ2FfdkpxT0czbE45N3hHUjZiWVR5dmtmbWdXZ0RJcTFSSGh6OUtja0NUQWF5QlMtWU5haFVUREZIY3FUZ0pXMnhkWmlxYlVTSGxmdDQ5c3BQVlFDV2FOYjE?oc=5"
-   },
-   {
-    "titulo": "Agronegócio rebate Banco do Brasil sobre lucro e inadimplência no campo",
-    "fonte": "Gazeta do Povo",
-    "data": "2026-11-18T00:37:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNRVRGMW1hd285LU0taDVfakczZnJOajNkeVhSMDVBWF9jTGVKYTRSRVpoZDlMRDExNDdHeXpBbFRCamdaTkJDUzVLZDkxYXpFcVc0dEdiNWdnMnc1NjNZX0E0eFFtMjlTWUhKM2NHN09UM0pZX0N1YVVEYzZQX05TOHJoaVkwYW1yZFVFM29UNXI3b0szYjd4eU53Y2NWZlVTY3FKU1NYM29HX1pTbUdnQ211aGttakNhd0RmSmNYQ1NMVmM?oc=5"
-   },
-   {
-    "titulo": "Banco do Brasil aprova demonstrações do 3T26 e reduz payout de 30% para 25%",
-    "fonte": "UOL Economia",
-    "data": "2026-11-18T00:33:31+00:00",
-    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNcTdGX3FjUW1DZzBDeXI0bWxmWmNZYjdTVS1feks2UzFkMkRyRldmYU5raFVmbWt1YnppSGpscnZPdDlxb1dnV01kbzMta3V2cXNmSEc5WXIyWkMzSGo4d3FfZUJBeHJSM3A2WTR3U3BQUl93RUJTUFBpaVZPTUlLT183SUFNVUc0YWU4VjhadWY3TzdSUDNXY0NtMWgxamJZamEzQzN6Uzd2Y3hZMHpzTXRNTXVMLUo5UVJ1UXRLSkgtSDNVNXczMGRWSm9WZkU?oc=5"
    }
   ],
   "BPAC": [
@@ -591,16 +593,16 @@
     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9UcnlVNnRmNkZ3cjIzcEl6TzdXeVhtNy1OdHcxR0NSVlR5UGpxS09UcThKN3RIWGJrTGI3amlKckNtdzV6V3JibHExdDB1YzJrblM5azEwZVVSbHMxc2JkWUpfVmw0ckZLeHZJVGlUbGFCZw?oc=5"
    },
    {
-    "titulo": "CPFL Energia (CPFE3)",
-    "fonte": "TradeMap",
-    "data": "2026-11-13T21:05:54+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9CeW0xMzZ2UThrd1NmWGxKUlpIOXBNRXd2SkFDZ2Ntc181ZW1VUXRvTU11dy02T1duOVFaU3NnTnBvOTFlay0yVXp5bTg?oc=5"
-   },
-   {
     "titulo": "CPFL (CPFE3) tem queda do lucro no 3º trimestre com efeito contábil de renovação de concessões",
     "fonte": "Prensa Mercosur",
     "data": "2026-11-13T14:54:14+00:00",
     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQQ1BHN3V1WEdodHhQR3M5T3k3SVlRYUpVUjVYRGZHWURCcVBJQW5EaUtuR1k5M1dwWUZKWl9zTkVXZnk0QW40WDFOb0Y4bVRZRFM2aHdURDVJSmFqem5zTG83V2Nib2dwejJqSlRnMUNxNFFULU9GRFFuSm9lbEw5Z25qZ05RMEh4QlRRRXhsUHZlUjJJcUtxM040MmR3UlhHdllnZElvOHE0bTFMdXQ5cmIzYU4zYWNQSGtlNmZFRGE5TF95R1AzLVNLNA?oc=5"
+   },
+   {
+    "titulo": "CPFL Energia registra lucro de R$ 1,29 bilhão no 3T26, com impacto contábil da renovação de concessões",
+    "fonte": "Cenário Energia",
+    "data": "2026-11-13T14:39:34+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZGxvZzFFRzNCM1RELTBRSXl4VllZTjlXd19Jb1J3bkc3cGRVaGpiNXlzTEhYOGtoS0ZIZF9RZWEyTXdLTlVXVkEtcktaenZhVEM1Q1Y4bGNDME81LTlyVjc5R0pfRGlaY0FsVDdCNUVtTVFkZDM2WV9HTExkS3h6VmM0dkdYVzlEYTZRLTk4SUptbXRINS1qejhNcGpOOXJFdkV5UTNVM193SF9iLVpMZUhxMVNoNVFKNy1hdU1zaW91Vnk0Y3M3WlZLNml3T0ltNjRhaXVnaVY?oc=5"
    }
   ],
   "ENGI": [
@@ -705,6 +707,12 @@
   ],
   "EQTL": [
    {
+    "titulo": "Manutenção em linha viva ou desligamento programado? Saiba como a Equatorial Piauí atua na rede elétrica",
+    "fonte": "Equatorial Energia",
+    "data": "2026-11-18T11:34:21+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQNlRybldfbDMyUTNtQlZVdHJEcVhZT1RWYktLZFVLd1JRTGhIWXhTbnM5ZVRSMy1pRlNOOUk1UW1GYmZqLUszc1J1S2RyS3dNX1ZwbzRGeFBka1hLR2ljYlVGcUJpYjYxRUpLMnNHQUFCTUVIUVZ1QTBHdUpwTWNxYWdlQjZYN1lPUTNzSFBJemFQQ3NtN2RjcUpScTAyQkxDYUJpYTQza0JMbk4tWS0tSDR5ZlEtSTduTXltUFUzRng0OHdqeHBNYlNmUEhYdzhsc2lYaVpQYw?oc=5"
+   },
+   {
     "titulo": "Equatorial Maranhão informa horários de atendimento para o feriado do Dia da Consciência Negra (20)",
     "fonte": "Equatorial Energia",
     "data": "2026-11-18T11:09:59+00:00",
@@ -745,12 +753,6 @@
     "fonte": "Equatorial Energia",
     "data": "2026-11-12T18:27:26+00:00",
     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOX0E5aXRSOURxanh2TVUxR0lQNTdaWGFrQWdpWDJ6enZuRUZQTnRsY01DM2dvNk1pa0JiODNQNE5MLVFOMXFKUmw4LUltMUpBZVhHSEExLWFBUTdVaEVpWWd3WGE2R0xuX2ZZeG1qNDBiYnQtb0FzYjFjUXh1V2J4UC1HaUtyYW1WLWdPbGhTY1NYVTE4T3JrWUdIR0tRSUZfekRnYUp3eDFySWxrSHhrbEI5NA?oc=5"
-   },
-   {
-    "titulo": "Sede da Equatorial em Santarém recebe imagem peregrina de Nossa Senhora da Conceição",
-    "fonte": "Equatorial Energia",
-    "data": "2026-11-12T18:13:57+00:00",
-    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOb0tEMXRESGM4Y2Z1ZVQ5RUdaY18wSzNqdGZ5WlA3akhRZVg2WG41RHVrZG5hZFc1TDJsOXNOLUpyZzZjSzNCXzFxcUtVWEZUMU5Vd0FTR1hiSGdRcFd6RUxCY1p5Zk01d25Rd0lDTFN3X3AtQXFXQWRDNTZYdnhXNWxfX3RDcXI5eWxMUW4xRnhHYU5rRy16eDJuVmZGekx3Qi11ZDZ0X3h3d2hiNDYtd3Q2bVRKVWgxRUJFVFZn?oc=5"
    }
   ],
   "ISAE": [
@@ -1003,56 +1005,6 @@
     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPRFhhVEl3WnNjZVJUUGhuUkV4dUlsZnF0VWc4d01IaFhVQ3A0SUdVOW1ZUkxfbHdnaXBUcDVkZ05LTEJIWGFFT21paWxuNGQ1YzFpT283X2d0eU9aT25Zd2hRRjJKTVRfX0JXd25OYTJ4VUtuNTNxcFJ4ZHZuMjdBaHJDZlRMWDEwbWFCd0FhQmtSdmpfSnh3cXBQYWVXUGlTbDFfdlBwU2NEZGxaR2RqTVdiM0FpRzJhOUE?oc=5"
    }
   ],
-  "SAPR": [
-   {
-    "titulo": "Hidrômetro da Sanepar é furtado em imóvel no centro de Mauá da Serra",
-    "fonte": "Canal 38",
-    "data": "2026-11-18T11:55:31+00:00",
-    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNajRPUks4NXh1aDJhekVISlJRaEJFMjJ6enBGZjVGWmw1aUhCN1NBM2xJVkcwb2dCeVRzanJWaDJnWnM2TXFmdEdJa2ZJQjJWT3NzUFBrNk5BN3owRFFIclREcHJITFR0X1llMDJ4UUpfTkZ0ZU9PZms5VUhiajRHRFlWa05iRGZSTDlWckJVTTV0SVJ5Ykxv?oc=5"
-   },
-   {
-    "titulo": "Sanepar diz que abastecimento de água foi normalizado em Foz",
-    "fonte": "Clickfoz",
-    "data": "2026-11-18T02:10:05+00:00",
-    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE93YmpDTGlsenZZdFNXeW1ybmZJQlg2MW9jUC1OTjFCamRyckp2YUVnWmtBZnVEWU1UZDRiREVOZDU3MFM1QUE2c0I0R0lNTGtKWVUwVUZkRm04SEF5ekJMTTByWjZhTkhvS2s4QU5Fd0h0Q21iQUE?oc=5"
-   },
-   {
-    "titulo": "Sanepar leva serviços e educação ambiental a São José dos Pinhais nesta quinta-feira",
-    "fonte": "Arena de Notícias",
-    "data": "2026-11-18T00:08:22+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNMlVpSWJ0ODFiUGxITEZsMEdvUDRISkNPX3oyLTJkbUVTSkptMFZBX0lTb3d0ZDFWSjl1b1ZJdHpnM2FoSzYzS3ZUTk1ySXR3aGdMTWVhMTVKbGI5RHN1c3lyVW9HanVRWHZfeXpGRjhWMm9VNkdGVnNwamdxLWMzX3J5eUV5ZG9hOWQ4b3hmYTM5eW0tRl8yLWJFUzNZUjdPM1dnX1N3SmFzTVYxR2RzNkRwMnN5RExBWFZVbTFCZWN6ekRjdEZKMWFn?oc=5"
-   },
-   {
-    "titulo": "Sanepar lança plataforma digital para agilizar aprovação de projetos de água e esgoto no Paraná",
-    "fonte": "D'Ponta News",
-    "data": "2026-11-17T21:22:35+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPaERJU0tzQUZNY0d4ZWRDQVpBdDZKcWZVNmx0dEFONTZXajFkY2FLS2M0ZTdMcXZTbWY1b21yV3BLc29HSC0xNGtJX21qcUNGcWJXdkJiOGdoRnZwS0JmRVd0RWFMUnAtUWhwTzdUS19rSFpXRFhxM21jR0wzR2cxY0lVS1lnQ2ktNE9UVTRmTzZqRDNJOFdpaUI5NXhJMUQwS1owNTdoRmFNaEhqckhiVlVETGt1RnM2WmtFRS0tRHBjUGszdVV5Xw?oc=5"
-   },
-   {
-    "titulo": "Sanepar lança plataforma digital para agilizar análise de projetos hidrossanitários no Paraná",
-    "fonte": "Preto no Branco",
-    "data": "2026-11-17T21:21:04+00:00",
-    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNVGQ0MjVZYVAzRkxlZm9fZldLampoR3hYcFVGLVQxc0VLMV9vN1VGSUpOby1DMUUxQ0Zqbk1adzdxYnlNdHdYSUtSSWphbDJPSklmUEVCUEw1Zzg1dkVfZm4tWVNhcjNwb0g3WWlRTEhocVlfams2SWxjVkt3QllETktPbjhVNG1LN3J5Z1c1Y0lGSEQ5UFo3bFVmbXNwclJBNWJTRDkyZk5VTGlWN3Q1NUdLNTV1aDhoNEhPUmJXTUVjNks3LXd3QXhVcVhQUmtmZWc?oc=5"
-   },
-   {
-    "titulo": "Sanepar lança Portal PHS para digitalizar análise de projetos hidrossanitários no Paraná",
-    "fonte": "Busão Curitiba",
-    "data": "2026-11-17T21:04:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxONjk0Wm13Tjh6YVBKb3VERWN3V3RXc3VVcHBmdEYtUjZpbFdiOUE1QjhlWnNYWS16aGU0Vi1RUUdQQUl4aFYyYnM0UnZWZUU3Ukc0bEd0RC02dmwxZDVXTjJXTzUyY1M0WmY3d0hvZUJaY3o2OXNtSXpTeUJSMnFrLVl6aUFCTXZ5YzRKeVRzekZMUW5TSEdRWXYwcXUxckFCWEpLVHBqWGtpd2Y0VkFGTXA1dnlLdw?oc=5"
-   },
-   {
-    "titulo": "Sanepar orienta moradores sobre esgoto e consumo de água em dias de temporal no Paraná",
-    "fonte": "União Metropolitana Curitiba",
-    "data": "2026-11-17T19:02:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPV2EzVkU0bEpqN1lSOU5TbjVUZ0FEUmhHdUhFbFN1ZkMtejZQME8yQnRkQnRZelptT1p1U041SzFMRlpPdkpRUU9wbVJiY0tTX3dvTHdsWlNCc0JXRU9NUUw3blUzTmVNTzB2WEdlWGFJQlNUTnBTTDhfcVU0RGNjSDJXcFdYUEtuY01UeTVnZk5qOUVUb1gwbG9kUlVmYW9WcUJNWVRxV0NMOE0zY0Y4YzZzbmR1UFNOMHFEb0N3?oc=5"
-   },
-   {
-    "titulo": "Sanepar oferece serviços gratuitos e ações de educação ambiental em São José dos Pinhais nesta quinta-feira",
-    "fonte": "SOT",
-    "data": "2026-11-17T17:43:34+00:00",
-    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQVmNRWl9tNktVdk9TeXlOZ2hGREhDN3NxNXg1anB6ZFRJVG40eTdFV3g4SGV2b0hITE95emdNOFdiaVlQekJtYUdpdS1CcDk3b2w4bHhXZXJtMDcwX0ZfS2wtcjBHSXk1dC1wcXdMRFlGUnBDbzNuWmJHMjRzMUpYdllERF9kanU2d3VEZ1BLdWVPZm0zZ19xR3F5d3YwUkkzSEFUcXJoUXQyMFNCQ2tTNnRNdVFXQndJZG9GYUpyUFdkQm1rVFdUSXNrTXpWNS0yZFJkZ1Rxdw?oc=5"
-   }
-  ],
   "SANB": [
    {
     "titulo": "Santander (SANB11) recebe novo laudo para oferta de troca de ações; veja o que mudou",
@@ -1223,16 +1175,16 @@
     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNb19Gd3BZZUJodFdpVEV1aURQYjRmalZVM01PTldYN0JFMlljT3FFUzJ0WmZTY2NIc0h3Um9pMjJXZ19jMzNKYmVQR01tQ1F2X21jQUc1YkkwV3R1SXJwVFB0Q3pOTmMzZ0ZSYURmR1IxaVZhTmk4WUV6Zzh4Ry1nRG9ia2YxVEpnQjRnaVp5OUVONm1JS1VQMlhHUThXMlY0OXE1MGZpd2l4U3o3b3BCaTJUREdEcGM0?oc=5"
    },
    {
-    "titulo": "BBSE3, PETR4, VALE3 e TAEE11: vale a pena? O que muda na tese",
-    "fonte": "ativovirtual.com.br",
-    "data": "2026-11-16T08:00:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQVFR1eGhIRXRtMzhUc2dPZTNyRm14OUY0YVNjRjhJT1E1WERDTVhka1RFOEx0djN5M2RDTmNQaW93Zlk3emJqUkdwZ0ozWmhVRWpwTlBfeTNzLXJKYklFcVpPNXdvWmJiX24yZVlPLVk2RldnbEJENU5SbVhzU0gxMVVvazBIdkFXQm1lS1V6dDJ0MWZWOGFnSDNpU1hSUzZnSmZvSDBpNA?oc=5"
-   },
-   {
     "titulo": "TAEE11: Novos Dividendos com 100% dos Lucros, Alertas e Preço-Teto",
     "fonte": "www.ativovirtual.com.br",
     "data": "2026-11-16T08:00:00+00:00",
     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZHFNQV82Mi1iamttdUlKM0NJWWhjSXRtaUJBRDdjY3lPSUNrRFVjVUdmaG1kRTB0VGFaLXRfQnNwbjAzdGREYjMyRGdsaFA4RFkwX0QxdDh4QlJIR3RiMXM0ZTE0NGpuU1BjV0tpY2ozSnducDh1eE9qNDZNSG1SOTBINUFRQTNWTmxiZXUzOTRqTVh0cGliM3U5ZldlX2ZzRmZxdElBUWVUOUlBbEhF?oc=5"
+   },
+   {
+    "titulo": "BBSE3, PETR4, VALE3 e TAEE11: vale a pena? O que muda na tese",
+    "fonte": "ativovirtual.com.br",
+    "data": "2026-11-16T08:00:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQVFR1eGhIRXRtMzhUc2dPZTNyRm14OUY0YVNjRjhJT1E1WERDTVhka1RFOEx0djN5M2RDTmNQaW93Zlk3emJqUkdwZ0ozWmhVRWpwTlBfeTNzLXJKYklFcVpPNXdvWmJiX24yZVlPLVk2RldnbEJENU5SbVhzU0gxMVVvazBIdkFXQm1lS1V6dDJ0MWZWOGFnSDNpU1hSUzZnSmZvSDBpNA?oc=5"
    },
    {
     "titulo": "Taesa (TAEE11) surpreende com lucro maior e dividendos de R$ 1,06 por unit no 3º trimestre",
