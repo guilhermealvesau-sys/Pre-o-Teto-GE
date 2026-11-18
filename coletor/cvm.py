@@ -293,10 +293,8 @@ def coletar(mapa: pd.DataFrame, anos_hist: int = 7, so_ind: set[str] = frozenset
         u = g.sort_values("DT_REFER").iloc[-1]
         res[por_cnpj[cnpj]].conta_lucro = f"{u['CD_CONTA']} {u['DS_CONTA']} ({u['origem']})"
     chave = ["CNPJ_CIA", "DT_INI_EXERC", "DT_FIM_EXERC"]
-    # período sem valor no documento mais recente (ex.: bancos na transição da Res. CMN 4.966, cujo DFP de 2025 não
-    # reapresenta 2024): vale o documento mais recente que traz o valor (o DFP do próprio ano)
-    luc = luc.assign(_tem=luc["vl_mi"].fillna(0) != 0)
-    luc = luc.sort_values(["_tem", "DT_REFER", "VERSAO"]).drop_duplicates(chave, keep="last").drop(columns="_tem")
+    luc_todos = luc
+    luc = luc.sort_values(["DT_REFER", "VERSAO"]).drop_duplicates(chave, keep="last")
     # período zerado na consolidada (TIM, ABC, Sabesp em alguns anos): vale o mesmo período da individual
     ind = pd.concat([d for d in inds if not d.empty], ignore_index=True) if any(not d.empty for d in inds) else None
     if ind is not None:
@@ -313,6 +311,14 @@ def coletar(mapa: pd.DataFrame, anos_hist: int = 7, so_ind: set[str] = frozenset
             extra = li.loc[faltam].reset_index()
             extra["DT_REFER"], extra["VERSAO"] = extra["DT_FIM_EXERC"], 0
             luc = pd.concat([luc, extra], ignore_index=True)
+    # ainda zerado: o documento mais recente que traz o valor do período (ex.: bancos na transição da Res. CMN 4.966,
+    # cujo DFP de 2025 não reapresenta 2024 — vale o DFP de 2024)
+    ant = luc_todos[luc_todos["vl_mi"].fillna(0) != 0].sort_values(["DT_REFER", "VERSAO"])
+    ant = ant.drop_duplicates(chave, keep="last").set_index(chave)["vl_mi"]
+    for i in luc.index[luc["vl_mi"].fillna(0) == 0]:
+        k = tuple(luc.loc[i, chave])
+        if k in ant.index:
+            luc.at[i, "vl_mi"] = ant.loc[k]
     # ainda zerado (sem individual para o período): total consolidado − não controladores; sem essa quebra, o total
     if "vl_total" in luc:
         z = (luc["vl_mi"].fillna(0) == 0) & luc["vl_total"].notna()
