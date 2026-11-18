@@ -1,0 +1,53 @@
+{
+ "sobre": "Divergências contra referências já investigadas na auditoria de 17-18/11/2026. Cada uma só é aceita enquanto os dois valores ficam a até 10% dos registrados aqui; fora disso volta a ser alerta.",
+ "itens": [
+  {
+   "papel": "TIMS3",
+   "campo": "lucro12m",
+   "nosso": 4108.679,
+   "referencia": -203.304,
+   "motivo": "Fundamentus mostra lucro 12 meses negativo, incompatível com os ITRs da TIM na CVM (erro da referência)",
+   "desde": "2026-11-16"
+  },
+  {
+   "papel": "KLBN3",
+   "campo": "lucro12m",
+   "nosso": 69.421,
+   "referencia": 476.665,
+   "motivo": "Fundamentus inclui a parcela dos não controladores; o painel usa só a dos controladores",
+   "desde": "2026-11-16"
+  },
+  {
+   "papel": "KLBN4",
+   "campo": "lucro12m",
+   "nosso": 69.421,
+   "referencia": 476.665,
+   "motivo": "Fundamentus inclui a parcela dos não controladores; o painel usa só a dos controladores",
+   "desde": "2026-11-16"
+  },
+  {
+   "papel": "KLBN11",
+   "campo": "lucro12m",
+   "nosso": 69.421,
+   "referencia": 476.665,
+   "motivo": "Fundamentus inclui a parcela dos não controladores; o painel usa só a dos controladores",
+   "desde": "2026-11-16"
+  },
+  {
+   "papel": "VALE3",
+   "campo": "acoes",
+   "nosso": 4072.366,
+   "referencia": 4439.16,
+   "motivo": "O painel conta as ações em circulação após o cancelamento; a referência usa o total antigo",
+   "desde": "2026-11-16"
+  },
+  {
+   "papel": "VALE3",
+   "campo": "vpa",
+   "nosso": 47.8243,
+   "referencia": 43.87,
+   "motivo": "Consequência da diferença no número de ações da Vale",
+   "desde": "2026-11-16"
+  }
+ ]
+}

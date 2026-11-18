@@ -75,4 +75,12 @@ Ferramentas:
 - `ferramentas/embrulhar.py` — transforma `paginas/*.html` no `index.html` publicado;
 - `ferramentas/gerar_visualizacao.py` — gera `paginas/ranking-visualizacao.html` a partir do dashboard público.
 
+## Conferências periódicas
+
+- **Semanal (segunda):** o workflow Auditoria coleta Fundamentus, Yahoo, IBGE e Banco Central e roda
+  `ferramentas/conferir_referencias.py`, que grava `auditoria/conferencia.json`. Divergências já explicadas ficam em
+  `config/divergencias_conhecidas.json` e só são aceitas enquanto os valores ficam a até 10% dos registrados.
+  `ferramentas/recalcular_preco_teto.py` refaz o preço teto do zero e compara com o `dados.json` publicado.
+- **Trimestral:** auditoria completa uma semana depois do prazo da CVM para os resultados (abril, maio, agosto e novembro).
+
 Teste sem internet: `python -m tests.teste_offline`

@@ -35,6 +35,10 @@ jobs:
         if: inputs.parte != 'detalhe'
         run: python -m ferramentas.auditoria_referencias
 
+      - name: Conferir a coleta contra as referências
+        if: inputs.parte != 'detalhe'
+        run: python ferramentas/conferir_referencias.py auditoria/conferencia.json
+
       - name: Coletar registros brutos para diagnóstico
         if: inputs.parte != 'referencias'
         run: python -m ferramentas.auditoria_detalhe
