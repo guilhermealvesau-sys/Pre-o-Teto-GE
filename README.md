@@ -59,4 +59,20 @@ Tickers que mudaram de código usam o histórico do código antigo (coluna `anti
 - `config/empresas.csv` — emissores; `cd_cvm` vazio é resolvido pelo cadastro da CVM (resultado em `dados/mapa_cvm.csv`)
 - `dados/` — saída das coletas (gerada pelo robô; não editar à mão)
 
+## Publicação nas páginas
+
+As páginas recebem os dados como arquivos publicados junto com cada uma (o banco das páginas não é mais usado para isso):
+
+- página principal: `oficial/dados.json`, `oficial/noticias.json`, `oficial/historico.json` (da coleta), `resumos.json`
+  (panoramas) e `base.json` (consenso, regras e parâmetros do usuário; o banco da página continua sendo onde ele edita);
+- dashboard público e página de visualização: `dados.json` (sem o consenso bruto; leva o dividendo-base já calculado).
+
+Ferramentas:
+
+- `ferramentas/montar_arquivos.py DADOS base.json resumos.json SAIDA [oficial_anterior]` — monta todos esses arquivos;
+- `ferramentas/conferir_base.py` — confere por SHA-256 a cópia da base que o botão de publicação grava em `publicacao/base`;
+- `ferramentas/mesclar_resumos.py` — junta panoramas novos ao `resumos.json`, recusando os incompletos;
+- `ferramentas/embrulhar.py` — transforma `paginas/*.html` no `index.html` publicado;
+- `ferramentas/gerar_visualizacao.py` — gera `paginas/ranking-visualizacao.html` a partir do dashboard público.
+
 Teste sem internet: `python -m tests.teste_offline`

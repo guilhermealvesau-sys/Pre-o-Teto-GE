@@ -4,7 +4,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
 <style>
-/* Visualização: ranking (BESST e commodities) e notícias, sem edição. Mesma identidade da página principal. */
+/* Página de visualização: ranking completo com seletores de base e payout, notícias e comparação por setor.
+   Lê dados.json, publicado junto com a página; nada aqui grava dados. */
 :root{
   --bg:#F2F4F7; --surface:#FFFFFF; --surface-2:#E9EDF3; --ink:#131A24; --muted:#586374; --line:#D8DEE7;
   --accent:#0E5A7A; --accent-ink:#FFFFFF; --accent-soft:#DCEBF2;
@@ -26,7 +27,7 @@
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--font-ui);font-size:14px;line-height:1.45}
 .wrap{max-width:1180px;margin:0 auto;padding-block:20px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:18px}
-h1,h2,h3{margin:0;text-wrap:balance;letter-spacing:-.01em}
+h1,h2{margin:0;text-wrap:balance;letter-spacing:-.01em}
 h1{font-size:24px;font-weight:700}
 h2{font-size:17px;font-weight:600}
 .eyebrow{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
@@ -39,14 +40,6 @@ header.top p{margin:4px 0 0;color:var(--muted);max-width:62ch}
 .chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 10px;font-size:12px;white-space:nowrap}
 .chip .dot{width:7px;height:7px;border-radius:50%;background:var(--muted)}
 .chip.ok .dot{background:var(--pos)} .chip.warn .dot{background:var(--warn)} .chip.bad .dot{background:var(--neg)}
-.tabs{display:flex;gap:2px;overflow-x:auto;border-bottom:1px solid var(--line);scrollbar-width:none;position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg)}
-.tabs::-webkit-scrollbar{display:none}
-.tabs button{flex:none;border:0;background:transparent;color:var(--muted);font:inherit;font-weight:600;font-size:14px;padding:10px 14px;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;display:inline-flex;gap:6px;align-items:center}
-.tabs button:hover{color:var(--ink)}
-.tabs button[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
-.tabs .badge{font-size:11px;font-family:var(--font-num);background:var(--neg-soft);color:var(--neg);border-radius:999px;padding:0 6px}
-[role=tabpanel]{display:grid;gap:18px}
-[role=tabpanel][hidden]{display:none}
 .controls{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px}
 .ctl{display:flex;align-items:center;gap:8px;font-size:13px}
 .seg{display:inline-flex;border:1px solid var(--line);border-radius:6px;overflow:hidden}
@@ -60,73 +53,99 @@ header.top p{margin:4px 0 0;color:var(--muted);max-width:62ch}
 .switch input:checked::after{transform:translateX(14px);background:var(--accent-ink)}
 input[type=number],select{font:inherit;padding:5px 8px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--ink)}
 input[type=number]{width:72px;font-family:var(--font-num)}
-button.btn{font:inherit;font-size:13px;font-weight:600;border-radius:6px;padding:7px 14px;cursor:pointer;border:1px solid var(--accent);background:transparent;color:var(--accent)}
+button.btn{font:inherit;font-size:12px;font-weight:600;border-radius:6px;padding:4px 10px;cursor:pointer;border:1px solid var(--accent);background:transparent;color:var(--accent)}
 button.lk{border:0;background:none;padding:0;font:inherit;color:inherit;cursor:pointer;text-align:left}
 button.lk:hover .tk{color:var(--accent);text-decoration:underline}
-button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,label.ck:focus-within{outline:2px solid var(--accent);outline-offset:2px}
 a{color:var(--accent)}
 .panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;min-width:0}
 .panel-head{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline;justify-content:space-between;padding:14px 16px 10px;border-bottom:1px solid var(--line)}
 .panel-head p{margin:0;color:var(--muted);font-size:12.5px}
+.pad{padding:10px 16px}
 .scroll{overflow-x:auto}
-table{border-collapse:collapse;width:100%}
-.wide table{min-width:900px}
-th,td{padding:8px 10px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
+table{border-collapse:collapse;width:100%;min-width:640px}
+th,td{padding:7px 8px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
 th{font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);background:var(--surface-2)}
 th.l,td.l{text-align:left}
-.rank th:nth-child(2),.rank td:nth-child(2),.rank th:last-child,.rank td:last-child{text-align:left}
-td.rk{color:var(--muted);width:36px}
-tbody tr:hover{background:var(--surface-2)}
+td.rk{color:var(--muted);width:32px}
+tr.pickrow{cursor:pointer}
+tr.pickrow:hover td{background:var(--surface-2)}
+tr.pickrow.sel td{background:var(--accent-soft)}
+tr.pickrow.sel td:first-child{box-shadow:inset 3px 0 0 var(--accent)}
 .tk{font-family:var(--font-num);font-weight:600}
 .nm{display:block;font-size:12px;color:var(--muted)}
 .var-pos{color:var(--pos)} .var-neg{color:var(--neg)}
 .desc{display:flex;align-items:center;gap:8px;justify-content:flex-end}
-.bar{position:relative;width:84px;height:8px;background:var(--surface-2);border-radius:4px;flex:none}
+.bar{position:relative;width:64px;height:8px;background:var(--surface-2);border-radius:4px;flex:none}
 .bar::before{content:"";position:absolute;left:50%;top:-2px;bottom:-2px;width:1px;background:var(--muted);opacity:.6}
 .bar span{position:absolute;top:0;bottom:0;border-radius:4px}
 .bar .p{left:50%;background:var(--pos)} .bar .n{right:50%;background:var(--neg)}
-.desc .num{min-width:52px}
-.tag{display:inline-block;font-size:11px;font-weight:600;padding:2px 7px;border-radius:4px;background:var(--warn-soft);color:var(--warn);margin-right:4px}
+.desc .num{min-width:44px}
+.tag{display:inline-block;font-size:11px;font-weight:600;padding:2px 7px;border-radius:4px;background:var(--warn-soft);color:var(--warn);margin:0 4px 4px 0}
 .tag.bad{background:var(--neg-soft);color:var(--neg)}
-.tag.info{background:var(--accent-soft);color:var(--accent)}
-td.pay b{color:var(--ink)} td.pay{color:var(--muted)}
-.more{padding:10px 16px}
-.note{padding:10px 16px;font-size:12.5px;color:var(--muted);border-top:1px solid var(--line)}
-.note b{color:var(--ink)}
-.empty{padding:28px 16px;color:var(--muted)}
-.two{display:grid;gap:18px;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start}
-@media (max-width:900px){.two{grid-template-columns:1fr}}
+.empty{padding:24px 16px;color:var(--muted)}
+.pay b{color:var(--ink)}
+.dash{display:grid;gap:18px;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);align-items:start}
+.dash .col{display:grid;gap:18px;min-width:0}
+.side{position:sticky;top:12px}
+@media (max-width:980px){.dash{grid-template-columns:1fr}.side{position:static}}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border-bottom:1px solid var(--line)}
+.kpi{background:var(--surface);padding:10px 12px;min-width:0}
+.kpi span{display:block;font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.kpi b{display:block;font-family:var(--font-num);font-size:16px;font-weight:600;margin-top:2px;white-space:nowrap}
+@media (max-width:420px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.subh{padding:12px 16px 4px;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
 .list{display:grid}
-.list .it{display:grid;gap:2px;padding:9px 16px;border-bottom:1px solid var(--line);font-size:13px}
+.list .it{display:grid;gap:2px;padding:8px 16px;border-bottom:1px solid var(--line);font-size:13px}
 .list .it:last-child{border-bottom:0}
-.list .meta{font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center}
+.list .meta{font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 10px}
 .list a{color:var(--ink);text-decoration:none;font-weight:500}
 .list a:hover{color:var(--accent);text-decoration:underline}
-.list .meta button.lk{font-weight:600;color:var(--ink);font-family:var(--font-num);font-size:12px}
-.list .meta button.lk:hover{color:var(--accent);text-decoration:underline}
-.links{display:flex;flex-wrap:wrap;gap:8px;padding:12px 16px}
-.links a{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:13px;font-weight:600;text-decoration:none}
-.links a:hover{border-color:var(--accent);background:var(--accent-soft)}
-.resumo{padding:12px 16px;display:grid;gap:8px;font-size:13.5px;line-height:1.55}
+.resumo{padding:4px 16px 10px;font-size:13.5px;line-height:1.55;display:grid;gap:6px}
 .resumo ul{margin:0;padding-left:18px;display:grid;gap:6px}
 .resumo p{margin:0}
-.resumo .disc{font-size:12px;color:var(--muted)}
+.disc{font-size:12px;color:var(--muted)}
+.links{display:flex;flex-wrap:wrap;gap:8px;padding:10px 16px 14px}
+.links a{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--line);border-radius:6px;padding:5px 9px;font-size:12.5px;font-weight:600;text-decoration:none}
+.links a:hover{border-color:var(--accent);background:var(--accent-soft)}
+.inner{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;padding:12px 16px;border-bottom:1px solid var(--line)}
+.checks{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+label.ck{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:999px;padding:5px 12px;cursor:pointer;font-size:13px;background:var(--surface);user-select:none}
+label.ck input{accent-color:var(--accent);margin:0}
+label.ck:has(input:checked){border-color:var(--accent);background:var(--accent-soft)}
+label.ck .num{color:var(--muted);font-size:11px}
+.hb{display:grid;grid-template-columns:minmax(92px,150px) 1fr 76px;gap:2px 10px;align-items:center;padding:12px 16px 14px}
+.hb .lab{font-size:12.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hb .trk{position:relative;height:14px}
+.hb .fill{position:absolute;top:0;bottom:0;background:var(--accent);opacity:.85}
+.hb .fill.pos{border-radius:0 4px 4px 0} .hb .fill.neg{border-radius:4px 0 0 4px;background:var(--neg)}
+.hb .zero{position:absolute;top:-2px;bottom:-2px;width:1px;background:var(--muted);opacity:.7}
+.hb .medl{position:absolute;top:-3px;bottom:-3px;width:0;border-left:1.5px dashed var(--ink);opacity:.55}
+.hb .val{font-family:var(--font-num);font-size:12.5px;text-align:right}
+.hb .row{display:contents}
+.legend{padding:0 16px 12px;font-size:12px;color:var(--muted)}
+.legend i{display:inline-block;width:14px;border-top:1.5px dashed var(--ink);opacity:.6;vertical-align:middle;margin-right:4px}
+.tabs{display:flex;gap:2px;overflow-x:auto;border-bottom:1px solid var(--line);scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:none;border:0;background:transparent;color:var(--muted);font:inherit;font-weight:600;font-size:14px;padding:10px 14px;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px}
+.tabs button:hover{color:var(--ink)}
+.tabs button[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+[role=tabpanel]{display:grid;gap:18px}
+[role=tabpanel][hidden]{display:none}
 .resumo h4{margin:8px 0 2px;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:600}
 .resumo h4:first-child{margin-top:0}
 .resumo .disc a{color:var(--accent)}
-.selbar .ctl{min-width:0;flex:1 1 300px} #selEmp{width:100%;max-width:460px;min-width:0}
-.mini td,.mini th{padding:6px 10px}
-details.metodo{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px 16px}
-details.metodo summary{cursor:pointer;font-weight:600}
-details.metodo ul{margin:10px 0 0;padding-left:18px;color:var(--muted);display:grid;gap:4px;max-width:90ch}
-@media (max-width:560px){h1{font-size:21px}.controls{gap:10px 14px}}
+footer.aviso{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px 16px;font-size:12.5px;color:var(--muted);display:grid;gap:6px}
+footer.aviso b{color:var(--ink)}
+footer.aviso ul{margin:0;padding-left:18px;display:grid;gap:4px}
+@media (max-width:560px){h1{font-size:21px}.controls{gap:10px 14px}.hb{grid-template-columns:84px 1fr 64px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 
 <div class="wrap">
   <header class="top">
     <div>
-      <div class="eyebrow">Bazin projetivo · B3 · visualização</div>
+      <div class="eyebrow">Bazin projetivo · B3</div>
       <h1>Ranking Preço Teto GE</h1>
       <p>Preço teto = dividendo projetado ÷ DY mínimo. BESST e commodities seguem modelos diferentes e têm rankings separados.</p>
     </div>
@@ -134,84 +153,62 @@ details.metodo ul{margin:10px 0 0;padding-left:18px;color:var(--muted);display:g
   </header>
 
   <nav class="tabs" role="tablist" aria-label="Seções" id="tabs">
-    <button role="tab" id="t-ranking" aria-controls="p-ranking" aria-selected="true" data-tab="ranking">Ranking</button>
-    <button role="tab" id="t-noticias" aria-controls="p-noticias" aria-selected="false" data-tab="noticias" tabindex="-1">Notícias <span class="badge" id="bdg" hidden></span></button>
+    <button role="tab" id="t-dash" aria-controls="p-dash" aria-selected="true" data-tab="dash">Dashboard</button>
+    <button role="tab" id="t-setores" aria-controls="p-setores" aria-selected="false" data-tab="setores" tabindex="-1">Comparação por setor</button>
+    <button role="tab" id="t-noticias" aria-controls="p-noticias" aria-selected="false" data-tab="noticias" tabindex="-1">Notícias</button>
   </nav>
 
-  <section role="tabpanel" id="p-ranking" aria-labelledby="t-ranking">
-    <div class="controls" role="group" aria-label="Opções do ranking">
-      <div class="ctl"><span class="muted">Base</span>
-        <div class="seg" id="segBase">
-          <button type="button" data-v="PROJETADO" aria-pressed="true">Projetado</button>
-          <button type="button" data-v="CONSERVADOR" aria-pressed="false" title="Menor entre o dividendo projetado e o dividendo médio de 6 anos">Conservador</button>
-        </div>
-      </div>
-      <div class="ctl"><span class="muted">Payout</span>
-        <div class="seg" id="segPay">
-          <button type="button" data-v="MEDIANO" aria-pressed="true" title="Mediana dos payouts dos 3 últimos anos completos">Mediano 3 anos</button>
-          <button type="button" data-v="MEDIA" aria-pressed="false" title="Média simples dos payouts anuais dos 6 últimos anos completos (5, se faltar um ano)">Média 5–6 anos</button>
-          <button type="button" data-v="ATUAL" aria-pressed="false" title="Proventos dos últimos 12 meses ÷ lucro dos últimos 12 meses">Atual 12 meses</button>
-        </div>
-      </div>
-      <label class="switch ctl"><input type="checkbox" id="uma"> Uma classe por empresa</label>
-      <label class="ctl" for="dymin"><span class="muted">Simular DY mínimo</span> <input type="number" id="dymin" step="0.5" min="1" max="20" inputmode="decimal"> %</label>
-      <span class="muted" id="ctlNote" style="font-size:12px"></span>
+  <section role="tabpanel" id="p-dash" aria-labelledby="t-dash">
+  <div class="controls" role="group" aria-label="Opções do painel">
+    <div class="ctl"><span class="muted">Base</span><div class="seg" id="segBase"><button type="button" data-v="PROJETADO">Projetado</button><button type="button" data-v="CONSERVADOR">Conservador</button></div></div>
+    <div class="ctl"><span class="muted">Payout</span><div class="seg" id="segPay"><button type="button" data-v="MEDIANO">Mediano 3 anos</button><button type="button" data-v="MEDIA">Média 5–6 anos</button><button type="button" data-v="ATUAL">12 meses</button></div></div>
+    <label class="switch"><input type="checkbox" id="uma"> Uma classe por empresa</label>
+    <label class="ctl" for="dymin"><span class="muted">Simular DY mínimo</span> <input type="number" id="dymin" step="0.5" min="1" max="20" inputmode="decimal"> %</label>
+    <span class="muted small" id="ctlNote"></span>
+  </div>
+
+  <div class="dash">
+    <div class="col">
+      <section class="panel" aria-labelledby="hB">
+        <div class="panel-head"><h2 id="hB">Ranking BESST</h2><p>Do maior para o menor desconto ao preço teto · clique numa linha para ver as notícias ao lado</p></div>
+        <div class="scroll" id="tBesst"><div class="empty">Carregando…</div></div>
+      </section>
+      <section class="panel" aria-labelledby="hC">
+        <div class="panel-head"><h2 id="hC">Commodities</h2><p id="subC">Maior desconto ao preço teto</p></div>
+        <div class="scroll" id="tCom"><div class="empty">Carregando…</div></div>
+      </section>
     </div>
+    <aside class="panel side" id="side" aria-label="Notícias do papel escolhido"><div class="empty">Escolha um papel na lista.</div></aside>
+  </div>
 
-    <section class="panel" aria-labelledby="hB">
-      <div class="panel-head"><h2 id="hB">Ranking BESST</h2><p>Bancos, seguros, energia, saneamento e telecom · clique no papel para ver as notícias</p></div>
-      <div class="scroll wide rank" id="tBesst"><div class="empty">O ranking aparece aqui assim que a base carregar.</div></div>
-      <div class="more"><button type="button" class="btn" id="btnMais" hidden>Mostrar todos</button></div>
-    </section>
-
-    <section class="panel" aria-labelledby="hC">
-      <div class="panel-head"><h2 id="hC">Ranking Commodities</h2><p>Petróleo, mineração e celulose · dividendo pela política de cada empresa</p></div>
-      <div class="scroll wide rank" id="tCom"><div class="empty">O ranking aparece aqui assim que a base carregar.</div></div>
-      <div class="note" id="petrNote"></div>
-    </section>
-
-    <details class="metodo">
-      <summary>Como os números são calculados</summary>
-      <ul>
-        <li><b>BESST:</b> dividendo projetado = consenso de lucro ÷ nº de ações × ações por papel (units) × payout. Payout: mediana dos 3 últimos anos, média de 5–6 anos ou últimos 12 meses, conforme o seletor; um payout manual definido pelo responsável pela base vale no lugar deles.</li>
-        <li><b>Commodities:</b> dividendo = payout da política × (consenso − CAPEX) ÷ nº de ações. Petrobras: % do FCL. Vale: % do EBITDA ajustado − investimentos de manutenção. Klabin: % do EBITDA ajustado.</li>
-        <li><b>Preço teto</b> = dividendo ÷ DY mínimo. <b>Desconto</b> = 1 − cotação ÷ preço teto. A ordem de cada ranking é pelo desconto. <b>Conservador</b> usa o menor entre o dividendo projetado e o dividendo médio de 6 anos.</li>
-        <li><b>Simular DY mínimo</b> muda o cálculo só na sua tela.</li>
-        <li><b>Fontes:</b> cotações de fechamento da B3 (COTAHIST); balanços entregues à CVM; proventos e preços históricos da B3; câmbio PTAX do Banco Central. O consenso de lucro é informado manualmente. Esta página é só de leitura e é atualizada uma vez por dia útil.</li>
-        <li>Os números são saídas de um modelo e não constituem recomendação de investimento.</li>
-      </ul>
-    </details>
   </section>
 
   <section role="tabpanel" id="p-noticias" aria-labelledby="t-noticias" hidden>
-    <div class="controls selbar" role="group" aria-label="Escolha da empresa">
-      <label class="ctl" for="selEmp"><span class="muted">Empresa</span> <select id="selEmp"></select></label>
-      <span class="muted small" id="fonte"></span>
-    </div>
-    <div id="nTodas">
-      <div class="two">
-        <section class="panel" aria-labelledby="hM"><div class="panel-head"><h2 id="hM">Últimas manchetes</h2><p>Imprensa, 14 dias · só assuntos de mercado; escolha uma empresa para ver todas</p></div><div class="list" id="mTodas"></div></section>
-        <section class="panel" aria-labelledby="hD"><div class="panel-head"><h2 id="hD">Documentos recentes na CVM</h2><p>Fatos relevantes, comunicados e avisos</p></div><div class="list" id="dTodas"></div></section>
-      </div>
-    </div>
-    <div id="nEmp" hidden>
-      <section class="panel" aria-labelledby="hI"><div class="panel-head"><h2 id="hI">Indicadores</h2><p id="sub"></p></div><div class="scroll mini" id="ind"></div></section>
-      <div class="two" style="margin-top:18px">
-        <div style="display:grid;gap:18px">
-          <section class="panel" aria-labelledby="hR" id="secResumo" hidden><div class="panel-head"><h2 id="hR">Panorama da empresa</h2><p id="resData"></p></div><div class="resumo" id="resumo"></div></section>
-          <section class="panel" aria-labelledby="hE"><div class="panel-head"><h2 id="hE">Manchetes</h2><p>Imprensa, últimos 14 dias</p></div><div class="list" id="mEmp"></div></section>
-        </div>
-        <div style="display:grid;gap:18px">
-          <section class="panel" aria-labelledby="hF"><div class="panel-head"><h2 id="hF">Documentos na CVM</h2><p>Últimos 12 meses</p></div><div class="list" id="dEmp"></div></section>
-          <section class="panel" aria-labelledby="hL"><div class="panel-head"><h2 id="hL">Links</h2><p>Abrem em nova aba</p></div><div class="links" id="links"></div></section>
-        </div>
-      </div>
-    </div>
-    <section class="panel" aria-labelledby="hA">
-      <div class="panel-head"><h2 id="hA">Mudanças de política de remuneração</h2><p>Documentos à CVM sobre política de dividendos ou payout · "Novo" por 30 dias</p></div>
-      <div class="list" id="avisos"><div class="empty">Nenhum documento ainda.</div></div>
-    </section>
+  <section class="panel" aria-labelledby="hN">
+    <div class="panel-head"><h2 id="hN">Notícias e documentos</h2><p id="notSub"></p></div>
+    <div class="inner"><label class="ctl" for="notEmp"><span class="muted">Empresa</span> <select id="notEmp"></select></label>
+      <div class="seg" id="segNot"><button type="button" data-v="noticias">Manchetes</button><button type="button" data-v="fatos">Documentos na CVM</button></div></div>
+    <div class="list" id="notLista"><div class="empty">Carregando…</div></div>
   </section>
+  </section>
+
+  <section role="tabpanel" id="p-setores" aria-labelledby="t-setores" hidden>
+  <section class="panel" aria-labelledby="hS">
+    <div class="panel-head"><h2 id="hS">Comparação por setor</h2><p id="setSub"></p></div>
+    <div class="inner">
+      <div class="checks" id="setChecks"></div>
+      <label class="ctl" for="metrica"><span class="muted">Comparar por</span> <select id="metrica"></select></label>
+      <span style="display:flex;gap:8px"><button type="button" class="btn" id="setTodos">Todos</button><button type="button" class="btn" id="setNenhum">Limpar</button></span>
+    </div>
+    <div id="setChart"><div class="empty">Carregando…</div></div>
+  </section>
+  </section>
+
+  <footer class="aviso">
+    <div><b>Como ler.</b> BESST: dividendo projetado = lucro de consenso por ação × payout escolhido (mediano dos 3 últimos anos, média de 5–6 anos ou últimos 12 meses). Base conservadora: o menor entre o dividendo projetado e o dividendo médio de 6 anos. Commodities: payout da política × (consenso − CAPEX) por ação. Preço teto = dividendo projetado ÷ DY mínimo; desconto = 1 − cotação ÷ preço teto. O simulador de DY mínimo refaz o cálculo só na sua tela. O payout de 12 meses oscila com distribuições extraordinárias.</div>
+    <div><b>Fontes.</b> Cotações de fechamento da B3; balanços entregues à CVM; proventos e preços históricos da B3; câmbio PTAX, Selic e IPCA do Banco Central; documentos eventuais da CVM e manchetes do Google Notícias. O panorama de cada empresa é montado por IA a partir do site de RI e das fontes citadas nele. O consenso de lucro é uma premissa do autor.</div>
+    <div><b>Aviso.</b> Conteúdo informativo, gerado por um modelo a partir de dados públicos e premissas próprias. Não é recomendação de compra ou venda de valores mobiliários. Os números podem conter erros ou estar desatualizados; confira nas fontes.</div>
+  </footer>
 </div>
 
 <script>
@@ -226,6 +223,7 @@ details.metodo ul{margin:10px 0 0;padding-left:18px;color:var(--muted);display:g
   const fDate = (iso) => { if (!iso) return "–"; const [y, m, d] = String(iso).slice(0, 10).split("-"); return d && m && y ? `${d}/${m}/${y}` : iso; };
   const fDateTime = (iso) => { const t = new Date(iso); return isNaN(t) ? "–" : t.toLocaleString("pt-BR", { day: "2-digit", month: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit" }); };
   const safeUrl = (u) => (/^https?:\/\//i.test(u || "") ? u : null);
+  const median = (xs) => { const v = xs.filter(isNum).sort((a, b) => a - b); if (!v.length) return null; const m = v.length >> 1; return v.length % 2 ? v[m] : (v[m - 1] + v[m]) / 2; };
   const store = {
     get(k, d) { try { const v = localStorage.getItem("ptgev:" + k); return v === null ? d : JSON.parse(v); } catch { return d; } },
     set(k, v) { try { localStorage.setItem("ptgev:" + k, JSON.stringify(v)); } catch {} },
@@ -233,38 +231,18 @@ details.metodo ul{margin:10px 0 0;padding-left:18px;color:var(--muted);display:g
   const emOf = (t) => String(t).slice(0, 4);
   const NOMES = { TAEE: "Taesa", VIVT: "Vivo (Telefônica Brasil)", ITUB: "Itaú Unibanco", ITSA: "Itaúsa", TIMS: "TIM Brasil",
     ISAE: "ISA Energia", CPFE: "CPFL Energia", EGIE: "Engie Brasil", EQTL: "Equatorial", SANB: "Santander Brasil" };
+  const SETOR_ROT = { Petroleo: "Petróleo", Mineracao: "Mineração", Eletricas: "Elétricas" };
+  const setRot = (s) => SETOR_ROT[s] || s;
 
   const S = {
-    base: null, of: null, ofN: null, ativos: new Map(), cot: new Map(), params: null, avisos: [], status: {},
-    baseSel: store.get("base", "PROJETADO"), payBase: store.get("payBase", "MEDIANO"), uma: store.get("uma", false), dymin: store.get("dymin", null),
-    tab: store.get("tab", "ranking"), sel: store.get("sel", ""), showAll: false, db: null, timedOut: false, loaded: false,
+    D: null, ativos: new Map(), base: store.get("base", "PROJETADO"), payBase: store.get("payBase", "MEDIANO"), uma: store.get("uma", false), tab: "dash",
+    notEmp: store.get("notEmp", ""), notTipo: store.get("notTipo", "noticias"),
+    dymin: store.get("dymin", null), setores: store.get("setores", null), metrica: store.get("metrica", "pl"),
+    sel: null, selTk: null, picked: false,
   };
-  const norm = (t) => String(t || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-  // no feed de todas as empresas, só manchetes com assunto de mercado (resultado, dividendos, ações, regulação, gestão…)
-  const MERCADO = /\b([a-z]{4}\d{1,2}|lucr\w*|preju\w*|dividend\w*|jcp|juros sobre|provent\w*|resultado\w*|balanc\w*|trimestr\w*|[1-4]t\d{2}|receita\w*|ebitda|guidance|aco(es)?|bolsa|ibovespa|b3|investidor\w*|analista\w*|recomend\w*|preco[- ]alvo|rating|fitch|moody\w*|debentur\w*|emiss\w*|oferta\w*|aquisi\w*|incorpora\w*|fusao|privatiza\w*|tarifa\w*|reajuste\w*|aneel|anatel|leilao|concess\w*|capex|investiment\w*|investe|investiu|payout|recompra|bonifica\w*|desdobra\w*|governanca|ceo|president\w*|conselho|diretor\w*|multa\w*|inadimpl\w*|credito|calote|vazamento|cvm|cade)\b/;
   const recente = (v) => v.novo && (Date.now() - new Date(v.detectado_em || v.data).getTime()) / 864e5 < 30;
 
-  function merge() {
-    const B = S.base || {}, of = S.of || {}, base = of.base?.itens || {}, oc = of.cotacoes || {};
-    S.ativos = new Map(Object.entries(B.ativos || {}).map(([tk, a]) => {
-      const o = { ...(base[tk] || {}) };
-      if (a.modelo === "POLITICA") delete o.payout;
-      return [tk, { ...a, ...o, ticker: tk }];
-    }));
-    S.cot = new Map(Object.entries(B.cotacoes || {}));
-    if (oc.ref) for (const [tk, c] of Object.entries(oc.itens || {})) {
-      const cur = S.cot.get(tk);
-      if (!cur || !cur.ref || cur.ref <= oc.ref) S.cot.set(tk, { ...c, ref: oc.ref });
-    }
-    S.params = { ...(B.params || {}), ...(of.params || {}) };
-    if (isNum(B.params?.cambio_manual)) S.params.cambio = B.params.cambio_manual;
-    S.avisos = of.avisos?.itens || [];
-    const st = { ...(B.status || {}) };
-    if (oc.ref && (!st.cotacoes_ref || st.cotacoes_ref <= oc.ref)) { st.cotacoes_ref = oc.ref; st.cotacoes_erro = null; }
-    st.base_gerado_em = of.base?.gerado_em; st.contabil_ate = of.base?.contabil_ate; st.espelhado_em = B.espelhado_em;
-    S.status = st;
-  }
-
+  // ---------- modelo ----------
   function payUsado(a) {
     if (a.modelo === "POLITICA") return { v: a.payout, k: "política" };
     if (isNum(a.payout_manual)) return { v: a.payout_manual, k: "manual" };
@@ -273,30 +251,23 @@ details.metodo ul{margin:10px 0 0;padding-left:18px;color:var(--muted);display:g
     return { v: a.payout, k: "mediano" };
   }
   function calc(a) {
-    const p = S.params || {};
+    const p = S.D?.params || {};
     const dymin = isNum(S.dymin) ? S.dymin : (p.dy_min ?? 0.06);
-    const c = S.cot.get(a.ticker);
+    const c = S.D?.cotacoes?.[a.ticker];
     const price = c && isNum(c.preco) && c.preco > 0 ? c.preco : null;
-    const f = a.fator || 1, pay = payUsado(a).v;
-    let div = null;
-    if (a.modelo === "POLITICA") {
-      let capex = 0;
-      if (a.capex_ref === "PETR") capex = (p.petr_capex_usd_bi || 0) * 1000 / (p.petr_anos || 1) * (p.cambio || 0);
-      if (a.capex_ref === "VALE") capex = (p.vale_capex_usd_bi || 0) * 1000 * (p.cambio || 0);
-      if (isNum(a.consenso_mi) && a.qtd_mi > 0 && isNum(pay)) div = pay * (a.consenso_mi - capex) / a.qtd_mi * f;
-    } else if (isNum(a.consenso_mi) && a.qtd_mi > 0 && isNum(pay)) div = a.consenso_mi / a.qtd_mi * f * pay;
-    const lpa = isNum(a.lucro12m_mi) && a.qtd_mi > 0 ? a.lucro12m_mi / a.qtd_mi * f : null;
-    let pl = price && lpa ? price / lpa : null;
+    const pay = payUsado(a).v;
+    const div = isNum(a.div_base) && isNum(pay) ? a.div_base * pay : null;
+    let pl = price && isNum(a.lpa) && a.lpa !== 0 ? price / a.lpa : null;
     if (pl === null && a.modelo === "POLITICA" && isNum(a.pl_fixo)) pl = a.pl_fixo;
     const pvp = price && isNum(a.vpa) && a.vpa > 0 ? price / a.vpa : null;
+    const roe = isNum(a.lpa) && isNum(a.vpa) && a.vpa > 0 ? a.lpa / a.vpa : null;
     const dy = price && div !== null ? div / price : null;
     const pt = div !== null ? div / dymin : null;
     const desc = price && pt > 0 ? 1 - price / pt : null;
     const divC = div !== null ? (isNum(a.div_medio6) ? Math.min(div, a.div_medio6) : div) : null;
     const ptC = divC !== null ? divC / dymin : null;
     const descC = price && ptC > 0 ? 1 - price / ptC : null;
-    const dyLiq = dy !== null ? dy * (1 - (isNum(a.pct_jcp) ? a.pct_jcp : 0) * (p.ir_jcp ?? 0.175)) : null;
-    const cons = S.baseSel === "CONSERVADOR";
+    const cons = S.base === "CONSERVADOR";
     const alerts = [];
     const faixa = p.pl_faixa ?? 1.5, gap = p.dy_gap ?? 0.04, maxDias = p.consenso_max_dias ?? 180;
     if (!price) alerts.push(["Sem cotação", "bad"]);
@@ -307,85 +278,21 @@ details.metodo ul{margin:10px 0 0;padding-left:18px;color:var(--muted);display:g
     const pRef = usaMedia ? a.payout_media : a.payout;
     if (a.modelo !== "POLITICA" && isNum(pRef) && isNum(a.payout_12m) && Math.abs(a.payout_12m - pRef) > (p.payout_gap ?? 0.15))
       alerts.push([`Payout 12M ${a.payout_12m > pRef ? "acima" : "abaixo"} da ${usaMedia ? "média" : "mediana"}`]);
-    if (a.modelo !== "POLITICA" && S.payBase === "MEDIA" && !isNum(a.payout_media) && !isNum(a.payout_manual)) alerts.push(["Sem 5 anos de payout: usa o mediano"]);
-    if (S.avisos.some((v) => v.emissor === emOf(a.ticker) && recente(v))) alerts.push(["Mudança de política anunciada", "bad"]);
+    if ((S.D?.avisos || []).some((v) => v.emissor === emOf(a.ticker) && recente(v))) alerts.push(["Mudança de política anunciada", "bad"]);
     if (a.consenso_data) { const dias = (Date.now() - new Date(a.consenso_data + "T12:00:00").getTime()) / 864e5; if (dias > maxDias) alerts.push(["Consenso de " + fDate(a.consenso_data), "bad"]); }
-    return { price, chg: c ? c.var : null, dy, pl, pvp, dyLiq, ptB: cons ? ptC : pt, descB: cons ? descC : desc, alerts };
+    return { price, chg: c ? c.var : null, dy, pl, pvp, roe, ptB: cons ? ptC : pt, descB: cons ? descC : desc, alerts };
+  }
+  function filtraUma(rows) {
+    if (!S.uma) return rows;
+    const seen = new Set();
+    return rows.filter((x) => (seen.has(emOf(x.a.ticker)) ? false : (seen.add(emOf(x.a.ticker)), true)));
   }
   function ranked(grupo) {
-    let rows = [...S.ativos.values()].filter((a) => a.grupo === grupo).map((a) => ({ a, r: calc(a) }));
+    const rows = [...S.ativos.values()].filter((a) => a.grupo === grupo).map((a) => ({ a, r: calc(a) }));
     const k = (x) => (isNum(x.r.descB) ? x.r.descB : -1e9);
     rows.sort((x, y) => k(y) - k(x) || (x.a.ordem || 0) - (y.a.ordem || 0));
-    if (S.uma) { const seen = new Set(); rows = rows.filter((x) => (seen.has(emOf(x.a.ticker)) ? false : (seen.add(emOf(x.a.ticker)), true))); }
-    return rows;
+    return filtraUma(rows);
   }
-
-  // ---------- status ----------
-  function renderStatus() {
-    const el = $("status");
-    if (!S.db) { el.innerHTML = '<span class="chip bad"><span class="dot"></span>Base indisponível nesta visualização</span>'; return; }
-    const st = S.status || {}, chips = [];
-    if (st.cotacoes_ref) {
-      const age = (Date.now() - new Date(st.cotacoes_ref + "T21:00:00").getTime()) / 864e5;
-      chips.push(`<span class="chip ${age > 4 ? "warn" : "ok"}"><span class="dot"></span>Cotações: fechamento de ${fDate(st.cotacoes_ref)}</span>`);
-    } else if (S.timedOut) chips.push('<span class="chip warn"><span class="dot"></span>A base ainda não respondeu</span>');
-    else if (!S.loaded) chips.push('<span class="chip"><span class="dot"></span>Carregando…</span>');
-    if (st.base_gerado_em) {
-      const ate = st.contabil_ate ? ` · balanços até ${fDate(st.contabil_ate + (st.contabil_ate.length === 7 ? "-01" : "")).slice(3)}` : "";
-      chips.push(`<span class="chip ok"><span class="dot"></span>Dados oficiais: ${fDate(st.base_gerado_em)}${ate}</span>`);
-    }
-    if (st.espelhado_em) chips.push(`<span class="chip"><span class="dot"></span>Atualizada em ${fDateTime(st.espelhado_em)}</span>`);
-    const n = S.avisos.filter(recente).length;
-    if (n) chips.push(`<span class="chip bad"><span class="dot"></span>${n} aviso(s) de política novo(s)</span>`);
-    el.innerHTML = chips.join("");
-    $("bdg").hidden = !n; $("bdg").textContent = n || "";
-  }
-
-  // ---------- ranking ----------
-  function bar(d) {
-    if (!isNum(d)) return '<span class="num">–</span>';
-    const w = Math.min(Math.abs(d), 1) * 50;
-    const span = d >= 0 ? `<span class="p" style="width:${w}%"></span>` : `<span class="n" style="width:${w}%"></span>`;
-    return `<div class="desc"><div class="bar" aria-hidden="true">${span}</div><span class="num">${fPct(d, 0)}</span></div>`;
-  }
-  function payCell(a) {
-    if (a.modelo === "POLITICA") return `<span title="Regra da política da empresa">política ${fPct(a.payout, 0)}</span>`;
-    const used = payUsado(a).k;
-    const vals = [["mediano", a.payout], ["média", a.payout_media], ["12M", a.payout_12m]].map(([k, v]) => (k === used ? `<b>${fPct(v, 0)}</b>` : fPct(v, 0))).join(" · ");
-    return isNum(a.payout_manual) ? `${vals} · <b>manual ${fPct(a.payout_manual, 0)}</b>` : vals;
-  }
-  const papelBtn = (a) => `<button type="button" class="lk" data-em="${esc(emOf(a.ticker))}" title="Ver notícias"><span class="tk">${esc(a.ticker)}</span><span class="nm">${esc(a.nome)}</span></button>`;
-  function table(rows) {
-    if (!rows.length) return '<div class="empty">Nenhum papel neste grupo.</div>';
-    const body = rows.map(({ a, r }, i) => {
-      const chg = isNum(r.chg) ? `<span class="nm ${r.chg >= 0 ? "var-pos" : "var-neg"}">${r.chg >= 0 ? "+" : ""}${fPct(r.chg, 2)}</span>` : "";
-      const tags = r.alerts.map(([t, k]) => `<span class="tag ${k || ""}">${esc(t)}</span>`).join("");
-      return `<tr><td class="rk num">${i + 1}</td><td>${papelBtn(a)}</td><td class="num">${fBRL(r.price)}${chg}</td><td class="num">${fBRL(r.ptB)}</td><td>${bar(r.descB)}</td><td class="num">${fPct(r.dy, 2)}</td><td class="num">${fPct(r.dyLiq, 2)}</td><td class="num">${fPct(a.dy_medio, 2)}</td><td class="num">${fNum(r.pl)}</td><td class="num">${fNum(a.pl_medio)}</td><td class="num pay">${payCell(a)}</td><td>${tags}</td></tr>`;
-    }).join("");
-    return `<table><thead><tr><th>#</th><th>Papel</th><th>Cotação</th><th>Preço teto</th><th>Desconto</th><th>DY proj.</th><th>DY líq.</th><th>DY médio 6a</th><th>P/L</th><th>P/L médio</th><th title="Mediano 3 anos · média 5–6 anos · 12 meses; em negrito, o usado no cálculo">Payout med. · média · 12M</th><th>Alertas</th></tr></thead><tbody>${body}</tbody></table>`;
-  }
-  function renderRanking() {
-    $("segBase").querySelectorAll("button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.v === S.baseSel)));
-    $("segPay").querySelectorAll("button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.v === S.payBase)));
-    $("uma").checked = !!S.uma;
-    const pDy = S.params?.dy_min ?? 0.06;
-    if (document.activeElement !== $("dymin")) $("dymin").value = String(+(((isNum(S.dymin) ? S.dymin : pDy) * 100).toFixed(2)));
-    $("ctlNote").textContent = isNum(S.dymin) && Math.abs(S.dymin - pDy) > 1e-9 ? `Simulação só nesta tela (padrão: ${fPct(pDy, 1)})` : "";
-    if (!S.loaded) return;
-    if (!S.ativos.size) { $("tBesst").innerHTML = $("tCom").innerHTML = '<div class="empty">A base ainda não foi publicada nesta página.</div>'; return; }
-    const b = ranked("BESST");
-    $("tBesst").innerHTML = table(S.showAll ? b : b.slice(0, 15));
-    $("btnMais").hidden = b.length <= 15;
-    $("btnMais").textContent = S.showAll ? "Mostrar só os 15 primeiros" : `Mostrar todos (${b.length})`;
-    $("tCom").innerHTML = table(ranked("COMMODITIES"));
-    const p = S.params || {};
-    if (isNum(p.petr_divida_usd_bi) && isNum(p.petr_teto_usd_bi)) {
-      const ok = p.petr_divida_usd_bi <= p.petr_teto_usd_bi;
-      $("petrNote").innerHTML = `Petrobras: dívida bruta de <b>US$ ${fNum(p.petr_divida_usd_bi, 1)} bi</b> contra teto de US$ ${fNum(p.petr_teto_usd_bi, 0)} bi, ${ok ? "dentro do teto" : "<b>acima do teto</b>: a distribuição pode ser menor"}. CAPEX: US$ ${fNum(p.petr_capex_usd_bi, 0)} bi em ${p.petr_anos} anos, câmbio ${fNum(p.cambio, 4)}.`;
-    }
-  }
-
-  // ---------- notícias ----------
   function empresas() {
     const m = new Map();
     for (const a of [...S.ativos.values()].sort((x, y) => (x.ordem || 0) - (y.ordem || 0))) {
@@ -393,13 +300,41 @@ details.metodo ul{margin:10px 0 0;padding-left:18px;color:var(--muted);display:g
       if (!m.has(em)) m.set(em, { em, nome: NOMES[em] || a.nome, setor: a.setor, grupo: a.grupo, tickers: [] });
       m.get(em).tickers.push(a.ticker);
     }
-    return [...m.values()].sort((x, y) => x.nome.localeCompare(y.nome, "pt-BR"));
+    return [...m.values()];
   }
-  const nomeEm = (em) => NOMES[em] || [...S.ativos.values()].find((a) => emOf(a.ticker) === em)?.nome || em;
-  const item = (data, meta, titulo, link, em) => {
-    const u = safeUrl(link);
-    return `<div class="it"><span class="meta">${em ? `<button type="button" class="lk" data-em="${esc(em)}">${esc(em)}</button>` : ""}<span class="num">${fDate(data)}</span>${meta}</span>${u ? `<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(titulo)}</a>` : `<span>${esc(titulo)}</span>`}</div>`;
-  };
+
+  // ---------- tela ----------
+  function bar(d) {
+    if (!isNum(d)) return '<span class="num">–</span>';
+    const w = Math.min(Math.abs(d), 1) * 50;
+    const span = d >= 0 ? `<span class="p" style="width:${w}%"></span>` : `<span class="n" style="width:${w}%"></span>`;
+    return `<div class="desc"><div class="bar" aria-hidden="true">${span}</div><span class="num">${fPct(d, 0)}</span></div>`;
+  }
+  function payCell(a) {
+    if (a.modelo === "POLITICA") return `política ${fPct(a.payout, 0)}`;
+    const used = payUsado(a).k;
+    const vals = [["mediano", a.payout], ["média", a.payout_media], ["12M", a.payout_12m]].map(([k, v]) => (k === used ? `<b>${fPct(v, 0)}</b>` : fPct(v, 0))).join(" · ");
+    return isNum(a.payout_manual) ? `${vals} · <b>ajustado ${fPct(a.payout_manual, 0)}</b>` : vals;
+  }
+  function miniTable(rows) {
+    if (!rows.length) return '<div class="empty">Nenhum papel neste grupo.</div>';
+    const body = rows.map(({ a, r }, i) => {
+      const on = a.ticker === S.selTk, bad = r.alerts.some(([, k]) => k === "bad");
+      const al = r.alerts.length ? `<span class="tag ${bad ? "bad" : ""}" title="${esc(r.alerts.map(([t]) => t).join(" · "))}">${r.alerts.length} alerta${r.alerts.length > 1 ? "s" : ""}</span>` : "";
+      const chg = isNum(r.chg) ? `<span class="nm ${r.chg >= 0 ? "var-pos" : "var-neg"}">${r.chg >= 0 ? "+" : ""}${fPct(r.chg, 2)}</span>` : "";
+      return `<tr class="pickrow ${on ? "sel" : ""}" data-tk="${esc(a.ticker)}"><td class="rk num">${i + 1}</td>
+        <td class="l"><button type="button" class="lk" data-tk="${esc(a.ticker)}" aria-pressed="${on}"><span class="tk">${esc(a.ticker)}</span><span class="nm">${esc(a.nome)}</span></button></td>
+        <td class="num">${fBRL(r.price)}${chg}</td><td class="num">${fBRL(r.ptB)}</td><td>${bar(r.descB)}</td>
+        <td class="num">${fPct(r.dy, 2)}</td><td class="num">${fPct(a.dy_medio, 2)}</td><td class="l">${al}</td></tr>`;
+    }).join("");
+    return `<table><thead><tr><th>#</th><th class="l">Papel</th><th>Cotação</th><th>Preço teto</th><th>Desconto</th><th>DY proj.</th><th>DY médio 6a</th><th class="l">Alertas</th></tr></thead><tbody>${body}</tbody></table>`;
+  }
+  function fontesHtml(fs) {
+    return (fs || []).filter((f) => safeUrl(f.url)).slice(0, 6).map((f) => {
+      let host = ""; try { host = new URL(f.url).hostname.replace(/^www\./, ""); } catch {}
+      return `<a href="${esc(f.url)}" target="_blank" rel="noopener noreferrer" title="${esc(f.titulo || "")}">${f.tipo ? esc(f.tipo) + ": " : ""}${esc(host || f.titulo || "fonte")}</a>`;
+    }).join(" · ");
+  }
   function txtResumo(t) {
     const lines = esc(t).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").split(/\n+/).map((l) => l.trim()).filter(Boolean);
     let html = "", inList = false;
@@ -412,92 +347,165 @@ details.metodo ul{margin:10px 0 0;padding-left:18px;color:var(--muted);display:g
     }
     return html + (inList ? "</ul>" : "");
   }
-  function renderNoticias() {
-    if (!S.loaded) return;
-    const emps = empresas(), P = S.ofN?.por_emissor || {};
-    const novos = new Set(S.avisos.filter(recente).map((v) => v.emissor));
-    const opts = `<option value="">Todas as empresas</option>` + emps.map((e) => `<option value="${e.em}">${esc(e.nome)} (${esc(e.tickers.join(", "))})${novos.has(e.em) ? " · aviso novo" : ""}</option>`).join("");
-    if ($("selEmp").dataset.h !== opts) { $("selEmp").innerHTML = opts; $("selEmp").dataset.h = opts; }
-    if (S.sel && !emps.some((e) => e.em === S.sel)) S.sel = "";
-    $("selEmp").value = S.sel;
-    const fa = S.ofN?.fatos || {}, no = S.ofN?.noticias || {};
-    $("fonte").textContent = S.ofN ? `CVM: documentos até ${fDate(fa.ultimo_documento)} · manchetes de ${fDateTime(no.atualizado_em)}` : "As notícias chegam com a próxima atualização.";
-    $("nTodas").hidden = !!S.sel; $("nEmp").hidden = !S.sel;
-    if (!S.sel) {
-      const ms = Object.entries(P).flatMap(([em, v]) => (v.noticias || []).map((n) => ({ ...n, em }))).filter((n) => MERCADO.test(norm(n.titulo))).sort((a, b) => String(b.data).localeCompare(String(a.data))).slice(0, 30);
-      const ds = Object.entries(P).flatMap(([em, v]) => (v.fatos || []).map((f) => ({ ...f, em }))).sort((a, b) => String(b.data).localeCompare(String(a.data))).slice(0, 25);
-      $("mTodas").innerHTML = ms.length ? ms.map((n) => item(n.data, `<span>${esc(n.fonte)}</span>`, n.titulo, n.link, n.em)).join("") : '<div class="empty">Sem manchetes ainda.</div>';
-      $("dTodas").innerHTML = ds.length ? ds.map((f) => item(f.data, `<span>${esc(f.categoria)}</span>`, f.assunto, f.link, f.em)).join("") : '<div class="empty">Sem documentos ainda.</div>';
-    } else {
-      const e = emps.find((x) => x.em === S.sel), N = P[S.sel] || {};
-      $("sub").textContent = `${e.nome} · ${e.setor || ""} · ${e.grupo === "COMMODITIES" ? "Commodities" : "BESST"}`;
-      const rows = e.tickers.map((t) => { const a = S.ativos.get(t); return { a, r: calc(a) }; });
-      $("ind").innerHTML = `<table><thead><tr><th class="l">Papel</th><th>Cotação</th><th>Preço teto</th><th>Desconto</th><th>DY proj.</th><th>P/L · médio</th><th>P/VP</th><th>Payout med. · média · 12M</th></tr></thead><tbody>${rows.map(({ a, r }) => `<tr><td class="l"><span class="tk">${esc(a.ticker)}</span></td><td class="num">${fBRL(r.price)}</td><td class="num">${fBRL(r.ptB)}</td><td class="num ${r.descB >= 0 ? "var-pos" : "var-neg"}">${fPct(r.descB, 0)}</td><td class="num">${fPct(r.dy, 2)}</td><td class="num">${fNum(r.pl, 1)} · ${fNum(a.pl_medio, 1)}</td><td class="num">${fNum(r.pvp, 2)}</td><td class="num pay">${payCell(a)}</td></tr>`).join("")}</tbody></table>`;
-      const R = S.base?.resumos?.[S.sel];
-      $("secResumo").hidden = !R;
-      if (R) {
-        const fs = (R.fontes || []).filter((f) => safeUrl(f.url)).slice(0, 6).map((f) => { let h = ""; try { h = new URL(f.url).hostname.replace(/^www\./, ""); } catch {} return `<a href="${esc(f.url)}" target="_blank" rel="noopener noreferrer" title="${esc(f.titulo || "")}">${esc(h || "fonte")}</a>`; }).join(" · ");
-        $("resumo").innerHTML = txtResumo(R.texto) + `<div class="disc">${R.formato === 2 ? `${R.referencia ? `Dados de ${esc(R.referencia)}. ` : ""}${fs ? `Fontes: ${fs}. ` : ""}Texto informativo montado por IA a partir das fontes citadas; confira nas fontes. Não é recomendação.` : "Resumo antigo, feito só com títulos de manchetes; não é recomendação."}</div>`;
-        $("resData").textContent = `Atualizado em ${fDateTime(R.gerado_em)}`;
-      }
-      $("mEmp").innerHTML = (N.noticias || []).length ? N.noticias.map((n) => item(n.data, `<span>${esc(n.fonte)}</span>`, n.titulo, n.link)).join("") : '<div class="empty">Nenhuma manchete nos últimos 14 dias.</div>';
-      $("dEmp").innerHTML = (N.fatos || []).length ? N.fatos.map((f) => {
-        const pol = S.avisos.some((v) => v.emissor === S.sel && v.data === f.data && v.assunto === f.assunto);
-        return item(f.data, `<span>${esc(f.categoria)}</span>${pol ? '<span class="tag bad">Política de dividendos</span>' : ""}`, f.assunto, f.link);
-      }).join("") : '<div class="empty">Nenhum documento nos últimos 12 meses.</div>';
-      const ref = e.tickers.find((t) => /11$/.test(t)) || e.tickers.find((t) => /4$/.test(t)) || e.tickers[0];
-      const q = `"${e.nome.replace(/\s*\(.*\)$/, "")}" OR ${ref}`;
-      const links = [];
-      if (safeUrl(N.site)) links.push([N.site, "Site da empresa"]);
-      links.push([`https://news.google.com/search?q=${encodeURIComponent(q)}&hl=pt-BR&gl=BR&ceid=BR%3Apt-419`, "Google Notícias"]);
-      links.push(["https://www.rad.cvm.gov.br/ENET/frmConsultaExternaCVM.aspx", "Consulta de documentos na CVM"]);
-      links.push([`https://statusinvest.com.br/acoes/${ref.toLowerCase()}`, `Status Invest · ${ref}`]);
-      links.push([`https://investidor10.com.br/acoes/${ref.toLowerCase()}/`, `Investidor10 · ${ref}`]);
-      $("links").innerHTML = links.map(([u, t]) => `<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(t)} ↗</a>`).join("");
-    }
-    $("avisos").innerHTML = S.avisos.length ? S.avisos.slice(0, 12).map((v) => item(v.data, `${recente(v) ? '<span class="tag bad">Novo</span>' : ""}<span>${esc(nomeEm(v.emissor))}</span><span>${esc(v.categoria)}</span>`, v.assunto, v.link, v.emissor)).join("") : '<div class="empty">Nenhum documento de política encontrado.</div>';
+  function renderSide() {
+    const el = $("side");
+    const e = empresas().find((x) => x.em === S.sel);
+    if (!e) { el.innerHTML = '<div class="empty">Escolha um papel na lista.</div>'; return; }
+    const a = S.ativos.get(S.selTk) || S.ativos.get(e.tickers[0]), r = calc(a);
+    const N = S.D?.noticias?.[e.em] || {}, R = S.D?.resumos?.[e.em];
+    const it = (data, meta, titulo, link) => { const u = safeUrl(link); return `<div class="it"><span class="meta"><span class="num">${fDate(data)}</span><span>${esc(meta)}</span></span>${u ? `<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(titulo)}</a>` : esc(titulo)}</div>`; };
+    const nots = (N.noticias || []).slice(0, 5), fat = (N.fatos || []).slice(0, 3);
+    const ref = e.tickers.find((t) => /11$/.test(t)) || e.tickers.find((t) => /4$/.test(t)) || e.tickers[0];
+    const q = `"${e.nome.replace(/\s*\(.*\)$/, "")}" OR ${ref}`;
+    const links = [];
+    if (safeUrl(N.site)) links.push([N.site, "Site da empresa"]);
+    links.push([`https://news.google.com/search?q=${encodeURIComponent(q)}&hl=pt-BR&gl=BR&ceid=BR%3Apt-419`, "Google Notícias"]);
+    links.push([`https://statusinvest.com.br/acoes/${ref.toLowerCase()}`, "Status Invest"]);
+    links.push([`https://investidor10.com.br/acoes/${ref.toLowerCase()}/`, "Investidor10"]);
+    el.innerHTML = `
+      <div class="panel-head"><h2>${esc(e.nome)}</h2><p>${esc(setRot(e.setor || ""))} · ${esc(e.tickers.join(", "))}</p></div>
+      <div class="kpis">
+        <div class="kpi"><span>${esc(a.ticker)}</span><b>${fBRL(r.price)}</b></div>
+        <div class="kpi"><span>Preço teto</span><b>${fBRL(r.ptB)}</b></div>
+        <div class="kpi"><span>Desconto</span><b class="${r.descB >= 0 ? "var-pos" : "var-neg"}">${fPct(r.descB, 0)}</b></div>
+        <div class="kpi"><span>DY proj.</span><b>${fPct(r.dy, 1)}</b></div>
+      </div>
+      <div class="pad small muted pay" style="padding-bottom:0">${a.modelo === "POLITICA" ? `Payout: ${payCell(a)}` : `Payout (mediano · média · 12M): ${payCell(a)}`} · P/L ${fNum(r.pl, 1)} (médio ${fNum(a.pl_medio, 1)})</div>
+      ${r.alerts.length ? `<div class="pad" style="padding-bottom:0">${r.alerts.map(([t, k]) => `<span class="tag ${k || ""}">${esc(t)}</span>`).join("")}</div>` : ""}
+      <div class="subh">Panorama da empresa</div>
+      <div class="resumo">${R ? txtResumo(R.texto) + `<div class="disc">${R.formato === 2 ? `${R.referencia ? `Dados de ${esc(R.referencia)} · ` : ""}atualizado em ${fDateTime(R.gerado_em)}${fontesHtml(R.fontes) ? ` · Fontes: ${fontesHtml(R.fontes)}` : ""}. Texto informativo montado por IA a partir das fontes citadas; confira nas fontes.` : `Resumo de ${fDateTime(R.gerado_em)}, feito só com títulos de manchetes.`}</div>` : '<p class="muted">Ainda não há panorama publicado para esta empresa.</p>'}</div>
+      <div class="subh">Manchetes recentes</div>
+      <div class="list">${nots.length ? nots.map((n) => it(n.data, n.fonte, n.titulo, n.link)).join("") : '<div class="empty" style="padding:8px 16px">Nenhuma manchete nos últimos 14 dias.</div>'}</div>
+      <div class="subh">Documentos na CVM</div>
+      <div class="list">${fat.length ? fat.map((f) => it(f.data, f.categoria, f.assunto, f.link)).join("") : '<div class="empty" style="padding:8px 16px">Nenhum documento recente.</div>'}</div>
+      <div class="links">${links.map(([u, t]) => `<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(t)} ↗</a>`).join("")}</div>`;
   }
 
-  // ---------- abas e controles ----------
-  const TABS = ["ranking", "noticias"];
+  const METRICAS = [
+    { k: "pl", rot: "P/L (12 meses)", f: (x) => x.r.pl, fmt: (v) => fNum(v, 1) + "×" },
+    { k: "pl_medio", rot: "P/L médio (6 anos)", f: (x) => x.a.pl_medio, fmt: (v) => fNum(v, 1) + "×" },
+    { k: "pvp", rot: "P/VP", f: (x) => x.r.pvp, fmt: (v) => fNum(v, 2) + "×" },
+    { k: "roe", rot: "ROE (12 meses)", f: (x) => x.r.roe, fmt: (v) => fPct(v, 1) },
+    { k: "dy", rot: "DY projetado", f: (x) => x.r.dy, fmt: (v) => fPct(v, 2) },
+    { k: "dy_medio", rot: "DY médio (6 anos)", f: (x) => x.a.dy_medio, fmt: (v) => fPct(v, 2) },
+    { k: "payout", rot: "Payout mediano (3 anos)", f: (x) => (x.a.modelo === "POLITICA" ? null : x.a.payout), fmt: (v) => fPct(v, 0) },
+    { k: "payout_media", rot: "Payout médio (5–6 anos)", f: (x) => (x.a.modelo === "POLITICA" ? null : x.a.payout_media), fmt: (v) => fPct(v, 0) },
+    { k: "payout_12m", rot: "Payout 12 meses", f: (x) => x.a.payout_12m, fmt: (v) => fPct(v, 0) },
+    { k: "desc", rot: "Desconto ao preço teto", f: (x) => x.r.descB, fmt: (v) => fPct(v, 0) },
+  ];
+  const metr = (k) => METRICAS.find((m) => m.k === k) || METRICAS[0];
+  function setoresDisp() {
+    const m = new Map();
+    for (const a of S.ativos.values()) { const s = a.setor || "Outros"; m.set(s, (m.get(s) || 0) + 1); }
+    return [...m.entries()].sort((x, y) => x[0].localeCompare(y[0], "pt-BR"));
+  }
+  function renderSetores() {
+    const all = setoresDisp().map(([s]) => s);
+    const sel = new Set(S.setores === null ? all : all.filter((s) => S.setores.includes(s)));
+    $("setChecks").innerHTML = setoresDisp().map(([s, n]) => `<label class="ck"><input type="checkbox" value="${esc(s)}" ${sel.has(s) ? "checked" : ""}> ${esc(setRot(s))} <span class="num">${n}</span></label>`).join("");
+    if (!$("metrica").options.length) $("metrica").innerHTML = METRICAS.map((m) => `<option value="${m.k}">${esc(m.rot)}</option>`).join("");
+    $("metrica").value = metr(S.metrica).k;
+    const rows = filtraUma([...S.ativos.values()].filter((a) => sel.has(a.setor || "Outros")).sort((x, y) => (x.ordem || 0) - (y.ordem || 0)).map((a) => ({ a, r: calc(a) })));
+    const M = metr(S.metrica);
+    const vals = rows.map((x) => ({ x, v: M.f(x) })).filter((o) => isNum(o.v)).sort((p, q) => q.v - p.v);
+    $("setSub").textContent = `${M.rot} · ${rows.length} papel(is)` + (vals.length < rows.length ? ` · ${rows.length - vals.length} sem dado` : "");
+    if (!vals.length) { $("setChart").innerHTML = '<div class="empty">Escolha um ou mais setores.</div>'; return; }
+    const max = Math.max(0, ...vals.map((o) => o.v)), min = Math.min(0, ...vals.map((o) => o.v));
+    const span = max - min || 1, z = (-min / span) * 100;
+    const med = median(vals.map((o) => o.v)), mp = ((med - min) / span) * 100;
+    const linhas = vals.map(({ x, v }) => {
+      const w = (Math.abs(v) / span) * 100;
+      const fill = v >= 0 ? `<span class="fill pos" style="left:${z}%;width:${w}%"></span>` : `<span class="fill neg" style="left:${z - w}%;width:${w}%"></span>`;
+      return `<div class="row" title="${esc(`${x.a.ticker} · ${setRot(x.a.setor || "")} · ${M.rot}: ${M.fmt(v)}`)}"><span class="lab"><span class="tk">${esc(x.a.ticker)}</span> <span class="muted">${esc(x.a.nome)}</span></span><span class="trk">${fill}${min < 0 ? `<span class="zero" style="left:${z}%"></span>` : ""}<span class="medl" style="left:${mp}%"></span></span><span class="val">${esc(M.fmt(v))}</span></div>`;
+    }).join("");
+    $("setChart").innerHTML = `<div class="hb" role="img" aria-label="${esc(M.rot)} por papel, do maior para o menor">${linhas}</div><div class="legend"><i></i>mediana da seleção: ${esc(M.fmt(med))}</div>`;
+  }
+  function renderStatus() {
+    const st = S.D?.status || {}, chips = [];
+    if (st.cotacoes_ref) { const age = (Date.now() - new Date(st.cotacoes_ref + "T21:00:00").getTime()) / 864e5; chips.push(`<span class="chip ${age > 4 ? "warn" : "ok"}"><span class="dot"></span>Cotações: fechamento de ${fDate(st.cotacoes_ref)}</span>`); }
+    if (st.base_gerado_em) chips.push(`<span class="chip ok"><span class="dot"></span>Dados oficiais: ${fDate(st.base_gerado_em)}${st.contabil_ate ? ` · balanços até ${fDate(st.contabil_ate + "-01").slice(3)}` : ""}</span>`);
+    const mc = S.D?.macro || {};
+    if (mc.selic) chips.push(`<span class="chip" title="Banco Central: Selic meta ${mc.selic.vigente_desde ? `vigente desde ${fDate(mc.selic.vigente_desde)}` : `em ${fDate(mc.selic.data)}`}"><span class="dot"></span>Selic ${fNum(mc.selic.valor, 2)}%${mc.ipca12m ? ` · IPCA 12m ${fNum(mc.ipca12m.valor, 2)}%` : ""}</span>`);
+    if (S.D?.publicado_em) chips.push(`<span class="chip"><span class="dot"></span>Publicado em ${fDateTime(S.D.publicado_em)}</span>`);
+    $("status").innerHTML = chips.join("");
+  }
+  function render() {
+    const pDy = S.D?.params?.dy_min ?? 0.06;
+    if (document.activeElement !== $("dymin")) $("dymin").value = String(+(((isNum(S.dymin) ? S.dymin : pDy) * 100).toFixed(2)));
+    $("ctlNote").textContent = isNum(S.dymin) && Math.abs(S.dymin - pDy) > 1e-9 ? `Simulação só nesta tela (padrão: ${fPct(pDy, 1)})` : "";
+    if (!S.D) return;
+    renderStatus();
+    syncControls();
+    const b = ranked("BESST"), c = ranked("COMMODITIES");
+    if ((!S.picked || !S.ativos.has(S.selTk)) && b[0]) { S.selTk = b[0].a.ticker; }
+    S.sel = S.selTk ? emOf(S.selTk) : null;
+    $("tBesst").innerHTML = miniTable(b);
+    $("tCom").innerHTML = miniTable(c);
+    $("hC").textContent = "Ranking Commodities";
+    $("subC").textContent = "Do maior para o menor desconto ao preço teto";
+    renderSide();
+    renderSetores();
+    renderNoticias();
+  }
+  function syncControls() {
+    for (const [id, v] of [["segBase", S.base], ["segPay", S.payBase]]) $(id).querySelectorAll("button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.v === v)));
+    $("uma").checked = !!S.uma;
+    $("segNot").querySelectorAll("button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.v === S.notTipo)));
+  }
+  function renderNoticias() {
+    if (!S.D) return;
+    const N = S.D.noticias || {}, emps = empresas();
+    const sel = $("notEmp");
+    if (!sel.options.length) sel.innerHTML = '<option value="">Todas as empresas</option>' + emps.map((e) => `<option value="${esc(e.em)}">${esc(e.nome)} (${esc(e.em)})</option>`).join("");
+    sel.value = emps.some((e) => e.em === S.notEmp) ? S.notEmp : "";
+    const nomeDe = Object.fromEntries(emps.map((e) => [e.em, e.nome]));
+    const itens = [];
+    for (const [em, v] of Object.entries(N)) {
+      if (S.notEmp && em !== S.notEmp) continue;
+      for (const x of (S.notTipo === "fatos" ? v.fatos : v.noticias) || []) itens.push({ em, ...x });
+    }
+    itens.sort((a, b) => String(b.data || "").localeCompare(String(a.data || "")));
+    $("notSub").textContent = `${itens.length} ${S.notTipo === "fatos" ? "documentos" : "manchetes"}` + (S.D.status?.noticias_em ? ` · manchetes de ${fDateTime(S.D.status.noticias_em)}` : "");
+    $("notLista").innerHTML = itens.length ? itens.slice(0, 80).map((x) => {
+      const u = safeUrl(x.link), tit = S.notTipo === "fatos" ? x.assunto : x.titulo, meta = S.notTipo === "fatos" ? x.categoria : x.fonte;
+      return `<div class="it"><span class="meta"><span class="num">${fDate(x.data)}</span><b>${esc(nomeDe[x.em] || x.em)}</b><span>${esc(meta || "")}</span></span>${u ? `<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(tit)}</a>` : esc(tit)}</div>`;
+    }).join("") : '<div class="empty">Nada para mostrar.</div>';
+  }
+
+  // ---------- controles ----------
+  document.addEventListener("click", (e) => { const row = e.target.closest("tr.pickrow[data-tk]"); if (row) { S.selTk = row.dataset.tk; S.picked = true; render(); } });
+  const TABS = ["dash", "setores", "noticias"];
   function showTab(t, focus) {
-    if (!TABS.includes(t)) t = "ranking";
-    S.tab = t; store.set("tab", t);
+    if (!TABS.includes(t)) t = "dash";
+    S.tab = t;
     for (const x of TABS) { const on = x === t; $("t-" + x).setAttribute("aria-selected", String(on)); $("t-" + x).tabIndex = on ? 0 : -1; $("p-" + x).hidden = !on; }
     if (focus) $("t-" + t).focus();
     try { history.replaceState(null, "", "#" + t); } catch {}
-    render();
   }
-  function render() { renderStatus(); if (S.tab === "ranking") renderRanking(); else renderNoticias(); }
   $("tabs").addEventListener("click", (e) => { const b = e.target.closest("[data-tab]"); if (b) showTab(b.dataset.tab); });
-  $("tabs").addEventListener("keydown", (e) => { if (e.key === "ArrowRight" || e.key === "ArrowLeft") { e.preventDefault(); showTab(S.tab === "ranking" ? "noticias" : "ranking", true); } });
-  window.addEventListener("hashchange", () => { const h = location.hash.slice(1); if (TABS.includes(h) && h !== S.tab) showTab(h); });
-  document.addEventListener("click", (e) => {
-    const b = e.target.closest("button.lk[data-em]"); if (!b) return;
-    S.sel = b.dataset.em; store.set("sel", S.sel);
-    if (S.tab !== "noticias") showTab("noticias"); else renderNoticias();
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-  $("segBase").addEventListener("click", (e) => { const v = e.target.closest("button")?.dataset.v; if (v) { S.baseSel = v; store.set("base", v); render(); } });
-  $("segPay").addEventListener("click", (e) => { const v = e.target.closest("button")?.dataset.v; if (v) { S.payBase = v; store.set("payBase", v); render(); } });
+  $("tabs").addEventListener("keydown", (e) => { if (e.key === "ArrowRight" || e.key === "ArrowLeft") { e.preventDefault(); const i = TABS.indexOf(S.tab), d = e.key === "ArrowRight" ? 1 : -1; showTab(TABS[(i + d + TABS.length) % TABS.length], true); } });
+  const seg = (id, f) => $(id).addEventListener("click", (e) => { const b = e.target.closest("button[data-v]"); if (b) f(b.dataset.v); });
+  seg("segBase", (v) => { S.base = v; store.set("base", v); render(); });
+  seg("segPay", (v) => { S.payBase = v; store.set("payBase", v); render(); });
+  seg("segNot", (v) => { S.notTipo = v; store.set("notTipo", v); syncControls(); renderNoticias(); });
   $("uma").addEventListener("change", (e) => { S.uma = e.target.checked; store.set("uma", S.uma); render(); });
+  $("notEmp").addEventListener("change", (e) => { S.notEmp = e.target.value; store.set("notEmp", S.notEmp); renderNoticias(); });
+  window.addEventListener("hashchange", () => { const h = location.hash.slice(1); if (TABS.includes(h) && h !== S.tab) showTab(h); });
+  showTab(TABS.includes(location.hash.slice(1)) ? location.hash.slice(1) : "dash");
   $("dymin").addEventListener("change", (e) => { const v = parseFloat(String(e.target.value).replace(",", ".")); S.dymin = isNum(v) && v > 0 ? v / 100 : null; store.set("dymin", S.dymin); render(); });
-  $("btnMais").addEventListener("click", () => { S.showAll = !S.showAll; render(); });
-  $("selEmp").addEventListener("change", (e) => { S.sel = e.target.value; store.set("sel", S.sel); renderNoticias(); });
+  $("setChecks").addEventListener("change", () => { S.setores = [...$("setChecks").querySelectorAll("input:checked")].map((i) => i.value); store.set("setores", S.setores); renderSetores(); });
+  $("setTodos").addEventListener("click", () => { S.setores = null; store.set("setores", null); renderSetores(); });
+  $("setNenhum").addEventListener("click", () => { S.setores = []; store.set("setores", []); renderSetores(); });
+  $("metrica").addEventListener("change", (e) => { S.metrica = e.target.value; store.set("metrica", S.metrica); renderSetores(); });
 
   // ---------- dados ----------
-  async function start() {
-    const h = location.hash.slice(1);
-    showTab(TABS.includes(h) ? h : S.tab);
-    const db = await (window.claude?.use ? claude.use("db") : null);
-    if (!db) { renderStatus(); $("tBesst").innerHTML = $("tCom").innerHTML = '<div class="empty">A base só abre dentro do claude.ai, com acesso a esta página.</div>'; return; }
-    S.db = db;
-    const timer = setTimeout(() => { S.timedOut = true; renderStatus(); }, 10000);
-    const fail = (e) => { clearTimeout(timer); $("status").innerHTML = `<span class="chip bad"><span class="dot"></span>Erro ao ler a base (${esc(e?.code || "erro")})</span>`; };
-    db.doc("painel/base").onSnapshot((d) => { clearTimeout(timer); S.base = d.exists ? d.data() : null; S.loaded = true; merge(); render(); }, fail);
-    db.doc("oficial/dados").onSnapshot((d) => { S.of = d.exists ? d.data() : null; merge(); render(); }, () => {});
-    db.doc("oficial/noticias").onSnapshot((d) => { S.ofN = d.exists ? d.data() : null; if (S.tab === "noticias") renderNoticias(); }, () => {});
-  }
-  start();
+  render();
+  fetch("dados.json", { cache: "no-store" })
+    .then((r) => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    .then((d) => { S.D = d; S.ativos = new Map(Object.entries(d.ativos || {}).map(([tk, a]) => [tk, { ...a, ticker: tk }])); render(); })
+    .catch(() => {
+      $("status").innerHTML = '<span class="chip bad"><span class="dot"></span>Não foi possível carregar os dados</span>';
+      $("tBesst").innerHTML = $("tCom").innerHTML = '<div class="empty">Os dados não carregaram. Tente abrir a página de novo em instantes.</div>';
+    });
 })();
 </script>
