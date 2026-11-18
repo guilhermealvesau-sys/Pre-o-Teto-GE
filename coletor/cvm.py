@@ -293,11 +293,15 @@ def coletar(mapa: pd.DataFrame, anos_hist: int = 7, so_ind: set[str] = frozenset
         u = g.sort_values("DT_REFER").iloc[-1]
         res[por_cnpj[cnpj]].conta_lucro = f"{u['CD_CONTA']} {u['DS_CONTA']} ({u['origem']})"
     chave = ["CNPJ_CIA", "DT_INI_EXERC", "DT_FIM_EXERC"]
-    luc = luc.sort_values(["DT_REFER", "VERSAO"]).drop_duplicates(chave, keep="last")
+    # período sem valor no documento mais recente (ex.: bancos na transição da Res. CMN 4.966, cujo DFP de 2025 não
+    # reapresenta 2024): vale o documento mais recente que traz o valor (o DFP do próprio ano)
+    luc = luc.assign(_tem=luc["vl_mi"].fillna(0) != 0)
+    luc = luc.sort_values(["_tem", "DT_REFER", "VERSAO"]).drop_duplicates(chave, keep="last").drop(columns="_tem")
     # período zerado na consolidada (TIM, ABC, Sabesp em alguns anos): vale o mesmo período da individual
     ind = pd.concat([d for d in inds if not d.empty], ignore_index=True) if any(not d.empty for d in inds) else None
     if ind is not None:
-        li = _linhas_lucro(ind).sort_values(["DT_REFER", "VERSAO"]).drop_duplicates(chave, keep="last")
+        li = _linhas_lucro(ind)
+        li = li.assign(_tem=li["vl_mi"].fillna(0) != 0).sort_values(["_tem", "DT_REFER", "VERSAO"]).drop_duplicates(chave, keep="last")
         li = li[li["vl_mi"].fillna(0) != 0].set_index(chave)["vl_mi"]
         z = luc["vl_mi"].fillna(0) == 0
         for i in luc.index[z]:

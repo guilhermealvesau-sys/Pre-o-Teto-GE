@@ -106,8 +106,9 @@ def fixtures():
                                       ("PENÚLTIMO", f"{y-1}-01-01", f"{y-1}-12-31", lucro_ano(em, y - 1))], banco=em == "ITUB")
             bpp += bpp_rows(em, ref)
             cap += cap_rows(em, ref, y)
+        # banco: o DFP mais recente não reapresenta o ano anterior (transição da Res. CMN 4.966) → vale o DFP daquele ano
         ind = [HDR] + dre_ind_banco(ref, [("ÚLTIMO", f"{y}-01-01", ref, lucro_ano("ITUB", y)),
-                                          ("PENÚLTIMO", f"{y-1}-01-01", f"{y-1}-12-31", lucro_ano("ITUB", y - 1))])
+                                          ("PENÚLTIMO", f"{y-1}-01-01", f"{y-1}-12-31", 0 if y == ANO - 1 else lucro_ano("ITUB", y - 1))])
         bpp_ind = [HDR_BPP] + bpp_ind_banco(ref)
         if y == ANO - 2:  # PETR: linha dos controladores zerada e minoritários relevantes → vale a individual
             cnpj, cd, nome, *_ = EMP["PETR"]
@@ -312,6 +313,8 @@ def main_teste():
     assert any("usado o consolidado" in x for x in A["PETR4"]["avisos"]), A["PETR4"]["avisos"]
     ok("PETR lucro com consolidada zerada → individual", A["PETR4"]["detalhe"]["lucro_anual_mi"][ANO - 6], 77000)
     ok("ITUB lucro 12M (banco: individual, padrão Banco Central)", i4["lucro12m_mi"], (33000 + 40000 - 30000) * 0.95)
+    ok("ITUB lucro de um ano sem comparativo no DFP seguinte → DFP do próprio ano",
+       A["ITUB4"]["detalhe"]["lucro_anual_mi"].get(ANO - 2), 40000 * 0.95)
     ok("ITUB4 VPA (banco: patrimônio da individual)", i4["vpa"], 7600e6 / 10000e6)
     ok("PETR4 dividendo médio na base de ações de hoje (÷2)", A["PETR4"]["div_medio6"], 0.35)
     ok("PETR4 DY médio igual antes e depois do desdobramento", A["PETR4"]["dy_medio"], 0.7 / 30)
