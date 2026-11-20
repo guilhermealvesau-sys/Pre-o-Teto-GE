@@ -1,4 +1,4 @@
-# Coleta de 2026-11-19T10:25:52+00:00
+# Coleta de 2026-11-20T10:25:00+00:00
 
 ## Empresas na CVM
 
