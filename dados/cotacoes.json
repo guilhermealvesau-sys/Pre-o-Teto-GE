@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-20T10:25:04+00:00",
+ "gerado_em": "2026-11-21T10:07:35+00:00",
  "fonte": "B3 – COTAHIST (arquivo diário)",
  "ref": "2026-11-19",
  "cotacoes": {
@@ -189,7 +189,7 @@
  "macro": {
   "selic": {
    "valor": 13.75,
-   "data": "2026-11-20",
+   "data": "2026-11-21",
    "descricao": "Meta Selic definida pelo Copom (% a.a.)",
    "serie": 432,
    "vigente_desde": "2026-09-17"
