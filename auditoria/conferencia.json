@@ -1,0 +1,93 @@
+{
+ "verificado_em": "2026-11-22T13:16:10+00:00",
+ "referencias_de": "2026-11-22T13:14:50+00:00",
+ "coleta_de": "2026-11-22T09:19:45+00:00",
+ "pregao": "2026-11-19",
+ "comparacoes": 221,
+ "divergencias_novas": [
+  {
+   "papel": "ENGI3",
+   "campo": "preco",
+   "nosso": 12.91,
+   "referencia": 12.3,
+   "fonte": "Yahoo",
+   "diferenca_pct": 4.96,
+   "obs": "",
+   "conhecida": null
+  }
+ ],
+ "conhecidas": [
+  {
+   "papel": "TIMS3",
+   "campo": "lucro12m",
+   "nosso": 4108.679,
+   "referencia": -203.304,
+   "fonte": "Fundamentus",
+   "diferenca_pct": -2120.95,
+   "obs": "",
+   "conhecida": "Fundamentus mostra lucro 12 meses negativo, incompatível com os ITRs da TIM na CVM (erro da referência)"
+  },
+  {
+   "papel": "KLBN4",
+   "campo": "lucro12m",
+   "nosso": 69.421,
+   "referencia": 476.665,
+   "fonte": "Fundamentus",
+   "diferenca_pct": -85.44,
+   "obs": "",
+   "conhecida": "Fundamentus inclui a parcela dos não controladores; o painel usa só a dos controladores"
+  },
+  {
+   "papel": "KLBN11",
+   "campo": "lucro12m",
+   "nosso": 69.421,
+   "referencia": 476.665,
+   "fonte": "Fundamentus",
+   "diferenca_pct": -85.44,
+   "obs": "",
+   "conhecida": "Fundamentus inclui a parcela dos não controladores; o painel usa só a dos controladores"
+  },
+  {
+   "papel": "KLBN3",
+   "campo": "lucro12m",
+   "nosso": 69.421,
+   "referencia": 476.665,
+   "fonte": "Fundamentus",
+   "diferenca_pct": -85.44,
+   "obs": "",
+   "conhecida": "Fundamentus inclui a parcela dos não controladores; o painel usa só a dos controladores"
+  },
+  {
+   "papel": "VALE3",
+   "campo": "acoes",
+   "nosso": 4072.366,
+   "referencia": 4439.16,
+   "fonte": "Fundamentus",
+   "diferenca_pct": -8.26,
+   "obs": "",
+   "conhecida": "O painel conta as ações em circulação após o cancelamento; a referência usa o total antigo"
+  },
+  {
+   "papel": "VALE3",
+   "campo": "vpa",
+   "nosso": 47.8243,
+   "referencia": 43.87,
+   "fonte": "Fundamentus",
+   "diferenca_pct": 9.01,
+   "obs": "",
+   "conhecida": "Consequência da diferença no número de ações da Vale"
+  }
+ ],
+ "informativo": [
+  {
+   "papel": "BPAC11",
+   "campo": "trimestre",
+   "nosso": "2026-06",
+   "referencia": "2026-09",
+   "fonte": "Fundamentus",
+   "obs": "balanços de trimestres diferentes (não comparados)",
+   "conhecida": "informativo"
+  }
+ ],
+ "erros_referencias": []
+}
