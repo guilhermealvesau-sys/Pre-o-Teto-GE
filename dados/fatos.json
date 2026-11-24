@@ -1,71 +1,449 @@
 {
- "atualizado_em": "2026-11-22T09:19:48+00:00",
+ "atualizado_em": "2026-11-24T10:27:01+00:00",
  "fonte": "CVM – documentos eventuais (IPE)",
- "ultimo_documento": "2026-11-14",
+ "ultimo_documento": "2026-11-21",
  "por_emissor": {
-  "ABCB": [
+  "EQTL": [
    {
-    "data": "2026-11-14",
-    "categoria": "Fato Relevante",
-    "assunto": "Associação com Angá Asset Management",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1589681&numSequencia=1114387&numVersao=1"
+    "data": "2026-11-21",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Aquisição de Participação Relevante",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1592283&numSequencia=1116989&numVersao=1"
    },
    {
-    "data": "2026-11-06",
+    "data": "2026-11-17",
     "categoria": "Comunicado ao Mercado",
-    "assunto": "Apresentação ABC Day 2026 / APIMEC",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1585281&numSequencia=1109987&numVersao=1"
+    "assunto": "Revisão Tarifária Periódica - CEEE-D",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1590628&numSequencia=1115334&numVersao=1"
+   },
+   {
+    "data": "2026-11-16",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Apresentação Institucional 3T26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1590218&numSequencia=1114924&numVersao=1"
+   },
+   {
+    "data": "2026-11-12",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Apresentação de Resultados 3T26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588307&numSequencia=1113013&numVersao=1"
+   },
+   {
+    "data": "2026-11-11",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Mudança na composição do comitê de auditoria estatutário",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588004&numSequencia=1112710&numVersao=1"
+   },
+   {
+    "data": "2026-10-29",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Release Operacional - 3T26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1581835&numSequencia=1106541&numVersao=1"
+   },
+   {
+    "data": "2026-10-21",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Declaração de Alienação de Participação Acionária Relevante - Art.12, §4º, da Instrução CVM nº358/02",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1579213&numSequencia=1103919&numVersao=1"
+   },
+   {
+    "data": "2026-10-21",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Cronograma de Eleição do CAE",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1579193&numSequencia=1103899&numVersao=1"
+   },
+   {
+    "data": "2026-10-20",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Declaração de Alienação de Participação Acionária Relevante - Art.12, §4º, da Instrução CVM nº358/02",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1578854&numSequencia=1103560&numVersao=1"
+   },
+   {
+    "data": "2026-10-20",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Reajuste Tarifário - Equatorial Goiás",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1578855&numSequencia=1103561&numVersao=1"
+   }
+  ],
+  "PSSA": [
+   {
+    "data": "2026-11-19",
+    "categoria": "Aviso aos Acionistas",
+    "assunto": "Dividendos/Juros sobre Capital Próprio",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1591960&numSequencia=1116666&numVersao=1"
+   },
+   {
+    "data": "2026-11-17",
+    "categoria": "Fato Relevante",
+    "assunto": "Deferimento de pedido de cancelamento voluntário do registro da controlada Porto Serviço S.A.",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1590733&numSequencia=1115439&numVersao=1"
+   },
+   {
+    "data": "2026-11-10",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Reporte Setorial - Set/26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1586975&numSequencia=1111681&numVersao=1"
    },
    {
     "data": "2026-11-05",
     "categoria": "Comunicado ao Mercado",
-    "assunto": "Live CNN Money",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584321&numSequencia=1109027&numVersao=1"
+    "assunto": "Call de Resultados - 3T26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584379&numSequencia=1109085&numVersao=1"
    },
    {
-    "data": "2026-10-19",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Homologação de aumento de capital",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1578172&numSequencia=1102878&numVersao=1"
-   },
-   {
-    "data": "2026-10-13",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Declaração de Aquisição de Participação Acionária Relevante - Art.12 da Instrução CVM nº358/02",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1576543&numSequencia=1101249&numVersao=1"
-   },
-   {
-    "data": "2026-09-29",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Emissão de Letras Financeiras Subordinadas Perpétuas",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1572597&numSequencia=1097303&numVersao=1"
-   },
-   {
-    "data": "2026-09-25",
+    "data": "2026-11-05",
     "categoria": "Fato Relevante",
-    "assunto": "Programa de Recompra",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1571441&numSequencia=1096147&numVersao=1"
+    "assunto": "Modificação de Projeções Divulgadas",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584315&numSequencia=1109021&numVersao=1"
+   },
+   {
+    "data": "2026-10-16",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Reporte Setorial Ago26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1577727&numSequencia=1102433&numVersao=1"
+   },
+   {
+    "data": "2026-10-02",
+    "categoria": "Fato Relevante",
+    "assunto": "Pedido de Cancelamento de registro de Companhia Aberta - Porto Serviço",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1573987&numSequencia=1098693&numVersao=1"
+   },
+   {
+    "data": "2026-09-21",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Reporte Setorial Mensal - Jul/26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1569828&numSequencia=1094534&numVersao=1"
+   },
+   {
+    "data": "2026-09-18",
+    "categoria": "Aviso aos Acionistas",
+    "assunto": "Dividendos/Juros sobre Capital Próprio",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1569636&numSequencia=1094342&numVersao=1"
+   },
+   {
+    "data": "2026-08-10",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Reporte Setorial Susep - Jun/26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1554777&numSequencia=1079483&numVersao=1"
+   }
+  ],
+  "CPLE": [
+   {
+    "data": "2026-11-19",
+    "categoria": "Aviso aos Acionistas",
+    "assunto": "Dividendos/Juros sobre Capital Próprio",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1591308&numSequencia=1116014&numVersao=1"
+   },
+   {
+    "data": "2026-11-19",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Apresentação Copel Day 2026",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1591320&numSequencia=1116026&numVersao=1"
+   },
+   {
+    "data": "2026-11-19",
+    "categoria": "Fato Relevante",
+    "assunto": "CAPEX de R$ 21,1 bilhões para o ciclo 2027 - 2030",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1591309&numSequencia=1116015&numVersao=1"
+   },
+   {
+    "data": "2026-11-17",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Apresentação institucional",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1590432&numSequencia=1115138&numVersao=1"
+   },
+   {
+    "data": "2026-11-13",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Apresentação de Resultados 3T26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588989&numSequencia=1113695&numVersao=1"
+   },
+   {
+    "data": "2026-11-03",
+    "categoria": "Fato Relevante",
+    "assunto": "FR 07/26 - Deslistagem das Ações da Latibex",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1582937&numSequencia=1107643&numVersao=1"
+   },
+   {
+    "data": "2026-10-26",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Comunicado ao Mercado 15/26 - Criação da Vice-Presidência de Operações",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1580363&numSequencia=1105069&numVersao=1"
+   },
+   {
+    "data": "2026-10-21",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Comunicado ao Mercado 14/26 - Mercado Faturado da Copel DIS cresce 5,8% no 3T26. No acumulado do ano cresce 5,0%.",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1579123&numSequencia=1103829&numVersao=1"
    },
    {
     "data": "2026-09-17",
+    "categoria": "Fato Relevante",
+    "assunto": "FR 06/26 - Deslistagem das Ações da Latibex",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1569123&numSequencia=1093829&numVersao=1"
+   },
+   {
+    "data": "2026-08-06",
     "categoria": "Comunicado ao Mercado",
-    "assunto": "Leilão de sobras de ações não subscritas",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1569118&numSequencia=1093824&numVersao=1"
+    "assunto": "Apresentação dos Resultados 2T26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1553068&numSequencia=1077774&numVersao=1"
+   }
+  ],
+  "BBSE": [
+   {
+    "data": "2026-11-18",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Mudança na composição do comitê de auditoria estatutário",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1591101&numSequencia=1115807&numVersao=1"
+   },
+   {
+    "data": "2026-11-16",
+    "categoria": "Aviso aos Acionistas",
+    "assunto": "Indicação de candidatos a membro do Conselho de Administração por acionistas minoritários",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1589964&numSequencia=1114670&numVersao=1"
+   },
+   {
+    "data": "2026-11-12",
+    "categoria": "Aviso aos Acionistas",
+    "assunto": "Data prevista para realização da Assembleia Geral Extraordinária",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588372&numSequencia=1113078&numVersao=1"
+   },
+   {
+    "data": "2026-11-12",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Apresentação de Resultados do 9M26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588228&numSequencia=1112934&numVersao=1"
+   },
+   {
+    "data": "2026-11-09",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Informativo mensal de desempenho - setembro 2026",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1586226&numSequencia=1110932&numVersao=1"
+   },
+   {
+    "data": "2026-11-04",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Apresentação de Resultados do 3T26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583676&numSequencia=1108382&numVersao=1"
+   },
+   {
+    "data": "2026-11-03",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Chamamento para indicação de candidatos ao Conselho de Administração",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583255&numSequencia=1107961&numVersao=1"
+   },
+   {
+    "data": "2026-11-03",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Relatório de Análise do Desempenho do 3T26 (Inglês)",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583462&numSequencia=1108168&numVersao=1"
+   },
+   {
+    "data": "2026-11-03",
+    "categoria": "Fato Relevante",
+    "assunto": "Modificação de Projeções Divulgadas",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583332&numSequencia=1108038&numVersao=1"
+   },
+   {
+    "data": "2026-10-23",
+    "categoria": "Fato Relevante",
+    "assunto": "Renúncia membro do Conselho de Administração e CTPR",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1579928&numSequencia=1104634&numVersao=1"
+   }
+  ],
+  "KLBN": [
+   {
+    "data": "2026-11-18",
+    "categoria": "Fato Relevante",
+    "assunto": "Fato Relevante - Caldeira de Recuperação de Otacílio Costa",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1591019&numSequencia=1115725&numVersao=1"
+   },
+   {
+    "data": "2026-11-16",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Emissão de Pré-Pagamento de Exportação",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1590097&numSequencia=1114803&numVersao=1"
+   },
+   {
+    "data": "2026-11-09",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Financiamento Term Loan",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1586538&numSequencia=1111244&numVersao=1"
+   },
+   {
+    "data": "2026-11-06",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Operação Florestal",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1585868&numSequencia=1110574&numVersao=1"
+   },
+   {
+    "data": "2026-11-05",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Apresentação Institucional 3T26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584846&numSequencia=1109552&numVersao=1"
+   },
+   {
+    "data": "2026-10-29",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Apresentação de Resultados 3T26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1581460&numSequencia=1106166&numVersao=1"
+   },
+   {
+    "data": "2026-10-27",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1580858&numSequencia=1105564&numVersao=1"
+   },
+   {
+    "data": "2026-10-15",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Comunicado ao Mercado -Aditivo ao contrato de financiamento",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1577579&numSequencia=1102285&numVersao=1"
    },
    {
     "data": "2026-08-20",
-    "categoria": "Aviso aos Acionistas",
-    "assunto": "Período para Subscrição de Sobras",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1559998&numSequencia=1084704&numVersao=1"
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Apresentação Institucional 2T26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1559974&numSequencia=1084680&numVersao=1"
    },
    {
-    "data": "2026-06-24",
+    "data": "2026-08-06",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Apresentação de Resultados 2T26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1553105&numSequencia=1077811&numVersao=1"
+   }
+  ],
+  "PETR": [
+   {
+    "data": "2026-11-17",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Relatório Fiscal 3T26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1590808&numSequencia=1115514&numVersao=1"
+   },
+   {
+    "data": "2026-11-16",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Notícia divulgada na mídia",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1590178&numSequencia=1114884&numVersao=1"
+   },
+   {
+    "data": "2026-11-16",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Petrobras recebe pagamento de novas parcelas do Programa de Subvenção Econômica do diesel",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1590187&numSequencia=1114893&numVersao=1"
+   },
+   {
+    "data": "2026-11-16",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Petrobras convida para seu webcast sobre o Plano de Negócios 2027-2031",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1590212&numSequencia=1114918&numVersao=1"
+   },
+   {
+    "data": "2026-11-12",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Petrobras celebra acordo para assumir 100% da Logum",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588095&numSequencia=1112801&numVersao=1"
+   },
+   {
+    "data": "2026-11-10",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Desempenho 3T26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1587572&numSequencia=1112278&numVersao=1"
+   },
+   {
+    "data": "2026-11-10",
+    "categoria": "Fato Relevante",
+    "assunto": "Petrobras informa sobre remuneração aos acionistas",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1587545&numSequencia=1112251&numVersao=1"
+   },
+   {
+    "data": "2026-11-10",
+    "categoria": "Fato Relevante",
+    "assunto": "Petrobras atualiza projeções operacionais e financeiras para 2026",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1587552&numSequencia=1112258&numVersao=1"
+   },
+   {
+    "data": "2026-11-04",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Fitch eleva o Perfil de Crédito Individual da Petrobras",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583667&numSequencia=1108373&numVersao=1"
+   },
+   {
+    "data": "2026-11-04",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Petrobras informa novo horário de webcast de resultados do 3T26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583678&numSequencia=1108384&numVersao=1"
+   }
+  ],
+  "SBSP": [
+   {
+    "data": "2026-11-17",
     "categoria": "Aviso aos Acionistas",
-    "assunto": "",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1538086&numSequencia=1062792&numVersao=1"
+    "assunto": "Resultado do leilão de frações de ações",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1590810&numSequencia=1115516&numVersao=1"
+   },
+   {
+    "data": "2026-11-17",
+    "categoria": "Fato Relevante",
+    "assunto": "Aprovação do pagamento de JCP",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1590807&numSequencia=1115513&numVersao=3"
+   },
+   {
+    "data": "2026-11-12",
+    "categoria": "Aviso aos Acionistas",
+    "assunto": "Leilão das frações de ações resultantes da incorporação da EMAE",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588827&numSequencia=1113533&numVersao=1"
+   },
+   {
+    "data": "2026-11-06",
+    "categoria": "Fato Relevante",
+    "assunto": "Aprovação do pagamento de JCP",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1585623&numSequencia=1110329&numVersao=2"
+   },
+   {
+    "data": "2026-11-05",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Apresentação de Resultados 3T26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584865&numSequencia=1109571&numVersao=1"
+   },
+   {
+    "data": "2026-11-05",
+    "categoria": "Fato Relevante",
+    "assunto": "Aprovação do pagamento de JCP",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1585100&numSequencia=1109806&numVersao=1"
+   },
+   {
+    "data": "2026-10-27",
+    "categoria": "Fato Relevante",
+    "assunto": "Consumação da Incorporação de Ações",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1580869&numSequencia=1105575&numVersao=1"
+   },
+   {
+    "data": "2026-10-20",
+    "categoria": "Fato Relevante",
+    "assunto": "RESULTADO DO EXERCÍCIO DO DIREITO DE RECESSO E CONFIRMAÇÃO DO CRONOGRAMA DA INCORPORAÇÃO DE AÇÕES",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1578859&numSequencia=1103565&numVersao=1"
+   },
+   {
+    "data": "2026-10-08",
+    "categoria": "Fato Relevante",
+    "assunto": "ATUALIZAÇÃO DO CRONOGRAMA ESTIMADO DA INCORPORAÇÃO DE AÇÕES",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1575714&numSequencia=1100420&numVersao=1"
+   },
+   {
+    "data": "2026-09-16",
+    "categoria": "Fato Relevante",
+    "assunto": "Acionistas da EMAE aprovaram a incorporação de suas ações pela Sabesp, concluindo a transferência da base acionária",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1568917&numSequencia=1093623&numVersao=1"
    }
   ],
   "ENGI": [
+   {
+    "data": "2026-11-16",
+    "categoria": "Aviso aos Acionistas",
+    "assunto": "Leilão de Frações Remanescentes de Ações e Units",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1590041&numSequencia=1114747&numVersao=1"
+   },
    {
     "data": "2026-11-13",
     "categoria": "Comunicado ao Mercado",
@@ -119,12 +497,254 @@
     "categoria": "Comunicado ao Mercado",
     "assunto": "Aneel homologa reajuste tarifário da EPB",
     "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1560763&numSequencia=1085469&numVersao=1"
+   }
+  ],
+  "CPFE": [
+   {
+    "data": "2026-11-16",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Apresentação de Resultados 3T26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1589891&numSequencia=1114597&numVersao=1"
+   },
+   {
+    "data": "2026-11-09",
+    "categoria": "Aviso aos Acionistas",
+    "assunto": "Dividendos/Juros sobre Capital Próprio",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1586133&numSequencia=1110839&numVersao=1"
+   },
+   {
+    "data": "2026-10-14",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Alteração da data da Conferência de Resultados do 3T26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1577105&numSequencia=1101811&numVersao=1"
+   },
+   {
+    "data": "2026-10-02",
+    "categoria": "Aviso aos Acionistas",
+    "assunto": "Dividendos/Juros sobre Capital Próprio",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1573762&numSequencia=1098468&numVersao=1"
+   },
+   {
+    "data": "2026-09-04",
+    "categoria": "Aviso aos Acionistas",
+    "assunto": "Dividendos/Juros sobre Capital Próprio",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1565092&numSequencia=1089798&numVersao=1"
    },
    {
     "data": "2026-08-14",
     "categoria": "Comunicado ao Mercado",
-    "assunto": "Declaração de Alienação de Participação Acionária Relevante - Art.12, §4º, da Instrução CVM nº358/02",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1558087&numSequencia=1082793&numVersao=1"
+    "assunto": "Apresentação de Resultados 2T26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1557597&numSequencia=1082303&numVersao=1"
+   },
+   {
+    "data": "2026-08-05",
+    "categoria": "Aviso aos Acionistas",
+    "assunto": "Dividendos/Juros sobre Capital Próprio",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1552324&numSequencia=1077030&numVersao=1"
+   },
+   {
+    "data": "2026-06-09",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Documento de Atribuições da Diretoria Executiva",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1532325&numSequencia=1057031&numVersao=1"
+   },
+   {
+    "data": "2026-06-01",
+    "categoria": "Aviso aos Acionistas",
+    "assunto": "Dividendos/Juros sobre Capital Próprio",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1529053&numSequencia=1053759&numVersao=2"
+   },
+   {
+    "data": "2026-05-15",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Apresentação de Resultados 1T26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1522868&numSequencia=1047574&numVersao=1"
+   }
+  ],
+  "CXSE": [
+   {
+    "data": "2026-11-16",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Apresentação Institucional 3T26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1590214&numSequencia=1114920&numVersao=1"
+   },
+   {
+    "data": "2026-11-12",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Incidente de segurança cibernética",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588148&numSequencia=1112854&numVersao=1"
+   },
+   {
+    "data": "2026-11-10",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Apresentação de Resultados 3T26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1586828&numSequencia=1111534&numVersao=1"
+   },
+   {
+    "data": "2026-11-09",
+    "categoria": "Aviso aos Acionistas",
+    "assunto": "Dividendos 3T2026",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1586617&numSequencia=1111323&numVersao=1"
+   },
+   {
+    "data": "2026-10-16",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Relatório de Desempenho Mensal - Agosto 2026",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1577742&numSequencia=1102448&numVersao=1"
+   },
+   {
+    "data": "2026-10-16",
+    "categoria": "Fato Relevante",
+    "assunto": "Rescisão do Contrato de Distribuição no Banco Pan",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1578017&numSequencia=1102723&numVersao=1"
+   },
+   {
+    "data": "2026-09-21",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Relatório de Desempenho Mensal Julho/2026",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1569829&numSequencia=1094535&numVersao=1"
+   },
+   {
+    "data": "2026-09-04",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Apresentação Institucional 2T26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1565338&numSequencia=1090044&numVersao=1"
+   },
+   {
+    "data": "2026-08-25",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Mudança de Banco Escriturador",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1561414&numSequencia=1086120&numVersao=1"
+   },
+   {
+    "data": "2026-08-11",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Apresentação de Resultados 2T26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1555601&numSequencia=1080307&numVersao=1"
+   }
+  ],
+  "ABCB": [
+   {
+    "data": "2026-11-16",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Apresentação Associação com Angá Asset Management",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1589724&numSequencia=1114430&numVersao=1"
+   },
+   {
+    "data": "2026-11-14",
+    "categoria": "Fato Relevante",
+    "assunto": "Associação com Angá Asset Management",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1589681&numSequencia=1114387&numVersao=1"
+   },
+   {
+    "data": "2026-11-06",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Apresentação ABC Day 2026 / APIMEC",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1585281&numSequencia=1109987&numVersao=1"
+   },
+   {
+    "data": "2026-11-05",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Live CNN Money",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584321&numSequencia=1109027&numVersao=1"
+   },
+   {
+    "data": "2026-10-19",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Homologação de aumento de capital",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1578172&numSequencia=1102878&numVersao=1"
+   },
+   {
+    "data": "2026-10-13",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Declaração de Aquisição de Participação Acionária Relevante - Art.12 da Instrução CVM nº358/02",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1576543&numSequencia=1101249&numVersao=1"
+   },
+   {
+    "data": "2026-09-29",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Emissão de Letras Financeiras Subordinadas Perpétuas",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1572597&numSequencia=1097303&numVersao=1"
+   },
+   {
+    "data": "2026-09-25",
+    "categoria": "Fato Relevante",
+    "assunto": "Programa de Recompra",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1571441&numSequencia=1096147&numVersao=1"
+   },
+   {
+    "data": "2026-09-17",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Leilão de sobras de ações não subscritas",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1569118&numSequencia=1093824&numVersao=1"
+   },
+   {
+    "data": "2026-08-20",
+    "categoria": "Aviso aos Acionistas",
+    "assunto": "Período para Subscrição de Sobras",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1559998&numSequencia=1084704&numVersao=1"
+   }
+  ],
+  "SANB": [
+   {
+    "data": "2026-11-16",
+    "categoria": "Fato Relevante",
+    "assunto": "Novo Laudo de Avaliação OPA Voluntária",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1590267&numSequencia=1114973&numVersao=1"
+   },
+   {
+    "data": "2026-11-12",
+    "categoria": "Fato Relevante",
+    "assunto": "OPA - Aumento Relação de Permuta",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588092&numSequencia=1112798&numVersao=1"
+   },
+   {
+    "data": "2026-10-28",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Apresentação de Resultados 3T26 - Versão em Português",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1580899&numSequencia=1105605&numVersao=1"
+   },
+   {
+    "data": "2026-10-28",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Apresentação de Resultados 3T26 - Versão em Inglês",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1580900&numSequencia=1105606&numVersao=1"
+   },
+   {
+    "data": "2026-10-09",
+    "categoria": "Aviso aos Acionistas",
+    "assunto": "Dividendos/Juros sobre Capital Próprio",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1576237&numSequencia=1100943&numVersao=1"
+   },
+   {
+    "data": "2026-09-21",
+    "categoria": "Fato Relevante",
+    "assunto": "OPA",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1570267&numSequencia=1094973&numVersao=1"
+   },
+   {
+    "data": "2026-08-31",
+    "categoria": "Aviso aos Acionistas",
+    "assunto": "Atualização OPA",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1563188&numSequencia=1087894&numVersao=1"
+   },
+   {
+    "data": "2026-08-19",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Emissão de Letras Financeiras",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1559533&numSequencia=1084239&numVersao=1"
+   },
+   {
+    "data": "2026-07-30",
+    "categoria": "Fato Relevante",
+    "assunto": "OPA",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1549941&numSequencia=1074647&numVersao=1"
+   },
+   {
+    "data": "2026-07-29",
+    "categoria": "Comunicado ao Mercado",
+    "assunto": "Apresentac¸a~o de Resultados 2T26",
+    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1549018&numSequencia=1073724&numVersao=1"
    }
   ],
   "EGIE": [
@@ -251,68 +871,6 @@
     "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1562249&numSequencia=1086955&numVersao=1"
    }
   ],
-  "CPLE": [
-   {
-    "data": "2026-11-13",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Apresentação de Resultados 3T26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588989&numSequencia=1113695&numVersao=1"
-   },
-   {
-    "data": "2026-11-03",
-    "categoria": "Fato Relevante",
-    "assunto": "FR 07/26 - Deslistagem das Ações da Latibex",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1582937&numSequencia=1107643&numVersao=1"
-   },
-   {
-    "data": "2026-10-26",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Comunicado ao Mercado 15/26 - Criação da Vice-Presidência de Operações",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1580363&numSequencia=1105069&numVersao=1"
-   },
-   {
-    "data": "2026-10-21",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Comunicado ao Mercado 14/26 - Mercado Faturado da Copel DIS cresce 5,8% no 3T26. No acumulado do ano cresce 5,0%.",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1579123&numSequencia=1103829&numVersao=1"
-   },
-   {
-    "data": "2026-09-17",
-    "categoria": "Fato Relevante",
-    "assunto": "FR 06/26 - Deslistagem das Ações da Latibex",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1569123&numSequencia=1093829&numVersao=1"
-   },
-   {
-    "data": "2026-08-06",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Apresentação dos Resultados 2T26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1553068&numSequencia=1077774&numVersao=1"
-   },
-   {
-    "data": "2026-08-06",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Comunicado ao Mercado 13/26 - Conclusão da alienação da participação na Usina Hidrelétrica Dona Francisca",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1553634&numSequencia=1078340&numVersao=1"
-   },
-   {
-    "data": "2026-07-28",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Comunicado ao Mercado 12/26 - Mercado Faturado da Copel DIS cresce 7,2% no 2T26 No acumulado do ano cresce 4,6%",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1548781&numSequencia=1073487&numVersao=2"
-   },
-   {
-    "data": "2026-07-16",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Comunicado ao Mercado 12/26 - Mercado Faturado da Copel DIS cresce 7,2% no 2T26 No acumulado do ano cresce 4,6%",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1545351&numSequencia=1070057&numVersao=1"
-   },
-   {
-    "data": "2026-07-15",
-    "categoria": "Fato Relevante",
-    "assunto": "Atualização dos parâmetros que orientam a   estrutura ótima de capital e a Política de Dividendos",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1545279&numSequencia=1069985&numVersao=1"
-   }
-  ],
   "BBAS": [
    {
     "data": "2026-11-12",
@@ -373,68 +931,6 @@
     "categoria": "Fato Relevante",
     "assunto": "JCP antecipação 3T26",
     "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1559643&numSequencia=1084349&numVersao=1"
-   }
-  ],
-  "EQTL": [
-   {
-    "data": "2026-11-12",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Apresentação de Resultados 3T26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588307&numSequencia=1113013&numVersao=1"
-   },
-   {
-    "data": "2026-11-11",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Mudança na composição do comitê de auditoria estatutário",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588004&numSequencia=1112710&numVersao=1"
-   },
-   {
-    "data": "2026-10-29",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Release Operacional - 3T26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1581835&numSequencia=1106541&numVersao=1"
-   },
-   {
-    "data": "2026-10-21",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Declaração de Alienação de Participação Acionária Relevante - Art.12, §4º, da Instrução CVM nº358/02",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1579213&numSequencia=1103919&numVersao=1"
-   },
-   {
-    "data": "2026-10-21",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Cronograma de Eleição do CAE",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1579193&numSequencia=1103899&numVersao=1"
-   },
-   {
-    "data": "2026-10-20",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Declaração de Alienação de Participação Acionária Relevante - Art.12, §4º, da Instrução CVM nº358/02",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1578854&numSequencia=1103560&numVersao=1"
-   },
-   {
-    "data": "2026-10-20",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Reajuste Tarifário - Equatorial Goiás",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1578855&numSequencia=1103561&numVersao=1"
-   },
-   {
-    "data": "2026-10-13",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Declaração de Aquisição de Participação Acionária Relevante - Art.12 da Instrução CVM nº358/02",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1576757&numSequencia=1101463&numVersao=1"
-   },
-   {
-    "data": "2026-10-08",
-    "categoria": "Aviso aos Acionistas",
-    "assunto": "Alteração no BVD",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1575672&numSequencia=1100378&numVersao=1"
-   },
-   {
-    "data": "2026-09-21",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "WACC regulatório",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1569972&numSequencia=1094678&numVersao=1"
    }
   ],
   "TAEE": [
@@ -561,130 +1057,6 @@
     "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1569440&numSequencia=1094146&numVersao=1"
    }
   ],
-  "BBSE": [
-   {
-    "data": "2026-11-12",
-    "categoria": "Aviso aos Acionistas",
-    "assunto": "Data prevista para realização da Assembleia Geral Extraordinária",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588372&numSequencia=1113078&numVersao=1"
-   },
-   {
-    "data": "2026-11-12",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Apresentação de Resultados do 9M26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588228&numSequencia=1112934&numVersao=1"
-   },
-   {
-    "data": "2026-11-09",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Informativo mensal de desempenho - setembro 2026",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1586226&numSequencia=1110932&numVersao=1"
-   },
-   {
-    "data": "2026-11-04",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Apresentação de Resultados do 3T26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583676&numSequencia=1108382&numVersao=1"
-   },
-   {
-    "data": "2026-11-03",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Chamamento para indicação de candidatos ao Conselho de Administração",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583255&numSequencia=1107961&numVersao=1"
-   },
-   {
-    "data": "2026-11-03",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Relatório de Análise do Desempenho do 3T26 (Inglês)",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583462&numSequencia=1108168&numVersao=1"
-   },
-   {
-    "data": "2026-11-03",
-    "categoria": "Fato Relevante",
-    "assunto": "Modificação de Projeções Divulgadas",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583332&numSequencia=1108038&numVersao=1"
-   },
-   {
-    "data": "2026-10-23",
-    "categoria": "Fato Relevante",
-    "assunto": "Renúncia membro do Conselho de Administração e CTPR",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1579928&numSequencia=1104634&numVersao=1"
-   },
-   {
-    "data": "2026-10-16",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Informativo mensal de desempenho - agosto 2026",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1577672&numSequencia=1102378&numVersao=1"
-   },
-   {
-    "data": "2026-10-14",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Período de silêncio para divulgação do 3T26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1577028&numSequencia=1101734&numVersao=1"
-   }
-  ],
-  "CXSE": [
-   {
-    "data": "2026-11-12",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Incidente de segurança cibernética",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588148&numSequencia=1112854&numVersao=1"
-   },
-   {
-    "data": "2026-11-10",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Apresentação de Resultados 3T26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1586828&numSequencia=1111534&numVersao=1"
-   },
-   {
-    "data": "2026-11-09",
-    "categoria": "Aviso aos Acionistas",
-    "assunto": "Dividendos 3T2026",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1586617&numSequencia=1111323&numVersao=1"
-   },
-   {
-    "data": "2026-10-16",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Relatório de Desempenho Mensal - Agosto 2026",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1577742&numSequencia=1102448&numVersao=1"
-   },
-   {
-    "data": "2026-10-16",
-    "categoria": "Fato Relevante",
-    "assunto": "Rescisão do Contrato de Distribuição no Banco Pan",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1578017&numSequencia=1102723&numVersao=1"
-   },
-   {
-    "data": "2026-09-21",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Relatório de Desempenho Mensal Julho/2026",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1569829&numSequencia=1094535&numVersao=1"
-   },
-   {
-    "data": "2026-09-04",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Apresentação Institucional 2T26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1565338&numSequencia=1090044&numVersao=1"
-   },
-   {
-    "data": "2026-08-25",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Mudança de Banco Escriturador",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1561414&numSequencia=1086120&numVersao=1"
-   },
-   {
-    "data": "2026-08-11",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Apresentação de Resultados 2T26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1555601&numSequencia=1080307&numVersao=1"
-   },
-   {
-    "data": "2026-08-10",
-    "categoria": "Aviso aos Acionistas",
-    "assunto": "Dividendos 2T2026",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1555458&numSequencia=1080164&numVersao=1"
-   }
-  ],
   "BPAC": [
    {
     "data": "2026-11-12",
@@ -747,130 +1119,6 @@
     "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1483069&numSequencia=1007775&numVersao=1"
    }
   ],
-  "PETR": [
-   {
-    "data": "2026-11-12",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Petrobras celebra acordo para assumir 100% da Logum",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588095&numSequencia=1112801&numVersao=1"
-   },
-   {
-    "data": "2026-11-10",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Desempenho 3T26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1587572&numSequencia=1112278&numVersao=1"
-   },
-   {
-    "data": "2026-11-10",
-    "categoria": "Fato Relevante",
-    "assunto": "Petrobras informa sobre remuneração aos acionistas",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1587545&numSequencia=1112251&numVersao=1"
-   },
-   {
-    "data": "2026-11-10",
-    "categoria": "Fato Relevante",
-    "assunto": "Petrobras atualiza projeções operacionais e financeiras para 2026",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1587552&numSequencia=1112258&numVersao=1"
-   },
-   {
-    "data": "2026-11-04",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Fitch eleva o Perfil de Crédito Individual da Petrobras",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583667&numSequencia=1108373&numVersao=1"
-   },
-   {
-    "data": "2026-11-04",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Petrobras informa novo horário de webcast de resultados do 3T26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583678&numSequencia=1108384&numVersao=1"
-   },
-   {
-    "data": "2026-10-29",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Notícia divulgada na mídia",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1581909&numSequencia=1106615&numVersao=1"
-   },
-   {
-    "data": "2026-10-29",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Petrobras conclui perfuração com mais uma descoberta de petróleo em águas ultra profundas do Amapá",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1581827&numSequencia=1106533&numVersao=1"
-   },
-   {
-    "data": "2026-10-28",
-    "categoria": "Fato Relevante",
-    "assunto": "Relatório de Produção e Vendas 3T26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1581329&numSequencia=1106035&numVersao=1"
-   },
-   {
-    "data": "2026-10-27",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Notícia divulgada na mídia",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1580878&numSequencia=1105584&numVersao=1"
-   }
-  ],
-  "SBSP": [
-   {
-    "data": "2026-11-12",
-    "categoria": "Aviso aos Acionistas",
-    "assunto": "Leilão das frações de ações resultantes da incorporação da EMAE",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588827&numSequencia=1113533&numVersao=1"
-   },
-   {
-    "data": "2026-11-06",
-    "categoria": "Fato Relevante",
-    "assunto": "Aprovação do pagamento de JCP",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1585623&numSequencia=1110329&numVersao=2"
-   },
-   {
-    "data": "2026-11-05",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Apresentação de Resultados 3T26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584865&numSequencia=1109571&numVersao=1"
-   },
-   {
-    "data": "2026-11-05",
-    "categoria": "Fato Relevante",
-    "assunto": "Aprovação do pagamento de JCP",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1585100&numSequencia=1109806&numVersao=1"
-   },
-   {
-    "data": "2026-10-27",
-    "categoria": "Fato Relevante",
-    "assunto": "Consumação da Incorporação de Ações",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1580869&numSequencia=1105575&numVersao=1"
-   },
-   {
-    "data": "2026-10-20",
-    "categoria": "Fato Relevante",
-    "assunto": "RESULTADO DO EXERCÍCIO DO DIREITO DE RECESSO E CONFIRMAÇÃO DO CRONOGRAMA DA INCORPORAÇÃO DE AÇÕES",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1578859&numSequencia=1103565&numVersao=1"
-   },
-   {
-    "data": "2026-10-08",
-    "categoria": "Fato Relevante",
-    "assunto": "ATUALIZAÇÃO DO CRONOGRAMA ESTIMADO DA INCORPORAÇÃO DE AÇÕES",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1575714&numSequencia=1100420&numVersao=1"
-   },
-   {
-    "data": "2026-09-16",
-    "categoria": "Fato Relevante",
-    "assunto": "Acionistas da EMAE aprovaram a incorporação de suas ações pela Sabesp, concluindo a transferência da base acionária",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1568917&numSequencia=1093623&numVersao=1"
-   },
-   {
-    "data": "2026-08-12",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Apresentação de Resultados 2T26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556530&numSequencia=1081236&numVersao=1"
-   },
-   {
-    "data": "2026-07-30",
-    "categoria": "Fato Relevante",
-    "assunto": "AGE da Sabesp aprovou a incorporação das ações da EMAE, condicionada à aprovação pela assembleia da EMAE.",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1550021&numSequencia=1074727&numVersao=1"
-   }
-  ],
   "SAPR": [
    {
     "data": "2026-11-12",
@@ -931,68 +1179,6 @@
     "categoria": "Comunicado ao Mercado",
     "assunto": "Apresentação 2T26",
     "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1557227&numSequencia=1081933&numVersao=1"
-   }
-  ],
-  "SANB": [
-   {
-    "data": "2026-11-12",
-    "categoria": "Fato Relevante",
-    "assunto": "OPA - Aumento Relação de Permuta",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1588092&numSequencia=1112798&numVersao=1"
-   },
-   {
-    "data": "2026-10-28",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Apresentação de Resultados 3T26 - Versão em Português",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1580899&numSequencia=1105605&numVersao=1"
-   },
-   {
-    "data": "2026-10-28",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Apresentação de Resultados 3T26 - Versão em Inglês",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1580900&numSequencia=1105606&numVersao=1"
-   },
-   {
-    "data": "2026-10-09",
-    "categoria": "Aviso aos Acionistas",
-    "assunto": "Dividendos/Juros sobre Capital Próprio",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1576237&numSequencia=1100943&numVersao=1"
-   },
-   {
-    "data": "2026-09-21",
-    "categoria": "Fato Relevante",
-    "assunto": "OPA",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1570267&numSequencia=1094973&numVersao=1"
-   },
-   {
-    "data": "2026-08-31",
-    "categoria": "Aviso aos Acionistas",
-    "assunto": "Atualização OPA",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1563188&numSequencia=1087894&numVersao=1"
-   },
-   {
-    "data": "2026-08-19",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Emissão de Letras Financeiras",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1559533&numSequencia=1084239&numVersao=1"
-   },
-   {
-    "data": "2026-07-30",
-    "categoria": "Fato Relevante",
-    "assunto": "OPA",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1549941&numSequencia=1074647&numVersao=1"
-   },
-   {
-    "data": "2026-07-29",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Apresentac¸a~o de Resultados 2T26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1549018&numSequencia=1073724&numVersao=1"
-   },
-   {
-    "data": "2026-07-29",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Earnings Presentation 2Q26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1549019&numSequencia=1073725&numVersao=1"
    }
   ],
   "BRSR": [
@@ -1117,68 +1303,6 @@
     "categoria": "Comunicado ao Mercado",
     "assunto": "Comunicado de Resultado do Bookbuilding - 23ª Emissão",
     "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1572650&numSequencia=1097356&numVersao=1"
-   }
-  ],
-  "PSSA": [
-   {
-    "data": "2026-11-10",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Reporte Setorial - Set/26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1586975&numSequencia=1111681&numVersao=1"
-   },
-   {
-    "data": "2026-11-05",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Call de Resultados - 3T26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584379&numSequencia=1109085&numVersao=1"
-   },
-   {
-    "data": "2026-11-05",
-    "categoria": "Fato Relevante",
-    "assunto": "Modificação de Projeções Divulgadas",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584315&numSequencia=1109021&numVersao=1"
-   },
-   {
-    "data": "2026-10-16",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Reporte Setorial Ago26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1577727&numSequencia=1102433&numVersao=1"
-   },
-   {
-    "data": "2026-10-02",
-    "categoria": "Fato Relevante",
-    "assunto": "Pedido de Cancelamento de registro de Companhia Aberta - Porto Serviço",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1573987&numSequencia=1098693&numVersao=1"
-   },
-   {
-    "data": "2026-09-21",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Reporte Setorial Mensal - Jul/26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1569828&numSequencia=1094534&numVersao=1"
-   },
-   {
-    "data": "2026-09-18",
-    "categoria": "Aviso aos Acionistas",
-    "assunto": "Dividendos/Juros sobre Capital Próprio",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1569636&numSequencia=1094342&numVersao=1"
-   },
-   {
-    "data": "2026-08-10",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Reporte Setorial Susep - Jun/26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1554777&numSequencia=1079483&numVersao=1"
-   },
-   {
-    "data": "2026-08-07",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Call de Resultados - 2T26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1553891&numSequencia=1078597&numVersao=1"
-   },
-   {
-    "data": "2026-08-07",
-    "categoria": "Fato Relevante",
-    "assunto": "Modificação de Projeções Divulgadas",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1553849&numSequencia=1078555&numVersao=1"
    }
   ],
   "TIMS": [
@@ -1365,130 +1489,6 @@
     "categoria": "Comunicado ao Mercado",
     "assunto": "Esclarecimento sobre matéria veiculada na imprensa",
     "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1572835&numSequencia=1097541&numVersao=1"
-   }
-  ],
-  "CPFE": [
-   {
-    "data": "2026-11-09",
-    "categoria": "Aviso aos Acionistas",
-    "assunto": "Dividendos/Juros sobre Capital Próprio",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1586133&numSequencia=1110839&numVersao=1"
-   },
-   {
-    "data": "2026-10-14",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Alteração da data da Conferência de Resultados do 3T26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1577105&numSequencia=1101811&numVersao=1"
-   },
-   {
-    "data": "2026-10-02",
-    "categoria": "Aviso aos Acionistas",
-    "assunto": "Dividendos/Juros sobre Capital Próprio",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1573762&numSequencia=1098468&numVersao=1"
-   },
-   {
-    "data": "2026-09-04",
-    "categoria": "Aviso aos Acionistas",
-    "assunto": "Dividendos/Juros sobre Capital Próprio",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1565092&numSequencia=1089798&numVersao=1"
-   },
-   {
-    "data": "2026-08-14",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Apresentação de Resultados 2T26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1557597&numSequencia=1082303&numVersao=1"
-   },
-   {
-    "data": "2026-08-05",
-    "categoria": "Aviso aos Acionistas",
-    "assunto": "Dividendos/Juros sobre Capital Próprio",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1552324&numSequencia=1077030&numVersao=1"
-   },
-   {
-    "data": "2026-06-09",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Documento de Atribuições da Diretoria Executiva",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1532325&numSequencia=1057031&numVersao=1"
-   },
-   {
-    "data": "2026-06-01",
-    "categoria": "Aviso aos Acionistas",
-    "assunto": "Dividendos/Juros sobre Capital Próprio",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1529053&numSequencia=1053759&numVersao=2"
-   },
-   {
-    "data": "2026-05-15",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Apresentação de Resultados 1T26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1522868&numSequencia=1047574&numVersao=1"
-   },
-   {
-    "data": "2026-05-11",
-    "categoria": "Aviso aos Acionistas",
-    "assunto": "Dividendos/Juros sobre Capital Próprio",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1519522&numSequencia=1044228&numVersao=2"
-   }
-  ],
-  "KLBN": [
-   {
-    "data": "2026-11-09",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Financiamento Term Loan",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1586538&numSequencia=1111244&numVersao=1"
-   },
-   {
-    "data": "2026-11-06",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Operação Florestal",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1585868&numSequencia=1110574&numVersao=1"
-   },
-   {
-    "data": "2026-11-05",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Apresentação Institucional 3T26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584846&numSequencia=1109552&numVersao=1"
-   },
-   {
-    "data": "2026-10-29",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Apresentação de Resultados 3T26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1581460&numSequencia=1106166&numVersao=1"
-   },
-   {
-    "data": "2026-10-27",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1580858&numSequencia=1105564&numVersao=1"
-   },
-   {
-    "data": "2026-10-15",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Comunicado ao Mercado -Aditivo ao contrato de financiamento",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1577579&numSequencia=1102285&numVersao=1"
-   },
-   {
-    "data": "2026-08-20",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Apresentação Institucional 2T26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1559974&numSequencia=1084680&numVersao=1"
-   },
-   {
-    "data": "2026-08-06",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Apresentação de Resultados 2T26",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1553105&numSequencia=1077811&numVersao=1"
-   },
-   {
-    "data": "2026-07-10",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Declaração de Aquisição de Participação Acionária Relevante - Art.12 da Instrução CVM nº358/02",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1543652&numSequencia=1068358&numVersao=1"
-   },
-   {
-    "data": "2026-07-07",
-    "categoria": "Comunicado ao Mercado",
-    "assunto": "Renúncia de Diretor Estatutário",
-    "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1542578&numSequencia=1067284&numVersao=1"
    }
   ],
   "ISAE": [
