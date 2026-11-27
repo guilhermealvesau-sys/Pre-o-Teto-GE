@@ -1,9 +1,15 @@
 {
- "atualizado_em": "2026-11-26T10:28:45+00:00",
+ "atualizado_em": "2026-11-27T10:26:33+00:00",
  "fonte": "Google Notícias (RSS, edição Brasil, últimos 14 dias)",
  "falhas": [],
  "por_emissor": {
   "ABCB": [
+   {
+    "titulo": "ABCB4 apresenta resultados positivos e crescimento em projeções",
+    "fonte": "Acionista.com.br",
+    "data": "2026-11-24T08:00:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPZEtCVUk1dXZDM25kZUVjOWpuR3h0RDY0Q3Jfal9aWmhROXozUGRxQTFySDhxeElIUUU4Q1Vtb2hjZVpCQ0cxOEdiZDBibWZrOUlqTGFYZVprWkxNaG1FaWlRSnhZYjFFTkVvMzB0aWFPMnJtQjRGWW9CR3djWDZ1OTh2d0kzX1cwZmNyWnJTTnJENE0?oc=5"
+   },
    {
     "titulo": "Banco ABC Brasil planeja adquirir 100% da gestora Angá até 2031",
     "fonte": "boca.com.br",
@@ -27,12 +33,6 @@
     "fonte": "PR Newswire",
     "data": "2026-11-16T12:27:00+00:00",
     "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOYWw4SFVKNVl0WFBibWRRNy1nTWpZaDByaS1pelh6MmZyRUpkVFdlVmdhbzQwaDhJdHZuOExXdW4tc3ZjYjgwN2c2bXZqRjlNRUpuNmoyRk53LTJ5MFI5THpwR0xmUUFtUTdWQS10RkN6bmwxWFhWalRueUl1R18wNWJFcV9LVnc1aGJhSG94d1lFOVdFN1F3UDZ1Qm01VXRFbGQ4NzduUFhTRUUxMTlrUU1fRVFZX3lqT0R1UU9lMU1OWHVEWkQtdWszNFNFemYwSGktOTdZdmFPLUFYc25BUm40dlMzSlFnV0NSZ1pn?oc=5"
-   },
-   {
-    "titulo": "ABC Brasil anuncia associação com a Angá Asset Management, com compra de 40% e meta de 100% até 2031",
-    "fonte": "atlaspublico.com.br",
-    "data": "2026-11-16T11:45:03+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQYWx5NkYzOS1LS3ZXMG0xTmVUX0p5V3pfZ3RFelg4dkZKdFRBZzJraVZhWW0zOG1hNWQxVF8tVHcta1pleEN1a3ZXancyR0dKVmhnTGJZQjY4M3VoUnVyLXFsQXQ2dzBxMUowZ3lLMlN1NkVoX0dKM3NwaHNfUkRoSUNPREJfb3lCWktDak54M1U4SERCbkp5VXR6V0FULUVtLXUzVm1fVFg?oc=5"
    },
    {
     "titulo": "Banco ABC Brasil fecha acordo para comprar gestora Angá",
@@ -63,6 +63,42 @@
   ],
   "BRSR": [
    {
+    "titulo": "Banrisul Seguros lança campanha com a capivara Capilúcia",
+    "fonte": "Live MKT News",
+    "data": "2026-11-27T00:33:27+00:00",
+    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPdEw0bG4zRDEySV9fZEVvcHk1UlV1ampwcFZQakRyTFFiX0JXMUlZSFBRLUw0VTRMWlZGdWg4NlhHdGlucjdPWVo5RUl1b3lSdnFqV3FvQWZKWXNhTS1oeFVIZzh1UUhZb1hrOGJ1WWZVQ1ZZNkpZZ1BKVlVNQUdKdWJiMko1dw?oc=5"
+   },
+   {
+    "titulo": "Daniella Marques pode ser uma opção para a presidência do Banrisul",
+    "fonte": "GZH",
+    "data": "2026-11-26T23:20:12+00:00",
+    "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQS3d5c09FTnFHX1pqREcyeHk3S21kTHk4NmRETXlrU1dDa29yc0Z2VktTeXdiUWlOMUJQLWJiUzZ4dE95eHExNVRvTjJhdHZIWTVQTVZhblBMYVpFMWpZN1VJN2hTLW5PejA5TkFmZ2szLWx6eHowb0NjYVZzclVOOXBiVVlPQ2ZUQkpqQ2NGVE9mNk8xd1VfVndZc0tDdF9GdFRWcEgzZ3RXUnVHYUNBbEZlYXFjdDFIdUx5REItMHZnNVR5VHBLNFFNSVVOY2FGbXEyQmRlSnFXQTlOTThZN3E3bWtoMEZRVmJGUlpyUm4waGI3SFdmU1FaSjIxRzR3QlU3Umt3?oc=5"
+   },
+   {
+    "titulo": "Empregados do Banrisul elegem delegado sindical em 10/12; inscrições começam dia 30",
+    "fonte": "Sindicato dos Bancários",
+    "data": "2026-11-26T19:26:08+00:00",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNNEJRc1RQZUZUVlJmZjlXWENpc1ptVWxqNW5KaXlkaG1ZRkdaR05zdE1ZTjFDTGFrM0tMMUU4UXdxQWs2VjVPVE52alNkYzJHYmNRLS0xNzhqUkw3UmF4Zkg0RXc5UGdSSlRJd01aZ0FGYU91MXlUaHl1ZEQ5NXYwZWVnLWllQjd6M3NtSy1hVWZsU1pmdnBUczc3eWk2LXBSQWxnaUQybXo1dTh5QmxhejNqZXFjN1U?oc=5"
+   },
+   {
+    "titulo": "Eloi Pedro Angst encerra carreira de 37 anos no Banrisul e permanecerá em Passo Fundo",
+    "fonte": "Radio Uirapuru",
+    "data": "2026-11-26T19:08:23+00:00",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPLXBNaUtxS0lWZ1lBbXVGU3pJMllsQWw5M3pDR0daSUFXMVdtTjRFWWFLSGxIYzE2U2U2NlpQSk1sWmxXNWd5YjdkRHZhRUozVElubjMydTJadk5fLV9iaEVsQTRuVlY2ck5XSEYxcW1rYVY4ZVRsbE51M3RGTE41THZ6cTZDamVxSFZFVnNsam9pcVRoaFAydmpfNkdJdTdHaHJUN3JkY3VneENCMGVFY2xn?oc=5"
+   },
+   {
+    "titulo": "13º em Gravataí: como abrir conta no Banrisul",
+    "fonte": "Real News",
+    "data": "2026-11-26T18:37:22+00:00",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOb05GRXlCY0llR1lMTU04b01YQlJEUUVJYkJ4SWRaY25rY09ZYWFZXzFfS3V0bDdYeVFlOVJ5OFRiZFdmSERXODRWMWVYYWNsSERSTzh5QjBQd2VkT0FTeDB1Sk0yUlFYajl1ZHhVT0JVbkMwYVhvZFNaSGxLSXFEcW5PbkROTWJpMmJtZVFQdlUxS1dSLWVIWTRIMFUxeGN1a1JLYnZGR1VHR3RDbURpbVB0S1JQaU5iSjAxQTdGVldZdjdZX1dwNU9vaFd6VHc?oc=5"
+   },
+   {
+    "titulo": "Moove cria campanha da Banrisul Seguros com mascote Capilúcia",
+    "fonte": "Coletiva.net",
+    "data": "2026-11-26T13:26:05+00:00",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQUTY2OVU3NjNmSFVNVDVnS1YwLW1EbTdXbmVNZVJwcVVmb25PM2QzLXItTTFPcUd4ODM3dV9YQUY4TGFiSW9TSmFqVnhCLTJabzY1LU9KSTJqQTlLRWFJalVEUlVxejdJcXpjVHlaaDJ2NnU1RndZa0dHRy1QNGV2VGdxQTNGVFRMN2lfOUN1SnJJaEpOdGFz?oc=5"
+   },
+   {
     "titulo": "Presidente do Banrisul, Fernando Lemos visita sede do JC no Tecnopuc",
     "fonte": "Jornal do Comércio",
     "data": "2026-11-25T23:21:48+00:00",
@@ -73,45 +109,15 @@
     "fonte": "Jornal do Comércio",
     "data": "2026-11-25T21:26:34+00:00",
     "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNaDFIdkhReDVEM3YtNlBPNDRLRmY5RWRJVS15eVIzQ3h0T09aSENkMmxJWkM5RVcyS2I5VXZONG9VVm9fdkV6SnA2Tnh0SzF0YU9BMjdjcjNhQWJJUktiQXExbEtDLUxSdHlYY003TDhpLU5qbXRnRkdwb0t2TWJJZERJMENVb0l6OURkbUtZWkZoLVVVbFJTaXZOOHV4TVI3RGhxTTBNd0Q0R3gyb25RTTEtbXpRZTM5ZGxQYnhFaHB4TTZhaU1EN01BYk96bGNv?oc=5"
-   },
-   {
-    "titulo": "Banrisul Seguros lança campanha com mascote Capilúcia",
-    "fonte": "Acontecendo Aqui",
-    "data": "2026-11-25T16:36:52+00:00",
-    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOcG5CMVIwOXFrekZXWFFMdTVmNXRUVms5Z2VsRkhLMU1SQl91U1VJM0ota3RJQ3FyMkxaeWZZOVNYdUtzQXpSOTc4NTlyelRvdFRvYXRTTVdsdkQ2UHRadVVhaDhUMmVvYmxGa1U4RFpQYlJQcXJ5aFlWNm1OWTFWNlE3LWJhYzliZmZRdlVzSndwWnROYTRKdkN6WV8?oc=5"
-   },
-   {
-    "titulo": "Banrisul Seguros reforça conexão com os gaúchos em nova campanha assinada pela Moove",
-    "fonte": "Portal da Propaganda",
-    "data": "2026-11-25T14:25:46+00:00",
-    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOa3ZrR2M3R0d2QUpsajZ4TzNXdzlXN213dDJ2bm9kSF80NkVsT0RWYWxuRTlrVmgwQTNoV2FWRGdXN25UWVIzUXpqbG9Fam5lVGNXbnphZjRKbzNaVkpMbzFfTjlLaDF2Q2RnZU9LVnNyNjNPako5WG0xNkJYMU9BWWpyWE1saFlZMTBtQ3JMazREcllwemVxcS1DSlJleThUcjJrTVpmNXNBcFpsVHFWbXFDVUN6al9vY2lIWGFPaTg3ZHVDQkVDTUU5YlYzdWVWWngySg?oc=5"
-   },
-   {
-    "titulo": "Pais e Amor conquista prêmio do Banrisul ao completar 10 anos",
-    "fonte": "oreporter.net",
-    "data": "2026-11-25T12:07:34+00:00",
-    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPMmtWSlRybEVxV2hTcTdOTWxFUEVzVkxzdmQxNmdSWDUxeDl3VHZwQk5Ob3BjNW5hU2RkblUxejZhYktJdkx4aTNBMWV3SWl2TjdNcVlmY1NhemlZUTBkQUExelI1T1k2M1dxRGt5SVlQVm9La0N2aWZFVVFvUzNWbHYzX1V0WlNjQVpkMkFYTnl4Zw?oc=5"
-   },
-   {
-    "titulo": "Giro das Associadas: Visão Prev, Prevdata, Fundação Itaú Unibanco e Fundação Banrisul",
-    "fonte": "Abrapp",
-    "data": "2026-11-25T01:10:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZXlVS0Jyb3I5dmZJNVd2RHBpVngwQTkyUElQZHlXMUFYREVZTk5yRzBQRFZlSThZMGJSM1ltU2lpQlRMRFFGdmZieTAwMGJuQmNrVUpFTWkteFpPMnZfXy1FNWJkWExlUHFvWVVEU1Azem4wUDJfQnVNS0lKdGM2NmoyV0JQcmR6aG4wRWtOZHhrWUZNemtWSWVIR2hUU3JrZXJ6dWRHZ1EyamJwWVV1WTZna0JQUQ?oc=5"
-   },
-   {
-    "titulo": "Banrisul anuncia R$ 100 milhões em crédito a Tupanciretã; veja regras",
-    "fonte": "Real News",
-    "data": "2026-11-25T00:15:28+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPcEhlZTlJMTN1cng2a1oxekZsc0d5R1A5N3NvTXVHOG9icTB4b3U1NURyRHBhRFA2X0hHaGk1azZfY1J1SmJydm15U0N3ay02ZC1EVGhtTDIzeHpQWVdzcFIxZXN3bkx5NWpYV3I5allvTzlLRDNoT29rRTJ2SThRc2VhMTNnQjUybDFzc3JDTDFwMmlLNDVVQTZ3NVYyNml3S3JJ?oc=5"
-   },
-   {
-    "titulo": "Banrisul aprimora sua Conta Digital MEI para simplificar a rotina dos pequenos empreendedores",
-    "fonte": "Rádio Guaíba",
-    "data": "2026-11-24T15:00:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPY2RnZG5LV2NiME1PRUdCUXlCandDOFd6dTRSYUxBSHBILWRCR1R6cHc1VTRGOHM4Z282RDJJVWJ2RFV3SVhHNU9acDJOM0w1Z3h5UXdtLWRUYlk5Yy01OGpHLUV4akxnVkRmWDRWX19QeldIQzJ5bkVwdVA2eXYwTnRGV2NUZGpaaURGWlY4WEgzNFhVVmkzMHF1WWo4R0wyZ2FyanI0aDdkY2FhdVk0SVRLTnEzeUk?oc=5"
    }
   ],
   "BBSE": [
+   {
+    "titulo": "Banco do Brasil (BBAS3) nega IPOs de 2 controladas e descarta vender participação na BB Seguridade",
+    "fonte": "Guia do Investidor",
+    "data": "2026-11-26T14:22:55+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPMHJjbnpuNzZhbXVuRWR2MnJOY3VmMHN1S1BuZ0R0SHl6Vzd3ZXpXT0JhYk10djQwVEF4MzJRN0QwSV8wakxiWFRmOU5HWUFZZjZyZlhsZTlWR1JtMmNIUXB0MUZzZG9VREc4UDZvTThwYVBkbDFEbGdDMTBxemNHa1pnZHlSeVdRYXVSLWR6NEprV29pbDJUTVE0T1JYdTNQd1pOZ3dlelhQSWx0NERxa21jVFl5V1lmQ0R5ckg4RFU3dHlfOFo0c0t5VmhsSTNibi1n?oc=5"
+   },
    {
     "titulo": "Banco do Brasil nega à CVM plano de vender fatia na BB Seguridade",
     "fonte": "TV Sim Brasil",
@@ -137,12 +143,6 @@
     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBnejg2S01pZmt3U3RicDdpZ3FrZ0pCbzZxRHQ3dElxYXNRb20zcE9NLTRNMW94QVZYUm51Yzc5OTBVbWN0THY4OFVDc3dielFiSkxyVklwYXMtOFI3SWVaLU5hZGgyWHV0N1lza0M3eFNyZGFWZ3JLcGNB0gF_QVVfeXFMT3VsWUVzaEZhX01lVFJkb2Ryc0s3dHhSa25sUkVFN2lNaTFmNEk3SDh3UmhKTmJVQU8zRjYxZi1sOFpxTnREdTB1NUhpUHJrWGdjaWFlZHJuOUlzc2ZscFpKb0NCZS1Ndi1aRWhFRGJDRkhFa0dKUzVMclU4SHozcw?oc=5"
    },
    {
-    "titulo": "BB Seguridade não está à venda, diz Banco do Brasil à CVM; IPO de controladas segue sem decisão",
-    "fonte": "melhorinvestimento.net",
-    "data": "2026-11-25T13:51:36+00:00",
-    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNdk5WNlRMLUo3eXZzVFJ2ZzhOallaYnI4bFVFLVBQbXQ3MWlobExDUE5HVzEwWHlJa19RcER3YlR4SURYM3d0bl9rLWJkcElxZF9oMUtGeXVSZURyOEZjWVFETlh6c2lpMHlxWmhXYWo1UFFJSUZsa3EtX3ZzYUQwTG9yczNDUQ?oc=5"
-   },
-   {
     "titulo": "Banco do Brasil nega à CVM planos de IPO de controladas e descarta vender fatia na BB Seguridade",
     "fonte": "BPMoney",
     "data": "2026-11-25T12:06:35+00:00",
@@ -163,165 +163,159 @@
   ],
   "BBDC": [
    {
-    "titulo": "BBDC3 - Banco Bradesco - Resultados, Dividendos, Cotação e Indicadores",
-    "fonte": "Investidor10",
-    "data": "2026-11-26T05:54:48+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5kTmYyTUcza1Z4RFNlNzZ3ZGUtRDRiQzlKa29yaTYzd3A3ekR2QjItU1FoWGUteUlCRHMyVUMzenVpenhuNC1FYTZmOEZmRWJSdnc?oc=5"
+    "titulo": "Bradesco diz que sucessão de Trabuco na presidência do conselho seguirá regulamentação",
+    "fonte": "Folha de S.Paulo",
+    "data": "2026-11-27T09:55:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPOXBZS3BaQ0FPLVVyN3RLU2tXbEp1VHlPWW9aMlRTNFB2SG04Q050dXpSeGpUQ2VOX1dKWXhhX1U1QUVpRVl3dEZLcnFWS2RJWGpyUEZWajcxbzFORjBIaEVmbHA0YVZDSHlBQ3g1YWp3WFdsSC1KeF90MXdKTlRQUmw1ZnJLb0VJSjVxdDBlQm1vMFRlTFlTbGNNNlZrcTVZdjcxQ093TnNVMjF1NW5WakdKakwycFpLTGJwWmludm1TZjJ3bmpqX3RnSGx2UUdEZjF6UA?oc=5"
+   },
+   {
+    "titulo": "Bradesco formaliza em comunicado que Trabuco será ministro da Fazenda",
+    "fonte": "UOL Economia",
+    "data": "2026-11-27T09:49:14+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQdlFpSFFfbXNidWI0SDJndkUxQXVRT29oTHc1RHZGcXlTTHl2eU15d2RqMzMyVzZLUFZOb1Z4c3JINXF3MFF5NURrcndEa21rblQxVHBuLVA4TzdaT2d6TE1lSlMzZDIyWlNUX0loWUxqNEdtNndEVHNpaVY4aUN4ZVFXRHpqU1V3cDhjOGt1eUtwZW9aSjVTcHFCVERpams4NGcwYXJkbTJSdFNBd0toSlRZSGRFaThYYmc?oc=5"
+   },
+   {
+    "titulo": "Trabuco, do Bradesco, é escolhido para o Ministério da Fazenda",
+    "fonte": "Valor Econômico",
+    "data": "2026-11-27T08:00:01+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPVldTT3VQMEY1RDJKa05ydjVIaVBhWlNRZE1EdThzcl9fQnVBZks3ZS1ZWjAxTGFXOGR4YXozTjQ4VHhaZmhVUVh2MjhmVE8tWW9yWDFZakpwTnU5VVJ2NEJaSnQyOGY3a3JQWERxYTlwalVhYXBwRXViYlB0aWZ5SHpyTTlDOG1nX19jSFZhQnNzZjY3d2lOU0JObWJLNkhURVMwQTJuRno0c19YOHRnLW5HcEV3U1hRM2fSAcgBQVVfeXFMUHBwdjJtLWR6dFRPaWtzSWpFLUNBTjlCVDJ1eTJRallaUENjbnU0LWoxZldPUUcyWXFxdmZNWkIxb3Z4Vl80aVItWVBwbmJGdjBzaEpySjJ4Qnk4LWQzcVBfQjE3cHhPYkYwNzVqRUtLMFgzZDVoVWR1RXQ2ZXJFY25SYmRLV2ZKUkVaZGlTQ05HU2R0ZkVqTmhPN2VpNHc4Q2ZjQ2hybTNTR2tvM3NWU093TXY5R2xmYThpc2xYOGZreG9aR3BMZng?oc=5"
    },
    {
     "titulo": "BBDC4 - Banco Bradesco - Resultados, Dividendos, Cotação e Indicadores",
     "fonte": "Investidor10",
-    "data": "2026-11-26T05:06:39+00:00",
+    "data": "2026-11-27T05:24:23+00:00",
     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1Eenpqb3dobnYyTWppWnFRazg2dk9jX05vaUlnYlRMVG81M1haOTJrY0huSTN2RTFaVjRUdURteW95amNmb3BJVjYxTFZESDR3bWc?oc=5"
    },
    {
-    "titulo": "Trabuco, do Bradesco, é sondado por Lula para a Fazenda: quem é o banqueiro e como é visto pelo mercado?",
-    "fonte": "O GLOBO",
-    "data": "2026-11-26T03:00:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNWTdHRHdhcG1RVGIwdjZXd0xHcFJwLTFfR0dSN0ktRXhaSndSOEJzelhfZkEtUXQ4R2s2OGhGWHZQYVd5TzNjLVVWMWdpMzV2bGVwSmlLZFNETlZNeWFaX0ZHNV8zb19tVFl4QTdheHZYdWp4R0U5d0ZwTUV1VVMyV0NhNEZfNjByUlduNXJpWGJfdUxJbWhUOG9ROXZ2QzZnZFNUWURaWDNQMllwelhWWXg5N0t1ejZrYnFzT3ZaOTVWMkNfTGlzc1hrd2M4SG11QXlwOHpEOUpZcGRTVFdYRlNFNEpnZDZnZXp6STRoeV_SAf8BQVVfeXFMT3pULXk4ekJGNGpPQUdqVjZ5ZzVKdWRtajBCV1d1bi16WUFGU0MxblF1QUdyTmNRRjRDM1lYQWxlWjBxa2s1a1pydFQ4MS1Gd3RZRHVNM25NRE1pSGZNUTdCSEpZY0dOZjUtU3EtaWhDeVp6d0RCNzNDZGRxaDlUVElzeURlM2tWUkFJZXdqWEQ3S3lLbmlhNnNMQUMxWUFRQTZrQTVXdVdrcnk2VkF1UzlZUnd6N2k0Y29TTE5jZWNSdEFHYzZSRjdPX0l4cXNvM1g5LVR5LXFVMkNkYmZwQ0J4Z0k5ZHVaWGhhNFRsVWdiRUlhY0dkbGZfWmJxcW00?oc=5"
+    "titulo": "Bradesco BBI eleva recomendação para ações brasileiras após escolha de Trabuco para Fazenda",
+    "fonte": "Folha de S.Paulo",
+    "data": "2026-11-27T03:35:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPRmphVldVZzRCUzZFQ2FWQ1VuZlRKT0RCeW9QNHRVeGloODB3YmlWbk02RXhiTmliZ19ZVFdReDZEN2M2WGpFVXR0UFRNU0lvcGRHcG1xU2J0d1NOTTJWRUFjT2FCVHR4dkZUWjAzTlprc0E2OHdtNE15bEl1Y010amVjbTNDWWppQjlZVDJ2YlRDSjNONW82OUw4aWhub3hNeDFyVWZNR0E2RXZYd1FFTjNMcjYxUUoyZklPV2lZTFlJWG1tczNBalpHX1FnQi12MTQzMTdjSWUtNHM?oc=5"
    },
    {
-    "titulo": "BBDC4: oportunidade ou cilada? Análise técnica gráfica da ação do Bradesco",
-    "fonte": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
-    "data": "2026-11-26T02:04:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxONXBZR1pyQkpOSVlMQkx2dzZKNHJucjFRVlY2RmFISjFzZWdlZTVteFNfSFUyVm82cXBOZ3ZaZnFmMmpuQ3AzZ3FwUG9ZMG5PVk16ZFBNd2xycVJaZkg1RmlWSXk3UHRybENNeDc2b2VtdHA5YUEyQ0hrWk1xX0h4OGREaVRCc2RXVDBiOW9zLWpXTkdkWUhkbk9qQTRIdHMxTk1sTnNHUHZOQnZCOW5TWmZVNlBlcUE?oc=5"
+    "titulo": "Luiz Trabuco, do Bradesco, é o novo Ministro da Fazenda",
+    "fonte": "AgroRevenda",
+    "data": "2026-11-27T03:09:33+00:00",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPYnNZZWZLb2RhczdENlhXVk9lbFFGRWp2T0FrNXJCLXBqZ1lLNWJiNDdOaWJLRHhFcWY0d2sxV2hLWHFta29VdEtFbUJDbDJKMnBQOG9TbFhLVm5nRWFIRWRhWnA4Tk8wMWlQYWY1UHQwZFM5RDFPRXBYMFB1MzIxSjdMZnVjMTQxdDlsX0hCWlg5MGx1Y1E?oc=5"
    },
    {
-    "titulo": "Quem é Luiz Trabuco, executivo do Bradesco sondado para Lula 4",
-    "fonte": "CNN Brasil",
-    "data": "2026-11-26T02:02:32+00:00",
-    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQ3o4Z0dOUDRHMEdLMW1GcmkxZEtrNUFmTEJxV0lIa0dfb3FQSHlvQWN2RmJ5bDB3NVlUSW5uNFYtZzJNSm9RNFBtbk1aYkpSaS1yRGVYMm9ETjAzcThucGtYbnJIRkFNV0dzZGZoQ2RRZnNWZjB6WnIyUVZXUzRlQnRncS1qWkw2ZDB0SkNMamRhdm5XOFhpNy1GeElEYTZ3bzZsRDRiZ2ZxSnJPX3poVUZmbkdFUXlZSjZxeg?oc=5"
+    "titulo": "Bradesco, de Trabuco, tem 3º maior juro dentre os 5 bancões",
+    "fonte": "Poder360",
+    "data": "2026-11-27T01:46:35+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPaU1iUVdERlRiXy10TXBSNGtpSzdSd3hacHd4NmhaUnZKQXVSVjhWazIzRF80ZElsdHFwX0FUUjBxcFhsZXRNXzBtd0x0WlFCci01R2MyakIyMVZvRWhGZDZwRmNkdF82U1Jsa1NfRG5HWFA3UGFIQlJDUHc0Ty0zY3gxd2dIeVBCdDEybTNrbU5RNlRzYWpydHdFMzBmQmpSM2hj?oc=5"
    },
    {
-    "titulo": "Lula sonda Luiz Carlos Trabuco, do Bradesco, para integrar o governo, segundo fontes",
-    "fonte": "Bloomberg Línea Brasil",
-    "data": "2026-11-26T02:01:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNOGhEVXBJeWUtVkpwaDVfbHNCenRUaTY2WFBIbzctTFhFM0pqanRNQ0NZcUNxbUgydjVUUVhaNGxjdks3RWtXYnlBOGU5TUZ4VGRGSncySzVGZ2pCd3RSWHUza1FjeWZwZGFJMjFKX2E0T2IzQlRoejNWSU1WTml1NlpUV3hXLTlBTVBEOHF5RmZlTmVOeGlaMjhmNW5ZMnc5ZHFQM0w5ZVJsdFN2bld4SVNnNDMwM1A5aDljSjBNbUzSAdQBQVVfeXFMTkdpR2xZT0psZEg2OWlyMENnRUVxV3dKTUxieGZmb3Q3ek1UeWtDNjNEMUNrZktkMnJ4bEJqQ1l0QlFlcV9rd2hCeEkzTUlJUWRnRlU1dVJUZDRkbVlRVTVXU1IxdWhxc19UaWF2R3BTTUpfS3ZMM2JBS3ZOYldBZGVXczVpb2M0bERqVXFzWkYteXpYUnR0UnJuZmhYSWd6S1g4c0Z0dzhNV3B0VTZjbFZZMjZ3Z3VzYXR4MGQ0OGhZM3FfRHBta3RIV1VNYTlnZnZROVA?oc=5"
-   },
-   {
-    "titulo": "Lula convida Trabuco, do Bradesco, para a Fazenda; banqueiro ainda não respondeu",
-    "fonte": "Portal 98 FM Natal",
-    "data": "2026-11-26T00:59:31+00:00",
-    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOc0E4YnBGaksyYXBsR1hrR21VLVhxZXJKS2JQUVZZNGR2MGNsVmw2eWNGbjUwUjVDbk1pZVRfT2lidDN3cGM1cW4wNGpXNmFXUjhXRzBpWUJ6bjNlRUJzNUVjWTdzQ0dxTWo1bV9xeDlGRHBBdkozWjhKZ1pqUDdyVFhJTFNYekUxN1U5N3Q0V1VNYlBNcE1CTQ?oc=5"
-   },
-   {
-    "titulo": "Após atacar, Lula pede socorro ao mercado e banqueiro do Bradesco como ministro da Fazenda",
-    "fonte": "Diário do Poder",
-    "data": "2026-11-25T23:36:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPRjFtX2dFOVNpeFpNSW1QdG1kTFNnY0t3Sk5ldVc5LTI4S0hxOS1qNFMwWUpON2wzMkNTOTlZbnM4UU91RUplclBHTnJXYjBCekllYnU5RUdtekQ0aFNtcnB2MmFPZVpYanlxMzVzSGUtajNQMWFTMDFfU3pXVUNYR0UzTWM1eHJhWWdEdmYwck1URU1nQWQwSVpIU041elQwa3QwMFlDT0pmbXJBTWIzTW51MnNhQWxFZFpyWUdXQzhSZGJiTUUtLVBvZFVraGc0WHVzUXU3RGtPd0FZUGxN0gHkAUFVX3lxTE5zSjlYaVZIMFc2bF9fdzZtX0t2dG9lQURoV1V0Q181NXhZY2RfMnhscGpwekN4eE15WTF0WUdOeWdFMkNnRC1aTGhLdDBxOXJDTDlFN3RudlBXR3pXMnVpTF8zeXR3UFBVZlA2M2o5VUZZOGs2cFIwSFdKM041eVIwSUUxczRCNUt6Sk5yVlBCS0x2dDBiaDQ3WDY1T1hUNVNZcnd0Y0t6NG43R3U1M25kaHJuSEYzUUZjdzNBY1JWOTN6R1JIMXU4b0h6U2Fna1AxQ01YTmNQdU53QjFMdHFVUS1mRw?oc=5"
+    "titulo": "Nome de confiança da Faria Lima, Luiz Trabuco cultivou amizade com Lula à frente do Bradesco",
+    "fonte": "BBC",
+    "data": "2026-11-27T01:05:07+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9TR3hNQTVBQXRmUE4wdnNoa1diVzE1dUdXbzJzT2xyUjFJeHFobUNTLUk5OWxDUzRObDRmejRmcmRkeG1Ub0lEQTEtcXltUzBjWFM5STlMdTBZdUdJUWVXLWVSTdIBaEFVX3lxTE94MldfS21nZ0NYZmdvRXZfRFdwNVJTSG5kMERITVpPLWNTQTJGWDkwT3Jzam9RbENacXZSbXVOYXRITzJPd25ibmhRa0E3aXRPZ2hnTlE4d05ZZ2w4R3dvVld4cWdjMmg4?oc=5"
    }
   ],
   "BBAS": [
    {
-    "titulo": "Contrato 'Caracu': MP junto ao TCU pede investigação sobre renovação de aluguéis do Banco do Brasil",
-    "fonte": "PlatôBR",
-    "data": "2026-11-26T03:03:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOaWFHcDBPak5LX0Rlak0yR19sN2NGS2VKTi1IQzY1NDVhb3YzNzM1RjZQRVlMcHN2N1R6RXd0QTZXZzdiU1J5OURBSVZydHUwZlJrN3lWR1BHTW1MYjJwYkRYcGlIb2UwbUh2dU44b2EyS25falVLUnVlS2xnMkJPRkZRRFo0YTdkRmZPblNXVi16WFUySDl4LU50RzYwRlRrTjlFemxhMnI1Zmh2ZjdNSmpUbzFMLUV4QUpF?oc=5"
+    "titulo": "Leilão do Banco do Brasil tem 6 imóveis no Alto Tietê; veja valores",
+    "fonte": "G1",
+    "data": "2026-11-27T09:41:39+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQYy1sN2NzMzlkdkFIZWZ6bVRqSVNlNmM4c2NZcjNUZjMzOGdKX0JFU1dMakdHQ2VQVzk2eXJNWGlMSFhqeF9jWlMtUXM5Rmk0Sk9fZ3VKdXR2SmpZVkFzRDdGQnctUk40Z2wzUVBzUFJteWlWdy1BZWF1TjhGUlUtVTZ1dDdZMVc5ZHJhb0N0ZTNXN242R2w2V1pvOW1Vak12QjR0bFBXMVBtWFRnZmJiR2h2cTlRMHY0TVNIRVdLRHdtT3p5cHBsbHowZmVxNU9vS1lXWtIB4wFBVV95cUxQcXRnS2FuajRuY2VSMFhmNmgzaGtyZ2tWWVRTR3ZPa1RmRlVUNzJpU1NSaS1ydFZoOThNcFpIMmxtNHRmZXMzRVNFQS1ySkFtM3pQSnNDem90MnVoU1FxSkdIUmlNcVlMMnZJMGpKTXdKeUVBcDRQU0tHeTAyOURUd2Y3SzVpbnQ3SVdkSTQ2NEthWTNkeUtocDVOdUU3dHNtQXFJTjV6b25xRVhfa0tMdmtyRmJUd1FFUV9peWRWOXh2YmtRblNIZV9CdHRQWmdpbng2ZGN1NzhoWEJJNWFKNGRRMA?oc=5"
    },
    {
-    "titulo": "O acordo entre o Aguinaldo e o Banco do Brasil",
-    "fonte": "Sou Patos",
-    "data": "2026-11-25T22:50:18+00:00",
-    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBQYW02WTdBY0tUd1BrOUdhN0VWc0J2ak4xV2E0NW1wckxuNnlJdmJWajZTdVpBWmtCLTk4OV9SMHN2ZW93WEpZbmVNdGItWi16TzVjX25OdWMwTG9xX1pSS3N4alpUU3puZnhibnZmYmgxUWtqNDMwNmtTZw?oc=5"
+    "titulo": "Banco do Brasil (BBAS3) nega mudança em provisões do crédito rural",
+    "fonte": "Visno Invest",
+    "data": "2026-11-27T00:05:25+00:00",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUWJxZWd1WUFIRVJwQlZ6amJQczBfclJLci1NRHhPZktwNjlySl9WX0JzMUZfRzNKaHpUT3FsQmlzVXRWT1hBTzFXWFJXMjhVRUd6Wkl1dlU2RncxX1RwT3AxYzhuQThPUDNGaTBHbEN6bWdTWFhIVlhUTnhZQmxKVDlNR2o2WUFEYk1zbzlXeWF3Y2dfRGJjY21ueHV4N1dwd2tWXw?oc=5"
    },
    {
-    "titulo": "Banco do Brasil enfrenta novo alerta: corretora recomenda venda e prevê lucro ainda menor em 2027",
-    "fonte": "Estadão",
-    "data": "2026-11-25T20:37:53+00:00",
-    "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNcUNwTGJwNTNvRVZTRUxZeXlpc2tMLXg3TGpRNDlLbEdVbDBoeU5GVTJSQUFHVmFEM19xa3BJTW5nREdvdmF2SDRWb0h4NXg0dFNGQmpKOHp6QWtJYUlubTJmcW0za1ZBS2M3V0Zxc1dCaEg3SlB6VWh5T0Vjc1hiTmlIMU1KejZjdmZTVEY3UUI5eVZsT1Z0R2RYaEpEaTl1SUNhNUxDSThzXzZwM0docVFzRlVWUHNEd3hMMEE2TUh3VXNFRnZyX1hGaEtMWGo1X1FaT2hzQlJCMDlYTUVseHFscGYxTnNKandXOEgzWEpUcjZyRVE?oc=5"
+    "titulo": "Ibovespa dispara 10 mil pontos e Banco do Brasil (BBAS3) sobe 12%",
+    "fonte": "Suno - Investimentos Inteligentes",
+    "data": "2026-11-26T22:31:43+00:00",
+    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9JeUdyQW56dUNpWFNZU0xISjBzdlk1dF9qRFFCelpKMERWeTM4WWZvYlJNQWtxZm9fcV9lV2dPQkhKY05mYjFDdkcwbTZTMHpheWJZa3BURkp4cU1xbW40VmNDQ25sbWNxUTB4eUVSTGlydFXSAXhBVV95cUxNWnFEUFpJOGFRQm1VZWlZZmJ1R2NMT0hZZnVldmM2VFo4Y3pHR0VTU25DZ0k3UG5WVzRWa3pQbkloREV3cGg5b24wN0RaNl9XSDdGbkd6M2JUYlNNQUIzRW50ZnFneFpCTFhnSTFUbEEtWDhKRVhOSnc?oc=5"
    },
    {
-    "titulo": "Crédito ao agronegócio: BB endurece critérios",
-    "fonte": "Portal IN - Pompeu Vasconcelos",
-    "data": "2026-11-25T20:08:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWUE1cFJHZ0FYNmNuMEtRangzbUtva1FUSmhiX253Y2I0MGpZX1lnQ2ZudWJNaWZJVElwbmlqaGJpRWg1cGdtaGw5ckFLTU55UmdRSW9UM3RmNmQwd2E1M2p2TmxWVWZNdVZJR2JOUFNCRHlkQm14LTM0QV95UE9SaGo5anNTRGNEeUFFX2ctaFdKQWN1OHV6Sk9KXzFHazJ0d1V6emxNZGoyeDB6ZzJ2SzlqQi0?oc=5"
+    "titulo": "Banco do Brasil e Google bloqueiam mais de 77 mil ligações falsas em uma semana de operação contra golpes",
+    "fonte": "Rádio Metrópole",
+    "data": "2026-11-26T20:47:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPQ0habFRqSHRsUVNYa0N6UkxBZ0ZvZ0ktMG5FM3Z2R1EyeWF2a2ppRzlGTTEyeldVU2cyRmxIbC1tbDVrdkg2alVMOW1iWF9lRXR0VlFLblZrWENsTmF0bmFaWndaQW15b2JZR29QU1ZEdTc4TWdaM2FfN2NKbkI0T0gxbEZJMXIxdDBzNkpodW1yS09XVTQyd1MwZFZEcHpWVVBlYzdubFQwTFJJTWVjNzhCTUFGRXItZ2VLOWdDZGFqcHRJUlNXMTlYT3QwOHdCUnJuV0NiVzRGXzJrZTh4QVBUMjM4WUh0LUE?oc=5"
    },
    {
-    "titulo": "Banco do Brasil nega à CVM plano de vender fatia na BB Seguridade",
-    "fonte": "TV Sim Brasil",
-    "data": "2026-11-25T19:00:48+00:00",
-    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWlljV29mdms0V3o0Z1A0VzQ4YVRkN1hZQ1UtemR0U0s2RG4wNkZYMUtUeDlLbEt4ZHU5RmlZN3dYamNXVGJuamRoMGIzUVRvYWJpaGRxSnQ0VHdtTmc4eVc1YVpYRHRyTW0yVUhPV01MamJsVEE4cnp6bHRqTHBpZHlrc3dsVEVHbEg4dHlhek1tX3FTZkQyRWVrQ196clRrOVVReUMtRE83M05CVkE?oc=5"
+    "titulo": "BB e Google bloqueiam mais de 77 mil chamadas fraudulentas",
+    "fonte": "Agência Brasil",
+    "data": "2026-11-26T19:45:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNa2Yzc1hXOUFpTFhxcnBmZDRXdnN6d3hnd29uQkthVkFHOWREUFlLMHFVV09VLU5paUdpNmpxMHhiTGNONUd1UWs5N3lLZHg5X0JiTnNrMUFZVXRIaTBKSHdrd0dJclY4VEoxV2lWWU4yenBGcTJUN1k1OERDUVJRWkFwejhPZzFFa3ZCeElCNEwzS1pLTkZqUm5uWnZ3d2FWaV8wRDMwVWJFWXFwZHdRSnhpcE1Ld3c?oc=5"
    },
    {
-    "titulo": "PicPay é o primeiro banco do Brasil a operar duplicata escritural em produção na B3",
-    "fonte": "BitNotícias",
-    "data": "2026-11-25T19:00:20+00:00",
-    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9SYllKanc3eV80bERyTVZXZUlGblFka0FodFFtQi1wRmpOODhwUVVSX0dmbFJNcFNvbFBNcEtWQUVwaUZFZVp0Nl9nSUQyT2JqZXFHb3lTRjg5cjVMNjFWQ3JaY0g3MnFkRDlOUlJfblNsdw?oc=5"
+    "titulo": "Alta do Banco do Brasil (BBAS3) é 'fogo de palha'? Gestora vê uma foto ruim de uma realidade pior ainda",
+    "fonte": "Money Times",
+    "data": "2026-11-26T19:42:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNeEpTYmdLN1dUd2p6bFhUa3lfdEhpaUFTLVdLZGM3S0ZxLXNIS1F1MFJwOTBpQ3RLYTdNUjNIbUN1dFNCQXkyYnV0QkdUdWZqM1N1VXlpaDNaV2JvTXJQTXdmdFRQa19pZXhPS3dFM3BoS2Nudzk4dXJaWTJMUjRiNnRTZHpCXzJUaERIVkRJYzZVRmFQeDREcU9sRE1wWC1RTHp5Y0RVc3pKWWRuWDhQLWo2MXFSaHVBSjFrNnVPX0JvTTdEajRHUkVEOUQyS0k?oc=5"
    },
    {
-    "titulo": "BB diz ter ‘interlocução técnica’ com reguladores, mas que não há decisão sobre eventual flexibilização de provisões no agro",
-    "fonte": "Valor Econômico",
-    "data": "2026-11-25T18:49:51+00:00",
-    "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNWE5QTW1NazBWazl0cHhObEE1MVlxZFFwdHJULWZZOGQ2N3lvS0p3ekVoYi04UXVQcE45UmswMk0zclhBaW9jUXJiOFprbGtaX01PajdfSTQ3WVZjYnJnV1V2dDNYYWFad3BLVkFSUDFKczdIXzljLUduSm1sb0Z5LVdxR1B3WjFHd1BVWW1RZzJUT0RUTk5hOER2bzZyQ1hMcTNoWUZBSVR3Sk9WdWtVS1NTYmFVa29LdHZhX0Rrc2JRRnBTdGxNdW00MG4tYmlPRkdKRk5oR1RlTVdTQWFiOHZtS1ViTkMwejk5WmVuclVSeDVoS3FlV0FKNVF4bXfSAY4CQVVfeXFMT0N1LVR3NWJqTFlMaEJiUHZpbGNSbEpvR1c0eFNhQkFCQVlxSkhNa3RsZmNmMENDWmdtUi1wdThheFZMMTlkdmlkam5ORG1IMG5YUTV2eHF6RE1OT0dmUUhEU1VCUGJGTFFfRWhTXzlrMDJtXzhIMmVwUnNWVUNjdVYzX1kyNHFsb1dSbGVGMWdJMUdMS0lrUWN5RFFZNTF3RU92UlZlZ2h1bXM5cjJSVUROcXktaHl5SnNJTVRSNUdfWDdnaE8wd3RlMVNHSXRXRnRheGQwWVBwOVdmVXVpdUZXRmxBNVlQR2RNaXZHQTZ1NDJBX0RKa3FkdjZadFZNMy14UG9qOEtPLUJtNzJn?oc=5"
+    "titulo": "BBAS3: Banco do Brasil não vai quebrar!",
+    "fonte": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
+    "data": "2026-11-26T18:34:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPYVAzUmZBUjROVDQzWjlENnVpellfWk9obkxGQjFJVXRRdTFFZEc2T1ZNU1VFMW1fOUZnUGxLRW1NNUR5VFZhd0tIMk53QmlGTGZrbnlqNnpmU2pidGhFZzlDQmdna3MwZ2VkX0JYTXAyUGNqNzF1MWxBajZMZkhnVm1kSnNTQWRU?oc=5"
    },
    {
-    "titulo": "Comissão da Câmara aprova convites a Durigan e à presidente do Banco do Brasil",
-    "fonte": "Tribuna do Sertão",
-    "data": "2026-11-25T18:30:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOSjR1ZkZqcDFCeGp2dllZeDB2X0ptdDdkRG1KSG1JYmtuNkNoQmhSY0I0U2MtOXdqRDhaY1J1aUZsaFFUYWFUcGV0QlZtUVZNVDNrQUw5QkZqeVNlTjhMTDJFZFJZdEFWOUxfWEMxTzJPcDhGUDNLWEdvOHBMeVU3X1NjWXJ1S0ZNYTVpN1BMakpHRHRVME5CMWt5d0NxdEliX0FkZTFNdTRHOWxEZHBPTU4zYURVVlZVWUg0NTBWX1VKT2IzaGtaMkJRa0sxbVBQaVFSeXgyOEk?oc=5"
+    "titulo": "Daniela Reinehr pede audiência para esclarecer renegociações de dívidas rurais pelo Banco do Brasil",
+    "fonte": "Santa Catarina em Pauta",
+    "data": "2026-11-26T18:05:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOVUFJVVpHMWs1dE1hZHZ0c08xSkQxdkdjYXY0aEl1NGFab2lsWFBtaW50RngtTE5rY3VKZTZ5bmF5QXlja21lNnEzUl81RGl4aWVhOGxFNUtINm9wV3NQMHVaM1RHdW9tb2tOWk9fRDRvdENvNWVjcTYwS3hXcGlGdWkyY2tkU1dPaldEOHZkRlJINGQ2WGhJSlhBb3U4N3dqdHdrT3FNNmRYYXJoZ2c5U2IxS1ZvdFRQajBINkU2dGpxOFBCb0tHLXp2SGtjNnhubHZ0VS1pWldnMUhxZEdhaUtZT2Jsdw?oc=5"
    }
   ],
   "BPAC": [
    {
-    "titulo": "BPAC11 - Btg Pactual - Resultados, Dividendos, Cotação e Indicadores",
-    "fonte": "Investidor10",
-    "data": "2026-11-26T02:31:07+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBqZ0pROHIxN2FzYXkxVlpZSElfM1h6YTgzOExVS3hyLW0zbVlwTUI0akV5ZDhhYXNCb0hFRFB5a3VNNnAtYUdraHFTRmRSWTVNai0w?oc=5"
+    "titulo": "SIR Investimentos oferece acesso à nova ferramenta de inteligência artificial do BTG Pactual",
+    "fonte": "Paraíba Business",
+    "data": "2026-11-26T22:00:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOcFdVdzJJU0VoNE9kRlFNMzFnTkxLWlZhY2Q0Z25kUnRuR2J0NHNqaWZKZFBIc0JXRTc5aFJFbERaY3JuTUNZNkdqSHlOUzBwSTFVSXZYdkhoZXEyV1UxN0xIc0hoeXJUanloeTNBbTRPeWFGNVpzUWJVRTh4YnpiSUJOaGZTLTVPYTRQN3JHUk42X083Z0N2b1haak1EdEM3dUdvek91WXFvUzhwUnl0VVhSOC0yemEycDI3Q01pX0lQUQ?oc=5"
    },
    {
-    "titulo": "BTG Pactual fecha acordo de R$ 964,7 milhões por participações em três megagalpões logísticos no Brasil, com 182 mil m² para Mercado Livre e Amazon",
-    "fonte": "CPG Click Petróleo e Gás",
-    "data": "2026-11-26T00:18:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMimgJBVV95cUxQekk5TUYzb0dOS1ZOeEpqUWdua21pT1gxNnAwXzB3azNFTzlZQ2FsWF9hMGZSOGo0bVlMOF8yU2VhVlZtUENEMGFpTDBpUzh1WnpQRUpVUUxSVEpma05qRTRHYVJmZDhmS3h5cV84NElHZExVZzdhNldnazBSOTluVm8tczRXTy1UV2dTVkVNLWRTR2NILUVfNTR6Sm9NU2dTT3dWYUFMRGRfNDVNbklycmI3anNRS1l3dVlZbE5wREpnaHo3OXZIaEpKRUxsVG9Sei1Ta3RTU2ZmLThRRl95OUtFNkMxcDJTcTNoRDhKWkMzNG9qQkVhRTA0RGtJMEJTZGtFV3dTQmV4cDFOWlA1QmdCbFZ2RXB3Unc?oc=5"
+    "titulo": "Ação do BTG Pactual (BPAC11) perdeu parte do encanto? UBS BB corta preço-alvo e revela os riscos no caminho",
+    "fonte": "Seu Dinheiro",
+    "data": "2026-11-26T20:33:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNSlhqTWlMTWc1b1Ezdm9rQVhydkxGMFZoWC1LcVVsd2RiaHg5OENJMFAzSUVvd0sxUlZrSG92aWt0RTUtR3dqVzBaNWd1YUdJVW5QQVlXNWdlcDBTR0w4S0p4bXk1c3Q1TFhQd21JYnByTERMaW5qV0ZSTzBqdzBEZGxsY1gzeGZXNEc0ajZmUlE4YzB1R28tSjNtQkVPZXU4VTBOdmhtRU03Tmxnc0lTX09FZnZjblR1d2xYakNXWkJSbGpiLUpTY2hKQlYtYWt3eUJJVXpCQ2FWNHVBUTEyUDZBX0FBTzQ?oc=5"
    },
    {
-    "titulo": "“A gente mira no amor e acerta na solidão” faz novas sessões no BTG Pactual Hall",
-    "fonte": "Canal Tadeu Ramos",
-    "data": "2026-11-25T21:56:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPTm05aklCZnNvM1l1TFJWSzUxdXlsMnVYblQ4YVFoaFhlYlFaQUYtbXNJQWdyTFBHYTdsOHloTGo5QkxVZWVBREVnUW5BR2trRTF1eUVuNTNySlc3SWFKaGF4bkJCcEZUR1BTemtjOU44WVFMelRUbGhWUUc3dmc0MTFrTTlGOEdtcHhrX0ZVZkFRN3lBbGktRm1WMExBUUlJdlZkd0FoZXExV1Vibk9wd1hlRHM5M2hNSzI2bQ?oc=5"
+    "titulo": "BTG Pactual (BPAC11): preço-alvo cai 21%, mas potencial de alta ainda chega a 20%!",
+    "fonte": "Acionista.com.br",
+    "data": "2026-11-26T20:19:50+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9mVnVzT0E2MEcyYUNhUFNpYmRHZzI5V2I3RFpYXzFjYlRCa2R6alBWVWdQVExRMzRfejdXdTlDREdrd1JISmVJdi1VNk11MGxFOF9HQkVOeHIwQW80WE5F?oc=5"
    },
    {
-    "titulo": "BTG Pactual mira mercado jurídico e amplia aproximação com advogados e escritórios",
-    "fonte": "BA de Valor",
-    "data": "2026-11-25T21:53:06+00:00",
-    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOUU1SX2FseGU1bmRMbVdEOFlzTnFxRHZpWVVrZUhUM2pCNzhzZTkwM2xyTEpud3JrSXMtaTdfbkdXenpPMzBrQ1FYZ195RkJuZk9ESng2NmpLUzRpb29NOHZXeXVnSnV2OEFjRWxPWU1BalppeHBHMzhCYloyaS1uQUQtS1hTV1RzZGRrLURDNjJGTld1UnFzV19WOGRuNkt6ZVNVU2pIVGc5QTA5?oc=5"
+    "titulo": "Juros altos colocam lucros futuros do BTG Pactual sob pressão e UBS BB revê potencial da ação",
+    "fonte": "Estadão",
+    "data": "2026-11-26T19:36:47+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxONlh4NldyUG9obTgxODJZZVh5OENpcTNndEw5SEN1R0ZBZkFteTR1SGNST19fSW5vOUc2ZDlCU2VXOFdZNXBENjU1V1N4ajFFdk9oRlZfTE1iSWgtUlVOUTBCcUdWZ0ZiU0o2UjVzNGoxR0dRSThURm5mLXBWclo5VFZCRUdYajJQR3BKVXJuX0dIZ3RzclJkRXhmckF0Y2dpLUQ0TEZ5WHZmZkJHbmRsZm42dGpQWEJEOVQ3S3BpX0QzUG5ZOG15ajlQSVZfVXV4RC1GS2VveTdXdGdyUEx5TUxqcVktYV9FWUZ0cU10eGRadw?oc=5"
    },
    {
-    "titulo": "25ª CNAB: “A OAB é uma entidade de classe mundial”, diz André Esteves, do BTG Pactual",
-    "fonte": "OAB",
-    "data": "2026-11-25T14:38:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQUW5wcUUtQkhXQWhRR0pjX1VPcXlSOVE4VlN0QnphdFpuZHpvaVN5djZzMDJ4ZVJWM29nemRkazJVbmFTdTZrdmhzSzNIbU5pcFJlcTVMcjcyTjNEb0dvVXp6Q0g5UmFXV3hUR01WTUMweDU5MnhQX0lSc1Npc3VvT29HdUtkckR1NERucUJQS1NxbTJoTDg0QTdSY0MtekRTenNTSmF0Z1pySlVheHJtMDkyMjloMjQ?oc=5"
+    "titulo": "BPAC11: corte de 21% no alvo expõe risco do crédito",
+    "fonte": "ativovirtual.com.br",
+    "data": "2026-11-26T19:17:52+00:00",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQQ0d4VjRpNDRWcFI0Q0xmeHdNSVpGRFhPel9yWFlhbkZ0aXg1NVJ5Tk9jam9WMlpqS2xkcGdZQ0pFVW9Hb1RiZWxYSElPZnFLWlJYblpWSFZaNW5WM3VuNDBQc1dDS0I3N1pSUWdFdkV4ZnhIUmxsMXJkcURkeHJlWlpQR0NIWnpCel9VYnNLNmtsNURfMVE2UnZqcXQ?oc=5"
    },
    {
-    "titulo": "Depreciação do real foi ‘um pouco exagerada’, diz sócio de wealth do BTG Pactual",
-    "fonte": "Bloomberg Línea Brasil",
-    "data": "2026-11-25T11:37:06+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQWlVIaWZMYl9VbmFmSV9scGw2Tm1hb3R2cGphWGpJODR5TEJKNXRSOURzLTU1U0NBU2lPV2pXdGhuT0hDdTQyRVozYnNNNVJJM0dMMXZ0bmh5X0NRcVNrbkRCaE1GdGVPUUc2U2hWT2RjM05TeUdFTGl1QVZsSjZFYXlmazU5QlU1bC01MHdhdi1oX3BKbUNuMFVMeTQ4dzZUb3VrdHVCYnI5T2wwNi1NTTRkNFN4aDQwZ2J2ZURsV2h0NFBGNm9mUnl3b9IB3wFBVV95cUxOaEMyR2F4WlFreU4wc2Nmbk05YWVzb1VCQ1ZNWjQwUDVpQ0R5cFZMSWdSQUFWRk1DX25rNDJmaGFBMWFnR3Y0akJ6blB1LVlRNldGZlkxWlRPSGV5QUI0QXByVUtNT1h6VUpJa253eVVjVy1rZXBGbmMzTTBPeHNNbG9OenBnNGJIekZ1SEdhOXJDcC00SGhJaTVpODRxeml5dW5RX1lyTFJlcEowZ2M3a3dUZ2pGVE1qOU1EbHZOY1RhNm0yZkcxLTdPaFhIeDhqcUwyZE9QXzAxRC1sRUxR?oc=5"
+    "titulo": "UBS BB passa a tesoura no preço-alvo das units do BTG Pactual (BPAC11) em mais de 20%; o que motivou o corte?",
+    "fonte": "Money Times",
+    "data": "2026-11-26T18:41:20+00:00",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPTElYSlhGeVNhMGpIMkRnRjNFbENwTnFSZkVLLWpXUmNGUVd4Wk5aNHJOWlFtTy04VEFxQWhBcUhuQ3RETHNJN0JPZjBNdUlKa0ZIZEQ1bFE5MnRnR3Y2cGZLdGdwaHVHQnVZR3pLR0FPNjlET1NnY0xtY1JFSnlZRmNGQXRucTVNU1NCcW9DbGIzTGRZcVgyZzJ4TEdkUFFZMFBPY2V0SGNPVXlCS3JzTDJjWVBWMFhnNFdDWjY4aEducElWOGwtVkl4d0g2UQ?oc=5"
    },
    {
-    "titulo": "Estratégia do BTG Pactual: como o gigante do atacado está dominando o varejo digital",
-    "fonte": "Nord Investimentos",
-    "data": "2026-11-25T07:41:03+00:00",
-    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPaEphSV9xOU9aZWNtTVNwR3BvQVY3UWRXVGVWQk9hSXp5dlNQY0JXVDZvMDhGQkRPbW92ZkV0QmFHT2pXczVhdzZmYjk5RDhOMmszSmthbi0wS01wT1hfa3hWVlpmNFp0R3MxcGpCQ0VaM1psNXZ3aEF0ckpOdnV4QjNaMnRjQUNMeTMwS2JYLW5WNUtTekREeC1n0gGfAUFVX3lxTFBWU0owZ0NHYm05RWtXTVBsSVYtS3dOR19VdnV0Q3VsOVdyckhQcU9FUVJKeGZVNURrZTIyelpWYjRGUUpLc1JYX0FpZ0FYZHJuc1R2cFJQb2IzcU5rbkctdzkwaExDSTVFQjBpVDRRUTAyVVFvSmFsc2drMEpwWmdzNzhmalFnSFozQ1NaMUc4SzdaSDRYeTlfeVdYdHZ4dw?oc=5"
+    "titulo": "BTG Pactual (BPAC11) investe R$ 100 milhões no WTC São Paulo após assumir controle do complexo",
+    "fonte": "Guia do Investidor",
+    "data": "2026-11-26T14:42:04+00:00",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQTWpYR0NqVkV1NjFUdURGLTVxa3htVXI4WU5xRXBySVRlZTdEOTR1UmdpakdSV0dDdHNlWTVPU0JfLUJaR0hYZkN6QTFoaUdhejVCa01uU2N6b0lwbWZiNHB5MjUyTG9kWnZXLWt0UXZvajZ5Q3JKU3hkTVk4bEE4MnpmZmtKcTN3SlpEY3NtbGcxb2F4dTdWWGw0dUxpQVdfOWRodkR3cnkyYjVjMDNBVDRwd3NGX3R1OWh1UHVYaGlZeUx0YnlvZnVZQ3U?oc=5"
    },
    {
-    "titulo": "Algoritmo coloca TikTok Shop na cola de Shopee e Mercado Livre, aponta relatório do BTG Pactual",
-    "fonte": "Gazeta de São Paulo",
-    "data": "2026-11-25T01:00:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQZGFCQlZHVnFNWXZwdUplWlA0WG1rT29QY3NVOWkzN3kwejY4c3EzMzRlWDZDRmR6ekhKSGlsZnVWMC00NEoyWldiYnpkVzdMb2Y2M1Z5Q0FoUTdxTkJfc29aY0thZ3RyLXBmWmJvdWRpRjZwcmdZTlRrc2FuYzdacklLUE00MWhqeXhRdnB1dDd3WXZRMG85SlBROU5CdGl1azRvSmx2SkxfQnFULXJvb1dlUWJjYmIwU0h6TEs2QTlMa0lqdUx4Y2NKQXY?oc=5"
+    "titulo": "Efeito de tarifa sobre aeronaves brasileiras parece 'administrável' para Embraer, diz BTG Pactual",
+    "fonte": "Valor Econômico",
+    "data": "2026-11-26T13:57:38+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOdk1kc1lfODNBZDlGdkdEeVBfLTI0YkU4MGZxRFFEN1dDSFR0YUEzVW13S0ZOU0dBTU5QZl85NnBnbnhBMkNaS21LYmVYMXducXFxWDczOU5LejNBYUE2VFlfWDFVQkhWbzJDaHhNZ05VMkhoSk9EVXRNQll2c0h4OE1QUnNBS192WGZjTEJQbmVjTGRINUdfelJfanhBS29ob0phWEMxYURCTm5EbWd3WXBVLWR5RXZHb3J0NldhempXTHBoV0dIcGt3RXR0U2VVcThsX1ZQYWxBbHRsRi0yNDB4WU9SZUHSAfYBQVVfeXFMTUFUb3d3OC0wZVBEbTdoVXA0c2U0WndxamE3ek5zeWVXU2ZSQmc5WGdWMmg3bVY5MmE2ck9tNWVfLWJ0MHliWHpnZGtFbW9DbEpjSVZQVERDQnUwbzZwSzhzdlJXUV9rdDlFVzlDNVV5djhEZG5JbURQWkZjcUtiTkRzYjVoZDluSTRFZHIyd041STYxTXcyZklLTDRlZzdlcWxBSTBXS0FRWU4wRjNvaGJ2VzBuWWRQaVdlZWNjVXVsMVhMWkVocEpaWnBFX1BqRVIzM2c1SFVJZWczMEdPQmFMRS1QdVNUVjNPUDVUWVI3UXF2dmhR?oc=5"
    }
   ],
   "CXSE": [
    {
-    "titulo": "CXSE3 - Caixa Seguridade - Resultados, Dividendos, Cotação e Indicadores",
-    "fonte": "Investidor10",
-    "data": "2026-11-26T05:06:39+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9qQldoTzFaU05QMVdtV2tmNG5RN21SdGNzR2F2R0NHblZyeHBCR0FLQmVVOGJkZzkxTVAxRnRXLVZJbkxBaHp2S1ZQdE54RTlPNFE?oc=5"
-   },
-   {
     "titulo": "Caixa Seguridade (CXSE3) lucra R$ 1,1 bilhão e anuncia dividendos",
     "fonte": "Nord Investimentos",
-    "data": "2026-11-26T02:48:53+00:00",
+    "data": "2026-11-26T22:05:06+00:00",
     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOd1lpTXM2WV9jU0pROXBwTEZPNDQwN2QyNElKVkJPcWVaa0Z0TlVweGhOR2VLVnBFdXNteTA3eG1FM2U0TlZiRnFoTEozbXdRNjFkYkFqZDFnT1VHdEF3cUs2cmo0Y2I2dHJzblFOVkppckI4aEtGTHFwN1ZpS1FyQUZVSGlwMURI0gGOAUFVX3lxTFBqMk9TcE1rRW1lQUlfQmJqMjd2Zy1hQ2daTFJzNVFBLURibHdvTXJtX2FYVk4xWS1NcG4yNnd6OWNOZE5MTWpRbXAydU5YYkk0a0FpNXNvYUxHWTY4dW94cjdGRU1MTmlQSUhmRkFZSkh1VHBDQmVqNmsxc255bXlVRGRJWVlWUmo3R01PZHc?oc=5"
    },
    {
@@ -335,6 +329,12 @@
     "fonte": "Revista Apólice",
     "data": "2026-11-25T13:12:29+00:00",
     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSlYtREoyUEZiX3Jqa1FzS1dMeGlPS3p6OUI2ejI3d3lJaWJoUzlwVWV0eVBRUnJ4SWF0enFaUlliREVjbXpDZmM5R2pCM3JLS09zZjFWU253S21oOFFfanBFZHFaNDd0MU00QWpNT09Cd3NLc0VXSk83SVBUTmJBTkJfclZHUVdaU0h0RkZIWUFVcHVVWThUaUtFQQ?oc=5"
+   },
+   {
+    "titulo": "CXSE3 - Caixa Seguridade - Resultados, Dividendos, Cotação e Indicadores",
+    "fonte": "Investidor10",
+    "data": "2026-11-25T08:00:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9qQldoTzFaU05QMVdtV2tmNG5RN21SdGNzR2F2R0NHblZyeHBCR0FLQmVVOGJkZzkxTVAxRnRXLVZJbkxBaHp2S1ZQdE54RTlPNFE?oc=5"
    },
    {
     "titulo": "CXSE3 vale a pena? O que o lucro de R$ 1,18 bi e o payout de 91,3% mudam na tese",
@@ -363,55 +363,91 @@
   ],
   "CMIG": [
    {
+    "titulo": "Presidente da Cemig assume comando do CA da Taesa",
+    "fonte": "Editora Brasil Energia",
+    "data": "2026-11-27T00:21:52+00:00",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQd2owNFV0VEhFYkZ5eHNKRDAtUkZOU29neS11ZnpSYUlzU2dWTGFQUGJUNExJMm9uLUNaQmMzZkozWmY4a1BuSElKSFUwRmcxSnJhTFdacGFqWHVSRGItYUd5T0dwMXhETmZpV0pUcDBhQnZkZVpMUm92V3Q5ejh1SGNyU2d5SGVtczI2U0FFUWlNc01UZnZGbkhR?oc=5"
+   },
+   {
+    "titulo": "Taesa elege presidente da Cemig como presidente do conselho de administração",
+    "fonte": "TradingView",
+    "data": "2026-11-26T22:42:12+00:00",
+    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9TUXRQVEYwTDF6b1AtOU5fcVVMeVpUajRTdlpSellqSEdsYWxtSVhoU3I0Z3VwaVBHUHlmOWMxYmp6VlltTF9XY0tvR0pGWGZQRkpuQkZPbm9pMU42WVBfNmd2bURqVWdkTWxvaDNjNkNtQXJSd2dv?oc=5"
+   },
+   {
+    "titulo": "Cemig alcança 4 mil unidades consumidoras no Mercado Livre Varejista",
+    "fonte": "Agência Minas",
+    "data": "2026-11-26T20:05:30+00:00",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOeTZnYkpmM2lENWZjTjNJVXNiY1cxWHdGcE1Va25QeEhER013aG9qNjNoUXYtbkllNzIybFE2UUJHWGRSN0Mway1jS3ZxWW9lT3ZWM2lpN19wZFdHOVJzQmNKdnNjUGE4OU5uQkZqTWEwZ2ZRcG5sS1hxelJ6VnR3SDB0OTFKZU1ISjRDNFgtNGdpdThFdGZhdExIRndzVkh4bUl5eUYzanFfa05yTlJxOA?oc=5"
+   },
+   {
+    "titulo": "Cemig supera 4 mil unidades consumidoras no Mercado Livre varejista e lidera ranking da CCEE",
+    "fonte": "Cenário Energia",
+    "data": "2026-11-26T20:03:35+00:00",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOOHVmUjg1WV93UWkwUEpNdVhYejRYdlZGMXl2Y05VQVRoYWJVd3V5ZlVvTFNrcDB2NWZ5a1dCa3J2ZGhhOWMyTUxXRTFNNEpoYkVlbzhhb2NIWGQ2Tkd0UFFvNHJFQS1VLVlRMDRmTy01a1NxNjlyWGhUeXhsM1h1TTg0Y0R4d2ZMc3ZjT0lxa01UVmh2MHNYeGVNaDlhVDg1Qjkwci04RG5ZcnF4WjdiYTZXSTlGcUZUc0k2S2xfQzNUd0xsbi1hd3U4U3NwWUE?oc=5"
+   },
+   {
+    "titulo": "ABCF envia Notificação Extrajudicial para a Cemig Saúde e questiona aumento de gastos com a diretoria às custas dos beneficiários",
+    "fonte": "Portal ABCF",
+    "data": "2026-11-26T16:15:26+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOQzdGWGNlZk5zWDRUWlB5WWpDR2FFTm8waTJqWE5RTW9mM08xelVscmlqVFRjdHFTWnA4YXZjWXVhM2NRY3dEckxFY3F5YW5JSnY4dEpNd2dQak12bWlMWEw4a2VKWDZ3WW9QVjI1cVNuUGpmaUJaMXVQWVZRTDFtaW11N2ZEeFB5RnhxOUtiX25HLU82S0FpbEhqbzEwYzduSGhaNFpZUm5MWjFWdjUzZ2pKUEh5RUViZjdpd2RraEVydVNQYjJwVGtpeFZTYU16czJTS0NHT2pROGNEM0hCNGdkVWRfZGoweHFxVw?oc=5"
+   },
+   {
+    "titulo": "CMIG4 a R$ 10,92: lucro de 115% vira dividendo? O que muda na tese",
+    "fonte": "ativovirtual.com.br",
+    "data": "2026-11-26T10:45:35+00:00",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNLU1rY3dwbEphOEFmZXJibnh0YW9lVVl5RlpmSTBVY21KT3h4ckp1d1NLR2I3U1d1NDFwYVJNd0hTaDduLUd4WVI3SWhSeFVIZlhCRlpxUFZqUG9ucDJGdkoxRTdObm9aNWRVSHZUM3ZmZkY3WWE5cDQybVZoajRYaFoyVElrMkozZGh6bGhaN2x2Wjl5ZldpMGlVWlpiSWVGRTE2ZklIMjMzeDViZXc?oc=5"
+   },
+   {
+    "titulo": "Programa Social Cemig vai trocar lâmpadas e sortear 20 geladeiras em Veredinha Mg",
+    "fonte": "csastudiowebradio.com.br",
+    "data": "2026-11-26T10:03:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNemRlMU9aNWxueVBjbHNpTWszMVNiejk1N19xREdkQ25pMTN3WkVNSklHQllHNlR6WDg5QnViVVZxVmRrcVNPaG9UUHNIYVFRMHdoY2dOQV8ycnBlcUd1d0ZaSzRrOEE1V2E2MnhaME0tbF9NSlFfRzk1eTJUdmdXLW9iNGgwZHlVYVJZbU94d3EtUnFIU00yUFJCQzNTZjd1S3ZPRmhrNVdvNjdXMHBYVTBMTUtIS1hwSWZ4VGZaaFFTWU4tN2RkSFZLcFA?oc=5"
+   },
+   {
     "titulo": "[RÁDIO] Decoração de Natal: Cemig orienta como evitar choques elétricos e incêndios",
     "fonte": "Agência Minas",
     "data": "2026-11-26T07:52:49+00:00",
     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPMU1wdXp1UTVidHNYLVY5QVotYmlONk5OaU1kbC1xbmNWX0oyVzJ5VDJWTE9fWmRDZ3ptbzhJOG5NcE1IclIzS2J3ai1LNnp2VlV4d3pBY0h5MzhmY0x0NlMzWHFBV2o5LUlWR21TQUdqM1RRdVJrR2hRdFp3UEhrRnJJdGhGNVpLTDZoQ3ZGSTdHNmh2TWlOTlpiT3F2clNzWXNpV0JJZ2FvWWp1c0pBMnNocFRfYnBBaG5VRDdHYWxQMDE5MlBpTnEza2Y?oc=5"
-   },
-   {
-    "titulo": "Cemig segue provocando uma série de prejuízos aos dorenses",
-    "fonte": "Portal Dores de Campos",
-    "data": "2026-11-25T23:35:34+00:00",
-    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPc2gyNWs1TTNfR3EtQzJEVTMyMWdUMkRxN1JNN25zdU9ia1BQMEFrZ1RBQWQxZkRyRjRyc2hLWTlJOG1YbWw4WWtpQy0yM3lMSWlDbW5oQzdiSzdGWFhORy13TmtVX2FqaW1DQ3pEbnV5bjNWaGVNUEYyemZkcXJvMXZVb2lRcTZxV1piSVE5VllibzBYaHVoNlVn?oc=5"
-   },
-   {
-    "titulo": "De Olho na Cidade – Carreta enrosca em fiação, interdita quarteirão e mobiliza Bombeiros e Cemig. Felizmente, ninguém se feriu…",
-    "fonte": "Jornal Araxá",
-    "data": "2026-11-25T20:38:03+00:00",
-    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxObWlHbWlHcDI2ejdiNnV4Sy15UGh4MEE1SE1NOU5zME9LOE1pWVo4UzVwekxobkF1UlIwbFdpa1F3a1pWTDQ2d0g4MmpSZGhsVFlLSTdmMXNRNXl6ZHkxYzc3NG1mSE1iLTUzVk4xRVRfU21BLW13WFpBdTFxb2lHQVRKX0pJTzRyNXN3SXJraTE5Q0g2ckhjaG9PWGxQd0VKS2tzU2lYUm0xLWVmYTQwUUk0bDFsNWdBNkREdHVyM0hvaEJ0ZXhXcXA1RnJqS3NNZVk5Y0NZeWh1R190bGhfNjNXTQ?oc=5"
-   },
-   {
-    "titulo": "Leilão de imóveis da Cemig termina nesta quinta-feira",
-    "fonte": "Editora Brasil Energia",
-    "data": "2026-11-25T20:36:49+00:00",
-    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNdG1qaHZCNUFYNjluSFh5ODh2T0hUcHpkTUlBNHdZZW1HWjBXVzExemZQQ3JudVZzY0RJODdXa2h3aUx1N05zVHQ4blVVOEhBSWk2VWE4N1ZkNkRqXzJUM0JDdUFzWEZBMFA1RTVscVVXeFVUeE9YQVNDdkdKcjR0SWRfS2x6OW4xWmlSREJiYkowcVJzSDR1dUxpbThEMmlW?oc=5"
-   },
-   {
-    "titulo": "Alô, Cemig! Comerciantes continuam enfrentando quedas frequentes de energia na rua Barão de Piumhi, em Formiga",
-    "fonte": "Últimas Notícias",
-    "data": "2026-11-25T19:20:15+00:00",
-    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFByWHhmQXppQ0E1YlYtN2l4cGVxTWl6ZTNFbHRwZ2NjQTF4dENIQU5WeWlzNU5Va1RiQWJybHFmMzBmRy1mcjN6RmY2cmEta2xsNVJ1MlFDaVoyaG4xMWJIUGE1NlIzdXVkMzhHa3FPZlY?oc=5"
-   },
-   {
-    "titulo": "Cemig dá dicas para economizar na compra de eletrodomésticos e na conta de luz",
-    "fonte": "G1",
-    "data": "2026-11-25T17:37:47+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNa3pnSU5feF84N1RTRzJ3R2QwZnUtWXRDazJQVnFnVF8xa3FPVWg2TzlLdFVDTm9JVG5VNHNLU0FPWk1Ga2hQMVZfb3R4ZWJyb1huRzhWd3Zaa3NFa2NOZ2Q2bGl1R3lDaW9NbHl6SG5LaWJjNzdHMTl0M3NTVjBHTmlNSUNPeU1RWFdzZnZnX3pNa1VWdXJyMGVsMkZ4OUpSUVRzTDZMbE5CX2Q1RGhhLU45TkFoN201RDA0bVZ2bFV5cmcxeDZwRUVhZlBKWWlTM3JlRHQ1bVctT1V5MmpHb1N4SnJteFJudldtd0FIa0FxSVpCWTRTT2VndE9PaFBzTHF6SFRCWDUtQdIBigJBVV95cUxNa3pnSU5feF84N1RTRzJ3R2QwZnUtWXRDazJQVnFnVF8xa3FPVWg2TzlLdFVDTm9JVG5VNHNLU0FPWk1Ga2hQMVZfb3R4ZWJyb1huRzhWd3Zaa3NFa2NOZ2Q2bGl1R3lDaW9NbHl6SG5LaWJjNzdHMTl0M3NTVjBHTmlNSUNPeU1RWFdzZnZnX3pNa1VWdXJyMGVsMkZ4OUpSUVRzTDZMbE5CX2Q1RGhhLU45TkFoN201RDA0bVZ2bFV5cmcxeDZwRUVhZlBKWWlTM3JlRHQ1bVctT1V5MmpHb1N4SnJteFJudldtd0FIa0FxSVpCWTRTT2VndE9PaFBzTHF6SFRCWDUtQQ?oc=5"
-   },
-   {
-    "titulo": "Cemig lança livro que celebra os dez anos da Lei das Estatais",
-    "fonte": "Agência Minas",
-    "data": "2026-11-25T16:44:50+00:00",
-    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWkg0X0Z5RnNPeEpIT0hiWG9wb002UmRlSV8weU1KaUtrdjJnd2YtX1FTN19RcjN2ZTludTRMbUt1R3ZHMHlqNFdueEd6OVlPMm90VDFGUFIxOWhJVDFsT2xQVENmbWxXc2R0eVI5R2N2eUR0NXJGd2U5ekd5bldaU256bzNzRjE5WVByMU1iRHNabVhUMXBreHM4elpjem80WnhCdENJdw?oc=5"
-   },
-   {
-    "titulo": "Leilão de imóveis da Cemig termina nesta quinta (26/11) com lotes a partir de R$ 31,7 mil em MG e GO",
-    "fonte": "Jornal Voz Ativa",
-    "data": "2026-11-25T15:27:49+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNc1BwNldEN2VKd2wyRlNpS3VpSVRjRmVfdDFtTG1COThvYVhXZlBzSGhxN0Q3dVZRTTZZTkl1d1RSaWs3TmpNUjFNdmRRYU9palZMdkxPcmNKRkpuakRSbXhNWlJzYW1aQWlUdWtkWjV5dkd2RUJhU2JDX043S09XbW1zc3BNZ2pH?oc=5"
    }
   ],
   "CSMG": [
+   {
+    "titulo": "Copasa informa que deve haver falta d’água em alguns bairros de Montes Claros nesta quinta-feira",
+    "fonte": "Revista Tempo",
+    "data": "2026-11-27T08:05:44+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOM1RjNk9Qa2d1ano0ZkVjYUVHNHBnQk54R1pXbkZ2djFNcm5aZnBHS1FVcjlURXgwOVg3T0dydEJfM3hlYXplS19DTy1JQUlVbFZ6M2R3MkJZX09hajNXenNodzh2MzlSWGtZNlI4RzdyRDFfQVNWb09jc0J4UHB3Smo3MTB5cGVHaXFnLVhhTURPM0piWnVaVHc0V29Uc3FsRzVINHhFNnhBZ01ZbXpfSmdwXzc2M0RJMHpySE55bm5Cbm5GOGphOWpBUzR1cVBE?oc=5"
+   },
+   {
+    "titulo": "Copasa (CSMG3) tem baixa de 14% no lucro no 1T26, para R$ 368 milhões",
+    "fonte": "Nord Investimentos",
+    "data": "2026-11-26T21:52:27+00:00",
+    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBsZWtBR3VVNGVwc0dhY3VCaXZFVDVHWGpKdmFQRUg4bWZodnpXQzZBSnhGaFIweHZUcFYxd29wbkNvVWdSYnNld09zRVF0RUEySmFWc0JtUGZ4eExVMm55RTBoUjZtZTkwaUFxWXAzVFpobDdwemlYVkpOTdIBgAFBVV95cUxPdFJBWXppdU9vSW1pLTZRMVJrb1NNN1lzNW1OMWJ3dVFSM0pSYzkyUUV1NGtZUF9zeTNvblpDOWJ0WnM3Ny1iRjBfYkt3Q3EwalIwQWdxVnFpQmJ1aUdFZ3JtOG1zYldxTUlQQmFtLURlN25RaDg3VWt6N29LSzBQaw?oc=5"
+   },
+   {
+    "titulo": "Copasa recebe reconhecimento nacional por parcerias e projetos de inovação",
+    "fonte": "Jornal Gazeta de Varginha",
+    "data": "2026-11-26T20:57:22+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOQ3NVS1hfZGpRNTJOWkMtd3VkeG95SkN5MG5CZ0s2YmszRkd5SXJxdnUwcFZ3OVlOVUJfVURqcVBncG9vdklNdTMxLVRWMm1DNndlRk9wTm0wbHFqemRaLWlodHFHZ0trRVBhZVp3LTVidE5WNFBlamhiVzZPdjUxSlhBM2xEQ2s4Z2N4dXJBc3UxSUk2S0laVWZ6V0FmdC1fN1NvelNfaEFvc2MzMW56cnlUQUFqMkJ0RGVQQTFKSy01anc?oc=5"
+   },
+   {
+    "titulo": "Colmeia recebe técnicos da Copasa para apresentação do projeto pedagógico do Ceam Mocambo",
+    "fonte": "Folha Patense",
+    "data": "2026-11-26T20:35:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQd04wTTBzeDZPX3oycHMzQXh4WDBxRUdNNmp0Yloxdy1Fb0NCemZlaDhERUwxTXNHMm5jMnRHMGlFNk5WdVpucE5oQnRQM0lCNHppa1JRMC0yYzlfWS1HUU9rUGtEV1R1Z1drWUtOMERFR2lmWFVBRHdHWjN2eGcwNjZxYVl5eDQ2SzVGRzBzNUtFcURsMl9qejY3N05UcnpQSE5qOUFLQm9mdkdCVGthZHctSkY4UjdOUnY3LUh3?oc=5"
+   },
+   {
+    "titulo": "Prefeitura volta a cobrar providências da COPASA após moradores voltarem a receber água suja em casa",
+    "fonte": "Correio de Minas",
+    "data": "2026-11-26T18:03:40+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOby1sd2J0cXY2UUxpUkEzOFk4Tk5idGJrWVcxWTZqQU1GaU50VGh3M1ZxYTJQNFh4dUR1VUpzc0FuX3VPX05hNTZNSlpwZHZ3SE1FUnN1aWZmdW9PX0k1cDR6eEZtTTl1VlA2elhLa1pCOXRZSGdFV2YyY3Nlbjl1TW1jRWVYamVkRXRLWE9QOEZjT1FzNnlDcGZralZENVUyWF9keUQwdjNibmUwRENUQVMyX2tHNG1jcjdEdElqNC0tSy0zSDBBSS10X3EwQnlBYnBkX0xUMEJqQQ?oc=5"
+   },
+   {
+    "titulo": "Corte indevido da Copasa deixa família sem água por quatro dias em Santos Dumont",
+    "fonte": "Portal 14B",
+    "data": "2026-11-26T17:24:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9FcXlTM2RnNnNnSUlrblJfdGtQRWp5aFlwSHNZZTVLZTRsZTFJQlVwdjJpd1REakYyYjBLRXQzdWdxcy1RUnVWTlNfTjRHSnhUTU5yOVpUZ3lKSGpzR3lv?oc=5"
+   },
    {
     "titulo": "VEJA VÍDEO: Vereador denuncia descaso da Copasa com moradores do bairro Bela Vista, em Timóteo",
     "fonte": "Jornal Bairros Net",
@@ -423,95 +459,65 @@
     "fonte": "radioeducadoramg.com.br",
     "data": "2026-11-26T00:02:45+00:00",
     "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQa1RzRFVoa1U0OWRLeHJjQi1KelRKdk9RV0w2OFBTSUxTVlFubzN1X29vZnpNV0NNWVp3anpWQXJIWlBLNWhtOHBoRHBPWkJWZlhEVXZVUkRUazdWWlNLTjdQY0pGbGhrN0poQW5XdEhrSElPM3IySXd3QzBGdnJDRXJGcTVEZ0RsTmUxU3o1MGV5MHVrR1dwWU5MWk5seXNuTEFTbjBicVRIQTVrcEotUkhOeGVha1JDU1lvY2VHcEZpOW85QnA4b082aEZCbWRPV1NuMURzaw?oc=5"
-   },
-   {
-    "titulo": "Ecos de Nós: Copasa celebra Mês da Consciência Negra com exposição e roda de conversa sobre ancestralidade",
-    "fonte": "Correio de Minas",
-    "data": "2026-11-25T21:00:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNcDh3SXFVck92ZUdCMkVpUFFzMXVmSEZfLXYzR1FJMU00TjVyT3I0OGNOZ0xNTUFLeWk0TjV1UmZKbDFlbU9YMFdFMDdJdmFDUEJuVzNPT3l4eDc5WHJIRDc1ZDc0UHBrNC1sb1I1SzNCc2szc1RzUmtaMkQ1Zm9VdjJhZVg4X19TclQzWURJRTBDaEdXeGhtNm1ncjVjamdoUVRJYzBzajAwOHh4WllabWZvYVMyeHo3ZThLblNRVmpKTlVGSHhpNU5SNlRWMmt2Y1JNaXhyNTdnM2UyelBUbQ?oc=5"
-   },
-   {
-    "titulo": "Abre e fecha de buracos gera reclamações e Copasa explica etapas de obra em Patos de Minas",
-    "fonte": "Patos Hoje",
-    "data": "2026-11-25T19:11:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPYk1XV05mWjYyUkhrRTdUQzJVVXhyZ244NG5lUGxVRlhTTkEtUDN5bXFsUi12WFFQQ2tGdW1zN3R6YVdhZF8zdVB6aDdURjlYSXJKYUxoUkk5bU5CcTJQTUI2a25GbVZ3VDEtSk9EcHRqX2FqYlA3SFlTS1l0Q3BLM0wyQ2xpMTl2SkpLMzE2RjlHWHhiWWZGMlFLNnNQUkxrQmIyZmdpSHBSN2Q4ZG91U1VvV0p0cWtVemhxSmVsbVhtMWJDMGJDZlJhZEtRb1RD?oc=5"
-   },
-   {
-    "titulo": "Falta de energia em estações da Copasa pode interromper abastecimento em 62 bairros de BH",
-    "fonte": "BH 24 Horas",
-    "data": "2026-11-25T18:58:22+00:00",
-    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZnJ6WjlleXNGZzhmSkNSS3RyUVF2MWx6WWNDNElFenNIcGZjWDAySW16dlBuVlc1ZUt6SldpRFU5OFptaHZxT0lwM2duUHIxV0hDd3p5SVM3b0F1NlBOaWktY1l3a1FVaTlWMmtZZHpGdmkyNHlTbmJ0TllEdXF0V1d0Z0x0SnJNYWt5cHZRbEt0b3VETnFJQkhOYng4TXFLbm5zZjRFTXEtWmJXSTBhbEJuc1J5MzU4MjhjQzhwbU9GaFhOLVVJ?oc=5"
-   },
-   {
-    "titulo": "Vereador cobra esclarecimentos sobre repactuação de contrato entre Prefeitura e Copasa",
-    "fonte": "Clube Notícia",
-    "data": "2026-11-25T17:00:39+00:00",
-    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZ1NtYXVHdkU5UXg0OTBBUE5pSUduRnZzMElIUGZva2ItREloaUlONWpYU2wtcUV0TXp4MFo2YjVjUGZuXzdxVG1MUmQwSUNMZHRqMDZQWElFR3BFYTVsZUxzcWp0NkMzQ2xpWDdPM3JockhiRW5SWW5PMUhhUFc1NWFCZXZjRDh0ZXkxSDdTZ29WMjRJNEJRTkNmTVJPRU94a2dhQ1ZhNkwycl95bmZkbzB4OXZLdw?oc=5"
-   },
-   {
-    "titulo": "Copasa realiza recomposição asfáltica no Novo Horizonte nesta quarta-feira (25)",
-    "fonte": "Rádio Montanheza",
-    "data": "2026-11-25T14:43:01+00:00",
-    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPYUFHc2pfQkFmUF9MRGJlQllMX1FnSE9veV92OXZCZWoxS1p3RlhncUFUbm1TN2tlNHRQN2lYNzhRZWs0SjdJdTJjbmtQM0RzVkhyVzVuOWN0bV9BdFB1MkxZSXIySldkMHVlenItSkFTa1p1SVl4S3Rac0VDQnhjeTJMQWFsY3UzNWpXVkNUeVdSNWFucTlVWWR0dVlVZ1R2VDlLNm9QMA?oc=5"
-   },
-   {
-    "titulo": "Copasa realiza reparos no asfalto de ruas do bairro Novo Horizonte, em Vazante",
-    "fonte": "Correio Regional",
-    "data": "2026-11-25T13:17:27+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOUE0yeE9wTXotNUZseGQ1V0dsVEh0SHphRHotcEx2b2l0QTlLSGFUcy03clZrSUV6cEN3aW5KQ2h0aFpZTHRiS1hhTlhfMDFFdGFraldsai1UU3lLdnlVSFVaSjlseXJ1S0dJdGJLNmV5OHRURnhFQzhfd2NIV010VFc3QnZxZm9LMUc4eVdMazZiejBidUxLSFp4U09tVFVrZS1qNEZtQ1p0T0Y2LWFXekxxdVRuTXpv?oc=5"
    }
   ],
   "CPLE": [
    {
-    "titulo": "Copel restabelece energia em 88% das unidades consumidoras afetadas por temporal",
-    "fonte": "Jornal Repórter do Vale",
-    "data": "2026-11-26T10:12:06+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQc2w1MVl4bEp4TUJQTDRObW5KbDVuckpRT1dNWmR6SFNLbEo3TkdndkN1THhGbkp4aVVpN25rc0tRcmZ0b01wT2REODFuWjNxRGpmWGVySXFVSUVWanBMMjI3RkdBbUJ0MDkwb3lPYkxfZ05EcC14SjBqendXSTRuVWsyQzZvVjFOUHdDR3AwY2Q3OGlFUnpFM3FNSVJOTFdTeDNHRW1wSEh6T25ianh6TWR3MA?oc=5"
+    "titulo": "Vermelho aciona ANEEL para investigar falhas da Copel e prejuízos causados no Paraná",
+    "fonte": "GDia",
+    "data": "2026-11-27T02:12:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNY3dudjFjX255a3VPekVSWllQU1dWTzdnZVhnRnp4TzlheF91Rkc1Y1BYdERLTXhMdG1fVkQ5Z3UzeGNBX29vSzNJSUJGcm9YamxlNGQ5VVNQenMxT1d5QmFxa0E4OEN0TkxlVFNxNzlIYVlZUVdwOXVxU1dIRGl0TzRkMzVNVDgxWHVSRlBBdnczNEFGMDJjS1gzbng0LXotdy1iVmg2VlRFSDhfTzR4eFdQcGNnelFP?oc=5"
    },
    {
-    "titulo": "Temporal deixa 224 postes danificados e Copel já recompõe energia em 88% das unidades",
-    "fonte": "Sou Enfermagem",
-    "data": "2026-11-26T07:16:35+00:00",
-    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPVGpPYmxITUlwblNadnBDRHBtWWo5NXZsckVWSzhWeVplX3k0VS00ckFYYy1nNWtEUnA0ZGRjcklCODdFby1fa0xTdExzem15SXlpNFg4OUZRbTdEXzlPOURGN3FGMnVKbFdDMU5LWWg0VC13N3RiYWJlc0NENDJISzRRYkNSWEJhUVVrbVZ4S3Q2VzZCaUpkTkx4bllIQXBPY0lSS2paMjk3ZlFSSUtkWTl1Q3VSWDZud3E3Q0lBbHlpdVdvN3c?oc=5"
+    "titulo": "Contra apagões, Copel anuncia pacote de obras rápidas nos municípios",
+    "fonte": "Tribuna de Cianorte",
+    "data": "2026-11-26T23:05:06+00:00",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPQk02SEdaa0dQQ2RoX0JPaUQ4OTY0QWs5aVZhUDlrUFVwT05zNzEzWUdOaHJQU2s3Y2hGd2psUHdwTlpyNk5kRmtVN3hEZmZVTzJ3clZkajNWWUkzZF9TNUFJRndVbFEzbTJTRTB4OC1OaW81N1BkaEVjRWNzVHVJN1lkMEdwUVNtdlViWEt2cjVFNUdBSGhVNGtfMW1fbXZ4UVY3amR6SHVvUGdSRWI5eVZR?oc=5"
    },
    {
-    "titulo": "Copel registra recorde de queda de energia após privatização: somente em 2026 foram mais de 407 mil ocorrências",
-    "fonte": "Mareli Martins",
-    "data": "2026-11-26T00:14:21+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOUTV6Q1kzYUdnNkdGQ0wtVzhkNmxjc1JGRFhxRWhteEwwclBNNkZ6NzM1Z3RsSTRMWFJPMmV4OVp4bkNQaF9Vc0V4VkY0VEdaRWdvT3FKMnhXMF9jTTdMcFAzWF9IWTlGNzJmb1lYaDNna2N0NWE1ci1YWHczQkNDM2NWVDU5MEVHa216U3l2bkJjY2NucXYxbXNUVGp2ZUNDT2NN?oc=5"
+    "titulo": "Fetaep: lideranças da agricultura familiar conhecem diretrizes do Copel Agro",
+    "fonte": "Angelo Rigon",
+    "data": "2026-11-26T22:46:33+00:00",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNT3hRdUVCTkhNWVlqZnlxTHZjc1Bwb1JPV2JLYWJRdlo1RllsaU5TQ2RGMnVEcGY2elJmdnh6TzZnTVlaNnd5S1FDN3F0MkZlOXBYSlZUZ1BJOWNBSno3NVFwakF2eHdFeWpVWERhWmlFV0MyZy1IOURwTFNJcnZQenhWU0wyM2lnb2pvVGZFQUZuM2FSdEdEaTBycW91RzR5eENUeU1BX0xNV3ZUczdEZk1HWnpKejFRd25wVNIBvAFBVV95cUxNT3hRdUVCTkhNWVlqZnlxTHZjc1Bwb1JPV2JLYWJRdlo1RllsaU5TQ2RGMnVEcGY2elJmdnh6TzZnTVlaNnd5S1FDN3F0MkZlOXBYSlZUZ1BJOWNBSno3NVFwakF2eHdFeWpVWERhWmlFV0MyZy1IOURwTFNJcnZQenhWU0wyM2lnb2pvVGZFQUZuM2FSdEdEaTBycW91RzR5eENUeU1BX0xNV3ZUczdEZk1HWnpKejFRd25wVA?oc=5"
    },
    {
-    "titulo": "Chuvas: Copel tem 2,7 mil profissionais em campo para religar unidades consumidoras afetadas",
-    "fonte": "Arena de Notícias",
-    "data": "2026-11-26T00:11:10+00:00",
-    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNTWRTOHpyRFNwZk1xQzdkWEI5NTNhem54SXhmd0xicmVkZ3ZEclVmSzVmd1pWTnhhaDhSOU1waHg4WFJMRGQ0QzI2OFdUUUFBWXBURFd2RzZPY2todWlISVhpMFVJUjhmQURyYkZSaHp5X1p3b1RGWUM3bUJBREhjVHJ6aUhPS3NsZ0paSEF0cUlHeXkwLXJFckF2MnVsV2VWVWtFNkdJUFBCY0lpT2VwZzdNX2pRVFlCUEZlVFQxcE5kU2pkRFZSSnFkTlFfNl9SY3I0?oc=5"
+    "titulo": "Copel Agro apresenta soluções para melhorar atendimento aos produtores rurais do Paraná na FETAEP",
+    "fonte": "Minuto Rural",
+    "data": "2026-11-26T22:18:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOREZ5WF9KSko1M2lIeGswRmxJMEZfVzJfOGMxWW42ekc1T0xXUVd5ZDk5c2lJUUJXSFg5RVZLQ0VCc3F3eG1tNWV0ci02Sl9oQTZLc0Izbm4wUHhoMnZ6bF91Z2N0WS1MdDVaZVhCTzFUNFdZam80WU56cU1YQnRRSDlmdklMQTBtQjJ2V09PeUV1WUNrVTNXR2E1U3p2R1VCRWVMSW1RTTd1ekdKbzdyYXhFS29VWnlyR2RUaU1fcnAyb3pHLVBKRDJpNGZMVzFYZVBDU040NDM5S0dTbGw0?oc=5"
    },
    {
-    "titulo": "Paraná ainda tem mais de 30 mil unidades sem luz após Copel resolver 88% dos casos",
-    "fonte": "Tribuna do Paraná",
-    "data": "2026-11-25T23:25:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQb29rOFVqdWdEVTQ4RlVoVktzanRBSVB1WF80aWNsTTdDZ3Vqa1NkeEgyaGpyZlFrY0hPZnR1N1JmbWFRQjlRcERIYjBzZDJRY2RVNlhGa1pQWE1URmR0Y3JYQUNHeTA2Z0J4UXRZcUFON0Q2bHZCX3ZUc0dkMzFkYU1QbjBwUUlzdy1HT0xvd2dPRU1UdV9NMzhfM25kMlRDbEdyckVGaWdBdXg1VDNYZ1ZhX1NRTXU5YkNjTk5mUVFTMXpBYVHSAcsBQVVfeXFMUEF0QzNJTGNnQUhRUWczN2ZyY0d6bUM2dDBMUUtCTXNJY1dhc1F4R1k0dXU2UW8tRmhPQVVQTHcxR21PcDhyb2loUktxSVJDSGY0SG9tcW1DZ3JXR0xLR1BLME1KcUFCclV0QUlNR05DVWVYU29KZ0pXTFJMLV9Ndl9mWHFJQTJJUE1hTTRJMmVvNG04X0gyM1BwZENaQV9LSkEzeGRvdFpGNnpzVWlrVkxpeGM4OTlIdGpoM0RGRzB5eXRSUGpMMmQtQmc?oc=5"
-   },
-   {
-    "titulo": "Chiorato cobra presidente da Copel na Alep após apagões",
-    "fonte": "Blog do Esmael",
-    "data": "2026-11-25T23:03:28+00:00",
-    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1xdEwtb1pDeHRNcF9jZWJuay1VMnBQZ0RFTHZfc29rZzFxM19mclh6R3ltWEowMW1aY00zZlp0ck1yYVdKaFZWV280Z2hDQUR2VnF0RXp4VnhBOXFFMlpoRFBwOHZlOUFNT3JmbTc3ZVdYdVBENEZ1MFdNTQ?oc=5"
-   },
-   {
-    "titulo": "Copel religa 88% dos imóveis; Sudoeste tem 11,1 mil sem luz",
+    "titulo": "Copel Agro apresenta diretrizes à agricultura familiar do PR",
     "fonte": "Diário do Sudoeste",
-    "data": "2026-11-25T22:39:32+00:00",
-    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQTk43eVk3VU01R0FiQklVSWE2NkR4enlzdFk0d215VVVQekdpa0xQU3hvbHlQSFZCa050eUY2WnVWVm00NTdpRmFxLWJjMDB6QkRheVJvOUVDMTlGVUQ1cm5fNy1EemhPd0lWV08wRElzTnJ1NnpZT3dSYmdXb3NPU25aSHdpaXZlSEFOQnpIUVlDcms?oc=5"
+    "data": "2026-11-26T21:57:49+00:00",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVDdpLW1LblJ2U051eHIxMTJCMzc3MklTVTBYMmxMOEtQbUN5a3oxd21CR3htTUZIU3pwbzZJbzYzN0xTMzdoLW5GYWdfSUhuQkRJcVhSWVdpT3ZyUHpSSmNiYTVialpqNDUtSm1UMXFtRzBrR0hfVEZnR0t2SHdLZjVEMmYyNFhVWWp6Sy1LQ2F3ZXRLMVphVA?oc=5"
    },
    {
-    "titulo": "Aluno apoiado pela Copel conquista bronze na Olimpíada Nacional de Eficiência Energética",
-    "fonte": "Marechal News",
-    "data": "2026-11-25T22:24:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPN2M2LWlrS3UzWllBWThjUnM0dXlUN2tyajVDUkRNTWI0M1A3YjBvbERDTGt2UEcxY1V5TEJ2YnczNmJnYlNjOXNRRnlNVkpDODhXbmNrb3BZT0VNOGtZSlRhMlgzZmFreW13NDNJTldlN3JfdUxOZFlFSUFneml6VHR4LUJwMHFObmtUbTZJRHFBVzFQRXQ3dlhQNktMTktSa1lORDZmaFRjZmVMdWQ5UU5LN0xma0t3TDZ6UGdpU0cwNXoyeTdtY0xMNA?oc=5"
+    "titulo": "Copel: Toledo perdeu a paciência e agora parte para a cobrança pública",
+    "fonte": "Gazeta de Toledo",
+    "data": "2026-11-26T20:50:41+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxObHIwdHA2UmxiTkVrMlY3UXJTV3Q3R05acjhWcnJlU3NMVTFwYkdkRzg0a1Z3QkVVNTE0ZGUyRXlkeUVmcmpXUW94UmxDM2xsWkFQUUxhNGpJM041eTBUaE5kcjJtVTJZTnE2NVM0Z3k4UjcweHpETjc5bVNMRTdYTEljTEZsSElpb0tXUndHSW5iVW5XdjNkaEtXSVB4b0w3c0E?oc=5"
+   },
+   {
+    "titulo": "Toledo terá manifestação em frente à Copel nesta sexta-feira contra as constantes falhas no fornecimento de energia",
+    "fonte": "Gazeta de Toledo",
+    "data": "2026-11-26T20:25:30+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQNzdzNHR4WlA1Zk5IMzA2dUNIVE8xOEZKOGRQSldQbmJQQ05hUENzeHlhOVlUcG9aYm54N2FkYkVjeWg2dllDLWpkLXFfTXpHaDJ3SEZwOEh0QVZNVlhZeGRXUjJQX2ZUOHFhRlhQZ0F5cjFGTWU4NmpMcHQtTVBnaDBpNFp3ZUk3dHE4OTd5bUc1Y0twdkp1YnVBT3gtbmU4VUtFZEhJQzRyRXotMmVZTjZic0RsY0VXNHViOE5uR1JrU3ViSTNPX1dONDhWSFQ0amRsSVdfS3hzcFV3SGIw?oc=5"
+   },
+   {
+    "titulo": "Copel promete plano emergencial contra falta de energia",
+    "fonte": "Editora Brasil Energia",
+    "data": "2026-11-26T20:06:48+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQX2xEV1Q3VDdabTh0R2NtUmJfZ205Nk91eEswQTV3UjZJcGFTRjZWWkJiYVRBSl9LLTJnNksxRlZYN1V2ZU5OX2RJTy1qQzV5bE5Hek5FNmFQb1Q5Zk5zQVNCdDl3RUNEWl8tY1l1SENVZHRnUlYyb0lfWUY0MnBBcmhSU3U3QjQwZ2ZmWFhxcHp0ZHZrTjBJTzExaVBrOXhSMlFQc3VaSkI?oc=5"
    }
   ],
   "CPFE": [
+   {
+    "titulo": "CPFL Energia: Atualização de crédito - Novembro/2026",
+    "fonte": "InvesTalk",
+    "data": "2026-11-26T18:47:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOWG92NU1IVU5xbEZqb0RRR2NObC00MUZ2bDVSYlFubGYwd1lEYlJEVkloT0p1enQ5WHpnb3BwWVhKV0I3bmJOSjBxa0pBR19Pdmk3b3NFckRzVWp2aVRCNGhLUGgwNmsxa2FRMko0N0p6YlVnUThtak90elppd3E4MGx3cTl6ZVFiTk8tWGRvaC1mWW8?oc=5"
+   },
    {
     "titulo": "CPFL lucra R$ 1,6 bi e anuncia dividendo bilionário",
     "fonte": "Nord Investimentos",
@@ -519,7 +525,7 @@
     "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBJdDR5WU50UEZncUNuaDBvOEJSb1JxUGJYNld4MjE4TDRfelcwblVfN2t3VmhFSERTc0FDcHNhODZSMXdQdkxadG91Q1VyazNrNFRQc0h3cW9pcDVMcktTdlozWlBMdzZXZlF0VFVfcjhHU3NDTmlSbdIBfkFVX3lxTE1OZk9ieHMtdDJiaXQzb08xdV9Bd1psZTVvaDQtMkp1WHlBRUhEd0t6eElLU1dtV3E5eGlfN1RZdU1uMkFreHotYkVCTkZ2TkZfNGRlWGFuYVBGZkl2SkZWMmlxeDViT0dtOG5saVhwQTlQRzhLN3pzSUVqa3VFZw?oc=5"
    },
    {
-    "titulo": "CPFL e State Grid debatem infraestrutura para veículos elétricos no Brasil",
+    "titulo": "CPFL e State Grid debatem infra para veículos elétricos no Brasil",
     "fonte": "Canal VE",
     "data": "2026-11-25T20:59:58+00:00",
     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1nUWVEUHlyMENYa1F5TXZOQzBjT3BWRERwaG5SUm9pQTdpTHJCSmp1ZkhPYkNPS1pPU3hpTWM2WUNQbVlkRlBCV3pZSXRsazgtNC1sWWtTZjdWSEx5ZnUxQkxiM210V0huR1B6cXV2YWZZRE0?oc=5"
@@ -546,72 +552,72 @@
     "titulo": "CPFL Energia (CPFE3), Petrobras (PETR4), Tenda (TEND3) e mais: Veja os destaques das empresas",
     "fonte": "Valor Investe",
     "data": "2026-11-25T11:21:59+00:00",
-    "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPeVdtSFk3enZVcUNBaGhoVXF1dWU1akVrQ3ZLNW1kSDQtSllNXzlzakhKRUJrR1lidmlkUlNnQkgzejZXdFF4c3F6QnZpc3ptMTllS1JUbExZSlM2eVVwQ1RtY29LWG95VG1ZZE53U1hFQmpuMUFZYXJGWHRqeTgxWlZ6ZzVKTlBha2VvR2d5Q1hBUG9SeHFISzd2RHNmUjdoYW12TWVrcHRERjAwbGlHQ2V0S2hJaFJENWlWWHlOa2pGMWNOY2puaVpmMEdpa0l3YTVEM1NxaEkzdzNSLWZmRXAtUmxKZHdRbEJ1T1pKX3drRENZbFJ1eTFNa0pXc1VOdEZ5Y3NZYWVvdFhQMk5NeXNn0gGSAkFVX3lxTE95V21IWTd6dlVxQ0FoaGhVcXV1ZTVqRWtDdks1bWRINC1KWU1fOXNqSEpFQmtHWWJ2aWRSU2dCSDN6Nld0UXhzcXpCdmlzem0xOWVLUlRsTFlKUzZ5VXBDVG1jb0tYb3lUbVlkTndTWEVCam4xQVlhckZYdGp5ODFaVnpnNUpOUGFrZW9HZ3lDWEFQb1J4cUhLN3ZEc2ZSN2hhbXZNZWtwdERGMDBsaUdDZXRLaEloUkQ1aVZYeU5rakYxY05jam5pWmYwR2lrSXdhNUQzU3FoSTN3M1ItZmZFcC1SbEpkd1FsQnVPWkpfd2tEQ1lsUnV5MU1rSldzVU50Rnljc1lhZW90WFAyTk15c2c?oc=5"
+    "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNNEJuX2kwXzJYQi1aaVFSWFd3NGtkMnlMRkl4SnJRRW9BWVhzdlgzVHA0a3NyZ094R3FXRDRwZ1I1RVR0UERUbk8yLUhHMzd6cVA3c2RKYTdZaXdtTlBjYTg5cEhUcUxMWlFaMmFQendHUS1mOWp2ZGhxczAxRGh4X3FKdUxrYWNGWE00Z2p2ZW5HdUFrazdVay1KQVh1eVNDYUx5VXhRbnY1d2JOSFN3TzYtUlhtZjNhY1hvOE9DSHJpUjhqRUNMdGlyTTNvTmFzd1JGTFV3d3lMRzRLYzB2Q1pnQ0dtcXRXUl9fZUxJX2Z5SGNnVGtJZW80b041YWx2VGJr0gGSAkFVX3lxTE95V21IWTd6dlVxQ0FoaGhVcXV1ZTVqRWtDdks1bWRINC1KWU1fOXNqSEpFQmtHWWJ2aWRSU2dCSDN6Nld0UXhzcXpCdmlzem0xOWVLUlRsTFlKUzZ5VXBDVG1jb0tYb3lUbVlkTndTWEVCam4xQVlhckZYdGp5ODFaVnpnNUpOUGFrZW9HZ3lDWEFQb1J4cUhLN3ZEc2ZSN2hhbXZNZWtwdERGMDBsaUdDZXRLaEloUkQ1aVZYeU5rakYxY05jam5pWmYwR2lrSXdhNUQzU3FoSTN3M1ItZmZFcC1SbEpkd1FsQnVPWkpfd2tEQ1lsUnV5MU1rSldzVU50Rnljc1lhZW90WFAyTk15c2c?oc=5"
    },
    {
     "titulo": "CPFL pagará em 10 de dezembro mais uma parcela do dividendo aprovado em abril",
     "fonte": "Finance News",
     "data": "2026-11-24T22:30:53+00:00",
     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbFlsb1ZvVjVVVkRqcERRR0dNTTliWE04YW9udVp4SjVnbXJ2U1NYN1E0UVVWb2RfOU5vaDMwRmtBTDg5emVudUZBaG5GWDgycnNJZ05hUjBrMWFnUi05a0lmbG9pOVRaLWlFQkpmVHh6SHJfdXd3bW5xZkktU0d4eEFlbk1XZkE5aVVlRVc2X0FsTVZfRkgzbEVEUjd6a0Q1eklYdnJfUDg1N0p5ZjFka1JMYw?oc=5"
-   },
-   {
-    "titulo": "A STATE GRID E A CPFL PROMOVERÃO DEBATE SOBRE O DESENVOLVIMENTO DA MOBILIDADE ELÉTRICA NO PAÍS",
-    "fonte": "Petronotícias",
-    "data": "2026-11-24T22:30:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQVGxUNExIQmdjZmVZUTNlSFcxQUtUNWRQREVOUkE0RUFSUUMyZ09jMVdNdGlndXUwMUhYcEFFR05jY3g4akJaR21zdkt0cGdwMW01ejZrOERjZEk1U0cxYVNYeFlxOEVoMmlQZjhuTHdDRDdZR1p2QWtMazc3eThyZkN5VG5IQUZaQ1Nmb3RjeG5DTFlzTHpxaEtCQldKMGxNdVRUVlh3dklBNExVTzE1ZVV6TkVIc2VSbFBiWW1tZjlHZw?oc=5"
    }
   ],
   "ENGI": [
    {
-    "titulo": "Vereador de Bela Vista leva à Alems queixas de quedas de energia e cobra resposta da Energisa",
-    "fonte": "A Crítica de Campo Grande",
-    "data": "2026-11-26T09:36:20+00:00",
-    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNRjJiNEpqRU9iQmJqOFFOSE14bGM0LXdfc0FqZ2QxRUVtZUFkSzl2eUdIVVdJQXJHeFMzUzZtSHBQS2kwMV92c1dtbFV1d2xfUE9rY0pEOGY3VV9tTVlOREJfc3QwRmpyQVVCTk1nb21pVUR0Q0w4a25idlRhSGp0ZVJlRFc0bndqaUlDSG10UVUycDNha0dfMEhVckppd1k?oc=5"
+    "titulo": "Energisa e AGEMS discutem prevenção de riscos à rede elétrica em MS -",
+    "fonte": "Folha de Campo Grande -",
+    "data": "2026-11-27T09:22:30+00:00",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSEN1YWVYV1hUa2tXa0x5QmRvb3cyYzBvWEhuUDhhek1PbjVkWTYyMGJ4NnBrQUN3MldtN2dGME8tbWVtUzh1bExXMXJCWEQxd1VxWFFHOVNxajMyQ1dUNDY5clhOVkZLQkYwakc1dlhyUkhFSjFPTjM0ajNndjY3UENFNmgtd1B6NzRRN2dYeTFPVndFckdfQk40am1VV05X?oc=5"
    },
    {
-    "titulo": "Deputado Rinaldo busca diálogo com a Energisa para sanar problemas no fornecimento de energia",
-    "fonte": "viamorena",
-    "data": "2026-11-26T01:34:08+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQenZEQmxGQVBQRk1iR1lMbWg0Qmx5UC11SW5aN1NEM2dERkVvalV3TWFPcVV6d3F6Znd1NlhYV3VnTmpxaDJUcWJQNkVRNkdyQlJSNklPQzlYS2wycmFvcTZ1Q21CTE9zaWtiZVRUYWNGNE9RSnl6ZUR3RUxzQ01PSDZSbF95dmJ1Tm1USV8tcTNVUjJMQ29fVmw2UU95QW5HUF9jdm81dzllM3huRzZBZEtQVDdrZDBlQXVBMy16NTg0cTE4bEpMNQ?oc=5"
+    "titulo": "Pollon cobra solução definitiva da Energisa para problemas enfrentados pela população",
+    "fonte": "Diário MS News",
+    "data": "2026-11-27T04:00:05+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQbnNVcjAtWEUzRGwzOFpPZno4eTE0S2ZfZktYblpkdll5TGZrUFA0dEU1MlJsN01KWURnQllHRlNDWk5RZ2VMcU1IUFl0aWR5ZUV2bm9FWjdyRld1bEk5VS10bG5FMVJxT2diVG9aUUZ0UjFzWTNFSFRUNEZsU0xSSkVzX0RSc2NzZkJGNnJJRTJJcjZjVnRZRzh4T1loakJYRkw3VGRaN1dacWVWaVZCOTJWWGc3ai1Ib1djVk5uQWc?oc=5"
    },
    {
-    "titulo": "Governo recua da venda de ações da Energisa",
-    "fonte": "G1",
-    "data": "2026-11-26T00:08:17+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQWDZlNXRNem9RVnRkMzJGSjBOQ05pcWtHaS1ybVRMSFRLMDFBRUpJaHJqZlU3YXBYc1VGZmliaURXWVl0RFROblNpd01FSnBJV1FmUHdic3lrUzhpM2FNejduZHlOUUloS1pCbU1aZ0RGczBRMjhac0tVWEZYLU10ZDNmTDBuVWhFeTBzYUxMWjl1SmFuVFI2cW4yYWtiWEtnUjhHS3ZtMTNRWlptX1A4ZHFsRVpiVDBFbk5nbVFQSXpzR1VpMzZ5T3ByTdIBywFBVV95cUxQWDZlNXRNem9RVnRkMzJGSjBOQ05pcWtHaS1ybVRMSFRLMDFBRUpJaHJqZlU3YXBYc1VGZmliaURXWVl0RFROblNpd01FSnBJV1FmUHdic3lrUzhpM2FNejduZHlOUUloS1pCbU1aZ0RGczBRMjhac0tVWEZYLU10ZDNmTDBuVWhFeTBzYUxMWjl1SmFuVFI2cW4yYWtiWEtnUjhHS3ZtMTNRWlptX1A4ZHFsRVpiVDBFbk5nbVFQSXpzR1VpMzZ5T3ByTQ?oc=5"
+    "titulo": "Energisa Paraíba é reconhecida no Prêmio Melhores em Gestão 2026 da FNQ",
+    "fonte": "Turismo em foco",
+    "data": "2026-11-26T23:11:57+00:00",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNM1hJRDhXalNCWll2Z045WHc0M3NpUFl3T0Z4RVNpSGVReF9EMlo3NDdFMkV2MHhocDQ3WGlVVkJua0NfRGN0QzlLYVhKVVBrR1gyMFhteVpPSk5HMkVOOTU2ZU00cjctOFlHb1JPZEc3VWU3dlZ2MUJDdTdrZmtxUXZIUDZkUnZDUFZFdnZQaS16SlFzdVhnUkEweHZFekVmak5qOGNkbS12Z3RYb1NnNGd2LVk0dw?oc=5"
    },
    {
-    "titulo": "Em um dia, Energisa é condenada em quase R$ 50 mil por falta de luz, faturas abusivas e sujar nomes",
-    "fonte": "Midia Jur",
-    "data": "2026-11-25T22:49:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxORmJiQlBqaFNJa09iUERfQ1pDSG9PbDZ1elFVMUVydUJRc1c1LUVSdWhHTTk1Nm5xaXNtOWV0QlA4T2NwWVpEWFR2MDF5bnpwb1lmR2tpRG04WTlodGRKOGN3MzFDYnZHSGxYU3RqdGZmeTk5MWNiVURMcGxONjRCemxjWV80V0ZvMF9KS2FsZnJaVmh1N1hnUjFEVGRYQzBnSjg2U19iVUZHaWhvNkd2bFNkVEZzdXJjWW9IeDE3andPQjVjekczZEdrSjJ4VURuUl9Fbw?oc=5"
+    "titulo": "Instituto Energisa e IBM oferecem cursos gratuitos de capacitação digital",
+    "fonte": "Infonet",
+    "data": "2026-11-26T21:29:41+00:00",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOUm5sazd4czJ5WE5ZU09zdHhOc1VTTHRhd0Y2MlhlTDNfTjZINEdFNTU1VWVBUFAxUUQ3QkQ1WFNoVFVFNzJKSGx4MHJyOUxxS3lreWZfOFFHR3lkdkhMMlVLNmo0WnczVDBjUnJoYlU0aFBkeXh3X0pjV0NGSURhYUlsM2hhMUEwQWZwejc3X2gydzE4eU1YckxRLVQtSTZJSW10V3ViMG9weGp3UUl0d3BSLWFRdw?oc=5"
    },
    {
-    "titulo": "DESLIGAMENTO PROGRAMADO ENERGISA-PB | 29.11 a 05.12",
-    "fonte": "Jornal da Paraíba",
-    "data": "2026-11-25T19:22:06+00:00",
-    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNcGhwV3FEVVZDemNOU1JleDc4azVFYU13ekZGcVlmTzNWSDh1eUNZZ1BvWTYwZ0NjZjhfdG1XMExKMmw0QnprSU5NbnF1U3VkZFFXUnE0anZBQWh4aFhEeVAwNEVOSEh3MTJIMmdMalk5NkdmVnRrbTFhVTlxeU1QcDVpOEdXVXJMekxRWnhLMWLSAZgBQVVfeXFMT2otd2VKX0FoajJfeXBRYjNRZ3dwTjJzblVGejBqcG1DeUszWXhySWd6Q2RTUDdENUlPMERBdU51aUZOUE1wUm80T1ZNNlk4bGZ0Q2hFS1hjQkxqV0lUYVJtdUV6bFA4bXNOLVJKSU1nSjUzSVdyc2NpekhWRlhnODc4c0VWREtVcVkxc0MzVHdJSFhydUJ5Z1I?oc=5"
+    "titulo": "Pollon pressiona Energisa por solução após falhas no fornecimento de energia",
+    "fonte": "Diário do Poder",
+    "data": "2026-11-26T21:20:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPbEtqYUljb2dSN1JDMmY5bHBMVjNyZ21ubW9PZEtRd05vRHZRWC1pdTdhcDZ2VThMSWU2dTZVRWdfQUJOTkdxNGQ2eWFnMHpZa3BHUnA4WGFJV2N5dEtkV01FM3dyMnhLR1NmdWRYdVZkV0UzcW9RSEhhWU45cHR6U3NtRVIta20wVk0zQWh0LVZQOXNQVU9VaEhWRGNacXlBOUwyRUZ1THd1VjNNUGttQnVaUXQ5SGxXVGU3MTBIWkw1bUlYa29KN19lMjF6QdIB0wFBVV95cUxOQlFpbDRHTktfOHp6WXlldXJ3d2NLLWEtZk9mUFA4ZklYdVN4YndTRnlGVHA5TmFrVDdValUyVzFudjVzcVRSdXlHWW5JWndiYWRBNzR6b0tkTzFaYTVTR3dnaTZDdUxHT094RkdpaUo5N1R1ZVdDc0J5bFE3emJfYmFpTFNybVZRN1hsNWtVbnptNDQxTEk2RkZ3eXIwVEFjNzNFN2wwdlpDTnZMWDZpUVlSTnV6TkZ6d2NaT3hPanJTY0xwYU5LY1JBWDFRUkJXZUF3?oc=5"
    },
    {
-    "titulo": "Consumo nas concessões da Energisa avança 5,1% em outubro",
-    "fonte": "CanalEnergia",
-    "data": "2026-11-25T18:32:53+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPaWhvMUh0WURiT3JVdTNYU183cTdqME9iUlRpTGRscUF0WXZ1dHhlYkJQQk90TFdCNGtrUHlzYVNNQ1hfRm9tZWl2aHBRVFAyUHQwVFItREt1WTJIcnhkX0tlRGlYQXlwaGlON19ZMVRPeVRyR1N6SWE4T1QzeW9hMTZrUEQyS3c3TnpmWWFMVTgyR1lra3oydW0taW5vcXY2ZUdSTHBlZU0?oc=5"
-   },
-   {
-    "titulo": "SOS Energisa reúne 229 reclamações em MS às vésperas de audiência pública",
+    "titulo": "Em Brasília, audiência contesta dados da Energisa e marca nova reunião para dezembro",
     "fonte": "JD1 Notícias",
-    "data": "2026-11-25T18:24:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPWlhtQ3RuWTJXX3JVM0Q4eXFmdW5od0p5d0F0dHRiTnBtVEh2UFFibFg2MnpKcTFlaWFKb2RRSXRGeS11RWZfdmU3N2c4RkVVR05xQm1WbDlqbjk5bDRNR1R1bE1wbllNS2xPejVWdUZDa0c5RXV2ME5DTFJhemh5eHlXU2EwZHNhQmxsRl9EUnRxcFdlVXBDcWxVQ2hPQkh0aUhxRlN4dFpfTXdONHN2aGJfVGFHeWhqbS1MaW5JeGRKZw?oc=5"
+    "data": "2026-11-26T19:28:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPUWlCWmN4TE9UQkpFbTZ0TjZnZFJCWTQ5ODNJbzNGdTdocnkzOGNCcjdHdU8yY2NRT21GRlpRX0hwRDVaQkVrXzRDbTZmTWZGeDJRSzNLQmhCWkJ3Q3dHVk1ueHNBc1BXaWRGN241ejdqRHcxTWlFMWdpcXZxQXZab0x1NU9mUjJLRmZHQkZpc29obWxJUnJPcTJacWFMLWlUOXdTRExIbXFVWlB0MXdBSFBmWTRjelNmdldDR2xBcjVXQkdYUVpUMHlaZ3ZibzVlaXc?oc=5"
    },
    {
-    "titulo": "Abilio diz que presidente da Energisa pode ser preso se voltar a cortar luz do Parque das Águas",
-    "fonte": "Isso É Notícia",
-    "data": "2026-11-25T18:12:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQLTd1eWhnOWxDMzNRa2pxNm91Vm51NFZMaU9tMElIT0pNbnNZWUMxOWJBd2dTVkQ0OVh2V0lUUzNEUUdoM21uOGRkeTFGWTFJamFUUGc1azAwMkJraFdrR2M1SkQ2MVRUbHdmVEFjTGNia2NqdmhjaURKdVVhdnp1ekRXWnpZOWJhRFFRMk5nR211ODRweXVEa0dFYjhpTlN2Tngxclp4Z0Q1SGR3Y212S0d2bTBJWFRMZGdYSU9tQmJfaVNVSFhvNndqcE9EZGJhaDU4cUgzZVJJcUk2ZDNrazdEaEVzZw?oc=5"
+    "titulo": "9º Festival Ver e Fazer Filmes divulga programação oficial e destaca filmes patrocinados pela Energisa em Cataguases",
+    "fonte": "Energisa",
+    "data": "2026-11-26T18:41:08+00:00",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOUTg3R0pQdGRNUVlZd0hYS2liQ29oaVhGS0JSXzkwTkRjVmF2ZHFXOTE3OGVlUzFYQWdtVXR4Sl91U2E0WVdnZWF4YTFnNjRTRkc1eWZhZEJrREtaa3FrZWZnSEt4QkRTTi0zQi1FV3pqbnBPMHJrTmoxVVVKX1VaTG5RVWNZV01ZT09wR29XVVYxY282U3J2YmJ6NjNVZDYzNzdDaDlkcC1EX3NWTWY5bkJLcEdDOUFFWjBReA?oc=5"
+   },
+   {
+    "titulo": "Consumo de energia cresce 5,1% na Energisa, enquanto gás para térmicas cai 72,7%",
+    "fonte": "MegaWhat",
+    "data": "2026-11-26T18:03:30+00:00",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNUEhTa3B2OHROQjNKUER6d0otcjZkQmJvQTgtUmdKQVZ0VkNGM015dzI3Z0RPWkJnalNSSjhXX0ZMNTROOHBQNVpya0lHSjRQcXAyd2MxMmNmY2RnRjBvaGlLMEEwTFVCYXNhVXpXRVBhbHVoYW1keWtxbTFhZ1BzTHBSbnI3SUU4ZEZmXzV2ZTZDX2x4dV9TSUkyaXNReHZHT0tCWFI4LW9pM1N2alEzb2pzWWdnaWlVcnpmZ0ZqWnNZY0hTcFBILWRPZGpMdw?oc=5"
    }
   ],
   "EGIE": [
+   {
+    "titulo": "DE NAMING RIGHT À PROPRIEDADE DE MARCA: ENGIE OPEN 2026 CONECTA TÊNIS, CULTURA LOCAL E IMERSÃO NO ESPORTE – ABC da Comunicação",
+    "fonte": "ABC da Comunicação",
+    "data": "2026-11-26T18:50:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOQnE5U0Nwc2w0UHY0UnhYT280U0J3VG5EalNYR0hleHJVRTVpRXkyWW9KN2lQYXNCeFFmYmhwNm9QQUtlX3Y5b01pWlFGazVQTGNDVWFialRqamJySGxWc3ZELWdPcEtNSDJLOGk4cWM3WlBNdVd2VDB1S2dYbHliRC1mNkU2SnJtV1NFclNERDhjdnhhR2FxTGcyLUxsMVBLcHdScUZwRHdpUlB3VTRaNGtHOWpHZkxkRzg3ZUM0aVNPS2FBQVlWUlhaemRHbVkwbmJZQ2Rqaw?oc=5"
+   },
    {
     "titulo": "A ENGIE BRASIL CONSEGUE A LICENÇA AMBIENTAL PARA INSTALAÇÃO DA LINHA DE TRANSMISSÃO DO PROJETO GRAÚNA LIGANDO SANTA CATARINA AO PARANÁ",
     "fonte": "Petronotícias",
@@ -643,12 +649,6 @@
     "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPeGhMaHkyRE83akVlQlFPUVU5QzRfd1ZDMzBqVEI1c21VajVRdy1tRmR1LVZkRnpFQVk2OVNyU1F1WVhSZ2NoWTZ2aThBYzVBR1h3OTlQRG5NdzVYd1VaUEdNTExiZU1jZzhzWnlhM0J1MGw1N01BYlVGREdSYlNPQkItdWI3U19hVUI4RHVuaU93OTVoVTFYeHg1b2NobXpBUkdyN2Q1ZGF2bUtTMlRMcEtwdnE2LXRuc1ZLLWhKMjNkWDlFNFVvRXhvTWRveUtiNGFycGNGaXFveWNRYUhNWUg4NHlHOGpYZGxvbU1uWkU?oc=5"
    },
    {
-    "titulo": "ENGIE inaugura 450 MW de capacidade solar na Índia",
-    "fonte": "Além da Energia",
-    "data": "2026-11-16T10:00:03+00:00",
-    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOa05vQzB6Q2txY2ZCTF96bjJNZVJVS0dKS0pKZkdsMFhLTGtMcE9TNlRuMm5zbjZxVEtra2hkTHNKN1FsczZHWDFpZGVmdS14WUM2TUtEOFA4X1NSZ0tUMmdERXhYM0tTOHd3NHY1RlFpUUlCMmo4bzVCS0hfcnNzblFuVEgtanZDTklmVGNEcE52TVRF?oc=5"
-   },
-   {
     "titulo": "Engie Brasil vende 155 MW médios em leilão de energia e reforça previsibilidade de receitas",
     "fonte": "ADVFN",
     "data": "2026-11-16T08:00:00+00:00",
@@ -663,6 +663,24 @@
   ],
   "EQTL": [
    {
+    "titulo": "Equatorial Alagoas realiza ação de negociação de débitos neste sábado (28), no Centro de Maceió",
+    "fonte": "Equatorial Alagoas",
+    "data": "2026-11-26T18:10:40+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPakg1ZElEamt6Zm9TWUs1MUtUT3hucWg4WHIzLUJnSlR1WmFqS0R5ZVA4bFZVLWg5MERyWUsxR2dJVXZEVDB3YkNFb1FHeVJDZVZ4Q0F3WWMzN2hOUGZoRmhfN052bzk1eGtxanpCLWFBTWJycEJLUGZPQzVEWkxUM1NaNjJJV3BUOGl6UmJsWGh0aURhTjlGZENTakZfekNpcGMyNmpieWNHNHRaWnUzSkRicHNLLWw2c0psaEJ4N1MtQW1pUzZadQ?oc=5"
+   },
+   {
+    "titulo": "E+ Caravana: Equatorial Pará realiza ação na Praça da Matriz durante preparativos para o Círio de Santarém",
+    "fonte": "Equatorial Energia",
+    "data": "2026-11-26T14:00:11+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNb2FkOTNCTmlYVkE5YUhVREFJZlJ2M0lESlNUNExHT0FGWll6TXFZekJBdDVrZG8tWXpCVzJPR2lVcFRmSUxuNGwySE9IRlM2MWdBdk4yejBoUVBsQ3RBdFR3Qzk2WDhfQ0MtRWFsbDEzdENCdHNnZTMtRXdqWW9DWENyWkRrUHozdTFJc3F0U2JYTTBobHBmal9zV2JSOU5hcHYwY3ZlTjAwQ0puNXBPN1RTYUxxbldhMGZrVnE3SDZBZkVhaE1DbFU0bzlkcmpmZ0VZTzVZYXU?oc=5"
+   },
+   {
+    "titulo": "Equatorial Maranhão adota nanotecnologia para reforçar combate ao furto de cabos",
+    "fonte": "Equatorial Energia",
+    "data": "2026-11-26T10:52:46+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNYUR6SHpGWnkxZG1wWnZTMk1rbGNIODVEbXZ1a21BcjUxTnFfRTFTc2d3THl4SWplSE1Jbi05NzNHM0NqNmZ4TGpQdlliNFdVZnp0YUlrV0ZJT3lER3I0WW1WMXBXVHFEc0Ffd0lRWVFQMm03dWFPNy1oQW43eUJ5RkVOMi03VVU0RHhPTXB6U0VLV01vb2FRR25QRDFRRENkTEUxT2ZSWjdlLXhkaFFEaE9icGp3T2NV?oc=5"
+   },
+   {
     "titulo": "Festa da Música no Maranhão 2026 reúne cultura, música e solidariedade com patrocínio da Equatorial Maranhão",
     "fonte": "Equatorial Energia",
     "data": "2026-11-25T12:49:13+00:00",
@@ -670,15 +688,9 @@
    },
    {
     "titulo": "Equatorial Piauí investe mais de R$ 113 mil em melhorias elétricas de Nazaré do Piauí",
-    "fonte": "Equatorial Energia",
+    "fonte": "Equatorial Piauí",
     "data": "2026-11-25T11:45:25+00:00",
     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQaFkxdmFWZXdUelIydnBSWmtmNmpXNVh6d0dDSFZPOWc0aWFkMGl0X2VnZ3dhMkhBOUVZVXE5aTd4NTYzbFVWcXpKTERIMmFRbGoxYndVT2RIb0I5c1JtbUMybmhFbjFBSUY2WWpOaFAzUUVqX2Zma2FabGl3WEVwNWl1ZjFmU2xDbkVfMUl1b1hBLUtxNll6ZDJsZmdrcEpFQWN1ZzdUdVRxc080cDdqQ285SmRNdnVDZTk5S2xB?oc=5"
-   },
-   {
-    "titulo": "EQTL3: CPPIB chega a 5% e aciona regras da CVM",
-    "fonte": "ativovirtual.com.br",
-    "data": "2026-11-24T15:47:13+00:00",
-    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSWdoLTRBeVdab25zTmM0d1R5MVNXR2JBSzVOOTh5SkIwd1VJYmZQTjFRUHhMdENjZGVhZmVWTlZDeDc2bDZOZnBOMVhqMzJMV2pCWVhUMzM2aEJVZkxfSDdJQVpqMXFSckpWaUg0aFpSUXdYanFaY09oMmZTbVE1N2RSSGJrT0tRV2w3NDlQbk1sS3NMMXc?oc=5"
    },
    {
     "titulo": "Equatorial Pará realiza serviços de manutenção e melhorias na rede elétrica em Cumaru do Norte e Marabá",
@@ -697,25 +709,13 @@
     "fonte": "Suno - Investimentos Inteligentes",
     "data": "2026-11-23T15:00:17+00:00",
     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPcWMwSmNHQmtHRmU1ai1lelFackFTX0JOaVpyOUFRWWFwYk10NTlPMHg3OXhabTRGcjRQXzFYOTRCbG9HdFVRcVlOR0pHcWFYUGI3UEJ1bG90Q3FFcTNtTHNyaThkY2s0aEp5NjZzRk8yakltVHhQX1NZamFqdkRTYUdR0gGHAUFVX3lxTE9pd3Y2aFBLVHFGTHE3MW9MTkJzWFlSempVbHBxZVJleFRxbEh3QXdjRElVSW1ib3pzakdOUDJsSFJxWEpOc2RpN2pEcHlfckZiMWNnc2Y2ZmRNdVBpUHRVU2ZOS3l1U3FvQ01VSkpMTVVNUFBVWEJpZlIyUUlrQXU1TVcwOEdtUQ?oc=5"
-   },
-   {
-    "titulo": "Equatorial realiza desligamentos programados para melhorias na rede elétrica em Ananindeua, Santa Izabel do Pará e Muaná – Equatorial Energia Pará",
-    "fonte": "Equatorial Energia",
-    "data": "2026-11-23T12:45:39+00:00",
-    "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNdzA5NW14d0t1bDJGSVNCeWRwZ1VSajdiV0xNZDRmeHgwV1B5UklTRkR2Y3ZFTGJQbHkxR0RjU2hid042RFVWX3R6cmZjVjdfbFFyVkp1ZkZsMTJFekpPbkRNWXpiYWRFYTBYZHBBQ3dsQjJDN016SG5vdnJITnpxYmwtV3Z0YzdBUFNpOVR1NllKY1NoUzd5eGhRUUVqUGZyTDRzQmc4bC1ySXFpWjFaeGFYYlZrUXhUblZwTEZlT3JmOTlVb21sY0FhbkQ1TFF4S2p2dnFTZDZ4TnQ2eURVa01VcDhRcVhnclItWg?oc=5"
-   },
-   {
-    "titulo": "EQTL3: CPPIB chega a 5% sem mirar o controle",
-    "fonte": "ativovirtual.com.br",
-    "data": "2026-11-23T00:30:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQV21RQ2ZuTE12SGZtb1BGWVh6aHhSX01VbGs0czdhZEEyT19Gd2JmMlYxMGk0ZmVVM0Fqb1oxQzAtcWtsTzVXSng1Q2tKN0I1TUhVZnhBQXhxSkJGVUVZU1dvUGRlUzBucHI2OTZpZTBheE42azVHaFZKMGFYNDBFaHhoMHpQc1JMYTRSUm5GWnE2d1E?oc=5"
    }
   ],
   "ISAE": [
    {
     "titulo": "ISA Energia (ISAE4) no 2T26: Ebitda cresce 23%, mas lucro cai 32%",
     "fonte": "Nord Investimentos",
-    "data": "2026-11-25T09:18:11+00:00",
+    "data": "2026-11-26T07:48:40+00:00",
     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQWU9iTHF2RG9IUll2LVZ6andvTlVIU1ptWjVabmloSG1BcHVrblRlZ2Njcnk4V3RQQzJwRTl1RElXNU16OHhpanp5SFZ6c0FQR3h0UVF0VFpTTi14dnVQeGx5UUk5ay1wdDZpWnV3NHl5YWtpSllHQ1RWdm5ydTVhaNIBhgFBVV95cUxOU0MtZk16Wi1IejdJei1IZnJWSzM0d29IOXgyWml2R0hhNGlvWGRKYmdCTDMzNTYwOXJOZUFZWGFnZVZaYjZkTEhVT3EwX2JDdUxCVUJaSmJ4N1Q4a28yMlpJaU80RzlyZGhTVFVkOGxhYXZLTU44S3lJVUI3UWtoaFJSbGxXUQ?oc=5"
    },
    {
@@ -729,12 +729,6 @@
     "fonte": "Times Brasil | CNBC",
     "data": "2026-11-23T18:10:00+00:00",
     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVHdibzA3eTB5V09KYkgyNUVETlB4d0dRRFdqNzdkTGRDbGlnMjVzM19rdE9XNVc1LWQzb3JTRDdtcTJfX1U0THoyLWRWbHE0eER2NnBrME41QmcyckFGZTk3ODFScmJFOFJ1TmZzTHc2VVRDa0ZxcG52MnJEQ1pwbmEwUUVqdVlWcFM1d1o5LUhZYjZRY2lJbDJQWUlYbm05aW4td181SQ?oc=5"
-   },
-   {
-    "titulo": "Isa Energia (ISAE4): Detalha resultados e investimentos em 2026",
-    "fonte": "Acionista.com.br",
-    "data": "2026-11-23T14:00:24+00:00",
-    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZUJGQUxfTERhR09RLV9Eb19KZnNGd1hzOWZFTHpNbWVtVzlxM3lEdGd3cTNycWlETTlkeFVOLTRZYUZ0UV83clh5dm5FbDBHeURuUHplQll3YVZCUUx5ZlhoY3RLUVk3TVlYdHhRS3Y1c0JoRjRtZ1RNUldTYzFKV1J4R0pROUx6eG12VVlRVQ?oc=5"
    },
    {
     "titulo": "ISAE4: lucro dispara 246% no 3T26; o que explica o salto?",
@@ -759,59 +753,71 @@
     "fonte": "O Petróleo",
     "data": "2026-11-18T10:44:08+00:00",
     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQazZYWnVURlVJVEF1bEFLTFVkNVpwdnlWVjBDVXhvSm4zaThiazJCRDhlTGhZSlZqa1ZSY19aTG81b3UyWE9Tbm1iRkpKVTlPU2x3SC1tN2ozMG5kYllUMXR6VTRzaUU2WW5JX0Q1REYtT2ZaTGQ2UkxHOXpjTDZTNGJEODZUd3A5anJSUEExMkFMSmoxLTkxNlFmbnJEWjk0bzJyUVd4RkNiT0EzWHBnUmxzZVBxeWtWcDlKeA?oc=5"
+   },
+   {
+    "titulo": "Isa Energia amplia certificação ambiental para 93 subestações",
+    "fonte": "CanalEnergia",
+    "data": "2026-11-13T13:24:34+00:00",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUkk0YnZRSTBXaGk1Y1dPMkdDWnNkTFFoMDBmRTctaFFSaEtJcHpRYjRqT2RON29wdDFhdEhTV1BLVWg5RmdEaExYMXFrMXEwOUI2bTFOSXVUVkVUdVlRYm5MUmdMSFBZRGprZkstT0VrUUg0Qk5ZLVZhME50QS1tMkg5Q2RkLXRpR2h1U0NLMkJtV29EbnRudC1BejA5bXFTT1hQcUljZHN6NlVXTXA4eQ?oc=5"
    }
   ],
   "ITUB": [
    {
+    "titulo": "ITUB4 - Banco Itaú - Resultados, Dividendos, Cotação e Indicadores",
+    "fonte": "Investidor10",
+    "data": "2026-11-27T06:18:44+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1TdzJFbjEwRFdLbXJ5dFVQZjk0QW1hbjRoM3lHOWRjZXc2b3p0YjBTaENUQy16eTlVRmhPeW1KS25VWEFfeC1Lb3hYbWFOR280aXc?oc=5"
+   },
+   {
+    "titulo": "ITUB4: eficiência e qualidade do crédito sustentam expectativas para o 3T26",
+    "fonte": "Acionista.com.br",
+    "data": "2026-11-27T01:10:41+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPWjZOV2pyWGllaFpwWVhlZ0dPTEs2RmQxWjlNR182QkVsV2NLVkVBQlMyUnhDS0ltdVpqcHFYYkhtR05JTXl2ZFRmT2EwUE1xWV9lbnNnSTctZXdxSUh0WEg5M2N2VUpXTnREZEo4bWV2d3dWU200bjlvS1E5US1RQzg5anFPRHdrdkNZNHhneGk3N0JlYnNTV2FQdjVocU1qT3c?oc=5"
+   },
+   {
+    "titulo": "BBAS3, BBDC4 e ITUB4 rebaixados com novos preços-alvo",
+    "fonte": "Acionista.com.br",
+    "data": "2026-11-26T23:50:25+00:00",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMUViallfdVlTYVAyZUpBUldMVi00UEVCZFh3RUxPb3h4MU5SaTV1ZklfMzVHZVNNeFJoT3VGTTVVY1M0SE5rRVFuZlR4VEhqV1lrc3JWcEUxN005WFpkNW9WYlRJdE9yUExscHRmZ3FqNVUwR0l5Q2N5LVpPSWtDdXRJNGk?oc=5"
+   },
+   {
+    "titulo": "Itaú Unibanco entra no Minha Casa, Minha Vida com financiamento para imóveis usados, ampliando concorrência na habitação popular no Brasil.",
+    "fonte": "Repórter Maceió",
+    "data": "2026-11-26T22:50:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQYVZLblpCTG40bzBNRkNGMGpvZDJTVHhwX3hnQWU1ZUNJWEtiNkRxTlI5RlhqMWdkRVRpLXdWcjdpOWFhQnBYXzBuY2VZdWhMMTE5azNXZllWZnRCMW9raGd3eGdSNE50bVBOdTBieTVXVkp1OGZHZElETG1oT0FEWERBcHNBZmI2cmtaOVpSWGRjM2lQOWJZUXFSaFNLTHlIdWJ4MERVVFRIT0Z0Yklkc3dhY21UckFwUm05Wk1qMjdQYldLZExVdzUzeEMyNzFlbFBaTGlGTmNsMnBsakd6SnNGbGJWaklBUm5ieGdBTTNsalprQVhNM1BHTQ?oc=5"
+   },
+   {
+    "titulo": "Itaú Unibanco entra no programa Minha Casa, Minha Vida, trazendo novas opções de financiamento para imóveis usados na faixa de renda de R$ 5 mil a R$ 9,6 mil.",
+    "fonte": "Repórter Maceió",
+    "data": "2026-11-26T22:05:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOaUh2UWFKZElydUNlVWx4emdiTHhucXJGNDhIa0pVOU1SdFl2YXlEREFNaXdrZzRDNm43S2diRHdnN1p5dTgxSTNvVUcyb0txMURUVTA4ZzhiZXZRY3pTSWpsR3BQU1ZfaF9TQVl2bVRtWkc4T2JCV0tuY3VFWWllVTNaR3VvQ2hTaFlnY2UzYTMySXhuUy1OTER3ZnJ5WmhodXliNUJNWmJTQW1JVjIyNUo5OE9LdVhxRUdBMzdPUG5xaHdfRHlGeHNfUUloRHdUYm42Y3QtMUxRYURYblA5NDVBSy15QjFYbUNnUXpJOFREeFlHWXNjSDd1NEpzdlZiYkZ1UlRHR3NyVEVwY0tvVg?oc=5"
+   },
+   {
+    "titulo": "Ações do Itaú Unibanco sobem quase 4% após confirmação de participação em programa habitacional federal",
+    "fonte": "Traders Union",
+    "data": "2026-11-26T16:14:26+00:00",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxObVcxakw5LVhGRmRoNnJBZFpQd0pVWmNfTjcwZFlHNHhmd1QtM2xxTDJYeHFVOHVDaFZWRzByb2o5UGRlOE94QjhGRGVwTnNsUzRpaWViOE1LWDBXMGdOcW00OW5oczJsQm9NNnAtZzVuVmFCTWZaaFVlWWI0czV6NF9wRWJueXpXTFN2VExEeW5XMUJGMUE?oc=5"
+   },
+   {
+    "titulo": "ITUB4 sobe com alta dos preços atraindo compradores",
+    "fonte": "Traders Union",
+    "data": "2026-11-26T14:13:39+00:00",
+    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQTXZ4d3llVjdKYjM5TWdQZ3dZZ1pOOW1adE9veFpOT05EZDJEbGxkdG0wYTVUT29vZTkyeVNnN2lxT2lJZ3N0SFllck5YeXFmaGdVeVhJcmJ4OWFqWnhrNWZ2eVlOdUhMSWxtSktoVFRPLVJQZHhFdF9MQTdTa3N4bWxCTFRRclFVX3pWTlFLRTk?oc=5"
+   },
+   {
     "titulo": "Investe no exterior por medo do Brasil? Então você está fazendo isso errado, explica Itaú",
     "fonte": "Estadão",
-    "data": "2026-11-25T18:39:54+00:00",
+    "data": "2026-11-26T13:47:45+00:00",
     "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMmtpS1dHWUEtMWktODNuQ0NEQ0xwM0NHVlJzdUdCYWxYMHBpSUE5Z09NRXNXbFZrVGRxWkJJTDVaa0Ewb1dFbzhxcVlKUWpYeXhrOERqUkNmSWYwZUVyTTdWSWN1VWJnaC1KcXA2czBSUGFvR202TFktclNUdXMwZTJtVHR1a0lVUTY0NnFrcjVFeUNiLVE1SVFXUDk1TzBPMEh5RGFtZmNMMTB4S0d1SjRyRmFrbFlBSkxwOW1TRTZ1UThpWlJIOHRKdEsxWlFDdmJhQTlDRnRHMFc2RXBj0gHkAUFVX3lxTE1GTEFxaWhVZmtILWFGZkRELUpfdDAyQ3dYbENpUDhYVTJoQ3ZZdW82ZGJCR1lUeXkzTHV2aERpMmdwRXBtQ1BpSzVLZ203RWJPLThoeFdPdUdGODJMUXEtekhfS29icVZDYWRNN2p3SW5yTFZRVUVuUGVQa1hJcUpIQllGVVpZRlpDQXBfZW4wbVhBdDEyQnItd1VpTy1PY3FkVHVVaFQ5ei1NMUszVHg0aVZzYjRqcmZfaVo5bWJSaE5hdTB6Tl9WSXgtT25WaVBSQ1RYU3JXY1ZFLXJzT2ctMzhNRQ?oc=5"
-   },
-   {
-    "titulo": "Ajuste fiscal não é sobre cortar benefícios sociais, diz estrategista-chefe do Itaú Unibanco",
-    "fonte": "Money Times",
-    "data": "2026-11-25T18:30:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOY2RRSmNVU2JjdkN2Y2RUUDRyaDRGSWU5dW9hRmFSeWtfOFAtdTk5NDFqZUtKemdMM3JiU0xvOFpxZldjOFlueE5rMGFYOTNySDhvNm5ScVRnSDhqdUdGOVRhNy1Qb0FpYW9NSFFra0lZdm5ybDkzOVZIMU0tXzRpQzJsNnBfaWNyYTNyNjdDWW1QaUJ5YlRZTDV4V3NUT3pIOUpuZExoUzltS1FXZHdULS1zMHZPaXNEMnVwNzJyOA?oc=5"
-   },
-   {
-    "titulo": "Itaú (ITUB4) agenda provento de dezembro",
-    "fonte": "SpaceMoney",
-    "data": "2026-11-25T18:07:46+00:00",
-    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOc0RHLXVkVEVZaWg5V3VNZUNJdWI4ZS0yZkJCelNsa3VOTTEydU12Mm5GdE1pWEExMWc4ay1PQTJTbWlPV0NqMEFRczU0T0xmTzJ2el81NUoxbzgxLWhkMlNEcFlWekZ1eGkzblcyVjRxY3gxWldrelZLR1JqQU1JOA?oc=5"
-   },
-   {
-    "titulo": "ITUB4: dividendo de R$ 0,015 sai em 4 de janeiro",
-    "fonte": "ativovirtual.com.br",
-    "data": "2026-11-25T18:07:20+00:00",
-    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNjBwT0c5NUR2WW9wSVV1LTVTOHdsN2pIbHJzamlWa1N3V3duWXA5NFo3RGxQdnFTdi1JRHhxbEdsTnRXczNqTDkzaXpsVnR2dF9hTWlReEpEZ1FqX1k3dlVpOVlqaHNIOEJHckJyMXMzenVrVEJQbnltNnZyNm00RXFOOTBQMmxrSDNpUzQ5ZzdVU0R0bXE4?oc=5"
-   },
-   {
-    "titulo": "Quando Itaú (ITUB4) paga dividendos? Confira o calendário",
-    "fonte": "Suno - Investimentos Inteligentes",
-    "data": "2026-11-25T18:01:06+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPRVdSdTh2ZjlMdHR0ZFpfM1hnSWRxQW9tLWk1OTMwV0QyVjRXQ3F2ZzVlb25iMlZjQU9MMWRiWkpsTkI1X3Z5WDVRMXlvd0ZSNkNmUWUya2lndjV0LXRzOEdSMEVLdmR6YjMxc2VkcGlHLWFQMmZwVDdJcWstSXp2V1JkcmRIREpYQVHSAY8BQVVfeXFMUExpcm1waHdOejgxdFc5bWxHcjd5eS1VVTJ1UzZVeDlhMkViMHVHaUYzVlpqYUZ1YXJ2amc1SkpUamZ5b2ZqTDMwZGlnbXBueWFXMEFLZWd3LXN1dnNWZG00WUl4eFFzLWI3eUJhTF9xMlFFZnBQR1lBZVBoLTRFNDZoRXdWRkV1aTNVWUxQd2M?oc=5"
-   },
-   {
-    "titulo": "Itaú Unibanco confirma demissões no segmento Itaú Empresas",
-    "fonte": "Brasil 247",
-    "data": "2026-11-25T17:17:42+00:00",
-    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxONUIxdU4wYmRZYjQwNmJjelkwUThjb0hzU3lLeEQxZVNENzN3WGg2Y191ZWR3dzlLeTllbEtRbmk3Yi10Y1ppOUhPZUVkZmJMeWdvc0VwX2c0SDhCQXVxN3luNDRVbU1tTkJ0VXkycXBESFdjOUJLMUlnbUpPVXZQUFUwY2U5VUs1Ml84NXZIcG01RkJ4VGlScjhR?oc=5"
-   },
-   {
-    "titulo": "Itaú Unibanco confirma demissões 'pontuais' em segmento para empresas",
-    "fonte": "UOL Economia",
-    "data": "2026-11-25T16:37:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNQjJyVkVTTy1rekNIU0hjdjRWNmxuWktCN3BfelNzNVY5dFFfdDIzQUE0ZXpCU2JkbV9lWmw4c1c2c0FJS1lkZnFyWEZzYUpGbzc2V205NnRKQXBwVURkZnRfMEFQMzRNUnZ1RVdFc1lSRVNQcTMxWTViYm8yMkRfcEpSMzRPZkc5UjhjdG9ZT2I0anN2T1J5bFNrVTVwSnNQejY1RUkwUUhXV3FZcm9QY3g2T2NoYnlMd0Zkdkw4cG9YNm9UY3Z2eTBSbFNXY3pKclE?oc=5"
-   },
-   {
-    "titulo": "Se desequilíbrio fiscal persistir, ‘uma hora a conta chega’, diz CIO do Itaú Unibanco",
-    "fonte": "Valor Econômico",
-    "data": "2026-11-25T16:25:47+00:00",
-    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNMlYtUUFtVE96NjZsbkxYbDhrSE9BS0x0SEdsbmZ1VTJKU201eDRZQlI1VmpVeXdsQkJIUlhkMk9OQ195V3R4VXp3SGJaSjhrenVaaFZnUWUyX1F4cXZEbDhCOWRxSGZoQ3ZISnh1ZzVsdF8xWTY1ZUtLSFFEOHZlX3lIZFpKNjBiTWhLZUV0QlVTOW9EV3RPY2pJWURmcXVabjlvcWFBZmxmOEFSSzlweDZvZk8teE5Ra3NxcXM0ZnVYWnRocC1fYU9PdzNWb2swWDEw0gHiAUFVX3lxTFA1S1hNd3RGN3V1Z1F1dGJtZEUtbnM3ejhhNUZYazh2bUZjRW92cWZYNHRoajFnVnplUXQ0TWdrMVh4WWZWVzgzOXlkN3plRWVmQnk3OWNtR0tHY3Z5TGxPdXlDVGpFQUVnVnJrUUtJZXcwSUVjOWtOTmxUUEg0anpyUFJHbUgzem92SkNEZ1RGaE9OV2tSd2NnX3BVeHh1bjlIT094R2taQ3k2Nm9mOWViX2FIMFcxYmVuTUJ4SGNKT2M1WnJpMmNBR1ozQlNoMk5YVmhtRVVLSTRNYnBzU0dqY1E?oc=5"
    }
   ],
   "ITSA": [
+   {
+    "titulo": "Itaúsa (ITSA4): por que a dívida merece atenção mesmo após resultado bilionário?",
+    "fonte": "Acionista.com.br",
+    "data": "2026-11-27T07:13:32+00:00",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNczBvTUFQa0hwUVNQcnU1WU9HUksxSkExano5VnlNVzJiaGV2YkVHWE1iMF9CTzh5b3hPVGEwaGhaeW5wYWpzVVBzZDVnX0NfcnlhN3BkUVhEamhDNVVycF9fSXlvUllDZlVhZ0xKWV9pVlJlM19lSjVqSmhMX196WUZJa3Z3VE92NG9lYjhFQTRQU1UybEVHelZlMnpJczN3a0VUOA?oc=5"
+   },
    {
     "titulo": "Itaúsa (ITSA4) pode economizar R$ 800 milhões por ano e ampliar dividendos com reforma tributária",
     "fonte": "O Petróleo",
@@ -825,22 +831,16 @@
     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNc2JJSFRTWVlOSlltX0FpajZ5b2JlNFl6X0VoSDVzMVAwS2JoQkV4d1lncHVNOW5IRnRhNHhmTVZIMUpwbGlFaEVvVVhyMFVxbmlQOUlVWDJNZzhDS3ZQa2MyMFdnbW1pcHBWeFo2ekxCT2NSMklSX1g2ZTgwd3pETXpIYUNiMk50YV9iWGpubVNpS3JMRFVPTWE5bWNBMzJGYy12dkZLX3Q3dw?oc=5"
    },
    {
+    "titulo": "Itaúsa vê resultado de negócios não financeiros crescer 65% até setembro",
+    "fonte": "Prensa Mercosur",
+    "data": "2026-11-23T19:57:46+00:00",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOVEZOaC1uRGhTNURKYnQyX0F2N2NkalZ0X0ZDcHZtT2NsR0FzMDdoMVJjS212dWZ3R01DTzhrQ3dMWV80SVIzd0dLb3NMQ0ZxM0xvaEhIbGFKQjlHZ1dDbEdMY0FvUmdQZ2RFOGMwWExPTUdaSG1tYlVZMWd1V2MtTnUzYzFlZWtFYWNTYWE3azc1SDZfUEVxblBWU29FUUdvX0F0TGNuRlNudDBIczk0?oc=5"
+   },
+   {
     "titulo": "Quando a Itaúsa (ITSA4) paga dividendos? Veja próxima data",
     "fonte": "Suno - Investimentos Inteligentes",
     "data": "2026-11-23T18:03:25+00:00",
     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE94aFpURThpeUVsNGJHN1lQUDdlU2dwQVlDUmI2NkNpcjlDYS03U2VrSnAxLXBKNmI3Y1FPejd6T3VtcDFlWDV4aG1pUmI3cnVBbm1YMmduYnJPUC1QeVJBdXVVbjBIWFFrd0pfcVhEUi1YalJSdjRHQ1ZISzFoVUnSAYQBQVVfeXFMT0lIN3JRQjh6ME1PZTBKRjhGVUFlWTNyQTBsVGpxRW1kTHY3bWo5czBzdG5pNlJsbFY1ZDNuUlZWSEtPdnpMTzA1Mi0zMTl6SVNjUGgyb09lbFdNWWxPVWc0ekxRaWl3WlRhTzRvUTFNVFY2WlBfTjVuSDUtbUs3UUR1cm5Z?oc=5"
-   },
-   {
-    "titulo": "Itaúsa aponta avanço de 16% no lucro recorrente do 9M26",
-    "fonte": "SpaceMoney",
-    "data": "2026-11-23T17:07:41+00:00",
-    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5NeDlyaUVwR0hfVUdaUlpwekcxMXFLeWt6cDZjMVV1dHpIR3BxNEllTmRJdlZudWVEaWx3bTY1ZnItTlp5dnJoUGRYUDhaUG5hNnUwZzN5VUZrdG82VlBJQXZJRmM5ZjI2TjYyWU1zTGJVZ1JC?oc=5"
-   },
-   {
-    "titulo": "Itaúsa vê resultado de negócios não financeiros crescer 65% até setembro",
-    "fonte": "Times Brasil | CNBC",
-    "data": "2026-11-23T17:00:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQV0pDOU54ZDdnaVdDU1NUd253NnVoc0RPZHVHN25fMWdrUzBZRHNvcEJkTWVJNS15cFkxd3M1TF85M2lEbzBOaWZqU3ZQSjNYaG9HenpldWRHQ0tIa3ViWW5zZlkxZ2NGZGlKamU0ZGZzajFwa0VqdURvWUZGSFVULTA3WlFrZ1g2dTN0eEFLVFBJU2RGLTE2aU52REFxaHpya3RhQ2NTbElWeVhrSGF5S2xVVExQbmZmTkdF?oc=5"
    },
    {
     "titulo": "ITSA4: lucro sobe 16% e ROE alcança 21,0% no 9M26",
@@ -862,6 +862,24 @@
    }
   ],
   "PSSA": [
+   {
+    "titulo": "Porto Seguro promove roadshow de Vida e fortalece relação com corretores em BH",
+    "fonte": "CQCS",
+    "data": "2026-11-26T14:47:09+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPcjhMdWViR3lVUDVYYmVlQ01WRzlRcUVfcnBwWFdRZU9fajlDTzh0enZoZnlkMWdYRmY3cWltU254V3ZBdWVJaDVJbXFvTEt4SjA4Z19meno1YURsaEJmdkwyaE1fMmhJZFFzY0ZKNDRocHZJZUo3VEhuNUpENkVLQkwxRzViOExubkFpMGNfMWZCMG5vZ0tZRHd4aDlyVlJ2MHZERUtOVkRMR28?oc=5"
+   },
+   {
+    "titulo": "Porto Seguro amplia oportunidades para corretores no mercado corporativo",
+    "fonte": "CQCS",
+    "data": "2026-11-25T23:36:06+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQZ2t1WlV2aEZfQ2RVZnU3ZUFhenFoYmItLWVNRXVvakdVQWRhcUVKV3hISzN2Vzl4SEhQbVlmbi1VQi1Kdkt1cHEtcl83ejNJX1A4RDFjMGVjZThKQ0FNOW80TEtqWjRwcFJNd1lNRkFmOUJORDBnSmhtMGhwTUFRLW5qMUM3MUV0TkVQTEtGSXY2NC1LYmtiUzgwTmxvN2VqRmJBVnlRR0lIU3JmV3QyX2poMDQ4MDg2S0E?oc=5"
+   },
+   {
+    "titulo": "Porto Seguro amplia Seguro de Vida com cobertura para preservação da fertilidade masculina",
+    "fonte": "JRS Portal",
+    "data": "2026-11-25T16:59:06+00:00",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxONEtUUThPYzdWdGxpbTdKT2dlLXFKeVNJSnpiTzViLW5XZ19Ea0hfS29xU1kzLWpNVTg5VUJZOW9xTFF2bnY4bzVTU0xYUExJdE95VHlBR1E5cVZyTDFxZjNlajlIRXBWcU5USmcwVVNHbnhSeGt2aHh3S05MZ0JWeTQzU2xodGFvYjJXQUpvdWNKODllamJlejU4b3FVU0JSUC10Z2VjNzhfNEJnR1FoWFNBT2xpZWdwT3BVMU1nU1hpdlRGS2c?oc=5"
+   },
    {
     "titulo": "Porto Seguro lança cobertura de congelamento de gametas masculinos",
     "fonte": "CQCS",
@@ -891,77 +909,89 @@
     "fonte": "InfoMoney",
     "data": "2026-11-23T10:27:18+00:00",
     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNV3lURUx4SjlKem1yRWdVZGxlcjlqeTdFM1h2bzJQNG1Hd05ieXZpcW0wYjdvVTZmMFNZWHc2ak9pVUMzbUh1S3Rfd0NoNk1hUk9yb2lYQktZaUw3TVJSbVNKczVEWkJmUElqVlFpdXVOMTFneENUVmZJNFhSV2VoR0RmTExQUzh0bGdMNHlRQjdXNENHWUxCSldhajNCMlZSVElhS3JxRy3SAa4BQVVfeXFMT05ZWFFqcm5pV1hTdUhOSmlZMWFOMzRQUzhPNXRlVU0zNkp1Z2ZIVUpXZUxJTnZFVlFobk5qWTROZ19Ib1M3d0dLd0FsY1VlXzRZZ0ZGdjFXb212cTdLUV9zdU45WEloMnZ4ZnlaU3l4OTZhNGFRU3N4VGVSc3ZsN1cxSWJCRFltbm1fdllGTnRWUEhWcExSNmRtT1NmRDR5aUxSVmJ0RDZEWkRpSlpB?oc=5"
-   },
-   {
-    "titulo": "Dividendos à vista: Porto Seguro (PSSA3) confirma pagamento de R$ 567 milhões; veja valor por ação",
-    "fonte": "Money Times",
-    "data": "2026-11-20T13:04:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPTHJMNGxKd0JRc3U3SDRtQ19hV0ZvVHczR2NqdTc2aFNZMVQ1YVdsakdfUDYweHoyM3VfSFhfSUhEbGV3c3BuSWRPdUI5NWl4LVktLUN4TkFrVTlOUkRTU3JEUHk2cmJDb09La0U2TEdsd0NxcnBTWWhxVVRKZWtqQ090NHpjaFhUbzRYUnlpWFB0Ni1BU3FCN2xVTnI5WjhtU2lQNmF3TDdaUmRaZVZoSzFWQWV5QVZBWnNRdUd6TnpDaFJUVVhSSA?oc=5"
-   },
-   {
-    "titulo": "Porto Seguro (PSSA3) paga R$ 0,8861 por ação em dividendos adicionais",
-    "fonte": "Visno Invest",
-    "data": "2026-11-19T21:31:21+00:00",
-    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQVjc3MDVkN3k1aUN3enZEV0RLc2RMQ053TWxKQXBxeFA3SW4xVFZmRWYxS1NxMC05eGFTSmtnQUt2a3UtdFVuSnIwZGJIbFpNRzJ2N3g3a21kYTB1cVNDSkpOZ3NNa3I3N1JBTXM4WDZNYi1nV2JlYmxnb00yOEV2cVFIVXlNOGhNMmxjeS1iRi0zaVl5M3ZLc2dmR3kxQzBsRnZtd2hn?oc=5"
-   },
-   {
-    "titulo": "Porto Seguro comunica deferimento de cancelamento de registro da Porto Serviço na CVM com foco em PSSA3",
-    "fonte": "Clube FII News",
-    "data": "2026-11-18T11:30:05+00:00",
-    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPaGluZVFyMjZDak15RW1lWnY3LTI1TGQ2cDZQZ2luUlJXQ2Vra3VZalVCd1hsQ1Q5aGZUNlhQYWdpcHNub091X1dURmtxYldiazBHSm5rN1FjWUpOdTZJUnR4SVYyb3BvdlhEUDluUlllR29MZEtHQ1VjZUs0YWRsZHRORGFobENkTndudmYxWkJkbi1oU3hTd255SDE?oc=5"
    }
   ],
   "SBSP": [
    {
-    "titulo": "Falta de água, contaminação e calamidade: a crise da Sabesp após a privatização",
-    "fonte": "ICL Notícias",
-    "data": "2026-11-26T08:00:36+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1vSWdKV1Q1N3FMUTNMRy1FV2FfQk91MnNPaVpDVHlvVk53blVOUTF4MGduWWVWbnR6TjN1bTRkZXdQNVJPeXZjRlV1dFdoUWVvYzhDVWt5LXdBMnpiZzc5S05mcmVqSFZudGc?oc=5"
+    "titulo": "Entenda como o Governo de São Paulo garante que a tarifa da Sabesp privada fique sempre abaixo da que seria cobrada se a empresa fosse pública",
+    "fonte": "agenciasp.sp.gov.br",
+    "data": "2026-11-27T04:10:27+00:00",
+    "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxPbS1GV3Y5a3FmVV9FSWpQU2pNZ3JRcXZhVml0Vm5BSHFaX1dUOVRfaUtEeEZxa3M0VEhvOGlFU2I3SEhienZhNjZ2dzJEaUdZUXJobmc5dkJlUFRuU0JJOFEwcGtxS29tekpGRVpnNUQyQU1LR2NCMzllbEE5QXo0STYzcHd1aXQ0c3J1M3ZaVTJzWmJBeElzbTBUY0d6azFYWE1OVW9nNXVIdEdfU1FLVFNUS1IydzZxUlB2aWlNRDRRaHBPd2RvdmFOM0Z4NTYtb2pxVTl5d1VhWXoyb1ZxY1dleU1yYU1qQ1dLdnBHQ0RfSTBSc2FMS1pUOEozNGNTRUlkanVZX3REYkRYd2Z5Skh3M2p6SDVq?oc=5"
    },
    {
-    "titulo": "Sabesp nega água contaminada; ministério registrou E. coli em 68 cidades",
-    "fonte": "CNN Brasil",
-    "data": "2026-11-26T02:07:47+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTG84YTNuOHFtdm1RR0Y1ZW1rMUxBdjZVdkFaN1lHekhGeS0tUGVxMEhvWktaN05leEFtMGdqSkJPU0JOekRvVFVSR2F4ZWRuVzZ5VzQ5SkNsWm5XYm1QT2k1NTJZUlRkRGwxU0JCeVppS25ydElDWmF5dHFKOG9TRVhFaHVuMFllaEtteUVBOFVxbWRHWjdhUEtvczhhbGlLelVobGZ3NkxoMDhlZ1ZtakREU1pBNzItNzJjOHA5WWI?oc=5"
+    "titulo": "Sabesp diz que Arsesp aprova base de ativos 11% maior para 2025",
+    "fonte": "UOL Economia",
+    "data": "2026-11-26T21:41:47+00:00",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOWWhKSnNDWjZabkdhTkxVNTFQZjdrbkZXQzczeXhZRk5JVTVyVzl3VW1iWWhZc1NIQXNzdTB0eFlpNkc4bjNneDhVN0JXcUFpWFI1TnRZOEVYRk9Zd0FJdTZYbmhJb1BlNUVueFZScGhmdW1sVGVSZ0tTZDN4TjJQZm1QdThYTFlHMzg3TVFJNWlGQ0haeDlhdmotSFpueGhTZlJvZXdOcDdrOEgxY0otVE9hWG43NVNZUFhWYjhqdw?oc=5"
    },
    {
-    "titulo": "‘Nós sabíamos que isso aconteceria’: surto de diarreia em SP expõe preço da privatização da Sabesp",
-    "fonte": "Brasil de Fato",
-    "data": "2026-11-26T00:32:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNN1BUZEJOSTBTakZEVWRsSExmbU02WlNYSjMtUUo2YWNVYzZtdTdRYjJXZnRTUW1rU2dIZWtjc1htWWQtTFdmdXk3OGZGT19QOTJkWjNzLXc2YzJXakdaajRfTXhNbFNpaTFJdEpXWkE3eWU2ZGRMY3JBUThQUUhWa3VZS0xhOEFEWUQ2LUdTUDJjT1BRMDlTWDlWWW1fSm56RGM1VEFPbEllWkFVSXRCZTlJbVlfcVpjeVBwTC1oSlNidS1KaGRvZk5rUUdsbUt3ekFBNzdB?oc=5"
+    "titulo": "Sabesp informa validação da Base de Ativos Regulatórios de 2025 em R$ 97,8 bilhões pela Arsesp na SBSP3",
+    "fonte": "Clube FII News",
+    "data": "2026-11-26T21:40:04+00:00",
+    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQk5LQmxFVDQ2RUx0NzkyTHg5cVhsZFVUWEtnVWEtSTVna1pOZ09vb1BiQVhtT3B6WlJEaC1DNUZacVJ0RHNWQnU4ZFNHZk11MHZLR0NkMFRNR1NVNy1mdmVjdUYxYWdKZmNjbEU3VGtwOTZjaDVtNGJ3N2o3U1hmVndPMkZTUml1djk2NDI2UWI?oc=5"
    },
    {
-    "titulo": "Deputado estadual do PT pede investigação sobre qualidade da água da Sabesp",
-    "fonte": "tmc.com.br",
-    "data": "2026-11-25T23:31:42+00:00",
-    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcFlmSFdQRnowLVJoQzYwM0FzWXVrWDMzLUhKeDdiWXhkYVpTRlVISFdTdjBRSHhKSzNvbEY5VU1rLWRuQXY3SlZ4TmEza056UkRGcHpMZ09TY2JKU1ZrZkxPNDlZdVh6YmpXVUZ2R3VvSHNHeS1yU1N3M29fLUxmVWpuTnVITDlLUG04SndkbzhiVXg5RkFfdUZmQjBTQ2c0cWtGLTRYdw?oc=5"
+    "titulo": "Sabesp (SBSP3) tem BAR de 2025 validada pela Arsesp em R$ 97,8 bi",
+    "fonte": "Visno Invest",
+    "data": "2026-11-26T21:01:22+00:00",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNODQ2Tzc2RXBscUx3ajhyVGRGcnBfSkhNRFltb3E0MG5HQllDS3FVaDIwUnZPdUpPME1lS2llZXBLU0pDZS13NmZIbTFTaXlLNFJMOERsUjVVVGJ0WmhIYWJ6aTI3c3dCVndSbjBibVd3cUQzei13cExIMGYyMHI1cm5TMXNQM2FxcDl0VVZlNVYtZHpTQ0ZIUFdfSEVsYUli?oc=5"
    },
    {
-    "titulo": "Fundo garante controle na tarifa cobrada pela Sabesp, diz governo de São Paulo",
-    "fonte": "Jovem Pan",
-    "data": "2026-11-25T23:26:48+00:00",
-    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNcHVYODZlZlNyMmlfbk5oMmNzbzlwZ1pQZ3JuWjRQVDQtVUk5d0MzdmVsYVNqNmw0RG5Wclczek5sa0FETDNSdmE5MnJIMlR5OXhwbnNSN1V6YmdPeFdENmJ6VUpncE9UcVJfYUJ0TWlUdlg0RnJxclpPaEV4cTZ2YUNlRXYzTWdyTDBCMEZ3YkdKVGNGcjdmZ0V4aUFGTV90dUFfNlhZMzN0bmpidTdYMw?oc=5"
+    "titulo": "Nota II: Sabesp trabalha na recuperação de adutora rompida e abastecimento deve ser normalizado durante a madrugada",
+    "fonte": "Prefeitura de Várzea Paulista",
+    "data": "2026-11-26T19:57:37+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNYTBoRmZlQTBob05WRHZyRGdodU5aNVQ0NTBWeUhYUlBBVnZ0Rko2RzV0NWhKVU9mSlBGaVo2aFFPdnlNUVdHNkNUeEVWeEFxOENWd2VQNjROZmpWVkk1bWFSVnRvMkN6S0F5aUZOck93S3pManRpM3ROSXBDeVhrbHBZMWNVZHd4VVRWdS1pZ3VsTS1PcmlvVUN4OTRoc3BjTm9nSk1Rbm5tcW1zY3B1OFNPOE80bUd6TE5FQkF3SzVDRFQyVDI0am5kM1c5cUZPWnV2bzB2RldySXJZRkVOYmw1dFNodmdiSXctVV8yYUJXSUxCakZWRWJn?oc=5"
    },
    {
-    "titulo": "Sabesp diz que ação coordenada dissemina informações falsas sobre a qualidade da água e aciona Justiça",
-    "fonte": "Folha de S.Paulo",
-    "data": "2026-11-25T22:46:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQRVlOejRpZkhmX2ExMVFCRHZTRDdFaDhPRnduQ3Z4azFQQ2hDQWdYWFpyOFdobVlGeldyWndWT0ZRYWlLOUdWUlhSbWdiLWgtUUd1VE42VUk1Zjd0Vmk0YmVkdHgzMm5hbVdORjRoRDBVby02QXlmUXVOYVNGWWNheFhqY3diRHNMaVVIb2pJMWxKTy1LcUVwajZIenI5V2pKa093QkdwR0czc3ZiZ2lSb21manJKdmxNS0d2ZzR6VUQ0VFNoNUd2Ujh3Mi0xY0F5S1FMN1NMNFlzY3hvdjF5ZHJhM3RfLTBjTzJMdQ?oc=5"
+    "titulo": "Obra da Sabesp de nova adutora avança em Botucatu (SP)",
+    "fonte": "Revista O Empreiteiro",
+    "data": "2026-11-26T18:14:49+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9hZlRMSGNkeDAycVhERFlLWGNPQjhTZ3lKUDVQQ3NDcWhUTUU3cng4bHdZSVRhQXAwMHBOdEdXVG1FOWNqR0dQXzlmV0FEZ3Q2Wms1UmxUT19vWHI1ODRQWEVIZnBtN05SVWdJVUQ1UUg4Uk5JRUtxUTNn?oc=5"
    },
    {
-    "titulo": "Sabesp alerta para fake news sobre qualidade da água em SP",
-    "fonte": "SBT News",
-    "data": "2026-11-25T22:39:42+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOVEM5MW1XVjd6NmF1WXNsRmoxRHRvbmItdzNYSmZpR2lGZER0RnpsZFNMeTl1M2lmdWtMZ3psV0s3ZTVGMFRaV09vV1VTRWRkY2FOaVJHd3N1ZFdwSkxlVXh1NTJ1RzBkM2t0R05jN3Y4MFZueFljTjFfejNKQUFhSjF2NG9SR2ktMHRabFhGdkwtWXk1U0N4Y0ctSjBVTlcwWUE?oc=5"
+    "titulo": "Sabesp indenizará por cortar água de consumidorsem comprovar fraude",
+    "fonte": "Migalhas",
+    "data": "2026-11-26T18:01:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQmdLU0FDbV9mQTJRWDR3MHVfWUM4Q3pTZGFOalM0NEVKd2lsQlB2QURGU20ycEZ5VWdLakZYT2E1V0swNGliYXFyMjFUM3p6SmJXSmxqSUhEalJoc1dKWk5GUkhaUVZJVzI4U25aNkUwODkxU0lUR3RDMDBLT3pfZkpJWUltZ0ZwZGl3WGFUOFhKdVZQLU5pUFh3Q2g5LWx3eU5WVXNxcmZsc0gzSG1n?oc=5"
    },
    {
-    "titulo": "Sabesp alerta para fake news sobre contaminação da água em São Paulo",
-    "fonte": "RedeTV!",
-    "data": "2026-11-25T21:32:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNSGdNNHdFWlJpcU91SjBsNVZzOTRENmJHT3c1MkhWb1JGVDF2MHFmZ3J5UHVKUTBnbnJUTTU4TU9uTzYyV3dtTDVYOGFYNGt4RWRUOGVtQlhHd0NKSVVBaERrTE4zaGFadmNXTVVJbGtGR1ItRHI0TXppNWJnTTdMR2NVTjg0UHRkeUFSS0RmaVAtSFZpVFo1dGotZVNwczhnNXY4amUzQlExV2RjM2dqX24tZWEtTEg4Yl9QdnRXbw?oc=5"
+    "titulo": "Sabesp conclui manutenção, reabastecimento é gradual",
+    "fonte": "Folha da Vila Prudente",
+    "data": "2026-11-26T16:17:26+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVmFOSWxFRTQzcmg4QXBUM2RMYUpmUXBRNVM2Qm1iT1BmSVhkSjAzeHFWY2txVm4wejhIQ3FYQU13NWI3ZkRTOWEtR3pyaEVfTEItYWhyODc5cTBJcjZlLWgyYWswVTVqeGFrWmYxNVZ5azBBdWxsWXFwZVowRUlUOWcyaUFpR2hW?oc=5"
    }
   ],
   "SAPR": [
+   {
+    "titulo": "Rompimento de adutora pode afetar abastecimento em seis bairros de Curitiba, informa Sanepar",
+    "fonte": "CBN Curitiba",
+    "data": "2026-11-26T23:25:02+00:00",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOVmU0cmx5bTBhZ2wwLTVacG5uYkc3aEQtNnZVOFlzRXBuNmVTNHo2NmdoUjlUMXpfX0o5SjNhRlUtbC1jbWZnOFV3WUFmMHNJVjlVRmU0RFdRNGRHRll4cndqM1gyTDJGQmxYMnBEZXlmOVM4MC1Mck0wREJRc2dxdC16aE5McWtPU05BTUUyQTNqckVzQjZaaU5XTkRtR2tVdnhuUXo0Z0xKQlNzcU92M3p2Z2lEX3lHMFVZcEJWMk1IM2I2YzJv?oc=5"
+   },
+   {
+    "titulo": "Investigado admite recebimento de propina para direcionar licitações da Sanepar",
+    "fonte": "Gazeta do Paraná",
+    "data": "2026-11-26T20:56:01+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdmFLNjk2UG8tRG9OQTRoaXVLOWJJbVhyOExCOEp4Wi1QYzhWTExOcm91V3ZwM0w2UGJwYVA3ZmxHWnBpNERfM0duckFaVnB5UXE1cW01b0V5U1A1RFFzUHh6MWZnTjJuckpGVWs2S19JQWtNeVJXNzdzcDhFcnF2SU43TW4yT0NKZmZqb0lqUHEzOEc1RnBJbDk3S2wyWnZTa3haSW05bHlkVUNhYmZSWFNzc0VvQ1NY?oc=5"
+   },
+   {
+    "titulo": "TCE determina anulação de licitação de R$ 133 milhões da Sanepar",
+    "fonte": "Gazeta do Paraná",
+    "data": "2026-11-26T16:59:33+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOWXJWVUdRQlloTnY2cXU2U1dGYUtjS1hNV2FqNzZ5LXRVeW50d25WWXYzSlZQLW9UY0Q0b3VuQjJzak9Vc3hGa3g2T0tJc3Z5N0o5TW9GSFk2YXZvRi0tUEpfa1NOWlJ4UG9PMHNFU3J2em9QYnZVczVodWplOC0zTjlaZ0gtVmkxRGJhazZqY1d1cGtwaWxQaVVzS3ZYd3pFalhN?oc=5"
+   },
+   {
+    "titulo": "Prefeito cobra providências da Sanepar após falta de água no município",
+    "fonte": "Portal Tri Notícias",
+    "data": "2026-11-26T11:20:30+00:00",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNakFEc0NpOF9aV0JxajgxZFJuWXpVeFRnY3FxZXVnbGdlSDdITzRtMEFKRVNkeC1wd0pqaWFkVGpNelZEOUI1QzBvNkdwbVhDZ24xcXBGUjN0LS1zUzRmeVJuNXh5TFlMMnQ1UXRKWDJUWmpSMENRaWIxV3g4RnFFRGstS1Vjcy1nVHoxd3VEV29qUHQxRWtpVFFiSDM1MWNaXzUxdjRqalgwMUJ0dTFWY1dWQzM?oc=5"
+   },
+   {
+    "titulo": "Temporais no Paraná levam Sanepar a enviar geradores e caminhões-pipa a 31 cidades",
+    "fonte": "Sou Enfermagem",
+    "data": "2026-11-26T11:17:21+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPaC12OXZobEVFRWp2ajJXdUlTd1MzOVF2d3JoZlMwZ0I5Qm9OS3RjTmdRTDJjZnVwSjExb2hfTVNISDdDcDRCdXlVVFM4OWU0ekUzOGp0NUkzQnhqT1pBclpGWUJiZUw2LXFtOG1qQkdwYnUwWTZaVGhUMHNaMV8yZlQtZlBUb3RBVHZ3b0UteFdXelY4c3pyelJQeEFuVG5pc3lQUnhOeWVRYng2aFJHc1Nka01qTXVFb2I1SHpDV016a3M?oc=5"
+   },
    {
     "titulo": "Temporais atingem 100 unidades da Sanepar em 56 cidades",
     "fonte": "Blog do Esmael",
@@ -975,93 +1005,81 @@
     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPZFRkMTZZX0FueVdUdXFHX2kyVWRhaXh1WWs3NjNvcUZ1RGJkNS11S1VxTEFPWVJOTTluZVJWWWt1THFPeTYxTmh6SC1TS0x4aXNwM3hoOFVZLV9SNjJMQVhyV0lGM21rdm1xZFYxUTJia0tWOUpEMzIxM1VqUVVUWXU3bjN5bUNBSFNlb3F3?oc=5"
    },
    {
-    "titulo": "Sanepar envia geradores e caminhões-pipa para cidades atingidas por temporais",
-    "fonte": "Folha de Curitiba",
-    "data": "2026-11-25T21:44:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWnlPWkhyOFRWWVdkX0ctVkxSVDRRd19VMTBLMTVRX3VPSk9tSmtwN01fZGR1ek82eFZYNXNUODR2SWtIbzFfZXBVSTFpNVlkbVdPbkozd1QwX0JDOVFnU3JtOEQzcTdSc2psblJuMllyUlA4NWpsNmJ3Z3ozVVphMmI3d2lURjRMcm13OUVCV05EUWdPamt6YWFXamZHajVISGpVclMxc3hmUVZVeGc?oc=5"
-   },
-   {
-    "titulo": "Mais de 100 unidades da Sanepar são danificadas pelos temporais no Paraná",
-    "fonte": "Band News FM Curitiba",
-    "data": "2026-11-25T19:46:59+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUUNaR2JmY2xKdWJoUWZzV1ozN0gtVlRXZXY5b0xLLXYxcnpBdkhlcmtXZ3JIM2xEUXAwR1hJZWZCSEtndmZUMnJsMjhYd0xlaEtmb0tQQWV5V0RsUkFrWG5yMlVIbWFsYzhGYWtxSmZGa0JBMUVmNWpQMDBRQlFkbGlYYUpDUk9NY1JjNGZrNmZxRDZoQjV3U1ZXR21nTlQ3U2x4TnkzX3M?oc=5"
-   },
-   {
-    "titulo": "Enxurradas arrancam tubulações e alagam poços da Sanepar no Sudoeste",
-    "fonte": "Jornal de Beltrão",
-    "data": "2026-11-25T19:26:58+00:00",
-    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbjhlOGtlQ3F1RWI2NVB5eWZ3WXhHU1JZcjBDQ1E3QVc4QUNjOHJYSXc5emZROGJQT3ZFbGVKTFRGZHBLSzJtZHpTUUszQTljTlotWDUyYlBQSGVQNlhRcWZiZVZ3TE9tSldtUG0ydjY1cGdNeHNqMWcwZ1NrMkRJOEZwem1FLVVmU1gyNmhjOTQyaDM2eDNsdVppcDQwVzNSTk0tc210ZHJZSDNjMi1xUTgwZldjdw?oc=5"
-   },
-   {
-    "titulo": "Temporais afetam mais de 100 unidades da Sanepar e comprometem abastecimento em Realeza e região",
-    "fonte": "Rádio Clube de Realeza",
-    "data": "2026-11-25T18:34:11+00:00",
-    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZmFVS2U3M211SGFmQURnWGpBRVZUMWlQOW13cnpoWDMyTmxKeXQ4NVozUnFJWUZ5MG9RS25uOE1tZGNTM3E5SDU0VkFhWTg5QV94dE1fbEFhRFJSWHpkX3V3MXVCNUM3aEtacW42S2U4eVBrTFRKWlZxb0xSLTZ6Y0dvb3lSTEV3RndWa1JNSXlYdnhWNXNsU3owX0tLbm1CeERnQVVTbk00RjMzX09LWkF2cTNiR0c4RVZXckdUUm9iT29RZHJ3U3pfZ3JJaEVDVzRhejdpa3N6VHFu?oc=5"
-   },
-   {
-    "titulo": "Sanepar mudou regras de licitação de R$ 1,95 bilhão que teve um único concorrente",
-    "fonte": "Gazeta do Paraná",
-    "data": "2026-11-25T17:50:18+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORzhDdThWeFBhczNpV3pyQmc5U0RUa0JDMDduSjF1YWtseXA0V253TlB5LTNzZ3hQOEdocWdESmsxc3ZlTGNJYWxkSEtjZkcwUjdIbGFzUGZCZERRNk1PV3RpclVNQV82UUpYTDRIaDcxTUVsbnZJMzZGXzdxQURSR3JMNy1qWDBpU180amlRYTJKX19vUFhXNVEtM0htQTdSNC1ZaUtFQzBzVjRhbFFJRUhkSk9YZ19j?oc=5"
-   },
-   {
-    "titulo": "Temporais danificam mais de 100 unidades da Sanepar; empresa monta força-tarefa",
-    "fonte": "REDE BRASIL DE TELEVISÃO",
-    "data": "2026-11-25T17:39:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOcG5sN09EYzNjSHVmU3Z4V09Xay1wT3dycUJaYjlaMXpqRVQ5STVIcjA0WFh5eEE3djNVN09Db0hkZTBoc19VNU82clZGSURIWlhxc0hMVDN3elM2M01tSDhtbDBwdXZBQVNTSTVMYy1JR3NUX2pUOVhHV0ZjUVRQaHp0YjluaWNvNGNFYU5mbW1hYzJkQmhmaUMtZ2JWS2tFdXMtc0NlcldrRmJlV3dBTlpyZk02X1U?oc=5"
+    "titulo": "Sanepar mobiliza geradores e caminhões-pipa nas cidades afetadas pelos temporais",
+    "fonte": "PortalJNN",
+    "data": "2026-11-25T21:26:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOdVo5V20zLWduSldrbFktdGZ5cURoOVVEeXpHQTctcV93VVFDeUltTWRhcXRxODdsSXBHdjNHRWI2emEzSzFHLURxV1pDd3RWM2RURktpckxaQzJjYTBXX3Jid1NOUktFVzE2a3pwdlY1WEFqSVFkdTRMVUFSYlgxaExhc25yV3lzOTl1VF91bjh0SmFqREJCV1VxVU5CY1FjVkdrMTRDclQteEVfZ2daYXRPWGdSSWs?oc=5"
    }
   ],
   "SANB": [
    {
-    "titulo": "Edital de Leilão de Alienação Fiduciária Banco Santander Brasil S/A",
-    "fonte": "Jornal Folha Capital",
-    "data": "2026-11-25T22:18:15+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdER0cUFXOVhuS0lNeWJqaElaeGNhdFFzckVVVzdwdGRjSldCMDNMWkRPNEU5R0c3QkFnRnVUb29iNGowMVhiV2dTYmRONGUxemNlRERjWkRfWm1PdlpiY3NjdlN5V25BMTlLYWZqLVl1cm5iWlhyRV9jOTAyc2o3eVdwRGFXZzdsVGhnLWJBZEtsM0p0Z19rOFBDSE1PSzBuQTNWMzh0aTI2N1czcG9Fa25vTnAzMkJJ?oc=5"
+    "titulo": "SANB11 - Banco Santander - Resultados, Dividendos, Cotação e Indicadores",
+    "fonte": "Investidor10",
+    "data": "2026-11-27T10:01:26+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5lbHZwY3RtUm4xU3FuSEZ1WW9JMzFrc05YVkFGbkFmbEkwZ2U1ZEtYcVExODYwRWJJVmdqcEpxbjQzZDkxeFE5eVQ2alBLenJkRkZB?oc=5"
    },
    {
-    "titulo": "Ruas de Santos recebem corredores do Santander Track&Field Run Series",
-    "fonte": "BS9",
-    "data": "2026-11-25T21:51:08+00:00",
-    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZjNBTFROejlmQWkyLXZQT2pJcTJiMGQya3lEOW8taVNkX2dYTERvRWNDeXpJWThTWklBSHY4aHAybkFmQlZ2NEJ2VUwwdGhCLU5pN2ZBSUswR2NyLVhiZENPVi1zVzZHeGktdXpud2Q5MWhQVWUtT0J4MVZUMHFRSW9EVHdqWDAyWDVGdlBtOHJsRzM0UlJiQzVlZnhNeUwwSk9KUjNmRElKaTN1WUVfb2kxY1NvZ3M?oc=5"
+    "titulo": "Minha Casa Minha Vida vira queridinho dos bancões? Itaú, Bradesco e Santander no páreo",
+    "fonte": "Investidor10",
+    "data": "2026-11-26T23:20:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNVHJXSEZ3NktEU1lZUGR6NFZnaHk1SUl4bF94MmRObHItcXd3a184eUJSbTZNZU1CNXhSaUFISFg5UFlFU2NhLWQ2Mk1RS2M2Vm1uSFg4QjRUUDgtTWFucVoxX29YTThCcWVQZXJMdzNXRVlHTUdoTmJYLWdFYUZtcjFvM2ZwR0dTUkhjcWlNa2lCVXNhbUtPWUVLWldJYzB3cUFqNENaNW9EaW5EcW5PaDZXWnBINjA1MkNibWNvb1pmdVY4dTM3WjNOVzg4QdIBzgFBVV95cUxNVHJXSEZ3NktEU1lZUGR6NFZnaHk1SUl4bF94MmRObHItcXd3a184eUJSbTZNZU1CNXhSaUFISFg5UFlFU2NhLWQ2Mk1RS2M2Vm1uSFg4QjRUUDgtTWFucVoxX29YTThCcWVQZXJMdzNXRVlHTUdoTmJYLWdFYUZtcjFvM2ZwR0dTUkhjcWlNa2lCVXNhbUtPWUVLWldJYzB3cUFqNENaNW9EaW5EcW5PaDZXWnBINjA1MkNibWNvb1pmdVY4dTM3WjNOVzg4QQ?oc=5"
+   },
+   {
+    "titulo": "Edital de Leilão Banco Santander Brasil S/A",
+    "fonte": "Jornal Folha Capital",
+    "data": "2026-11-26T22:45:53+00:00",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOODJWMnFqRFE3VmZLVG9Ec0JrMjZYVEQ2VG0yVmhlbVhTUDNUX28zdUVKMG53MUpIWDQ5MEZlM010c2dKOEtoblgwOXV0aXEtLWNDTEE0ejVoTldUYjhiMFl0bF82YWxibF9pR3pfRFN0N1NYZlkwTHluRjYwTGp6aXJ2STJxaE9DT3VJV2dOVzROalM2TmNOUw?oc=5"
+   },
+   {
+    "titulo": "Depois do Itaú, Bradesco (BBDC4) e Santander Brasil (SANB11) confirmam planos para entrar no Minha Casa, Minha Vida",
+    "fonte": "Money Times",
+    "data": "2026-11-26T20:25:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQSEw3QklRUDFibmFpSUxtb0cxaGRqbmRiRjJzLVo0LVpNdVFiRWpma2FTcjdndHRyczJoMDhNSkZKaXVaaktmT3h2RER5RE1iVzg1bzUzOHVuWHlTeUI5NEFqaWZYUi02ZnJLbDlBZ1I2ZGFqY3BjanBoTWdleV9OQXZYRDNMS3VBd1JBYkR1RXkzeHBrai01bDJWSkYyb2ZtU0hJRTctVEtVZl9BZ0tUdkQtbkMtMGg5NXdVR2xWbkMwemdsRFNleDFRdGtiOEY3NWc?oc=5"
+   },
+   {
+    "titulo": "SANB11: Santander estuda MCMV e o ROE de 11,9%",
+    "fonte": "ativovirtual.com.br",
+    "data": "2026-11-26T20:07:27+00:00",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPWE43UktpaGFXQXVzUm01aEprU2FLb0tEYTFRU0kwTkFZQXVnUE02S2IyeXlPZDVRX0N5R3M1Tk9lbGhGVnBuMjdIOWM0MHM4VGVRbGtjcE1LQWZCbkgySlA1aDc2dXltSW5MTXNOMXMtUGdFTGJ6Qkt3Z1FLQ3RHTjVKd2RCM25RVnprVzk5RmIwa2hr?oc=5"
+   },
+   {
+    "titulo": "A Caixa que se cuide: Bradesco (BBDC4) e Santander (SANB11) avaliam entrar na disputa pelo Minha Casa Minha Vida",
+    "fonte": "Seu Dinheiro",
+    "data": "2026-11-26T19:41:25+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNaFc4U3hWVVFfQ2M5a0ZUTl9SR1U2T04xVU9td0NVMUVsaXd0SFVHeGZOZVlmeTRtaVRrZEgwN2p1RFhQWWtHdTRieU9WcDd3NktqZGJ0T1BQREl1Nm9VMjBFRlFyR3pHVHZfb3gzZGRUZ1BjbXB6czVxZUwxOFNCb1ZubDktNnJ5TTFzUE1rM2tYQ0NnNHkwRkIwbXRBczlnUkwwaW1JRkR5VnVUSkVQVGRMMmRIODNSTnl6V1d3MXFWbnBRcE1SQjV3?oc=5"
+   },
+   {
+    "titulo": "Santander (SANB11) aumenta oferta na OPA; veja quanto passa a valer cada ação",
+    "fonte": "Acionista.com.br",
+    "data": "2026-11-24T08:00:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9CNXBGNzd5aWRXVVFMc1RZc3lSdkdHVjcxangzanVkeUhBRHdyVnFYWjBRd3loTEEwYThpMWc1WjZCNk5oZEtKSjFQT3FRVkp6YUNveTlfX21kQXZIZ0JoLS1ydmtHX29fUDJSYV95ZDk?oc=5"
    },
    {
     "titulo": "OPA do Santander: banco prevê concluir operação em 2027",
     "fonte": "Nord Investimentos",
     "data": "2026-11-24T05:30:18+00:00",
     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNRjhmM2R3RnVDcmU0NjVKTzZHX3E5b09YSGtTNG41aC1rLXljM2JUMEFQa3gwQUtHNjFPYmQxc3daVkpISlBVaG9XdGF2V3oxSkhsbzJhVmo2elR0ZWJnSGl5amNsREtJR2R5alRUaGhDTWdkaHZDUF9VNGlYeEV2N9IBhgFBVV95cUxQeG9YMGFnTi1LY3lTR2VPMTV4N3JRYS11WDJaOERXY1QtZTNGV3JVazVNS1BJbmtlX1B4a2FSQjY0RnhPM2VRWDFlRE9oTWx2djF4ZkRhT0FSMHFzbmlQUnZfd29WZlNybTVkT0dXNjNJelVzRHFwWXRzdW5YWWRXVDB2NzJxQQ?oc=5"
-   },
-   {
-    "titulo": "SANB11: troca de ações virou gatilho de alta em Santander?",
-    "fonte": "Acionista.com.br",
-    "data": "2026-11-24T00:21:51+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQekxsQVFBc2VTM2paWFNlelVsNzhrNHVrM3B0S2ZkMnVGNjdkSHpmTXdJcXBvTDhkc2d3RnVKZmNJdjdDa1JSam1tWFgxZzNsY0JUdUd2MEdmTF9BeDYycWNINmFQMW5kdUpodmRkeHdkdDZQSVR3NFo5UEEtWERtX0FlWnBoWHJTdFE?oc=5"
-   },
-   {
-    "titulo": "A nova tacada do Santander para conquistar milionários não está na bolsa — está nos campos de golfe",
-    "fonte": "Seu Dinheiro",
-    "data": "2026-11-22T16:31:54+00:00",
-    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQQVdYT2NabjM1LS1HdVVXSHl0dzRHWk5YWUZqa1JwQzhtRm9SS1luVXkwdXpVUW5wcHBHOUZGMDluUFZTbW4wQWE0VW9RNG5OQTNiUWxaeHBrYVRKbnFoNEhaOHNtS3BFR1NnY05fSjdVd2tzc0ZfUkg2OGxDSkhaU1FTMVBMSGVWSUdFeFRYejFNNjlnVF91dnRzbmNqZkZVZVM4Vng0THFfV0lsaTRYdkxXSm1PTmV6OEFsLUhSNkI5Z3FoS3VORUl5NmFxV1luUkxnc3V1cUFWbTl0bWc?oc=5"
-   },
-   {
-    "titulo": "Santander (SANB11) aumenta oferta na OPA; veja quanto passa a valer cada ação",
-    "fonte": "Acionista.com.br",
-    "data": "2026-11-20T08:00:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9CNXBGNzd5aWRXVVFMc1RZc3lSdkdHVjcxangzanVkeUhBRHdyVnFYWjBRd3loTEEwYThpMWc1WjZCNk5oZEtKSjFQT3FRVkp6YUNveTlfX21kQXZIZ0JoLS1ydmtHX29fUDJSYV95ZDk?oc=5"
-   },
-   {
-    "titulo": "SANB11: lucro deve cair 21%, mas um detalhe preocupa ainda mais",
-    "fonte": "Acionista.com.br",
-    "data": "2026-11-20T08:00:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPLWVpeHBFMnB1cXBTdGtGSjlZUnIycDZNM2RXNklVanRlR053d0UtT2pvSi1kcUNnSzQ1bURwNkgwckJnbDNsZVNrWVZRN0VJRVFnUFpRSGVTcXpEa0Uyb3UtemtBcGZoQmpyRFZYaGl3TllzSG1fb2t5QV9qNzFRNkJaV2VzU1FBZmo4V01zSQ?oc=5"
-   },
-   {
-    "titulo": "Santander (SANB11) recebe novo laudo para oferta de ações",
-    "fonte": "BPMoney",
-    "data": "2026-11-17T12:56:54+00:00",
-    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPZUU1Yml2SWp0NC16T214NU5mcU5ncHRGVlE1U2VTM2JHOEpyaGc1ZmxDc0ZpMFA4S2ZhMFZZa0MwcEdYYmU2cU9RTlJiVDFjc1BnT1ZkRUJUdnZtTEJEOTZ6VEJWMzFRVTlGOVVOUWVvWTUxeEo3ZFpmc2hFb3Y4Z0JZUWFOc0dxUnluQXRxU2w?oc=5"
    }
   ],
   "VIVT": [
+   {
+    "titulo": "Citi eleva alvos de VIVT3 e TIMS3: 19% em dividendos",
+    "fonte": "ativovirtual.com.br",
+    "data": "2026-11-27T10:20:44+00:00",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOMFc3SUFlUVB4N2FFc2R0Z09qMXUtckx3dl9HZGYxWWJBM2RLS1BNTHVTUlNoSXVrNEhEc1ZiblZkVWRGMnN6Y2NOUkZYaDlPVmh3d3E1bWs2SnlPT1VEREJlUVZ4UmtxUDZhcW5EWVJEdkZFSFNrTW9ISzFaQWNRaklxYW5iOUJDd1hMNFR3VXdHbWdCc2ZBcWJEczd5UQ?oc=5"
+   },
+   {
+    "titulo": "MP investiga Vivo por aumentar mensalidades poucos meses após contratação e alterar condições oferecidas aos clientes",
+    "fonte": "JBNEWS",
+    "data": "2026-11-26T18:44:08+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNbWZQa2lNSzU4VjhzOExweXZIZmFzWU5zT3dhSEdKLWxLQXZzNXM3emdNUE9MclNEQjEyZkVFaXdobTRwblJYVkR2aWo4d3RzUU5ZRFJvV2VmOWI5NzBYN0hqa19iR3NjeHJRbGhPRmhjOEg3UGJfUU04NnRmdjN6SWV5RzZ3V0J5dzNuM191Tk5SNWdLdndvZGwzcDJ6TE5oQnZ2ZVJZRGt5OGwwZ0d4cUFNMTVXRU5NSUl4RDRHVUVrUklGa01XbWlXbUIyelFFVFdkbmZZbw?oc=5"
+   },
+   {
+    "titulo": "TIM (TIMS3) e Telefônica (VIVT3): JPMorgan corta preços-alvo e mantém recomendação de venda para uma das ações",
+    "fonte": "Guia do Investidor",
+    "data": "2026-11-26T15:22:07+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPOUxIck5zU3BZZG52d0loTzlkdm1WUkdPbGhZWTk5d2trWU5taUtlQ2ItNDlsb0p2OG80X0N1YkU4RkdaVXljR0hzMmUtWk5CZG9SMGV1VERZMDRkbktWZGlKeEFoVU5haXA2T0JlS3Y1U3N4TzRVZEQzQVU5Yks5NVRRNHpxX3NlSDlnVGtfZ2tqUGlmYklkbFRaZzdncnNRRF95WkZ4cFNBNWN0QTdIWUtSVVc1V1FBZEkyUlRaNjhSM2h0Z2QwUVQ3WU9ONUpIZks3M2pMY0VLbEF2YzVn?oc=5"
+   },
    {
     "titulo": "JPMorgan reduz preços-alvo de TIM (TIMS3) e Vivo (VIVT3), mas mantém preferência pela TIM",
     "fonte": "Gazeta Mercantil",
@@ -1075,54 +1093,60 @@
     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQeUdRSFlsb3lUMzA3ZnBMQWZnU0RxMWJ3Z2o5SzZ6al9oMHJRQlg3WTQycGlXOGVXS1lzUGxGSmZuNzRlMTJsN1FBMFE3X1h0WjhacWpGMlVhSkl4WUNHRmdSMm83VEpKZDZnUEhyMFBISWtld3oxNE1DYjVxZGVJTlVUR1kyaWxOVWZZb1BB?oc=5"
    },
    {
+    "titulo": "MP instaura inquérito civil contra a Vivo por reajuste unilateral e suposta publicidade enganosa",
+    "fonte": "Olhar Direto",
+    "data": "2026-11-25T15:50:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNZEZLTG8zTXItcDhrYktnNWxWOXJ0RjZHT1dCT0VBdUZ6WTFNV0hzdi13MWNPTUhOUWxKVlN2aUlMM1BvckRMdjFuS3ZxenV1MDl0bnNkQ0JqMGFtQl9YS0tZWm15ZXBueWFUQ2ZQMk0tOHlaNU51SzRzVFFsWk1wY1BWYTVvM2l3Y09zN3RTN3BiOWhHTkFFZi0yWXFtYWtodzZwOE41TjZ6TnhBS3E4R1FoV2Q5b3hVNnpuXzFkMXI3VERnUTRGSHptSlQyblFYaGg3WGRWNlZIdEZleHc?oc=5"
+   },
+   {
+    "titulo": "J.P. Morgan reduz preços-alvo de TIM e Telefônica para incorporar margens menores",
+    "fonte": "Valor Econômico",
+    "data": "2026-11-25T13:45:05+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPQ2RxaTY4cWk0WnhJZlozdzlId1FvYjBzNTZ1YVNDWE9YT0IwMVBudlNlWmV3MHZYOFNVMzh4ZTJVX2V2NkV3Rm5CU0RzbFVzSkItZ2xoa1RLcTVPcVJ5RXJIaWo2c3Rnc0N3bnNFZ0FZOHVTdjJHM3B0RTRGcmcwWm5MR09wS2t3SGRMS1p4MDloQjduRnNlaUVtVk85NWg5MWFobFMxUUJXSG1DZGdPVTlMNWhzaGQ1RmJSSDdxVktLZUdNZ3JtU1F2RDRWZzhm0gHfAUFVX3lxTE85QlBDUmFPR0k1RGFfUlc5d3hNMHpRamRlVEhPYlVmRC1SZ0dJYkY4ZEhsd2M5cFd0aWdJWG0wY2lVdmxHMjNfTURqOVpza3JtcTZDSUkyZWdBZkJ0b0pfM1k5d1RfRDZvOThhWEVGSk0wSmQ2OU43QlFNaEJBV3pYaERzNGhSQ0Z1aWNqcnRwY1JwTzJxOTBSUFBGOTZwazJaNE9iSDZFaFVjSUtJWl9IVzhMaXJHRTVCOHZEelFPYzloNXpWM043aFFydm43VmN4dHdsRzNsenIxZlJRaVk?oc=5"
+   },
+   {
     "titulo": "Procon de Maceió multa Equatorial, Samsung, Vivo e outras duas empresas em R$ 84,7 mil",
     "fonte": "Francês News",
     "data": "2026-11-25T11:10:00+00:00",
     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNVks4cE1RMS1LSkprVFdXYjJ6dXhKUnNPR0d4ZUZqRU02TFBBMkhUd3FDREVnREo0eGRvN2x1NVEwdlVaSHkyMWdzckFFOHduVTRfbXR3cTNyZ0h5NzlDTUZQV21pNDRIbGZlZHdjZDZEbmxtVzl0U2V2SVFtb1UzdXYya3FJNE83cEZ3THE1WVVvZ3ROem5rZTJiM3o0eVBPZ2tqX1YyLWlkbTQyZ0o0QnJEOUtwS3dkTkQ4Yk12bGlRdVhueEUwX3VJbw?oc=5"
-   },
-   {
-    "titulo": "Procon multa Equatorial, Samsung, Telefônica e outras empresas em R$ 84,7 mil em Maceió",
-    "fonte": "Cadaminuto",
-    "data": "2026-11-25T10:20:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPUzBfUkpBa2lyelJIb1djOFpYaGtXWDR0cDhuLVVndGs2dWpJc282MnR4WGRZNi1MTkhKXzdWN1Q4eWNOQ3Jra3JRT0dLaG9TVVQyWXFaWmFKRG9vYUlKaG50RFhDUnFSUEFmT3ZPQUlEMkhWbThjSEpyU2V2c0Naa1NnVkZaSndaREMtdktTTk5hLVVQMTJ3RlptM0xPU09GSm00U2NXNU5DcGZKQUNycmZReFI4MENkdDlDcW5rMlVMaVlCNG4xZ3NPWVBuQQ?oc=5"
-   },
-   {
-    "titulo": "O que o Citi enxergou em TIM (TIMS3) e Vivo (VIVT3) que o mercado pode estar ignorando?",
-    "fonte": "Acionista.com.br",
-    "data": "2026-11-24T15:02:51+00:00",
-    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE05TGFudEt4cW9pUllyZExtZTdTSVdqWXpsYnhYX2FUcGxReTVXQ0xjT0w1U1VvMHlDVklGeTJLT0I5QWNYOFZUOWIzWE9qMmNhTG10RlhrZi05Q2RIbGJoSlhCTzVXOXAwdWt1QlF3?oc=5"
-   },
-   {
-    "titulo": "Dividendos de 11%: Citi eleva recomendação de Tim (TIMS3) e Telefônica Brasil (VIVT3), mas prefere uma delas",
-    "fonte": "Seu Dinheiro",
-    "data": "2026-11-23T21:02:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOd1doOUt4Wm0xZ2pFTFF4ZFVUbTREbnpFVXl2T1FjTnhjYWRoc2VTYktsdzlNV2ZvdElOMWE2bWtJUG1tNnZSdHFYOTFsZUlpN050MjVqbFFlZVhiZktUWElqNktTMS1PWExMMDVUWnVOZ3drc2hLVVlSazRBMEtLVWp0dWpoRVYwQUhrZzUtN3UyUDRsaE1LV05QN3pRMjlDUHVvMm9YQ2ZZRm51a1QwaVRWYlN1VE9jWE5zZ1lOa2E5TWhpOHJ3c1FNNDFGSFNVMGdXTmdjamEyTWk4Z0RTNHZCMFNEOU9Gbkg0?oc=5"
-   },
-   {
-    "titulo": "TIM ou Vivo? Citi aposta nas duas ações, mas vê mais ganhos e dividendos em uma delas",
-    "fonte": "Estadão",
-    "data": "2026-11-23T19:15:43+00:00",
-    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPWm1JNndNalIxNFc4TGtLZ2ZKMF83TGVHclEwUjcwVVlibWtQaGVhNnRGNmRjcS1uUzhUNzBvMXBIY0xWbV9qaFR4VGhnemFyZkdrc3BtQXlCNzNlT1ZJX2VVekxFVHl5c2ZvRkVoWUVIWHRETW1aWERLMTZRZGxwRDBMUDBQUnZKZ1FHcl8zRlJjaVFoLU43X01ZN040SjVhaGd5ZFViWkVwQmFDYjItWXpoNW5RSkpWZU1hN3U2WFoyZmtlbHNST25NOUUyMGpydVZ30gHYAUFVX3lxTFBoRVQ3cUtReXY2SFNjeEFURldsbXR1cFlTQTR4MFE4RjBkaEZ6N0c0alNVbGRtdXdQLXZBNFRQeThMMV9LWXBKbS0wcEhuTXVIZF8ta2NONFVicEpBdTZTZmtGNUpERzRNLVJwYlVoODBnUkFaNWM0aGl2aWx1VDhSV3VwOF9VYTlicHItX0NvaFpTWDJMdGZpMTdvWkhPd0wwSkc4U0tGZWRvN3hGb3FhSzlTVUNFTTVUUV9Ea1ZMSVhKU2ZOTkRHYXowcEVvSGlFRTdDS3dudg?oc=5"
-   },
-   {
-    "titulo": "Citi eleva Vivo (VIVT3) e TIM (TIMS3) para compra e destaca resiliência do setor",
-    "fonte": "InfoMoney",
-    "data": "2026-11-23T15:31:28+00:00",
-    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZkZDX3loc0xReUlPYzJxWDh0SGxnUFQwZGxYX2kxYkNwNUNpWmp2QUhGTENQdEJMMHZwQzBieVhTSUNkSHNGWUZCUzBzajVkVzFYTHhUQVoyS0JoWGxfUnNDWHZBUnpxZE1CcC1falhldUdUYlFYbGczRFhyTU5FU1JiaWJFMGVsRjZ2N1JlXy1SN21kZ2VocUVCRHFGeGh1ajlTN3BzOUEwR2hKM01CUTZxUXlYUdIBuwFBVV95cUxOUkVaTVBXSFlEbU5pdjZzMk9TdGtsTm5DTkRPMkUwcFdBejI0UjBXX1NOWW53QUkzc284NFZMblVZUS1WNUdJVERNalpvZlJrLTZtZUhEQ2RCbWNoUkk4WUdHdTV0amdkbjd1SDhTck9iNkUzeFN4bTd6aVdkVnJ3bXdVMEhaSmlXVFdyWWxXSEF5ZGk5Ni1jekVzd1ZwQklVVXVKR3hiSjRpOXZFamxXNHVhaHcyWEpFa0Nn?oc=5"
    }
   ],
   "TIMS": [
    {
-    "titulo": "TIM fecha acordo com SBA Torres Brasil para ampliar eficiência operacional e dar previsibilidade aos contratos",
-    "fonte": "ADVFN",
-    "data": "2026-11-26T10:18:12+00:00",
-    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNOUlnaWl4YkllZmp5aUFfVjJ4Vm5sVXI5OWtxVTFzdERBWmhzZEhEREVuVVI1MWlnLWhwdkJzeGdDMUk2SDRFd0NDRHZqVVlHU0VuREJsVld0OXdhZXY3b2dpd2tCeWtTTkFXX0pGTDB4ZmNSUXNpdm9fTFdGc1BoUFRtajYwYkhFbjdOZS1hWkIxRkFLTWZIallleUs5VEdiOVktSldSOUJTWVRFWEtWWTFEZHNfdE43aWtURVEyajQ3Z09XUmo3TTRvWktMMzJreERhRDE4dTRLRWRiTVJR?oc=5"
+    "titulo": "Citi eleva alvos de VIVT3 e TIMS3: 19% em dividendos",
+    "fonte": "ativovirtual.com.br",
+    "data": "2026-11-27T10:20:44+00:00",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOMFc3SUFlUVB4N2FFc2R0Z09qMXUtckx3dl9HZGYxWWJBM2RLS1BNTHVTUlNoSXVrNEhEc1ZiblZkVWRGMnN6Y2NOUkZYaDlPVmh3d3E1bWs2SnlPT1VEREJlUVZ4UmtxUDZhcW5EWVJEdkZFSFNrTW9ISzFaQWNRaklxYW5iOUJDd1hMNFR3VXdHbWdCc2ZBcWJEczd5UQ?oc=5"
    },
    {
-    "titulo": "Acionistas da Yduqs aprovam fusão com Afya, notícia da TIM, Motiva, Banestes, Klabin e de outras companhias",
-    "fonte": "Finance News",
-    "data": "2026-11-26T00:57:43+00:00",
-    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNMUtncG1qWUVzeXFWWmVSa1NzRUpJLWQ1Ykw1TWdHQWpwNnRKRGFMNTdkRVFxTUp2enF6MVVfWHZaWThJNE1RV1NXNlpqMGZYZnlPdFRYUVBYOTFtNFhNOThWdlZwNUY0aldIcHpFUzRaSGVLdE1NRnNsQUhVWUtTSFBfRXkzNGhDU1pKQ0t5bTdmLWdqZHh4ZHE3c2NvZ2dTOTFsbXFGcmxzUnNZb1M0a25aNld6MTRjc0licThfM1FZMUZlSVlfQks0RTdjUnFlX2tZRnln?oc=5"
+    "titulo": "TIM (TIMS3) pode reduzir custos de arrendamento com novo acordo com SBA, avalia Jefferies",
+    "fonte": "Guia do Investidor",
+    "data": "2026-11-26T20:22:06+00:00",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTHY4SUlqelRVeXVTUzRuZV9EZDZWeC0xcE1uR3VBS0FiSHhNUUtBTDRtTVd5d25xc2xZd1gyUkxZYkt5cWhjZlRKYVZXQzdBLUZTSXl3ZVEyakpnR1JOdjl0djRwLV9SaGpmSkFmQ3I2YzMzbmc2VHRxM3NLR2FGSUxOb2ZZcHgzRXNiSUR6QkxRLWNLbU5kOC1zbUdzWUwxdFJDbXY1a3hGNVFNc25IM1Nscklaa3FYYTloYklXdTJZYmYzUGc?oc=5"
+   },
+   {
+    "titulo": "TIM (TIMS3) e Telefônica (VIVT3): JPMorgan corta preços-alvo e mantém recomendação de venda para uma das ações",
+    "fonte": "Guia do Investidor",
+    "data": "2026-11-26T15:22:07+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPOUxIck5zU3BZZG52d0loTzlkdm1WUkdPbGhZWTk5d2trWU5taUtlQ2ItNDlsb0p2OG80X0N1YkU4RkdaVXljR0hzMmUtWk5CZG9SMGV1VERZMDRkbktWZGlKeEFoVU5haXA2T0JlS3Y1U3N4TzRVZEQzQVU5Yks5NVRRNHpxX3NlSDlnVGtfZ2tqUGlmYklkbFRaZzdncnNRRF95WkZ4cFNBNWN0QTdIWUtSVVc1V1FBZEkyUlRaNjhSM2h0Z2QwUVQ3WU9ONUpIZks3M2pMY0VLbEF2YzVn?oc=5"
+   },
+   {
+    "titulo": "Novo acordo entre TIM Brasil e SBA deve proporcionar ganhos de eficiência em arrendamentos, diz Jefferies",
+    "fonte": "Valor Econômico",
+    "data": "2026-11-26T15:10:41+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOTTZZSHRFdzBQOFo0QW1wSFAyanZYQ011Z3NrS19mWlFNLTZ4RnZtZHRQZmdZNnpsNU5GYXI4aVpkRTBaU0hNdTJ1Ykh1MDhsbmdhWEdiVV9PTmQtbExQU05qN2FIVExhVmhLTXpxbzR2WlRTeHRjRlo0OHVmT2U5NzkxZmRKWlNwc0VjYjB0U2xOVE5UQ3AyT3NMSnpRWjdzYTc3RHNkbDgzT0NSenh4WlpZWmR1Rm83QmVkOG42NlBwZm5RcHJIRmtreWNkM1VtU05MZ1hiMXN2ZzVubDVVc3ZxajNfNlFyOExiUE9ZLWZpWTFMY0d5bzJ3MS1pT2RTRXfSAYICQVVfeXFMTk02WUh0RXcwUDhaNEFtcEhQMmp2WENNdWdza0tfZlpRTS02eEZ2bWR0UGZnWTZ6bDVORmFyOGlaZEUwWlNITXUydWJIdTA4bG5nYVhHYlVfT05kLWxMUFNOajdhSFRMYVZoS016cW80dlpUU3h0Y0ZaNDh1Zk9lOTc5MWZkSlpTcHNFY2IwdFNsTlROVENwMk9zTEp6UVo3c2E3N0RzZGw4M09DUnp4eFpaWVpkdUZvN0JlZDhuNjZQcGZuUXBySEZra3ljZDNVbVNOTGdYYjFzdmc1bmw1VXN2cWozXzZRcjhMYlBPWS1maVkxTGNHeW8ydzEtaU9kU0V3?oc=5"
+   },
+   {
+    "titulo": "Tim (TIMS3): Firma contrato de longo prazo com a SBA para torres",
+    "fonte": "Acionista.com.br",
+    "data": "2026-11-26T14:58:29+00:00",
+    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQclN4Mnh0SVZQM2hvSm93ZVk5THVrdE55RlltOUFJWV9nX1dxaGJ2MHpiSEk5dnpVR2RvTXF0bGNjWVE3Wm1ZS2lWOGQ5VVVvX3ZJbDI0dU5fNjNjUUVMVnBreXg4UjdWYUo2RHZkdmtTdjRXQUVhNl8waDBlbVVONW81bEhJMWtSUkJvam0zbzg?oc=5"
+   },
+   {
+    "titulo": "TIMS3: 16% das torres em novo acordo com a SBA",
+    "fonte": "ativovirtual.com.br",
+    "data": "2026-11-26T11:02:42+00:00",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNN0p3X3ltUm5lWTJqLTdDd3ppMkVGNlRsUXBuOU9WbDdROVJfOUp6eEJ6WEQ1LXhXYzJhSUtGZ3Exbng5WjlpX2F5UUpWclZ4bm5lSGpaU3hadXRYbnc0aFE3blBJWlJZLTJkNTE0LUhLYllqbXZ3LTdpOVFLOUNubzlXQlN1RjNhbVRkeHJyWmtLZXNXWUE?oc=5"
    },
    {
     "titulo": "TIM Brasil e SBA celebram novo acordo sobre arrendamento de torres",
@@ -1135,133 +1159,145 @@
     "fonte": "Visno Invest",
     "data": "2026-11-25T21:40:26+00:00",
     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPemlOZXBuSDRqSUdLUm4zZmdWbGg1UGJoQ0JGRC1ZVEFyLXZuWkd5TmhYMnhJNFd6M1dnelVsMHJtWnZLME4xWHFJNTFJXzBpQ2o1ZXlpdkJoRmlyd3N5S0UySGQzZ1JraFBKa2JsdzJlam40dUFDUTdsTVpCc0VtUUtGaFVWYkVsN3hxYS1tZjh2eXlNN0pCVHF0RFE2dXBrSmI5bXNqUQ?oc=5"
-   },
-   {
-    "titulo": "JPMorgan mantém TIM favorita e corta projeções para 2027",
-    "fonte": "SpaceMoney",
-    "data": "2026-11-25T19:42:02+00:00",
-    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQa2EwOE1SbmQzVmRWV2NSTjJVVTJfU3h3WGN1OFZhbkZacFB5dmtwMktBT2pRQ3h1V3JLaDMtNWlEYWdBZmtvR3Y3ZDJSU05pNkJ4QlhEVk1sOHFOeU5FTzd6ZnBtbkdUSW1OU0lvZEVHN3Nfcl9RbDAzV3JaWnRkMGQ0c0d0RnhGazF0LVFBY25mTlhrbnRfQw?oc=5"
-   },
-   {
-    "titulo": "JPMorgan reduz preços-alvo de TIM (TIMS3) e Vivo (VIVT3), mas mantém preferência pela TIM",
-    "fonte": "Gazeta Mercantil",
-    "data": "2026-11-25T19:29:36+00:00",
-    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5Dcms0U3FleE5INzdrb1NxbDUwNUU1eHFKb0VPY014LUZOS0hKMHNqN2FaeUIwVmFHUEZwMzE1bEFubmRGWXltc2Q5dFJMdjdSemlqZDhRTW51bGp0R2VOU0JuYnZ1aGlycER4cWFyOWh5UWg4NmJkX0NMTko?oc=5"
-   },
-   {
-    "titulo": "JPMorgan corta projeções de Vivo e TIM para 2027, mas mantém TIM como favorita do setor",
-    "fonte": "BPMoney",
-    "data": "2026-11-25T19:22:48+00:00",
-    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQeUdRSFlsb3lUMzA3ZnBMQWZnU0RxMWJ3Z2o5SzZ6al9oMHJRQlg3WTQycGlXOGVXS1lzUGxGSmZuNzRlMTJsN1FBMFE3X1h0WjhacWpGMlVhSkl4WUNHRmdSMm83VEpKZDZnUEhyMFBISWtld3oxNE1DYjVxZGVJTlVUR1kyaWxOVWZZb1BB?oc=5"
-   },
-   {
-    "titulo": "J.P. Morgan reduz preços-alvo de TIM e Telefônica para incorporar margens menores",
-    "fonte": "Valor Econômico",
-    "data": "2026-11-25T13:45:05+00:00",
-    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPQ2RxaTY4cWk0WnhJZlozdzlId1FvYjBzNTZ1YVNDWE9YT0IwMVBudlNlWmV3MHZYOFNVMzh4ZTJVX2V2NkV3Rm5CU0RzbFVzSkItZ2xoa1RLcTVPcVJ5RXJIaWo2c3Rnc0N3bnNFZ0FZOHVTdjJHM3B0RTRGcmcwWm5MR09wS2t3SGRMS1p4MDloQjduRnNlaUVtVk85NWg5MWFobFMxUUJXSG1DZGdPVTlMNWhzaGQ1RmJSSDdxVktLZUdNZ3JtU1F2RDRWZzhm0gHfAUFVX3lxTE85QlBDUmFPR0k1RGFfUlc5d3hNMHpRamRlVEhPYlVmRC1SZ0dJYkY4ZEhsd2M5cFd0aWdJWG0wY2lVdmxHMjNfTURqOVpza3JtcTZDSUkyZWdBZkJ0b0pfM1k5d1RfRDZvOThhWEVGSk0wSmQ2OU43QlFNaEJBV3pYaERzNGhSQ0Z1aWNqcnRwY1JwTzJxOTBSUFBGOTZwazJaNE9iSDZFaFVjSUtJWl9IVzhMaXJHRTVCOHZEelFPYzloNXpWM043aFFydm43VmN4dHdsRzNsenIxZlJRaVk?oc=5"
    }
   ],
   "TAEE": [
    {
-    "titulo": "Petrobras (PETR4), Taesa (TAEE11) e Mitre (MTRE3) pagam proventos nesta semana",
-    "fonte": "melhorinvestimento.net",
-    "data": "2026-11-23T15:27:48+00:00",
-    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNbnhVTFdRUXVQSDlLRDdMRFVGdExwdkZITWp3ZFZCS2VQbzAwbGpmQ3V3eEdxYUg4RmptNV9VZzludndiTEMtNm9XaHlaUi1QS1NjWlR5aFV6Zm1naTBaY2ZDVGMwbmhCbHgwMHlocGpUQ0gyaEEzemw4ck9PdHJ0U21NVkZiUWhjV1FaWWtnc0JRYXZxN3YtUGJMQ3hodw?oc=5"
+    "titulo": "Taesa S.A.: história, serviços, participação na bolsa de valores",
+    "fonte": "Investidor Sardinha",
+    "data": "2026-11-27T04:48:17+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9UaGlvNW9VM29CWTl5bEZqbEhpSTI2VVc5OWNRaE54ZHpNbmdZR21lREFkX2RFdW1qSDFlT1BENHNaMF9pWVpQV2hLeFhFa3NRbWhzd2N6TVY5TDVJNm9ObkNoNWNEaWxE?oc=5"
    },
    {
-    "titulo": "Petrobras (PETR4), Taesa (TAEE3) e mais empresas pagam dividendos nesta semana; veja valores",
-    "fonte": "Money Times",
-    "data": "2026-11-23T10:00:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQc0o5b3ZfTncyckFRWFJTc1ozeE5YcHlHbDRFbkNGTldXVkgxUXRlNUFOemRvUFRrcTRZOVJfTUxVbVRSaXlJVnlZOE1aLTJ0dWV5UURhWHZ4SXFieVFwRGtFcDNMVEtwV1M5dXIxUUhlNzRSU2F2S1ZhZTI5V3RkdTNfcTlod2FDU19jRXhVU09jbktKektZNmUzOA?oc=5"
-   },
-   {
-    "titulo": "Taesa, Petrobras, Bradespar, BR Partners, Mitre e Porto pagam provento nesta semana. Veja",
+    "titulo": "Planalto confirma Trabuco para comandar Fazenda; notícia da Taesa, CSN, Dexco, Unipar, Axia e Brava",
     "fonte": "Finance News",
-    "data": "2026-11-22T21:13:23+00:00",
-    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPX2RGVGlYeDJQbFRJQ080cVVNTE1mUmpNcTg0X0FHdnNXcDBPeFI3MW9UOEVob3RuRkM2YWxzUHMxLURfWGJhVVBpdjZEQkF0VTRndkJVTk9nMHctcHFfMV9ZZi1DNzJNWVl5emlKR2tJdGZncFhOTUp5U2J0LV9oOWZlWWhycnpLZkt3aDNnTjY2bXJxZGF1cTJjOGpoeHM5RzJreWpWZFpCNmMwLVlCRnYxcC10cWlUTGdNbw?oc=5"
+    "data": "2026-11-27T00:41:22+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOeGRQUlZSYlpoWHVjMXB0d3kycXV6SnljLUNTWldmMU1sWndoS1B0eng3UDNTdHpQWnBsVFdVamNxWG9KdW8tOGZ5VDdPazhYUC15TnZGUWloaGhtUXpFUlB0SW5vUmZhYmFpcWMyS0xmSTg1cDV1OHE3Q3RGN2dWYm5obzBLM3JmTm9hZ09UaVVqSzFjMlRZMUtRWV9mWF9XSXpjYk91ZXB5NDhBaTMtcUhiSXN0OE9sTUJXeS1WemZ5TGZuV2x0NjB3?oc=5"
    },
    {
-    "titulo": "Taesa (TAEE11): lucro cresce 12,5% e dividendos chegam a R$ 363,8 milhões",
-    "fonte": "O Petróleo",
-    "data": "2026-11-22T10:45:16+00:00",
-    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxON3h2MEpWSkJWcXkxYm5sMUZaU29xTmZCOTI4dTVhUzJSWF83NGZCdnlmelV0OXNwZ1pWai1wVFBEQkVKRVphMWxhc1htcHpEV1pEZ05TY054OGt4R0VXM09yUU9wMk5nbzQ2clE2UlllY1FfeGhvQlJuT1BTaC10ZThMSjhTRkFJdXo5dmRpTWdUQURLQnF3?oc=5"
+    "titulo": "CEO da Cemig é eleito para o cargo de presidente do conselho de administração da Taesa",
+    "fonte": "Finance News",
+    "data": "2026-11-27T00:36:50+00:00",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOY0FXUGZRMl9SRFVjMnpWQWVoYVVhNlpoOHFhS3hiSk1EWFhPbVZJalhUTVBRa3ZwcUlralJXV3RCUXYwZlFON29Sa2RzeEJpNmcwX09uTW1oR2diWFZfYVVudWhXT3BWWTVjaWUxN3dFb2liMUlrZ0FrRTN6b3VLcVAxU21NM29jZ08yWFIyWG5WYTFzX0lTdEJhUER2ZUtLcGVQM1QwVTlDZnVHd0lfVkJQbWc5Unh0S0ZyUXYxcw?oc=5"
    },
    {
-    "titulo": "TAEE11 surpreende com lucro maior e anuncia R$ 363 milhões em dividendos; veja quem recebe",
-    "fonte": "O Petróleo",
-    "data": "2026-11-16T13:06:32+00:00",
-    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPOXoxWlhoOVc5cVM1ejlNNW84UkI1SlV1RTBEcDVkU19HSjBfXzk3bEsxNHZTRmZEQUxoVV96WDRnQ3A4T0JhR194MHl6anU2a0tnS181R0xVZUVnMWhXNDBVTXl2M0xvZWY2dUxEOGJRTFBJVUw5Y1Vlb0FvRE13bjV2ZnlrRkdiTVFGLXNJQ1dsQnhVV2tLeVZyUkRyLUZpcnhQX3Y1Z2Z1YW5xeEYtc2duTVg?oc=5"
+    "titulo": "Presidente da Cemig assume comando do CA da Taesa",
+    "fonte": "Editora Brasil Energia",
+    "data": "2026-11-27T00:21:52+00:00",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQd2owNFV0VEhFYkZ5eHNKRDAtUkZOU29neS11ZnpSYUlzU2dWTGFQUGJUNExJMm9uLUNaQmMzZkozWmY4a1BuSElKSFUwRmcxSnJhTFdacGFqWHVSRGItYUd5T0dwMXhETmZpV0pUcDBhQnZkZVpMUm92V3Q5ejh1SGNyU2d5SGVtczI2U0FFUWlNc01UZnZGbkhR?oc=5"
    },
    {
-    "titulo": "TAEE11 vale a pena? Lucro +12,5%, R$ 363,8 mi em dividendos e dívida a 4,7x",
+    "titulo": "Taesa elege presidente da Cemig como presidente do conselho de administração",
+    "fonte": "TradingView",
+    "data": "2026-11-26T22:42:12+00:00",
+    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9TUXRQVEYwTDF6b1AtOU5fcVVMeVpUajRTdlpSellqSEdsYWxtSVhoU3I0Z3VwaVBHUHlmOWMxYmp6VlltTF9XY0tvR0pGWGZQRkpuQkZPbm9pMU42WVBfNmd2bURqVWdkTWxvaDNjNkNtQXJSd2dv?oc=5"
+   },
+   {
+    "titulo": "Taesa (TAEE11) elege Marco Aurélio Vasconcelos presidente do conselho",
+    "fonte": "Visno Invest",
+    "data": "2026-11-26T22:40:23+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPNmtoSWNKdktMNDNGUmloWS1naDBoZ2NscWhUTEFiYWxRZHZiNlA5ckZPWERsRWZzSjFSc0JGSU8tVndMMWZQVmpXUDdxU05ockVrNkd1N0g5X1RmQllTNmZvcXNSTUZ1cTJRLXZCaFo0MjkzTkJiNXNQd2w2ckpQaG95LTAyUUVhWFJ6a0tJcHc2bF9XMVZscDFKdnJyWkJHQlZtajVJcms?oc=5"
+   },
+   {
+    "titulo": "Rápidas: Ibovespa, dólar, Petrobras, Vale, construtoras, varejistas, Suzano, Smart Fit, Taesa, BR Partners",
+    "fonte": "Finance News",
+    "data": "2026-11-26T14:01:13+00:00",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNTnRXbzZQZzA3UzFZTVF4ajRKbTBYTk1ZMlpEY3ktU0FMMko3M19OWGxpdGZ0MVlUUE9lQUxpZEpxaTI5RW5hVkZobGZmRmpoWmR2S09HdW15YmREa3ZTRTd3Qm5CdmxUSzg0Y2s0WHAtT1hDcEFQM0o3MDVGSkF6RzBnbFAyUWxLZE5VLW9kUjFlUDFwU0pyZkxhRFlpUlllX2ptVFB3ZXZ1Tlo2VThQdHo2N1VLaThaUFJ0TEZRS0NEcEJNQXRrM3N1WWQ?oc=5"
+   },
+   {
+    "titulo": "TAEE11: dividendo de R$ 0,2407 hoje; quem recebe",
     "fonte": "ativovirtual.com.br",
-    "data": "2026-11-16T08:00:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNb19Gd3BZZUJodFdpVEV1aURQYjRmalZVM01PTldYN0JFMlljT3FFUzJ0WmZTY2NIc0h3Um9pMjJXZ19jMzNKYmVQR01tQ1F2X21jQUc1YkkwV3R1SXJwVFB0Q3pOTmMzZ0ZSYURmR1IxaVZhTmk4WUV6Zzh4Ry1nRG9ia2YxVEpnQjRnaVp5OUVONm1JS1VQMlhHUThXMlY0OXE1MGZpd2l4U3o3b3BCaTJUREdEcGM0?oc=5"
-   },
-   {
-    "titulo": "Atenção investidor: data de corte para ter direito ao dividendo da Taesa é nesta segunda, 16",
-    "fonte": "Finance News",
-    "data": "2026-11-16T08:00:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOTzBBMThMYmhNVjlUVVhWOGJCNHRicEdVSmJLRVdza1FJM0pyU3RCZVFZazFDQUZNSmVsOE5mak9ObEc4NkQyRDM0dUpjRDdKaXlYcWcyOEY0eVNiWk90Q0JMWUQxUDcyQ0h1SWpLZTROcmtocEY0TDRmRGR4VEtfQVdjMUExbDRiMDJRQkZhZW1UNURmbWtjcWhSMzNzRVF1T3dUcTNoYnRCUkM3Z3NDUXlnVFNsRVVPSWtoREJyQ3FCYzZW?oc=5"
-   },
-   {
-    "titulo": "Taesa (TAEE11) surpreende com lucro maior e dividendos de R$ 1,06 por unit no 3º trimestre",
-    "fonte": "O Petróleo",
-    "data": "2026-11-15T11:40:20+00:00",
-    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPUTBSRXY3V1k3STFwcFh2TXZfRkV1YTh2d09OaFNWTlNlMFlsSUNPNXFid2VEY0RPUUFvZjMwdkpoaExLQWlWQVh5RWMxWHZhcl9vLXBNSlRTNVc5RmRYTjZib29ITTJZWjZNc0dSNER1NEFjRlNHdnFFZE5jZUtoU0xacXdRRGZfa1ZoODFnR21EVGtpa0s1VEJGanJSN19XakNmU284VUd2N1hNUkJaZGxR?oc=5"
+    "data": "2026-11-26T13:17:25+00:00",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTVlOUnBUcDZjMXh1RzRDVWtwNFgwRDdIY0c1WFFDMDFnUS0zN20yVGFRVkxaLXk3SlBRd0otZ0VleWJld2o1ZXExWmRwZ29xb3dfZEVEZHhSMmdiZnBmOXBjYThRUUlJd2V2RmRYMWxEcUNaZnFIZ2FCckZ0WUZablJXYVl3dkFHMnZGeTd2LWw3dk9ZWWc?oc=5"
    }
   ],
   "KLBN": [
+   {
+    "titulo": "KLBN11: Por que as ações da Klabin estão \"MUITO CARAS\" agora",
+    "fonte": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
+    "data": "2026-11-26T18:36:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaDRpODI5QWtva1BfXzR0OFp0OGUzdWhqZU5fb3NPX3BGNXdhcXBmczZhNzh1UVJ2UnJRazR2dWJQdXpjalVCcXF2bXVhWGg1S2JSMEdNS1lwT2gzaDBLV1A4T0RPMEZYaWIwYktpWTN2Z2pDdDdGSHd1cHRkQzJvVXpVSVVOUHczUktMOFNYcGZLSkVDZEc3M2tDcnVwdVY5R1E4?oc=5"
+   },
+   {
+    "titulo": "KLBN11: acidente adia evento e pressiona o Ebitda",
+    "fonte": "ativovirtual.com.br",
+    "data": "2026-11-26T13:53:57+00:00",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNdktVemxabmpaTXBfUzkydEFCNFJXaEZyeVVBbGNVTUVIcUl1Q2ZtaWdFbjR1ZElKUGp1bnZMUFNSZ3BKTDR5OTlRVzJvaGlyemI0X1hQSkFjS2dwMFd5dDF4c2Jiel9aSGt6NkFJWHBOMG01T3JlSl83NjJ1YUxqYWkzQVhuRTVjV25yeXJscmtQODlhU05VLW5tQQ?oc=5"
+   },
+   {
+    "titulo": "Gigante do papel, Klabin adia encontro de acionistas após explosão em fábrica de SC",
+    "fonte": "NSC Total",
+    "data": "2026-11-26T13:34:06+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxONS1GNGlyR3BmY1dRUzdlVzZqcGlrc2d4LUVKdlBqNmZfWHQ1dVlLcTRUOGotaUxaWXdDQ3pGX3RyZmtsOWxJWk0xYVhvSVVjUVJWYjdxVjNjRkFFaTNWa0V2WDA3U2hCajRMSXJtYnk2QnBvQVZURF9FcUk5UGl1QlR2VlFIX2FoeXlWY1BCSUVJNmJPV1NOZzA0V0ZrajNfcFE2dzdraUJ6QlFTaGpfNnZ2aUx5MDYzaWlsOTBEVUtXaXUwVE1OV185V0Jidkpv?oc=5"
+   },
+   {
+    "titulo": "Após explosão em fábrica em SC, Klabin muda planos e suspende evento tradicional com investidores",
+    "fonte": "NSC Total",
+    "data": "2026-11-26T13:20:49+00:00",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPQnV4N2ZrdlNmUUtsRWFrb2FIcTZIcmRvLUtLQXdqQWJLUEFFMVBadDZZZVhqM05YcVRJWnQyWVcwc2V0NTlTdzJKamxiTmV3cnhwaTFnblpnbGZGbDJEVk9Oc3F3aWJQdHdZclBiTGswT09SYmdaSVlDVW9BcEFMVjZJamtKSnBoZmhmNWZqeDZBQWlUaGhGLU9QNGk5a2VhelNhNzVkWnhOT1hGQ0VodzdDQmNWd3VUazlRR3ZvZXpsazUwWXFYQVAxanVxZw?oc=5"
+   },
+   {
+    "titulo": "Klabin (KLBN11) atualiza informações sobre acidente em SC e adia Investor Day",
+    "fonte": "Investidor10",
+    "data": "2026-11-26T11:36:24+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOXFWUldHbWpoVEtXRXlkRXc5VE5FZ3gtYWJhNmpNWlpLMkpJYW5OanZUWVFDNW04VGRYRUdSSTVmd0FnRnBzRXgtUW9RemlNNTRrMExQQk1kci1OY3N1WFRvbEhMYVJjRzF6enF4aEpUa0lISzE4cHZpZURNazFnZjVOMms1TGZUR2licnhZT2ZEWEtuREhKZW5lTTUyaUw4UXcxVVl3T0JhZndrTUt1a0NwSnRmcVZaQjlDa2ZDWG1OUdIBwgFBVV95cUxOOXFWUldHbWpoVEtXRXlkRXc5VE5FZ3gtYWJhNmpNWlpLMkpJYW5OanZUWVFDNW04VGRYRUdSSTVmd0FnRnBzRXgtUW9RemlNNTRrMExQQk1kci1OY3N1WFRvbEhMYVJjRzF6enF4aEpUa0lISzE4cHZpZURNazFnZjVOMms1TGZUR2licnhZT2ZEWEtuREhKZW5lTTUyaUw4UXcxVVl3T0JhZndrTUt1a0NwSnRmcVZaQjlDa2ZDWG1OUQ?oc=5"
+   },
+   {
+    "titulo": "Mercados nesta quinta, minério, petróleo, notícia da Klabin, Yduqs, TIM, JCP da Smart Fit e outros destaques",
+    "fonte": "Finance News",
+    "data": "2026-11-26T11:02:02+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZ0ZncGN1QVdfdEN2LWNtWWN5UllIZ21GRndrODFsbDJUbVQ1QlJYcG1PcHBXeUZyZ3RlcE91Zzk5dlk2dUV3YTZaZHZOaHZ2THBSQ0FTczAxSDlfY2ZaTDlNS1JDQVNtblpOX3R0TkVrbjVCdjJtZkdIV0xhNHJOeVh0em5aaG5Oai1XYTE0cGFuLVlsWFhBY1RLOTg2b0F5cjhUM0hEVFhEU1dUdnVOaUVqTXhTUjQ4aXNMU2VNaENWd04yVWQtaWhzY3VRLWtweV9ocQ?oc=5"
+   },
+   {
+    "titulo": "Klabin adia evento com acionistas após acidente em unidade industrial de Santa Catarina",
+    "fonte": "ADVFN",
+    "data": "2026-11-26T10:48:55+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPdFo2U1FFdXNEcGFERkdFZ3pTeHFlOHBsMVNPWS1ETGx0VVFnbF96LW5xWmtUTE1Kell3NVpsWFktVXVrczl2bzM1MGJ0NkRyUVl2VWt1UDFXZzRLZ290MWZvS1pBNDdoZ0FHQVRhRFp4ai1iSEN1clFkMVl2RHBXdlFYTFR6TkloRkhJaUxmci1yMVEtS2tvcEJTZkV3RWw5TmdoajJ3d3NsRF9LRmRpWkJnYlZ5eFhRUXl3cnl0a0k?oc=5"
+   },
    {
     "titulo": "Momento B3: Klabin, Motiva, Yduqs e os principais destaques desta quinta-feira (26)",
     "fonte": "ADVFN",
     "data": "2026-11-26T10:02:37+00:00",
     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNSUtwWmpjSFIyMFhXMjJvVk50NTE3ZENYbzFUVGtqc3dKdlZsUDlodm1KM2s3QzV4cHBPRVpyWVNhck1qUUF3QVlqdEl6ZmVUUEFSVnlRNVJmMHJic3NISFVtSTB3S0pNdEVFRm1MNkEzVEcwSWR6QUpzUW9GUDdnUWhwYjdkUXBOWVhsS0JzUUNIbmZZMjlZbldiM0JDbWtQUl9YSVlNREFtb0ExZEU3ZXlkU1c?oc=5"
-   },
-   {
-    "titulo": "Klabin Day é adiado após acidente em unidade da empresa",
-    "fonte": "Valor Econômico",
-    "data": "2026-11-25T21:59:29+00:00",
-    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPb29ZYkVsT3lKQmxPTEwyLU56bzZ3WXdNX1daTFphWkZfVEZUaUdGdDJUSXBtVDZqQ3gxSVIwSEdlRjJNYm1zWU9PN1JJc0dLd0l5WEo1UU9sMXhiZ1dOZDczY2lydkhpQ2JGQ2tid1VXOFdnSGpxbTFHdS02TGJsZmlHRDFLUW1KQm5xSEk1Z3h0THRrREVrMGdrOG9uZkFjTkFuTUlmSEVCMlloLXQ40gG-AUFVX3lxTE5NMEpKTmFtMnYtLU5jdmZGZV9oSWRPRVlOU0xYcVFfTWFwUEhSbGdsSnJqTzRtVG5SWlMySnRSZnJ1TmE0bmxhNWFjdjl1ejdYZjNsMVhXYUVXVzhoUXYweTVDR2NCbkh1aENfMUdWbkJKY3hqQ2FXaHI5cFF2VHE0X1FkWVlHUXpJN29GOXhOYXVpdlgzS2YtQ21abVdIWFdqMnJzbDBXWEJXMk9kYjNiX244VzFrWmxGc0dFNWc?oc=5"
-   },
-   {
-    "titulo": "Klabin (KLBN11) atualiza informações sobre acidente em Santa Catarina e adia Investor Day",
-    "fonte": "Money Times",
-    "data": "2026-11-25T21:26:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQSFJLb3lhekRCQUtxNUMxR1ZKV1dxWGUzMVBHVTYxWk1XeHFtdld0bTY0eWw3aDg5c1Y1OTJWOHVlSGROZ1Z5Ym1xS1hLQkRsamZmdWI0bUpicWdiaU1iVUgtRW9CQUxpaDJYOXpuR2pZSlFJazUxR05OMUVJMUl0ckNkYjNnWlZIa0I0cWZQRmFILVRqT0R3THpfNGlxS0JaSmRQaC14cTFyQkR6ckpJdmdYdXFPX3BOa2FITnB3WG8?oc=5"
-   },
-   {
-    "titulo": "Klabin adia reunião com investidores após explosão de caldeira em SC",
-    "fonte": "TradingView",
-    "data": "2026-11-25T21:20:31+00:00",
-    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1LNFN4VkdrNExRWlVUWFoycGliNzFqcmlCR3ZwdGtnT3Vta2ZrZmthVXpma2pGRk9OcWNtai14dGVZNFdfeDBUYnhfNXByZE1rbW9pVUEtWmFrV0FXNWpmcU0tRXRBMV9MYVp0LU1WWEpSQkQwdUF3?oc=5"
-   },
-   {
-    "titulo": "Caldeira explode em unidade da Klabin em Santa Catarina; 11 pessoas ficam feridas",
-    "fonte": "GZH",
-    "data": "2026-11-25T09:09:12+00:00",
-    "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNYjZtWnp6bzhTZ1ltUXRFOEl1eVU2eldmejl1NTI0Q3pEMk1DZVRJdXR6ZzVnRkVZWjVQRFpZamo1b1dqX3BEWkR0OXIyRHdFU1JWYUpka1J5QUp5dnlWZER3NEZYVVhXbHo4TkhCaThXbklSNHZqSGRfTENZRUNQTk01MEFjNndrMnVRa0thRDk3Q0p4TFNTTWxFUnBWanFlbk1hVld4bEVIQ2stbk5veVpuX2JjOWJ1UTJPeE03dEpWcGVKX3ZFUmdmTmR3dUZJWnZiRWxMdTlrS0J2OXhFa3RqREl1YUJqODJqWUJMa0RoQ1pRN05VXw?oc=5"
-   },
-   {
-    "titulo": "Explosão em caldeira da Klabin em SC: o que se sabe até agora",
-    "fonte": "Automação Industrial",
-    "data": "2026-11-25T01:18:31+00:00",
-    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZ00tV3pLZzM1RU51bXUzZm94RWNYMk9LdFlpWWdjTzlQdHdwLVBZcmxHNFlzNXVZNmtyTVZRSnF2UTFZZGlSNmZUSzUyM1hncXd1ZVd3eGZRM1lhNWFxTkNTR3g0VGM2RnlGUEd4dDJRNWhXWG44ckR0RTVSTmtZM2xHYkhjVEJpRTJrbVB6dkUyMUhKWmZmWXpFSGtDNUE?oc=5"
-   },
-   {
-    "titulo": "Klabin completa dez anos de operação da Unidade Ortigueira, no Paraná",
-    "fonte": "Portal Packaging",
-    "data": "2026-11-24T13:04:37+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNNldvSVBFRGFkakg4b0lYb2pWTmRkalRJZGNCZlJJYTFOSGFBZXZJc2Zzdmg0TVZOYTRfYkI5QzZ3ZlJ1U0QzZkZBRGF1ei1ZNG0yMmU2SjU2MGFjVE04MkRRVFJrMW5nVFE2WHpDNWt6ZjZMUE1XNEo2cmtmSXczWS1UMjA2Q0EtaDFTVzJDODA0SWp4WjV6aVJGNFZQS0d2bkE?oc=5"
-   },
-   {
-    "titulo": "KLBN11 sobe na crise: o dólar favorece a Klabin?",
-    "fonte": "Acionista.com.br",
-    "data": "2026-11-24T09:29:51+00:00",
-    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE56QURnV3I0dlViaXNCcE5uVWhQcFJGQy1rLU9KRDV0Wm5hUjhINTN2ZUNmRUVoekcwOEhJX1RaOHl5QzJkV0J3WUR5RVlEdGtab0lpTjZPR3JpNDVnS1ZjbHVoX3psZHFBRW5HZzRZdHYzd0NxZVpqYkVNcjM?oc=5"
    }
   ],
   "PETR": [
+   {
+    "titulo": "Raio atinge plataforma da Petrobras a 200 quilômetros da costa do Rio",
+    "fonte": "Agência Brasil",
+    "data": "2026-11-26T22:17:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNenpnQW9Ud2Ewelh6LThZVUdSOGlOal93bnlqbHp4WC1FU0xQZzJ5dHhEZm9ycFFZcWFUbXE1SlJlNUxwakdnYzhNSlgyaU1ZQmdZdDdvOHFpR0tzZUlIZkZOVklYYzlwc09wcEY2N3p2dmJuWk5zUFlKazA3ZUJVTUFnMFJ2My1jU2ZfMzRodHJEcUF2NXFHX01uOV9JZl9HQUZpZjkxMllQRThHUlNlUEFrTEF6U1RoX0paOG9YYU8tYXc?oc=5"
+   },
+   {
+    "titulo": "Sessão Vitrine Petrobras chega à Sala Walter da Silveira, em Salvador, com mostra especial a fim de ocupar telas e formar plateias",
+    "fonte": "ba.gov.br",
+    "data": "2026-11-26T21:15:38+00:00",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVVQtYzZsM1RTZUxWdVBER0dYMXUxWU5hVERIOUoyV0ZYSFg1SUQwbXRkbHBKSU1aNmNSRE5aZFZ1b1VORlFXVFhsdlhGZGtFazRvWkFibUI1eFZjN2RBRFlXMGFfVW9sR1VJWFpiYlJZbS1FLTlyNFlxODl3cWs1N2NWSmVSdHhLUzZ1YnVhWEhLaXRQSF9ndl9DVlR1NDBpTlU2NnJXNzBua3hNcGw1MDdnVlA5Q1BTNzlVNVcwVQ?oc=5"
+   },
+   {
+    "titulo": "Copinha F Petrobras",
+    "fonte": "Federação Paulista de Futebol",
+    "data": "2026-11-26T20:00:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFA0cEVyS0FtSWNsQUpvZU1PMW85azZDV3hyYXRSa0dIUzZybTZUOE9VVFBUSW5QMVoxOFY3Rkw4eGVFOVpIZ002bEpCRTNkT0VQM3llRTJBb2lWUHJMck80ejBnZGExbHg2b1BvbFBxYktZdWtGZmRhaHJn?oc=5"
+   },
+   {
+    "titulo": "TV Brasil acompanha emoções de Corinthians x Atlético-MG pela Copinha F Petrobras",
+    "fonte": "EBC - Empresa Brasil de Comunicação",
+    "data": "2026-11-26T18:00:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOTHRXcjF0YmpTUkJNLVV6dFJwajlpNi14SVQ5UTEyN0x4cUNyT09kblZiWHRmTzdZTncyUFN2Z3JuaVRjalZUY1VaWGhKU1lHbGJkQ2g5QXdqU3UyQ2xuem1BU2l0MzhzcWVyWWtYTGlIcmFfWnY2eDlLaE5jM2ZWeXl4cTN0TnpUMm1JVUJ3NzIycnNXVE43U0s5dzdGMDRyYnUyWW9xYnQ1M3FnNE9FUElrTEs?oc=5"
+   },
+   {
+    "titulo": "Bertioga é contemplada pela Petrobras com projeto de soluções baseadas na natureza",
+    "fonte": "Prefeitura de Bertioga",
+    "data": "2026-11-26T16:14:44+00:00",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTC1zdzBTbGxYQlBEbW1GdGFzQ0x5YVpMZWotS29hZHNwQXh3TDlwT0ZxLWxwdEJIb1dULTlzWTJ4b0RpUmRpUGY3eHFaX1o5Vm0yNnp3M1lsWExiYWJiTVM3bWgxaDg5WlQydTlVTU5QWWc2TU5nd0M1X053U0FRVzBXRVdxZXMwenJJNy1iWndSeXlDN3lZRG9YMFZzbmRZVHVXY193TFhjelNBeWJBVVRqRQ?oc=5"
+   },
+   {
+    "titulo": "Petrobrás aprova compra de 42% de produtora de etanol de milho e FUP vê movimento como positivo para a diversificação energética | FUP - Federação Única dos Petroleiros",
+    "fonte": "FUP - Federação Única dos Petroleiros",
+    "data": "2026-11-26T16:01:00+00:00",
+    "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOUnB2bTFWZGZhVVhOcmJyemRJWjA4YWJrd0dqQ01IMXFsano3Z1g3UzRNODB2RlB2NlYzbGU3UXU5Z01MQ2hSc2RPQ1oxZFhGbHVoSWw5LXNxWDlpYW1aT2V3X252RjRWMTRGRmxkbE91anBhalA5X2hTcHhiQm96ZEF0bzJIT1UxUEtHcTBWR2JmdExKZEo3NmI5NHVacllHUDMxZU8wLUo3VVd1NllrdzlSR1czV2NGVktHV3lyVGhMT2hkRl9FcWhzaEJJclQwMGxOLUZPOVFOc25RRVJUZA?oc=5"
+   },
    {
     "titulo": "Petrobras: Novo plano de negócios prevê investimentos bilionários",
     "fonte": "Monitor Mercantil",
@@ -1271,47 +1307,17 @@
    {
     "titulo": "FUP e Ineep debatem novo Plano de Negócios da Petrobrás e medidas do governo para preço dos combustíveis",
     "fonte": "FUP - Federação Única dos Petroleiros",
-    "data": "2026-11-25T23:31:43+00:00",
+    "data": "2026-11-25T23:20:00+00:00",
     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOck9oYUFPUkZGdnF0NHVZZkpmbmMtdVdSUjZOMWFZUjhHamgzUDc0OWYydWlLVXJtYTdxckJLb2lTM2llTUJja0lZTVVYdFdGSE1lU3ZfRjFKUmotWUdoT204UVh4TU0yTk90WnNTUVlNZTVxWDVaZTVjb0duUm8wd0w3RnI2OFF0SU4tZ2lnNlEtNFpIZXI3dFV0ZVJaSVM0UE5fUENGVTVnRTVyc0xoLUZaYlVYT1JNWFBDdGRHSWJ6UQ?oc=5"
-   },
-   {
-    "titulo": "TCU retira condenações de Gabrielli e ex-diretores da Petrobras sobre Pasadena",
-    "fonte": "Agência iNFRA",
-    "data": "2026-11-25T23:18:54+00:00",
-    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOanAyTmw0QUNPV2xvdzhKaTlDYmdONU92d21ISzAwUklZQktHR0pCWUk0WmN5YTE5cng4STFXVEdEdHktZ05LSzdLMVJnblM5cHZObUFhWkc5TlBvQ2VEbDM3QVRRQ1dNeEtHMGk0MTZxX1V4di15TnByZVFRMm9JUnlZUms0ZHRraVhfZzA2S05KdC10c2ktbFRxWFh0Rkp1VW8xWkR1VUs2bnBoZEE?oc=5"
-   },
-   {
-    "titulo": "Ibovespa B3 sobe 1,58%, com recuperação de Vale e Petrobras; dólar cai a R$ 5,81",
-    "fonte": "Bora Investir",
-    "data": "2026-11-25T21:43:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPRkNhcDBzRHVxRi1KbklnMXhid2NPWkJWMjNWV3kzMnpkUkF2UUlRSFhNWVdCMjFTY3I1RGY4a3BLTDZfNVZvbDcyQ0tuSGNWMk04Wi1ySHBqSFZQTnJLZjhkOGp5MkNuLS0xU1JOVHBfUm5YQ1BPNnJZSENGSDQzNThKdlgxRXhGUnJKbmVGb2o2N3R5NmYwRlRyLS12dEl0eGFqT3ZCbnhJbDY5NVA4UVgyaTFFQ0xIa1pYRC1uUnc?oc=5"
-   },
-   {
-    "titulo": "A Petrobras já perdeu dinheiro no etanol de cana. Agora vai tentar o milho",
-    "fonte": "Brazil Journal",
-    "data": "2026-11-25T20:59:00+00:00",
-    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWjVwRFJWdVM5QlVlYW1kdExoR1BNdVJCcVJmcDZNeFNEc0l6SDczenJ5U2p2eDFaMVI5ODVDTlFMRURyN29fZFF6MlhUX3pIY2NXUS1vZV8xM2NDT1FabFg0cjNVSmJ5aWlrV1hjRTlkRTVKS3RkVzFLM0tHZUpwRHJ0VlFGX2gwanVHOUEwRzZsVGhwb3JycTBnRmthdFNY?oc=5"
-   },
-   {
-    "titulo": "Petrobras: plano 2027-31 do Safra eleva capex e dividendos",
-    "fonte": "Safra",
-    "data": "2026-11-25T19:57:08+00:00",
-    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNWjJmd09wYWNMUTdEcldxVGUzSnUwX0ZnZ1JOTVJxc2F1UzFkMUI2aTBkU2ZZa093SDRBU3dGTlNFVld1a2MxWmF1dHVYV3V4ejdQZjRaQ2lCS2ppYk5NNWN0UUVXUDdTclBiU2tyQVBWaHNBSWpEck1ONFB5Q1RhVw?oc=5"
-   },
-   {
-    "titulo": "Petrobras fecha contrato de R$ 2,2 bilhões para instalação de dutos em águas ultraprofundas",
-    "fonte": "O GLOBO",
-    "data": "2026-11-25T18:15:44+00:00",
-    "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNRkJHR282X3VWT1BIeW1JU2ZiUGx4a2dDOS1HdkZBRXotajdnUWd6dmhvTS1LR20zVnpwcGRsUUk2V3RkMXZHZldCU2Y2OXVuTWhBb3piMkRWOHpJZzhPRnJXWGIyOGZmVjZUWHp6aUlyNUp4MG5qN2c1OXdqWU1YRHQzNE0yczQ4b1V2LWsyczdtdWRYX0ZmWkRYMEszZEZ1VW5SbU10VHA2b1dhTW5CRzh2b28ydzBXdERfUXlmVEZ4bWhHNWNHeFJRcWJzV3AzNmU4RzNIRGRBTWg2SEdBM2pLMXpveE1Ncm9IemxR0gH8AUFVX3lxTE5zeF9SQ0ZDY1hqV3liQzlxSnlZbTAwaHNXQzRMZXZydkR6Mk9tNjRJSV9WeGJaOGdCRUlDODdxcDVEclQxUWpYWklxdWk3QXJBel9HMUlFdDJXUFdESkI0d2EtTFkydlFPaVhYbVJOZmJNWElDSXZoWWhwYm5kc2d6VjdZWklZU3BnbkY2YUlsallha0owRTR5RTJHd1dINTdtb0dELS1sV1R3akJpMldMRW53OURrMHNiLVZHMWg0VTA1SUgyNHRNcjFFdHNfa1EtaktRX1dxdGpGSE5jRDBuUHRCNzRJNWdKbHJyVzZrUU9ubDM1cXc3RGtYVg?oc=5"
-   },
-   {
-    "titulo": "Santander rebaixa Petrobras e corta preço-alvo após novo plano",
-    "fonte": "Investidor10",
-    "data": "2026-11-25T15:58:02+00:00",
-    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxObVNQbnFBWGdPNmV0ZUpuR1JXX09Pc2xmSHBSOWFkcDNYTzg3ODB6OWROTUptc005RVV3RHJKazRxaEN3ckpMWEZjeWtGdVJvZVBjRkMxbmhFd3FUaEo3eUlSd2NKWHpvRUdIbURrTXF5UTRodmlRWGNoZjBYSjdWYlhHcTh5VTFmNnQxY1FZbGNLUDZubk1uYy1vUlB3QzU4Ym4tQUR1d21pR1kxZEdnbNIBsAFBVV95cUxObVNQbnFBWGdPNmV0ZUpuR1JXX09Pc2xmSHBSOWFkcDNYTzg3ODB6OWROTUptc005RVV3RHJKazRxaEN3ckpMWEZjeWtGdVJvZVBjRkMxbmhFd3FUaEo3eUlSd2NKWHpvRUdIbURrTXF5UTRodmlRWGNoZjBYSjdWYlhHcTh5VTFmNnQxY1FZbGNLUDZubk1uYy1vUlB3QzU4Ym4tQUR1d21pR1kxZEdnbA?oc=5"
    }
   ],
   "VALE": [
+   {
+    "titulo": "VALE3 abaixo de R$ 60: estoques de minério triplicam na China",
+    "fonte": "O Petróleo",
+    "data": "2026-11-26T19:22:15+00:00",
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbHNma2JyVzFrcG1OU21mMmhmS0NMZHNsLWlvcjlvdjNscjZuWmhfbmxWbjVjVHJ3SWtCUEJqcFdMeks4djhfalNKVVhlak9reE9HMDJrQlVaUWFnRXJvOUhfN1lnMzBnNWdmcW5ycjExVUppT0pjVDBrV3JhM2dIUVNwclRPenFqSS1GSmRn?oc=5"
+   },
    {
     "titulo": "Vale (VALE3) pode pagar R$ 3,81 por ação em 2027? Veja o que esperar dos dividendos",
     "fonte": "O Petróleo",
@@ -1349,16 +1355,10 @@
     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQaHNUYl8yLWF2OWpuREVqWGhQSllaRmpzOWVQZllnc1RfdC1Ra1Nka1g4M09peWNXRFl1TncwdEcxV3ZqVjUtTWxhSXk1Ni1XT1lRZnB6QWJSZlQtZHNIdnVVeHllWmE1bVNsVkYzdmR4bWR4R1oycXFLXzRCb2ltMkpzX0kyNm11WEhIdEhLUmp6NlZXQ29YNnp2X1o5eHFRNU5rTmVGcElNMUU0azFBMGdsYmxvWVZ1Mk9nM3BmOE5qS2d5bkhz?oc=5"
    },
    {
-    "titulo": "Vale (VALE3) confirma data do Vale Day 2026 em Nova York",
-    "fonte": "Suno - Investimentos Inteligentes",
-    "data": "2026-11-25T15:01:09+00:00",
-    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5qMjh0akJxVzN0blR1LW9ZSlhsYWR0U0c4cl9kOWhGTGRfRkg3alc1Q1pKSjNCQXlvdzczRU9OY3hJMHRvS1F6aTBGYmlNclg2ZHNJdFJLX01JOXVXT0JDOWxFZm05QmFjVHktT0M5UVFDVFQ1S0ItWXlB0gF_QVVfeXFMTXdfUG9UUERicC16UmZsT2xHWGIwOGJ3bVVlM2lBVGJGQlFDcjI3UmNEM29wMjRqcHd0aE5QNTBWc3hoVTdmRm5qeVlmU3BBYkNlWVJVZ1ZXX3RNMTdlelpSQXZNdzJ5dzBsUnZ5MVNYeThMTldBVGlmZjlCVHBLTQ?oc=5"
-   },
-   {
-    "titulo": "BBAS3, PETR4, VALE3 e ITUB4: cinco acontecimentos que mexem com os investimentos nesta semana",
-    "fonte": "O Petróleo",
-    "data": "2026-11-25T12:13:21+00:00",
-    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNazExUldaMUdPTVBma2dNTnctN1dfanVHNlp5MWY4ZWppNEVlRGRqUElVdHp0RW9Hd1VrUkdwOWR4aDIybjBOT2hlZlZsYUt1ekp6ODNxb21xOERfY1Fyb2ZPV3lUSkhvZWJJV1dWN1d2ZjNQQnV6SVI0aFMxQ2V2NlVXc2tGMVZLRU5SRkVQclN0SWJsa1NSVjdTc2ZGZUJHdXp1SkFIVzBJLUYwOU5HeUhpeXN3akk?oc=5"
+    "titulo": "VALE3: Vale Day 2026 e o que observar em dezembro",
+    "fonte": "ativovirtual.com.br",
+    "data": "2026-11-25T15:19:23+00:00",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQY1V1Wm5iaFJ6VHZ6T01Qc1RxLWRjOTNkZkdYLWJ5b0ZMbFdQdVBUV2lZUndtaFJ5Z293NUluM3lMWVZIVGw4SEZxVE5kclNxYTktTlBoTkVyRkwycWNnMHllS0FDdVludko3eEtyZmctTTVBYlN4VnFWOUd1czBzTng4T0picWtFX0xScjZxeEJqRF9URGNNSkREVQ?oc=5"
    }
   ]
  }

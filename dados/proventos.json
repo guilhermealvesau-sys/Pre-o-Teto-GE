@@ -26138,6 +26138,24 @@
    "pagamento": "2026-12-07",
    "ano_ref": 2026,
    "referente": "1º Semestre/2026"
+  },
+  {
+   "classe": "ON",
+   "tipo": "JCP",
+   "valor": 0.188959,
+   "data_com": "2026-11-25",
+   "pagamento": "2026-12-07",
+   "ano_ref": 2026,
+   "referente": "1º Semestre/2026"
+  },
+  {
+   "classe": "PN",
+   "tipo": "JCP",
+   "valor": 0.188959,
+   "data_com": "2026-11-25",
+   "pagamento": "2026-12-07",
+   "ano_ref": 2026,
+   "referente": "1º Semestre/2026"
   }
  ],
  "ITSA": [
