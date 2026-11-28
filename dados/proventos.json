@@ -23728,18 +23728,18 @@
    "tipo": "DIVIDENDO",
    "valor": 0.14023106424,
    "data_com": "2025-11-26",
-   "pagamento": "2025-12-19",
+   "pagamento": null,
    "ano_ref": 2025,
-   "referente": "3º Trimestre/2025"
+   "referente": ""
   },
   {
    "classe": "PN",
    "tipo": "DIVIDENDO",
    "valor": 0.14023106424,
    "data_com": "2025-11-26",
-   "pagamento": "2025-12-19",
+   "pagamento": null,
    "ano_ref": 2025,
-   "referente": "3º Trimestre/2025"
+   "referente": ""
   },
   {
    "classe": "ON",
